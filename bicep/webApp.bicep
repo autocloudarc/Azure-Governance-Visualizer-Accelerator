@@ -36,7 +36,7 @@ param managementGroupId string
 @description('The authorized groups IDs to access the web app')
 param authorizedGroupId string
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2024-11-01' = {
   name: appServicePlanName
   location: location
   sku: {
@@ -45,7 +45,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   kind: kind
 }
 
-resource webApp 'Microsoft.Web/sites@2023-01-01' = {
+resource webApp 'Microsoft.Web/sites@2024-11-01' = {
   name: webAppName
   location: location
   properties: {
