@@ -31,6 +31,36 @@
 
 Follow these steps to deploy the Azure Governance Visualizer accelerator into your own Azure and Microsoft Entra ID tenant. Most steps have both **portal based** ( :computer_mouse: ) and **PowerShell based** ( :keyboard: ) instructions. Use whichever you feel is appropriate for your situation, they both produce the same results.
 
+### Deployment Process Overview
+
+```mermaid
+flowchart TD
+    Start([Start]) --> Step1["<a href='#1-create-a-service-principal-microsoft-entra-id-app-registration-to-run-azure-governance-visualizer'>1. Create AzGovViz Service Principal<br/>(Microsoft Entra ID)</a>"]
+    Step1 --> Step2["<a href='#2-create-copy-of-the-azure-governance-visualizer-accerlator-in-your-own-github-repository'>2. Create Private GitHub Repository<br/>(from accelerator template)</a>"]
+    Step2 --> Step3["<a href='#3-configure-federated-credentials-for-the-service-principal-created-in-the-first-step'>3. Configure Federated Credentials<br/>(GitHub Actions → Azure)</a>"]
+    Step3 --> Step4["<a href='#4-grant-permissions-in-azure-for-the-azgovviz-service-principal-created-in-the-first-step'>4. Grant Azure Permissions<br/>(Reader role on Management Group)</a>"]
+    Step4 --> Step5["<a href='#5-create-a-microsoft-entra-application-for-user-authentication-to-the-azure-web-app-that-will-host-azgovviz'>5. Create Web App Auth Application<br/>(Microsoft Entra ID)</a>"]
+    Step5 --> Step6["<a href='#6-create-a-resource-group-and-assign-necessary-rbac-roles'>6. Create Resource Group<br/>(and assign RBAC roles)</a>"]
+    Step6 --> Step7["<a href='#7-create-the-github-secrets-variables-and-permissions'>7. Configure GitHub Secrets & Variables<br/>(CLIENT_ID, SUBSCRIPTION_ID, etc.)</a>"]
+    Step7 --> Step8a["<a href='#8-deploy-azure-governance-visualizer-azure-resources-and-application'>8a. Run DeployAzGovVizAccelerator<br/>(Deploy Web App + Auth)</a>"]
+    Step8a --> Step8b["<a href='#8-deploy-azure-governance-visualizer-azure-resources-and-application'>Workflow: SyncAzGovViz<br/>(Sync latest code)</a>"]
+    Step8b --> Step8c["<a href='#8-deploy-azure-governance-visualizer-azure-resources-and-application'>8b. Run DeployAzGovViz<br/>(Deploy & Publish AzGovViz)</a>"]
+    Step8c --> End(["✓ Access Web App<br/>via Azure Portal"])
+    
+    style Start fill:#2E7D32,color:#FFFFFF
+    style End fill:#2E7D32,color:#FFFFFF
+    style Step1 fill:#1565C0,color:#FFFFFF
+    style Step2 fill:#1565C0,color:#FFFFFF
+    style Step3 fill:#1565C0,color:#FFFFFF
+    style Step4 fill:#1565C0,color:#FFFFFF
+    style Step5 fill:#1565C0,color:#FFFFFF
+    style Step6 fill:#1565C0,color:#FFFFFF
+    style Step7 fill:#1565C0,color:#FFFFFF
+    style Step8a fill:#C2185B,color:#FFFFFF
+    style Step8b fill:#C2185B,color:#FFFFFF
+    style Step8c fill:#C2185B,color:#FFFFFF
+```
+
 ### 1. Create a service principal (Microsoft Entra ID app registration) to run Azure Governance Visualizer
 
 > NOTE: To grant API permissions and grant admin consent for the directory, you must have 'Privileged Role Administrator' or 'Global Administrator' role assigned. See [Assign Microsoft Entra roles to users](https://learn.microsoft.com/entra/identity/role-based-access-control/manage-roles-portal) for instructions.
