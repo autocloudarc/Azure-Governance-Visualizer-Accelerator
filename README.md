@@ -61,6 +61,10 @@ flowchart TD
     style Step8c fill:#C2185B,color:#FFFFFF
 ```
 
+### Azure Governance Visualizer Accelerator Implementation Flow Architecture
+
+![Azure Governance Visualizer Accelerator Implementation Flow Architecture](./media/implementation_flow_architecture.png)
+
 ### 1. Create a service principal (Microsoft Entra ID app registration) to run Azure Governance Visualizer
 
 > NOTE: To grant API permissions and grant admin consent for the directory, you must have 'Privileged Role Administrator' or 'Global Administrator' role assigned. See [Assign Microsoft Entra roles to users](https://learn.microsoft.com/entra/identity/role-based-access-control/manage-roles-portal) for instructions.
