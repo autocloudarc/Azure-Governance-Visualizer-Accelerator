@@ -525,11 +525,11 @@ You can configure some aspects of the Azure Web application where AzGovViz is pu
 
 ### GitHub Copilot Meta-Prompt
 
-If you want to further automate the setup process and have a GitHub Copilot license, consider using the following meta-prompt, that may accelerate some of the initial pre-requisites:
+If you want to further automate the setup process and have a GitHub Copilot license, consider using the following meta-prompt, that may accelerate some of the initial pre-requisites. Copy the meta-prompt below and paste it in the GitHub Copilot chat window.
 
 **Assumption**: It's important that this repo has arleady been forked and cloned from your own GitHub account or organization first, which is step two in the diagrams above.
 
-_System role: You are an expert DevOps engineer specializing in automated Azure infrastructure deployment using modern methods that leverages bicep, powershell, GitHub action workflows, and MCP client configuration for GitHub and Azure MCP services. Copy the meta-prompt below and paste it in the GitHub Copilot chat window.
+System role: You are an expert DevOps engineer specializing in automated Azure infrastructure deployment using modern methods that leverages bicep, powershell, GitHub action workflows, and MCP client configuration for GitHub and Azure MCP services.
 
 #### Meta-Prompt
 
@@ -548,22 +548,39 @@ model: Claude Haiku 4.5 (copilot)
 Also provide instructions based on the content of the "$(git rev-parse --show-toplevel)\README.md" file for the following listed below. If a tool is required, such as the Az cli, azd, pwsh, bicep or the gh cli, offer to install and configure it. For Azure and GitHub operations, offer to configure the MCP client or extension to accomodate these types of tasks. This will maximize opportunities to automate the majority of the process. Perform these steps outline below as a plan:
 
 [] 1. Prompt user to log into his/her Azure tenant and select the target subscription.
+
 [] 2. Prompt user for the Azure deployment region and provide examples: 'eastus2', 'centralus'
+
 [] 3. Prompt user for the name of the app registration/service principal, but suggest the default name of: "azgovviz-accelerator-01"
+
 [] 4. Create the azgovviz-accelerator-01 app registration and service principal.
+
 [] 5. Set API permissions for this app registration.
+
 [] 6. Generate a random string and save it in a variable named resourceRandomString using the powershell command: $resouceRandomString = (new-guid).guid.substring(0,8)
+
 [] 7. Create another app registration for the Web App user authentication named: "azgovviz-web-auth-$resourceRandomString"
+
 [] 8. Create the app registration and service principal using the name obtained in (4.) above, that will be used to run the Azure Governance Visualizer Accelerator.
+
 [] 9. Configure federated credentials in Azure for the service principal created in (4.) above based on prompting or resolving the values for this GitHub account or org, repo name and branch.
+
 [] 10. Prompt user for the name of the target management group to scope the visualizer to. Usually this is the intermediate-level organization named management group in an Azure Landing Zone architecture hierarchy, so also provide a hint to the user to suggest what this value should be.
+
 [] 11. Grant the service principal created in (4.), the reader role RBAC permission for the target management group from (10.) above.
+
 [] 12. Generate a psuedo-random name for the Azure App Service and Azure Web App prefixes using the pwsh command: "azgovviz-web-$resourceRandomString"
+
 [] 13. Create a resource group for the Azure Web App named: "rg-azgovviz-$resourceRandomString"
+
 [] 14. At this resource group scope, assign the roles "Website Contributor" and "Wep Plan Contributor" roles to the app registration in (7.) for the web app user authN.
+
 [] 15. Create the required subscriptoin id, tenant id, and client id secrets in this online github repository within the current GitHub account or organization.
+
 [] 16. Configure the approprate GitHub action permissions in the GitHub org to allow GitHub Actions to run.
+
 [] 17. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file.
+
 [] 18. Provide a comprehensive summary of the action taken so far and suggest next steps.
 _
 
