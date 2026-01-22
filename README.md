@@ -63,7 +63,7 @@ flowchart TD
 
 ### Azure Governance Visualizer Accelerator Implementation Flow Architecture
 
-![Azure Governance Visualizer Accelerator Implementation Flow Architecture](./media/implementation_flow_architecture.png)
+![Azure Governance Visualizer Accelerator Implementation Flow Architecture](./media/azgovviz-implementation-flow.png)
 
 ### 1. Create a service principal (Microsoft Entra ID app registration) to run Azure Governance Visualizer
 
