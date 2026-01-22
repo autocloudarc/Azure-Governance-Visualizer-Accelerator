@@ -582,7 +582,6 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 [] 17. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file.
 
 [] 18. Provide a comprehensive summary of the action taken so far and suggest next steps.
-_
 
 ### Keep the Azure Governance Visualizer code up-to-date
 
