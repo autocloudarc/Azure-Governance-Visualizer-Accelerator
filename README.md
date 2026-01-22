@@ -300,21 +300,21 @@ New-AzRoleAssignment `
    Copy the secret's value and store it in a safe place, keeping mind you won't be able to view it again later
     <img width="971" alt="image" src="https://github.com/user-attachments/assets/8132e138-bab5-4e04-ab4b-d82eb51afc2f">
 
-4. Click on _Authentication_ and under _Implicit grant and hybrid flows_, enable ID tokens to allow OpenID Connect user sign-ins from App Service. Select Save.
+3. Click on _Authentication_ and under _Implicit grant and hybrid flows_, enable ID tokens to allow OpenID Connect user sign-ins from App Service. Select Save.
 
    ![Screenshot showing enabling Open ID in app registration](./media/app_registration_openID.png)
 
-5. From the left navigation, select Expose an API > Add > Save.
+4. From the left navigation, select Expose an API > Add > Save.
 
    ![Screenshot showing exposing an API](./media/app_registration_expose_api.png)
 
    ![Screenshot showing exposing an API](./media/app_registration_expose_api_add.png)
 
-6. Click on _Add a scope_ and provide the values as the screenshot.
+5. Click on _Add a scope_ and provide the values as the screenshot.
 
    ![Screenshot showing adding a scope to the API](./media/app_registration_expose_api_addScope.png)
 
-7. From the left navigation, select Manifest and set "groupMembershipClaims" to "SecurityGroup".
+6. From the left navigation, select Manifest and set "groupMembershipClaims" to "SecurityGroup".
 
    ![Screenshot showing adding a scope to the API](./media/app_registration_groupsClaim.png)
 
@@ -502,7 +502,7 @@ gh api -X PUT /repos/$GitHubOrg/$GitHubRepository/actions/permissions/workflow -
 
    ![Screenshot showing the AzGovViz web app published](./media/azgovviz_published.png)
 
-## :checkered_flag: Try it out!
+## :checkered_flag: Try it out
 
 Once the _DeployAzGovViz_ workflow has been ran successfully, navigate to the Azure Web App on the Azure portal and click _Browse_ to access the visualizer. You'll notice that you'll need to be authenticated with Microsoft Entra ID.
 
@@ -522,6 +522,50 @@ If you were deploying the Azure Governance Visualizer for exploratory purposes, 
 You can configure some aspects of the Azure Web application where AzGovViz is published by editing the _webApp.parameters.json_ file in the _bicep_ folder.
 
 ![Screenshot showing the Azure Web app parameters file](./media/webapp_params.png)
+
+### GitHub Copilot Meta-Prompt
+
+If you want to further automate the setup process and have a GitHub Copilot license, consider using the following meta-prompt, that may accelerate some of the initial pre-requisites:
+
+**Assumption**: It's important that this repo has arleady been forked and cloned from your own GitHub account or organization first, which is step two in the diagrams above.
+
+_System role: You are an expert DevOps engineer specializing in automated Azure infrastructure deployment using modern methods that leverages bicep, powershell, GitHub action workflows, and MCP client configuration for GitHub and Azure MCP services. Copy the meta-prompt below and paste it in the GitHub Copilot chat window.
+
+#### Meta-Prompt
+
+[] A. Please analyze the README.md file for this repo and based on it's context, create a corresponding copilot-instructions.md file to reflect the standards, styles, practices and formats currently employed in this repository. Place the instruction file at the path "$(git rev-parse --show-toplevel)\.github"
+
+[] B. Additionally, create a new custom prompt file at "$(git rev-parse --show-toplevel)\.github\prompts\automate-setup.prompt.md" and in it, specify the following header:
+
+---
+
+agent: agent
+description: This prompt is used to automate as much as possible, the setup of the Azure Governance Visualizer Accelerator.
+model: Claude Haiku 4.5 (copilot)
+
+---
+
+Also provide instructions based on the content of the "$(git rev-parse --show-toplevel)\README.md" file for the following listed below. If a tool is required, such as the Az cli, azd, pwsh, bicep or the gh cli, offer to install and configure it. For Azure and GitHub operations, offer to configure the MCP client or extension to accomodate these types of tasks. This will maximize opportunities to automate the majority of the process. Perform these steps outline below as a plan:
+
+[] 1. Prompt user to log into his/her Azure tenant and select the target subscription.
+[] 2. Prompt user for the Azure deployment region and provide examples: 'eastus2', 'centralus'
+[] 3. Prompt user for the name of the app registration/service principal, but suggest the default name of: "azgovviz-accelerator-01"
+[] 4. Create the azgovviz-accelerator-01 app registration and service principal.
+[] 5. Set API permissions for this app registration.
+[] 6. Generate a random string and save it in a variable named resourceRandomString using the powershell command: $resouceRandomString = (new-guid).guid.substring(0,8)
+[] 7. Create another app registration for the Web App user authentication named: "azgovviz-web-auth-$resourceRandomString"
+[] 8. Create the app registration and service principal using the name obtained in (4.) above, that will be used to run the Azure Governance Visualizer Accelerator.
+[] 9. Configure federated credentials in Azure for the service principal created in (4.) above based on prompting or resolving the values for this GitHub account or org, repo name and branch.
+[] 10. Prompt user for the name of the target management group to scope the visualizer to. Usually this is the intermediate-level organization named management group in an Azure Landing Zone architecture hierarchy, so also provide a hint to the user to suggest what this value should be.
+[] 11. Grant the service principal created in (4.), the reader role RBAC permission for the target management group from (10.) above.
+[] 12. Generate a psuedo-random name for the Azure App Service and Azure Web App prefixes using the pwsh command: "azgovviz-web-$resourceRandomString"
+[] 13. Create a resource group for the Azure Web App named: "rg-azgovviz-$resourceRandomString"
+[] 14. At this resource group scope, assign the roles "Website Contributor" and "Wep Plan Contributor" roles to the app registration in (7.) for the web app user authN.
+[] 15. Create the required subscriptoin id, tenant id, and client id secrets in this online github repository within the current GitHub account or organization.
+[] 16. Configure the approprate GitHub action permissions in the GitHub org to allow GitHub Actions to run.
+[] 17. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file.
+[] 18. Provide a comprehensive summary of the action taken so far and suggest next steps.
+_
 
 ### Keep the Azure Governance Visualizer code up-to-date
 
