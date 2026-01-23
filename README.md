@@ -791,6 +791,8 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 
 [] 24. **IMPORTANT: Explain the workflow execution order to the user.** The **DeployAzGovVizAccelerator** workflow only deploys the **empty web app infrastructure** - it does not generate or publish any governance visualization content. After DeployAzGovVizAccelerator completes, **SyncAzGovViz** triggers automatically to sync the latest AzGovViz code. However, to see actual content in the web app, the user **must run DeployAzGovViz** workflow, which will: (1) Run the AzGovViz PowerShell script against the management group, (2) Generate the HTML governance visualization, and (3) Publish it to the Azure Web App. Provide the command: `gh workflow run DeployAzGovViz --repo <org>/Azure-Governance-Visualizer-Accelerator`
 
+[] 25. **CRITICAL: Grant Admin Consent for API Permissions.** Navigate to Microsoft Entra ID > App registrations > select the AzGovViz service principal (azgovviz-accelerator-01) > API permissions. Click **Grant admin consent for [tenant name]** to authorize all configured permissions. This step requires **Global Administrator** or **Privileged Role Administrator** role. Without admin consent, the AzGovViz script will fail with permission check errors for: User.Read.All, Group.Read.All, Application.Read.All, and PrivilegedAccess.Read.AzureResources.
+
 **CRITICAL REMINDERS FOR THE AGENT:**
 
 - Do NOT proceed past step 7 unless the web app auth app is confirmed created
