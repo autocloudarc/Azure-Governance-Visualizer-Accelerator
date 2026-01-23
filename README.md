@@ -789,6 +789,8 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 
 [] 23. After the next suggested steps list is provided, please prompt the user to review and then to allow proceeding with these next steps, but indicate that the workflow must be triggered manually.
 
+[] 24. **IMPORTANT: Explain the workflow execution order to the user.** The **DeployAzGovVizAccelerator** workflow only deploys the **empty web app infrastructure** - it does not generate or publish any governance visualization content. After DeployAzGovVizAccelerator completes, **SyncAzGovViz** triggers automatically to sync the latest AzGovViz code. However, to see actual content in the web app, the user **must run DeployAzGovViz** workflow, which will: (1) Run the AzGovViz PowerShell script against the management group, (2) Generate the HTML governance visualization, and (3) Publish it to the Azure Web App. Provide the command: `gh workflow run DeployAzGovViz --repo <org>/Azure-Governance-Visualizer-Accelerator`
+
 **CRITICAL REMINDERS FOR THE AGENT:**
 
 - Do NOT proceed past step 7 unless the web app auth app is confirmed created
