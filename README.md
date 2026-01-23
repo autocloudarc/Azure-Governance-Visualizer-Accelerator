@@ -533,9 +533,11 @@ System role: You are an expert DevOps engineer specializing in automated Azure i
 
 #### Meta-Prompt
 
-[] A. Please analyze the README.md file for this repo and based on it's context, create a corresponding copilot-instructions.md file to reflect the standards, styles, practices and formats currently employed in this repository. Place the instruction file at the path "$(git rev-parse --show-toplevel)\.github"
+[] A. Explicitly add the README.md file at the root of this repository into the GitHub Copilot chat session as context.
 
-[] B. Additionally, create a new custom prompt file at "$(git rev-parse --show-toplevel)\.github\prompts\automate-setup.prompt.md" and in it, specify the following header:
+[] B. Please analyze the README.md file for this repo and based on it's context, create a corresponding copilot-instructions.md file to reflect the standards, styles, practices and formats currently employed in this repository. Place the instruction file at the path "$(git rev-parse --show-toplevel)\.github"
+
+[] C. Additionally, create a new custom prompt file at "$(git rev-parse --show-toplevel)\.github\prompts\automate-setup.prompt.md" and in it, specify the following header:
 
 ---
 
