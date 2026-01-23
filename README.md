@@ -515,6 +515,189 @@ If you were deploying the Azure Governance Visualizer for exploratory purposes, 
 3. Delete the local copy of the GitHub repository created on your machine.
 4. Delete the two service principals created for the AzGovViz authorization and the Azure Web App Entra ID authentication.
 
+## Troubleshooting & Lessons Learned
+
+This section documents common issues, mistakes, and pain points encountered during deployment, with solutions to help future deployments go smoothly.
+
+### Critical Issues
+
+#### Issue 1: Web App Authentication App Registration Not Created
+
+**Problem:** Step 5 (Create Microsoft Entra application for user authentication) was skipped or incomplete, causing the deployment to fail when trying to configure web app authentication.
+
+**Symptoms:**
+
+- Deployment workflow fails during web app configuration
+- Authentication settings cannot be applied
+- Redirect URI not configured
+
+**Prevention:**
+
+- ✅ **Do NOT skip Step 5** - The web app authentication app is required before running deployment workflows
+- ✅ **Verify** the authentication app exists before proceeding: Search for the app in Microsoft Entra > App registrations
+- ✅ **Save the client secret immediately** - You cannot retrieve it again if lost
+
+**Solution:** Create the missing web app auth app before proceeding:
+
+```powershell
+# Use PowerShell to create the web app auth app (see Step 5 above)
+# Ensure the redirect URI is correctly formatted: https://<webapp_name>.azurewebsites.net/.auth/login/aad/callback
+# Save both the App ID and client secret
+```
+
+#### Issue 2: Wrong GitHub Secrets - Repository URL Mismatch
+
+**Problem:** GitHub secrets and variables were configured in the wrong repository, causing workflows to fail.
+
+**Symptoms:**
+
+- Workflows cannot find secrets when executed
+- "Secret not found" errors in workflow logs
+- Deployment fails immediately
+
+**Prevention:**
+
+- ✅ **Always verify** you're working with the **Azure-Governance-Visualizer-Accelerator** repository (not the main Azure-Governance-Visualizer)
+- ✅ **Check the current repo** in GitHub CLI: `gh repo view` should show `autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- ✅ **Use full repo path** in commands: `--repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+
+**Solution:** Verify secrets are in the correct repo:
+
+```powershell
+# Verify you're working with the correct repository
+gh repo view
+# Output should show: autocloudarc/Azure-Governance-Visualizer-Accelerator
+
+# Check if secrets exist in this repo
+gh secret list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator
+
+# If empty, set them using the correct repository flag
+gh secret set SECRET_NAME -b $secretValue --repo autocloudarc/Azure-Governance-Visualizer-Accelerator
+```
+
+#### Issue 3: Management Group ID Set to Display Name Instead of ID
+
+**Problem:** The `MANAGEMENT_GROUP_ID` GitHub variable was set to the display name ("Azure Landing Zones") instead of the management group ID ("alz").
+
+**Symptoms:**
+
+- Workflows execute but Azure Governance Visualizer fails to scan
+- "Invalid management group" errors in workflow logs
+- No governance data is collected
+
+**Prevention:**
+
+- ✅ **Use management group IDs, not display names** - IDs are usually short identifiers (e.g., "alz", "corp", "mgmt")
+- ✅ **List all management groups with IDs first** (not display names):
+
+  ```powershell
+  $managementGroups = AzAPICall -method GET -uri "$($azAPICallConf['azAPIEndpointUrls'].MicrosoftGraph)/v1.0/domains?$select=id" -AzAPICallConfiguration $azAPICallConf
+  ```
+
+- ✅ **Verify the ID** before setting it: Use Azure Portal > Management Groups to confirm
+
+**Solution:** Update the variable to use the correct ID:
+
+```powershell
+gh variable set MANAGEMENT_GROUP_ID -b "alz" --repo autocloudarc/Azure-Governance-Visualizer-Accelerator
+```
+
+### Workflow & Deployment Issues
+
+#### Issue 4: Workflows Don't Execute - Secrets/Variables Missing
+
+**Problem:** GitHub workflows don't appear to run or fail silently due to missing secrets or variables.
+
+**Symptoms:**
+
+- Workflow doesn't trigger
+- Workflow fails at the first step with "secret not found"
+- No workflow output visible
+
+**Prevention:**
+
+- ✅ **Verify ALL secrets** before running workflows: `gh secret list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- ✅ **Verify ALL variables** before running workflows: `gh variable list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- ✅ **Required secrets (6 total):** CLIENT_ID, ENTRA_CLIENT_ID, ENTRA_CLIENT_SECRET, SUBSCRIPTION_ID, TENANT_ID, MANAGEMENT_GROUP_ID
+- ✅ **Required variables (2 total):** RESOURCE_GROUP_NAME, WEB_APP_NAME
+
+**Solution:** Set missing secrets/variables:
+
+```powershell
+# List what's missing
+gh secret list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator
+gh variable list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator
+
+# Set any missing ones (see Step 7 in main documentation)
+```
+
+#### Issue 5: Web App Not Accessible After Deployment
+
+**Problem:** Web app URL returns 403 Forbidden or "Access Denied" even after successful workflow execution.
+
+**Symptoms:**
+
+- Web app URL exists but access is denied
+- Azure AD redirect URL shows permission error
+- Authentication fails
+
+**Prevention:**
+
+- ✅ **Ensure Azure AD app registration is configured correctly:**
+  - Redirect URI: `https://<webapp_name>.azurewebsites.net/.auth/login/aad/callback`
+  - ID tokens enabled (OpenID Connect)
+  - Group membership claims set to "SecurityGroup"
+- ✅ **Assign yourself access** via RBAC on the resource group
+- ✅ **Wait for deployment to complete fully** before accessing the web app
+
+**Solution:** Verify and fix Azure AD app registration:
+
+```powershell
+# Check web app configuration in Azure Portal
+# Verify the auth app has correct settings:
+# - Redirect URIs include: https://<webapp_name>.azurewebsites.net/.auth/login/aad/callback
+# - ID tokens enabled (Authentication > Implicit grant and hybrid flows)
+# - Manifest shows: "groupMembershipClaims": "SecurityGroup"
+```
+
+### Common Mistakes to Avoid
+
+| Mistake | Impact | Prevention |
+|---------|--------|-----------|
+| Skipping Step 5 (Web App Auth) | Deployment fails | Always create web app auth app before workflows |
+| Using wrong repository | Secrets not found | Always use full repo path: `--repo autocloudarc/Azure-Governance-Visualizer-Accelerator` |
+| Management group display name instead of ID | No governance data | Use management group IDs (e.g., "alz"), not display names |
+| Not waiting for workflow to complete | Premature access attempt | Monitor GitHub Actions tab until all workflows show green ✅ |
+| Wrong redirect URI format | Authentication fails | Format: `https://<webapp_name>.azurewebsites.net/.auth/login/aad/callback` |
+| Missing RBAC assignment for service principal | Workflows fail | Assign Reader + Website Contributor + Web Plan Contributor roles |
+| Secrets set in wrong GitHub repository | Workflows can't find secrets | Always specify correct repository in gh CLI commands |
+| Not granting admin consent for app permissions | API calls fail | Always grant admin consent for Microsoft Graph API permissions |
+
+### Quick Verification Checklist Before Running Workflows
+
+Before triggering any GitHub Actions workflows, verify:
+
+- [ ] **Web App Auth App Exists** - Check Microsoft Entra > App registrations for the web app auth app
+- [ ] **Correct Repository** - Verify working with `autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- [ ] **All 6 Secrets Set** - Run: `gh secret list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- [ ] **All 2 Variables Set** - Run: `gh variable list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- [ ] **Management Group ID is Correct** - Use ID (e.g., "alz"), not display name
+- [ ] **Federated Credentials Created** - Check app registration > Certificates & secrets > Federated credentials
+- [ ] **RBAC Roles Assigned** - Service principal has Reader, Website Contributor, Web Plan Contributor roles
+- [ ] **Resource Group Created** - Verify resource group exists in Azure subscription
+- [ ] **GitHub Actions Enabled** - Check repository settings > Actions > allow pull request creation
+
+### Debugging Workflow Failures
+
+If a workflow fails:
+
+1. **Check the workflow run logs** in GitHub Actions tab
+2. **Look for specific error message** - usually indicates missing secret, permission, or configuration issue
+3. **Verify secrets/variables** match exactly (case-sensitive)
+4. **Check Azure portal** for resource creation status
+5. **Verify Microsoft Entra ID** permissions and app registration settings
+6. **Review federated credentials** for correct GitHub org/repo/branch format
+
 ## Additional topics
 
 ### Azure Web App configuration
@@ -529,6 +712,8 @@ If you want to further automate the setup process and have a GitHub Copilot lice
 
 **Assumption**: It's important that this repo has arleady been forked and cloned from your own GitHub account or organization first, which is step two in the diagrams above.
 
+**Prerequisites**: Install and configure both the Azure MCP and GitHub MCP servers. Enable all tools for these MCP servers.
+
 System role: You are an expert DevOps engineer specializing in automated Azure infrastructure deployment using modern methods that leverages bicep, powershell, GitHub action workflows, and MCP client configuration for GitHub and Azure MCP services.
 
 #### Meta-Prompt
@@ -538,6 +723,10 @@ System role: You are an expert DevOps engineer specializing in automated Azure i
 [] B. Please analyze the README.md file for this repo and based on it's context, create a corresponding copilot-instructions.md file to reflect the standards, styles, practices and formats currently employed in this repository. Place the instruction file at the path "$(git rev-parse --show-toplevel)\.github"
 
 [] C. Additionally, create a new custom prompt file at "$(git rev-parse --show-toplevel)\.github\prompts\automate-setup.prompt.md" and in it, specify the following header:
+
+[] D. If the Azure and GitHub MCP servers are not yet installed, prompt the user and install them or install them automatically, if possible, otherwise ask the user to install them manually and remind them to also enable the appropriate tools for each of these MCP servers.
+
+[] E. If the Azure and GitHub MCP server tools aren't enabled, prompt the user to enable them or enable them automatically if possible, otherwise ask the user to enable them manually.
 
 ---
 
@@ -555,35 +744,54 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 
 [] 3. Prompt user for the name of the app registration/service principal, but suggest the default name of: "azgovviz-accelerator-01"
 
-[] 4. Create the azgovviz-accelerator-01 app registration and service principal.
+[] 4. Create the azgovviz-accelerator-01 app registration and service principal. This will be used to run the Azure Governance Visualizer Accelerator.
 
 [] 5. Set API permissions for this app registration.
 
 [] 6. Generate a random string and save it in a variable named resourceRandomString using the powershell command: $resouceRandomString = (new-guid).guid.substring(0,8)
 
-[] 7. Create another app registration for the Web App user authentication named: "azgovviz-web-auth-$resourceRandomString"
+[] 7. **CRITICAL: Create another app registration for the Web App user authentication** named: "azgovviz-web-auth-$resourceRandomString". **THIS STEP MUST BE COMPLETED BEFORE RUNNING WORKFLOWS.** Verify it was created successfully before proceeding.
 
-[] 8. Create the app registration and service principal using the name obtained in (4.) above, that will be used to run the Azure Governance Visualizer Accelerator.
+[] 8. Configure federated credentials in Azure for the service principal created in (4.) above. For inputs to configure these credentials, do not prompt the user for the github org or account username, repository name and branch name. Instead automatically retrieve the org and repo names: For org, use: (git remote get-url origin) -replace '._[:/]([^/]+)/[^/]+$', '$1' and for the repo name, use (git remote get-url origin) -replace '._[:/]([^/]+)/([^/]+?)(?:\.git)?$', '$2'. Also assume the branch name as: "main".
 
-[] 9. Configure federated credentials in Azure for the service principal created in (4.) above based on prompting or resolving the values for this GitHub account or org, repo name and branch.
+[] 9. **CRITICAL: Prompt user for the target management group ID (not display name)**. First list all management group IDs in the tenant. Emphasize that the ID should be a short identifier like "alz", "corp", or "mgmt" - NOT a display name like "Azure Landing Zones". Verify the user selects the correct ID format before proceeding.
 
-[] 10. Prompt user for the name of the target management group to scope the visualizer to. Usually this is the intermediate-level organization named management group in an Azure Landing Zone architecture hierarchy, so also provide a hint to the user to suggest what this value should be.
+[] 10. Grant the service principal created in (4.), the reader role RBAC permission for the target management group from (9.) above.
 
-[] 11. Grant the service principal created in (4.), the reader role RBAC permission for the target management group from (10.) above.
+[] 11. Generate a psuedo-random name for the Azure App Service and Azure Web App prefixes using the pwsh command: "azgovviz-web-$resourceRandomString"
 
-[] 12. Generate a psuedo-random name for the Azure App Service and Azure Web App prefixes using the pwsh command: "azgovviz-web-$resourceRandomString"
+[] 12. Create a resource group for the Azure Web App named: "rg-azgovviz-$resourceRandomString"
 
-[] 13. Create a resource group for the Azure Web App named: "rg-azgovviz-$resourceRandomString"
+[] 13. At this resource group scope, assign the roles "Website Contributor" and "Web Plan Contributor" roles to the app registration in (7.) for the web app user authentication.
 
-[] 14. At this resource group scope, assign the roles "Website Contributor" and "Wep Plan Contributor" roles to the app registration in (7.) for the web app user authN.
+[] 14. At the "rg-azgovviz-$resourceRandomString" scope, also assign the currently interactive logged in user's object id to the "Website Contributor" and "Web Plan Contributor" roles so that he or she can browse the web app interactively from the portal link.
 
-[] 15. Create the required subscriptoin id, tenant id, and client id secrets in this online github repository within the current GitHub account or organization.
+[] 15. **CRITICAL: Create GitHub secrets in the CORRECT repository**. Before setting secrets, verify using `gh repo view` that you're working with the correct Accelerator repository (autocloudarc/Azure-Governance-Visualizer-Accelerator), not the main visualizer repository. When setting secrets, always use: `--repo autocloudarc/Azure-Governance-Visualizer-Accelerator`. Create the required secrets: CLIENT_ID, ENTRA_CLIENT_ID, ENTRA_CLIENT_SECRET, SUBSCRIPTION_ID, TENANT_ID, MANAGEMENT_GROUP_ID (using the ID, not display name).
 
-[] 16. Configure the approprate GitHub action permissions in the GitHub org to allow GitHub Actions to run.
+[] 16. Create GitHub variables in the same repository: RESOURCE_GROUP_NAME and WEB_APP_NAME.
 
-[] 17. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file.
+[] 17. **VERIFICATION STEP: Before proceeding to workflows, verify all secrets and variables are set correctly**:
 
-[] 18. Provide a comprehensive summary of the action taken so far and suggest next steps.
+- Run: `gh secret list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- Run: `gh variable list --repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- Ensure 6 secrets and 2 variables are listed
+- Verify MANAGEMENT_GROUP_ID contains the ID (e.g., "alz"), not a display name
+
+[] 18. Configure the appropriate GitHub action permissions in the GitHub org to allow GitHub Actions to run.
+
+[] 19. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file. Run workflows in order: DeployAzGovVizAccelerator → wait for SyncAzGovViz → DeployAzGovViz.
+
+[] 20. Provide a comprehensive summary of the action taken so far and suggest next steps.
+
+[] 21. After the next suggested steps list is provided, please prompt the user to review and then to allow proceeding with these next steps.
+
+**CRITICAL REMINDERS FOR THE AGENT:**
+
+- Do NOT proceed past step 7 unless the web app auth app is confirmed created
+- Do NOT set GitHub secrets until confirming the correct repository (step 15)
+- Always use management group IDs (not display names) for MANAGEMENT_GROUP_ID
+- Always verify all 6 secrets + 2 variables before running workflows (step 17)
+- Use full repo paths in all gh CLI commands: `--repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
 
 ### Keep the Azure Governance Visualizer code up-to-date
 

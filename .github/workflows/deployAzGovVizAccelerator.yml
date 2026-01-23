@@ -28,7 +28,7 @@ jobs:
 
       - name: Deploy web app to Azure
         id: deployWebApp
-        if: ${{github.event.inputs.PublishTo}} == 'Azure Web App'
+        if: ${{github.event.inputs.PublishTo == 'Azure Web App'}}
         uses: azure/arm-deploy@v1
         with:
           scope: resourcegroup
