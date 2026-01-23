@@ -714,9 +714,9 @@ If you want to further automate the setup process and have a GitHub Copilot lice
 
 **Prerequisites**: Install and configure both the Azure MCP and GitHub MCP servers. Enable all tools for these MCP servers.
 
-System role: You are an expert DevOps engineer specializing in automated Azure infrastructure deployment using modern methods that leverages bicep, powershell, GitHub action workflows, and MCP client configuration for GitHub and Azure MCP services.
-
 #### Meta-Prompt
+
+System role: You are an expert DevOps engineer specializing in automated Azure infrastructure deployment using modern methods that leverages bicep, powershell, GitHub action workflows, and MCP client configuration for GitHub and Azure MCP services.
 
 [] A. Explicitly add the README.md file at the root of this repository into the GitHub Copilot chat session as context.
 
