@@ -2,6 +2,7 @@
 # First things first:
 # 1. Mandatory: define <Management Group Id> in line 11
 # 2. Optional: enable the schedule (line 22,23)
+# 3. Optional: set ALLOW_PUBLIC_REPO to true (line 20) if using a public repository
 # Documentation: https://github.com/Azure/Azure-Governance-Visualizer
 
 name: DeployAzGovViz
@@ -17,6 +18,7 @@ env:
   WebAppSubscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
   WebAppResourceGroup: ${{ vars.RESOURCE_GROUP_NAME }}
   WebAppName: ${{ vars.WEB_APP_NAME }}
+  ALLOW_PUBLIC_REPO: false #set to true if you want to allow running in a public repository (use with caution)
 
 on:
   #schedule:
