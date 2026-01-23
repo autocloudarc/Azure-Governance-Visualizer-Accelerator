@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Defender Agentless VM Scan",
+    "type": "BuiltInRole",
+    "description": "Role that provides access to disk snapshot for security analysis.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/disks/read",
+          "Microsoft.Compute/disks/beginGetAccess/action",
+          "Microsoft.Compute/diskEncryptionSets/read",
+          "Microsoft.Compute/virtualMachines/instanceView/read",
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Compute/virtualMachineScaleSets/instanceView/read",
+          "Microsoft.Compute/virtualMachineScaleSets/read",
+          "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/read",
+          "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/instanceView/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-05-15T22:07:11.4824101Z",
+    "updatedOn": "2025-11-14T09:58:06.2331251Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d24ecba3-c1f4-40fa-a7bb-4588a071e8fd",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d24ecba3-c1f4-40fa-a7bb-4588a071e8fd"
+}

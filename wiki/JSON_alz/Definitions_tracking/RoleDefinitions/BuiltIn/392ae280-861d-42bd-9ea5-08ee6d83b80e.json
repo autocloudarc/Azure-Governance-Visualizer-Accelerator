@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Template Spec Reader",
+    "type": "BuiltInRole",
+    "description": "Allows read access to Template Specs at the assigned scope.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/templateSpecs/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-09-08T01:58:14.2969628Z",
+    "updatedOn": "2022-09-08T01:58:14.2969628Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/392ae280-861d-42bd-9ea5-08ee6d83b80e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "392ae280-861d-42bd-9ea5-08ee6d83b80e"
+}

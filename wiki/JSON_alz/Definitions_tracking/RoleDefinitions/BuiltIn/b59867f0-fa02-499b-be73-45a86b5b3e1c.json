@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services Data Reader",
+    "type": "BuiltInRole",
+    "description": "Lets you read Cognitive Services data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/*/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-02-13T20:02:12.6849986Z",
+    "updatedOn": "2024-10-11T18:50:23.3642018Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b59867f0-fa02-499b-be73-45a86b5b3e1c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b59867f0-fa02-499b-be73-45a86b5b3e1c"
+}

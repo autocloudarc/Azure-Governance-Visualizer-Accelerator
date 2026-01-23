@@ -1,0 +1,22 @@
+{
+  "roleName": "Microsoft.Edge Winfields federated subscription read access role",
+  "type": "BuiltInRole",
+  "description": "Microsoft.Edge Winfields role for read access on federated subscriptions",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-04-15T15:14:13.2886992Z",
+  "updatedOn": "2024-07-16T15:12:08.3117167Z",
+  "createdBy": null,
+  "updatedBy": null
+}

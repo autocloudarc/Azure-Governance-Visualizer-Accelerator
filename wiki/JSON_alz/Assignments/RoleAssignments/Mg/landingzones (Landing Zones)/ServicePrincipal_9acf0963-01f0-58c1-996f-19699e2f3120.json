@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/9acf0963-01f0-58c1-996f-19699e2f3120",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enable-AUM-CheckUpdates",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "b9bed05d-d241-463a-8b6b-35f6e0a56b7f",
+  "ObjectType": "ServicePrincipal"
+}

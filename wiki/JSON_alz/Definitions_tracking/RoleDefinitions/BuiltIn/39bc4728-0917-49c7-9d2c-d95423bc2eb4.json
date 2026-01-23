@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Security Reader",
+    "type": "BuiltInRole",
+    "description": "Security Reader Role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/read",
+          "Microsoft.operationalInsights/workspaces/*/read",
+          "Microsoft.Resources/deployments/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Security/*/read",
+          "Microsoft.IoTSecurity/*/read",
+          "Microsoft.Support/*/read",
+          "Microsoft.Security/iotDefenderSettings/packageDownloads/action",
+          "Microsoft.Security/iotDefenderSettings/downloadManagerActivation/action",
+          "Microsoft.Security/iotSensors/downloadResetPassword/action",
+          "Microsoft.IoTSecurity/defenderSettings/packageDownloads/action",
+          "Microsoft.IoTSecurity/defenderSettings/downloadManagerActivation/action",
+          "Microsoft.Management/managementGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2017-05-03T07:48:49.0516559Z",
+    "updatedOn": "2021-11-11T20:13:50.7479015Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/39bc4728-0917-49c7-9d2c-d95423bc2eb4",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "39bc4728-0917-49c7-9d2c-d95423bc2eb4"
+}

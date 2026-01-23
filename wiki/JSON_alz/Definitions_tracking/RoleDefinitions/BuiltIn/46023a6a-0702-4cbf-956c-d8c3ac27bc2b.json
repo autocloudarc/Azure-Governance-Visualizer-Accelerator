@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Defender CSPM",
+    "type": "BuiltInRole",
+    "description": "Grants permissions for Microsoft Defender for Cloud CSPM base plan features",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/accounts/aiservices/agents/read",
+          "Microsoft.CognitiveServices/accounts/aiservices/assets/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-11-10T16:07:20.9268324Z",
+    "updatedOn": "2025-11-10T16:07:20.9268324Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/46023a6a-0702-4cbf-956c-d8c3ac27bc2b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "46023a6a-0702-4cbf-956c-d8c3ac27bc2b"
+}

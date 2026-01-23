@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Spring Apps Remote Debugging Role",
+  "type": "BuiltInRole",
+  "description": "Azure Spring Apps Remote Debugging Role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/apps/deployments/remotedebugging/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-23T11:23:41.716385Z",
+  "updatedOn": "2022-09-23T11:23:41.716385Z",
+  "createdBy": null,
+  "updatedBy": null
+}

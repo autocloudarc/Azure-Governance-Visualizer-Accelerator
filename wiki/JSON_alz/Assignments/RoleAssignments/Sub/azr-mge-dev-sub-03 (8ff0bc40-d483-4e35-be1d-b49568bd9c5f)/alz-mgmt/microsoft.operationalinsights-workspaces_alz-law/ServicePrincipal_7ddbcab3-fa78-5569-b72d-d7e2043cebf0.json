@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.operationalinsights/workspaces/alz-law/providers/microsoft.authorization/roleassignments/7ddbcab3-fa78-5569-b72d-d7e2043cebf0",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.OperationalInsights/workspaces/alz-law",
+  "DisplayName": "Deploy-AzSqlDb-Auditing",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Security Manager",
+  "RoleDefinitionId": "056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+  "ObjectId": "32ba4a2b-8a18-4bae-81f4-04f5323b950d",
+  "ObjectType": "ServicePrincipal"
+}

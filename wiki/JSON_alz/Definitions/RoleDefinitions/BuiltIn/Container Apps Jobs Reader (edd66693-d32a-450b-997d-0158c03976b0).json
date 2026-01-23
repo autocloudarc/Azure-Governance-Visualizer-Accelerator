@@ -1,0 +1,24 @@
+{
+  "roleName": "Container Apps Jobs Reader",
+  "type": "BuiltInRole",
+  "description": "Read access to ContainerApps jobs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "microsoft.app/jobs/read",
+        "Microsoft.App/jobs/*/read",
+        "Microsoft.App/managedenvironments/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-08-14T16:23:28.4380427Z",
+  "updatedOn": "2024-08-14T16:23:28.4380427Z",
+  "createdBy": null,
+  "updatedBy": null
+}

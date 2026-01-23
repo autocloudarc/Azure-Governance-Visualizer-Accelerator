@@ -1,0 +1,190 @@
+{
+  "displayName": "Enforce recommended guardrails for Cognitive Services",
+  "policyType": "Custom",
+  "description": "This policy initiative is a group of policies that ensures Cognitive Services is compliant per regulated Landing Zones.",
+  "metadata": {
+    "alzCloudEnvironments": [
+      "AzureCloud",
+      "AzureChinaCloud",
+      "AzureUSGovernment"
+    ],
+    "category": "Cognitive Services",
+    "source": "https://github.com/Azure/Enterprise-Scale/",
+    "version": "1.2.0",
+    "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+    "createdOn": "2026-01-21T00:37:11.0046848Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "cognitiveSearchLocalAuth": {
+      "type": "string",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    },
+    "cognitiveSearchSku": {
+      "type": "string",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    },
+    "cognitiveServicesCustomerStorage": {
+      "type": "string",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    },
+    "cognitiveServicesLocalAuth": {
+      "type": "string",
+      "allowedValues": [
+        "Modify",
+        "Disabled"
+      ],
+      "defaultValue": "Modify"
+    },
+    "cognitiveServicesManagedIdentity": {
+      "type": "string",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    },
+    "cognitiveServicesModifyPublicNetworkAccess": {
+      "type": "string",
+      "allowedValues": [
+        "Modify",
+        "Disabled"
+      ],
+      "defaultValue": "Modify"
+    },
+    "cognitiveServicesResourceLogs": {
+      "type": "string",
+      "allowedValues": [
+        "AuditIfNotExists",
+        "Disabled"
+      ],
+      "defaultValue": "AuditIfNotExists"
+    },
+    "modifyCognitiveSearchLocalAuth": {
+      "type": "string",
+      "allowedValues": [
+        "Modify",
+        "Disabled"
+      ],
+      "defaultValue": "Modify"
+    },
+    "modifyCognitiveSearchPublicEndpoint": {
+      "type": "string",
+      "allowedValues": [
+        "Modify",
+        "Disabled"
+      ],
+      "defaultValue": "Modify"
+    }
+  },
+  "policyDefinitions": [
+    {
+      "policyDefinitionReferenceId": "Deny-CognitiveSearch-SKU",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a049bf77-880b-470f-ba6d-9f21c530cf83",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveSearchSku')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Deny-CongitiveSearch-LocalAuth",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6300012e-e9a4-4649-b41f-a85f5c43be91",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveSearchLocalAuth')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Modify-CogntiveSearch-LocalAuth",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/4eb216f2-9dba-4979-86e6-5d7e63ce3b75",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('modifyCognitiveSearchLocalAuth')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Modify-CogntiveSearch-PublicEndpoint",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9cee519f-d9c1-4fd9-9f79-24ec3449ed30",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('modifyCognitiveSearchPublicEndpoint')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Modify-Cognitive-Services-Public-Network-Access",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/47ba1dd7-28d9-4b07-a8d5-9813bed64e0c",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveServicesModifyPublicNetworkAccess')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Deny-Cognitive-Services-Managed-Identity",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fe3fd216-4f83-4fc1-8984-2bbec80a3418",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveServicesManagedIdentity')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Deny-Cognitive-Services-Customer-Storage",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/46aa9b05-0e60-4eae-a88b-1e9d374fa515",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveServicesCustomerStorage')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Modify-Cognitive-Services-Local-Auth",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/14de9e63-1b31-492e-a5a3-c3f7fd57f555",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveServicesLocalAuth')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Aine-Cognitive-Services-Resource-Logs",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b4330a05-a843-4bc8-bf9a-cacce50c67f4",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('cognitiveServicesResourceLogs')]"
+        }
+      },
+      "groupNames": []
+    }
+  ],
+  "policyDefinitionGroups": []
+}

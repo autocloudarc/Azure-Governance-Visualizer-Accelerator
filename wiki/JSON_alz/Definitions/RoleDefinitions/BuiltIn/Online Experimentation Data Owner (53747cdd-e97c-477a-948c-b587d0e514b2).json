@@ -1,0 +1,25 @@
+{
+  "roleName": "Online Experimentation Data Owner",
+  "type": "BuiltInRole",
+  "description": "Allows full access to Online Experimentation data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.OnlineExperimentation/workspaces/read",
+        "Microsoft.OnlineExperimentation/workspaces/write",
+        "Microsoft.OnlineExperimentation/workspaces/delete",
+        "Microsoft.OnlineExperimentation/workspaces/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-01-31T18:42:14.0945842Z",
+  "updatedOn": "2025-02-17T16:06:31.7759474Z",
+  "createdBy": null,
+  "updatedBy": null
+}

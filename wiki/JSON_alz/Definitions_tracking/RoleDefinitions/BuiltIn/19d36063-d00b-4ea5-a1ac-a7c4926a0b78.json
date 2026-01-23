@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Playwright Workspace Reader",
+    "type": "BuiltInRole",
+    "description": "View and list all Playwright Workspace resources and tests but can not make any changes.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Loadtestservice/playwrightworkspaces/*/read",
+          "Microsoft.Loadtestservice/locations/playwrightquotas/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-11-13T18:19:31.1501692Z",
+    "updatedOn": "2025-11-13T18:19:31.1501692Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/19d36063-d00b-4ea5-a1ac-a7c4926a0b78",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "19d36063-d00b-4ea5-a1ac-a7c4926a0b78"
+}

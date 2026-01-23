@@ -1,0 +1,23 @@
+{
+  "roleName": "Azure Maps Search and Render Data Reader",
+  "type": "BuiltInRole",
+  "description": "Grants access to very limited set of data APIs for common visual web SDK scenarios. Specifically, render and search data APIs.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Maps/accounts/services/render/read",
+        "Microsoft.Maps/accounts/services/search/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-10-01T22:17:50.5178931Z",
+  "updatedOn": "2021-11-11T20:15:22.045541Z",
+  "createdBy": null,
+  "updatedBy": null
+}

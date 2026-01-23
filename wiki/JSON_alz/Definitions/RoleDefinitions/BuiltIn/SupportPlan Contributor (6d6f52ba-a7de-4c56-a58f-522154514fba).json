@@ -1,0 +1,26 @@
+{
+  "roleName": "SupportPlan Contributor",
+  "type": "BuiltInRole",
+  "description": "Contributor role for Enterprise Support Resource Provider",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.EnterpriseSupport/services/delete",
+        "Microsoft.EnterpriseSupport/services/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-31T21:56:33.5815128Z",
+  "updatedOn": "2025-07-31T21:56:33.5815128Z",
+  "createdBy": null,
+  "updatedBy": null
+}

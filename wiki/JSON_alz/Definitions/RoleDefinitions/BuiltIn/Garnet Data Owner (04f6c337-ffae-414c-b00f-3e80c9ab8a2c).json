@@ -1,0 +1,22 @@
+{
+  "roleName": "Garnet Data Owner",
+  "type": "BuiltInRole",
+  "description": "Allows read, write, destructive and scripting actions on the Garnet resource",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DocumentDB/garnetClusters/acl/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-28T15:52:47.2299298Z",
+  "updatedOn": "2025-08-28T15:52:47.2299298Z",
+  "createdBy": null,
+  "updatedBy": null
+}

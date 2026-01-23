@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Windows365SubscriptionReader",
+    "type": "BuiltInRole",
+    "description": "Read subscriptions, images, azure firewalls. This role is used in Windows365 scenarios.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Authorization/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-03-27T15:08:58.3984832Z",
+    "updatedOn": "2023-03-27T15:08:58.3984832Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3d55a8f6-4133-418d-8051-facdb1735758",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3d55a8f6-4133-418d-8051-facdb1735758"
+}

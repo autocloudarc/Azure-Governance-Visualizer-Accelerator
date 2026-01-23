@@ -1,0 +1,51 @@
+{
+  "properties": {
+    "displayName": "Multi Factor Authentication Enforcement - Write",
+    "policyType": "BuiltIn",
+    "mode": "All",
+    "description": "This policy definition blocks resource create and update operations when the caller is not authenticated via MFA. For more information, visit https://aka.ms/mfaforazure.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "System Policy"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "The desired effect of the policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "value": "[requestContext().identity.idtyp]",
+            "equals": "user"
+          },
+          {
+            "value": "mfa",
+            "notIn": "[split(tryGet(requestContext().identity, 'http://schemas.microsoft.com/claims/authnmethodsreferences'), ',')]"
+          },
+          {
+            "value": "p1",
+            "notIn": "[split(requestContext().identity.acrs, ',')]"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/54f51f64-eaa5-44cf-8674-830bcfd14d21",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "54f51f64-eaa5-44cf-8674-830bcfd14d21"
+}

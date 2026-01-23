@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "principalId": "f49137a2-3586-48ed-b5ec-28f2b3ea8f8b",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Enable category group resource logging for supported resources to Log Analytics",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/f5b29bc4-feca-4cc6-a58a-772dd5e290a5",
+    "scope": "/providers/Microsoft.Management/managementGroups/alz",
+    "notScopes": [],
+    "parameters": {
+      "logAnalytics": {
+        "value": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/Microsoft.OperationalInsights/workspaces/alz-law"
+      }
+    },
+    "description": "Resource logs should be enabled to track activities and events that take place on your resources and give you visibility and insights into any changes that occur. This initiative deploys diagnostic setting using the allLogs category group to route logs to an Event Hub for all supported resources.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:28.5650789Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "Diagnostic settings must be deployed to Azure services to forward logs to Log Analytics."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyAssignments/Deploy-Diag-LogsCat",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Deploy-Diag-LogsCat",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:27.7126254Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:27.7126254Z"
+  }
+}

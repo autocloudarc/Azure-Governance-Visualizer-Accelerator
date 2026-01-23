@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Device Registry Credentials Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows for full access to manage credentials and policies within Azure Device Registry Namespace.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "microsoft.deviceregistry/namespaces/credentials/*",
+          "microsoft.deviceregistry/namespaces/credentials/policies/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-10T02:33:43.2135366Z",
+    "updatedOn": "2025-10-17T01:08:49.666498Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/09267e11-2e06-40b5-8fe4-68cea20794c9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "09267e11-2e06-40b5-8fe4-68cea20794c9"
+}

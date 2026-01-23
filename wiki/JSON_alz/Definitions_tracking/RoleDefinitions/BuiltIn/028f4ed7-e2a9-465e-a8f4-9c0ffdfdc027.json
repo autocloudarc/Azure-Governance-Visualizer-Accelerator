@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Data Box Reader",
+    "type": "BuiltInRole",
+    "description": "Lets you manage Data Box Service except creating order or editing order details and giving access to others.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Databox/*/read",
+          "Microsoft.Databox/jobs/listsecrets/action",
+          "Microsoft.Databox/jobs/listcredentials/action",
+          "Microsoft.Databox/locations/availableSkus/action",
+          "Microsoft.Databox/locations/validateInputs/action",
+          "Microsoft.Databox/locations/regionConfiguration/action",
+          "Microsoft.Databox/locations/validateAddress/action",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-07-27T08:26:21.9284772Z",
+    "updatedOn": "2021-11-11T20:13:30.5546117Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/028f4ed7-e2a9-465e-a8f4-9c0ffdfdc027",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "028f4ed7-e2a9-465e-a8f4-9c0ffdfdc027"
+}

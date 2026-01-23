@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "EventGrid Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows send and receive access to event grid events.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.EventGrid/eventSubscriptions/read",
+          "Microsoft.EventGrid/topicTypes/eventSubscriptions/read",
+          "Microsoft.EventGrid/locations/eventSubscriptions/read",
+          "Microsoft.EventGrid/locations/topicTypes/eventSubscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.EventGrid/topics/read",
+          "Microsoft.EventGrid/domains/read",
+          "Microsoft.EventGrid/partnerNamespaces/read",
+          "Microsoft.EventGrid/namespaces/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.EventGrid/events/send/action",
+          "Microsoft.EventGrid/events/receive/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-10-30T15:07:29.5851627Z",
+    "updatedOn": "2023-10-30T15:07:29.5851627Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1d8c3fe3-8864-474b-8749-01e3783e8157",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1d8c3fe3-8864-474b-8749-01e3783e8157"
+}

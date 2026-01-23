@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/c5b402ad-c13f-5446-ad35-7ef4fb49f05d",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-MDFC-Config-H224",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Kubernetes Agent Operator",
+  "RoleDefinitionId": "8bb6f106-b146-4ee6-a3f9-b9c5a96e0ae5",
+  "ObjectId": "f44fb9d8-b77d-4dd3-bc10-3cf07f7486db",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Savings plan Administrator",
+    "type": "BuiltInRole",
+    "description": "Lets you read, manage savings plans and delegate savings plan-related roles",
+    "assignableScopes": [
+      "/providers/Microsoft.BillingBenefits"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.BillingBenefits/savingsPlanOrders/read",
+          "Microsoft.BillingBenefits/savingsPlanOrders/action",
+          "Microsoft.BillingBenefits/savingsPlanOrders/write",
+          "Microsoft.BillingBenefits/savingsPlanOrders/savingsPlans/read",
+          "Microsoft.BillingBenefits/savingsPlanOrders/savingsPlans/write",
+          "Microsoft.BillingBenefits/savingsPlanOrders/*/action",
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.Authorization/roleDefinitions/read",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Authorization/roleAssignments/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": [],
+        "conditionVersion": "2.0",
+        "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{182a574c-b3c6-4acc-b019-48ae44cd4677, d534ad90-4ac5-4815-a178-b2e47397baab, 28c0d4cd-558d-4de9-91a0-faa18e7b3266})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{182a574c-b3c6-4acc-b019-48ae44cd4677, d534ad90-4ac5-4815-a178-b2e47397baab, 28c0d4cd-558d-4de9-91a0-faa18e7b3266}))"
+      }
+    ],
+    "createdOn": "2024-03-18T15:10:34.3862485Z",
+    "updatedOn": "2024-04-23T15:07:34.4895362Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/182a574c-b3c6-4acc-b019-48ae44cd4677",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "182a574c-b3c6-4acc-b019-48ae44cd4677"
+}

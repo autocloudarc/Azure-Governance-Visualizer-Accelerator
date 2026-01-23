@@ -1,0 +1,24 @@
+{
+  "roleName": "Advisor Recommendations Contributor (Assessments and Reviews)",
+  "type": "BuiltInRole",
+  "description": "View assessment recommendations, accepted review recommendations, and manage the recommendations lifecycle (mark recommendations as completed, postponed or dismissed, in progress, or not started).",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Advisor/recommendations/read",
+        "Microsoft.Advisor/recommendations/write",
+        "Microsoft.Advisor/recommendations/available/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-02-27T16:09:01.7439167Z",
+  "updatedOn": "2024-03-14T23:14:57.0882716Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Relationship Administrator",
+    "type": "BuiltInRole",
+    "description": "Role definition allowing read, write and delete access to all relationship types",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Relationships/*/read",
+          "Microsoft.Relationships/*/write",
+          "Microsoft.Relationships/*/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-28T15:14:09.6729695Z",
+    "updatedOn": "2025-10-28T15:14:09.6729695Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b54df9c1-53dc-45cc-a86d-7a83cced2ed0",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b54df9c1-53dc-45cc-a86d-7a83cced2ed0"
+}

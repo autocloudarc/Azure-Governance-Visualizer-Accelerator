@@ -1,0 +1,32 @@
+{
+  "roleName": "Deployment Environments Reader",
+  "type": "BuiltInRole",
+  "description": "Provides read access to environment resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DevCenter/projects/read",
+        "Microsoft.DevCenter/projects/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [
+        "Microsoft.DevCenter/projects/pools/read",
+        "Microsoft.DevCenter/projects/pools/schedules/read"
+      ],
+      "dataActions": [
+        "Microsoft.DevCenter/projects/users/environments/adminRead/action",
+        "Microsoft.DevCenter/projects/users/environments/adminActionRead/action",
+        "Microsoft.DevCenter/projects/users/environments/adminOutputsRead/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-10-26T22:28:07.1033006Z",
+  "updatedOn": "2023-10-26T22:28:07.1033006Z",
+  "createdBy": null,
+  "updatedBy": null
+}

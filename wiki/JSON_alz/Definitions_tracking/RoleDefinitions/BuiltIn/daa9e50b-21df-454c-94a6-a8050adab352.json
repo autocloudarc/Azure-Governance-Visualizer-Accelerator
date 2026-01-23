@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "Collaborative Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Can manage data packages of a collaborative.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.IndustryDataLifecycle/custodianCollaboratives/*/read",
+          "Microsoft.IndustryDataLifecycle/memberCollaboratives/*/read",
+          "Microsoft.IndustryDataLifecycle/locations/dataPackages/*",
+          "Microsoft.IndustryDataLifecycle/custodianCollaboratives/receivedDataPackages/*",
+          "Microsoft.IndustryDataLifecycle/custodianCollaboratives/rejectDataPackage/action",
+          "Microsoft.IndustryDataLifecycle/memberCollaboratives/sharedDataPackages/*",
+          "Microsoft.IndustryDataLifecycle/custodianCollaboratives/dataModels/*",
+          "Microsoft.IndustryDataLifecycle/custodianCollaboratives/auditLogs/action",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-08-14T11:58:31.8973556Z",
+    "updatedOn": "2021-11-11T20:14:40.2428145Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/daa9e50b-21df-454c-94a6-a8050adab352",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "daa9e50b-21df-454c-94a6-a8050adab352"
+}

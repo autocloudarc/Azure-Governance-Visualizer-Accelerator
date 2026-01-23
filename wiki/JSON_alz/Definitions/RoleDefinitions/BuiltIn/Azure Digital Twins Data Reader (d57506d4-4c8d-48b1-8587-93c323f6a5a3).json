@@ -1,0 +1,29 @@
+{
+  "roleName": "Azure Digital Twins Data Reader",
+  "type": "BuiltInRole",
+  "description": "Read-only role for Digital Twins data-plane properties",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DigitalTwins/digitaltwins/read",
+        "Microsoft.DigitalTwins/digitaltwins/relationships/read",
+        "Microsoft.DigitalTwins/eventroutes/read",
+        "Microsoft.DigitalTwins/jobs/import/read",
+        "Microsoft.DigitalTwins/jobs/imports/read",
+        "Microsoft.DigitalTwins/jobs/deletions/read",
+        "Microsoft.DigitalTwins/models/read",
+        "Microsoft.DigitalTwins/query/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-10T23:48:14.7057381Z",
+  "updatedOn": "2024-01-11T19:37:51.2477819Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,45 @@
+{
+  "roleName": "Change Safety Contributor",
+  "type": "BuiltInRole",
+  "description": "Grants access to manage all Microsoft.ChangeSafety resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ChangeSafety/changeStates/read",
+        "Microsoft.ChangeSafety/changeStates/write",
+        "Microsoft.ChangeSafety/changeStates/delete",
+        "Microsoft.ChangeSafety/changeRecords/read",
+        "Microsoft.ChangeSafety/changeRecords/write",
+        "Microsoft.ChangeSafety/changeRecords/delete",
+        "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
+        "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+        "Microsoft.ChangeSafety/changeStates/stageProgressions/delete",
+        "Microsoft.ChangeSafety/changeRecords/stageProgressions/read",
+        "Microsoft.ChangeSafety/changeRecords/stageProgressions/write",
+        "Microsoft.ChangeSafety/changeRecords/stageProgressions/delete",
+        "Microsoft.ChangeSafety/locations/operationstatuses/read",
+        "Microsoft.ChangeSafety/locations/operationstatuses/write",
+        "Microsoft.ChangeSafety/safeRollouts/read",
+        "Microsoft.ChangeSafety/safeRollouts/write",
+        "Microsoft.ChangeSafety/safeRollouts/delete",
+        "Microsoft.ChangeSafety/safeRollouts/steps/read",
+        "Microsoft.ChangeSafety/stageMaps/read",
+        "Microsoft.ChangeSafety/stageMaps/write",
+        "Microsoft.ChangeSafety/stageMaps/delete",
+        "Microsoft.ChangeSafety/validations/read",
+        "Microsoft.ChangeSafety/validations/write",
+        "Microsoft.ChangeSafety/validations/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-14T20:45:31.6650113Z",
+  "updatedOn": "2026-01-14T18:33:23.2731065Z",
+  "createdBy": null,
+  "updatedBy": null
+}

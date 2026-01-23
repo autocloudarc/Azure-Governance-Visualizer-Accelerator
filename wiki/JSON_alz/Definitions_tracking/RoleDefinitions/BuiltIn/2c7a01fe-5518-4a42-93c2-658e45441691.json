@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Online Experimentation Contributor",
+    "type": "BuiltInRole",
+    "description": "Grants permissions for all management operations to Online Experimentation resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.OnlineExperimentation/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-04-01T15:25:07.1438851Z",
+    "updatedOn": "2025-04-01T15:25:07.1438851Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2c7a01fe-5518-4a42-93c2-658e45441691",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2c7a01fe-5518-4a42-93c2-658e45441691"
+}

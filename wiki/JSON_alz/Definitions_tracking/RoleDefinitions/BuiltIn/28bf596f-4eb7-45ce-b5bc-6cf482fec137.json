@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Locks Contributor",
+    "type": "BuiltInRole",
+    "description": "Can Manage Locks Operations.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/locks/read",
+          "Microsoft.Authorization/locks/write",
+          "Microsoft.Authorization/locks/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-06-07T22:55:15.2914829Z",
+    "updatedOn": "2024-06-07T22:55:15.2914829Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/28bf596f-4eb7-45ce-b5bc-6cf482fec137",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "28bf596f-4eb7-45ce-b5bc-6cf482fec137"
+}

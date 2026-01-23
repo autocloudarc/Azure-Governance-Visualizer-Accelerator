@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Purview role 3 (Deprecated)",
+    "type": "BuiltInRole",
+    "description": "Deprecated role.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Purview/accounts/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Purview/accounts/data/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-11-14T02:39:22.234474Z",
+    "updatedOn": "2022-01-04T00:48:08.2844802Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ff100721-1b9d-43d8-af52-42b69c1272db",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ff100721-1b9d-43d8-af52-42b69c1272db"
+}

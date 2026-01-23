@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/corp/providers/microsoft.authorization/roleassignments/640f024f-9e49-5528-ab48-ae9934d5c9c3",
+  "Scope": "/providers/Microsoft.Management/managementGroups/corp",
+  "DisplayName": "Deploy-Private-DNS-Zones",
+  "SignInName": null,
+  "RoleDefinitionName": "Network Contributor",
+  "RoleDefinitionId": "4d97b98b-1d4f-4787-a291-c67834d212e7",
+  "ObjectId": "c53367bf-c70d-47fe-800a-d39cec62b490",
+  "ObjectType": "ServicePrincipal"
+}

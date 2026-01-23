@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "roleName": "Experimentation Administrator",
+    "type": "BuiltInRole",
+    "description": "Experimentation Administrator",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Experimentation/experimentWorkspaces/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/admin/action",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/read",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/write",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/delete",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/experimentadmin/action",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/experiment/action",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/emergencystop/action",
+          "Microsoft.Experimentation/experimentWorkspaces/read",
+          "Microsoft.Experimentation/experimentWorkspaces/write",
+          "Microsoft.Experimentation/experimentWorkspaces/delete",
+          "Microsoft.Experimentation/experimentWorkspaces/admin/action",
+          "Microsoft.Experimentation/experimentWorkspaces/metricwrite/action",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/metricwrite/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-12-18T22:46:33.1116612Z",
+    "updatedOn": "2021-11-11T20:14:15.1811577Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7f646f1b-fa08-80eb-a33b-edd6ce5c915c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7f646f1b-fa08-80eb-a33b-edd6ce5c915c"
+}

@@ -1,0 +1,35 @@
+{
+  "roleName": "Azure Landing Zones Management Group Reader (alz-mgmt)",
+  "type": "CustomRole",
+  "description": "This is a custom role created by the Azure Landing Zones Accelerator for Reading the Management Group Structure.",
+  "assignableScopes": [
+    "/providers/Microsoft.Management/managementGroups/54d665dd-30f1-45c5-a8d5-d6ffcdb518f9"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Management/managementGroups/read",
+        "Microsoft.Management/managementGroups/subscriptions/read",
+        "Microsoft.Management/managementGroups/settings/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/policyDefinitions/write",
+        "Microsoft.Authorization/policySetDefinitions/write",
+        "Microsoft.Authorization/roleDefinitions/write",
+        "Microsoft.Authorization/policyAssignments/write",
+        "Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.Insights/diagnosticSettings/read",
+        "Microsoft.Resources/deployments/whatIf/action",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/deploymentStacks/read",
+        "Microsoft.Resources/deploymentStacks/validate/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-20T23:23:07.268203Z",
+  "updatedOn": "2026-01-20T23:23:07.268203Z",
+  "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+  "updatedBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9"
+}

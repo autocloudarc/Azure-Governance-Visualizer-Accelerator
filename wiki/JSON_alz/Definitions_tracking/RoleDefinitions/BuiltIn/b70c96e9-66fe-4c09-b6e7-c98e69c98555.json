@@ -1,0 +1,45 @@
+{
+  "properties": {
+    "roleName": "Logic Apps Standard Operator (Preview)",
+    "type": "BuiltInRole",
+    "description": "You can enable and disable the logic app, resubmit workflow runs, as well as create connections. You can't edit workflows or settings.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.Web/*/read",
+          "Microsoft.Web/sites/applySlotConfig/Action",
+          "microsoft.web/sites/hostruntime/*",
+          "Microsoft.Web/sites/restart/Action",
+          "Microsoft.Web/sites/slots/restart/Action",
+          "Microsoft.Web/sites/slots/slotsswap/Action",
+          "Microsoft.Web/sites/slots/start/Action",
+          "Microsoft.Web/sites/slots/stop/Action",
+          "Microsoft.Web/sites/slotsdiffs/Action",
+          "Microsoft.Web/sites/slotsswap/Action",
+          "Microsoft.Web/sites/start/Action",
+          "Microsoft.Web/sites/stop/Action",
+          "Microsoft.Web/sites/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-08-11T18:29:26.2014706Z",
+    "updatedOn": "2024-04-04T21:09:40.8293422Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b70c96e9-66fe-4c09-b6e7-c98e69c98555",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b70c96e9-66fe-4c09-b6e7-c98e69c98555"
+}

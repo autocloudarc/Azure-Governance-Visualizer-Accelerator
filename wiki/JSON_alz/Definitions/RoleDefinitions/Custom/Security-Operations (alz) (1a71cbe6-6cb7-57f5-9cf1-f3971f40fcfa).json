@@ -1,0 +1,33 @@
+{
+  "roleName": "Security-Operations (alz)",
+  "type": "CustomRole",
+  "description": "Security Administrator role with a horizontal view across the entire Azure estate and the Azure Key Vault purge policy.",
+  "assignableScopes": [
+    "/providers/Microsoft.Management/managementGroups/alz"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "*/register/action",
+        "Microsoft.KeyVault/locations/deletedVaults/purge/action",
+        "Microsoft.PolicyInsights/*",
+        "Microsoft.Authorization/policyAssignments/*",
+        "Microsoft.Authorization/policyDefinitions/*",
+        "Microsoft.Authorization/policyExemptions/*",
+        "Microsoft.Authorization/policySetDefinitions/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Security/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-21T00:36:53.1889709Z",
+  "updatedOn": "2026-01-21T00:36:53.1889709Z",
+  "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+  "updatedBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590"
+}

@@ -1,0 +1,81 @@
+{
+  "properties": {
+    "displayName": "Deny vNet peering cross subscription.",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy denies the creation of vNet Peerings outside of the same subscriptions under the assigned scope.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Network",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.1.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:36:55.3784827Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "allowedVnets": {
+        "type": "Array",
+        "metadata": {
+          "description": "Array of allowed vNets that can be peered with. Must be entered using their resource ID. Example: /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}",
+          "displayName": "Allowed vNets to peer with"
+        },
+        "defaultValue": []
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "Enable or disable the execution of the policy",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+            "field": "type"
+          },
+          {
+            "allOf": [
+              {
+                "field": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/remoteVirtualNetwork.id",
+                "notIn": "[parameters('allowedVnets')]"
+              },
+              {
+                "field": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/remoteVirtualNetwork.id",
+                "notLike": "[concat(subscription().id, '/*')]"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-VNET-Peer-Cross-Sub",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Deny-VNET-Peer-Cross-Sub",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:36:55.2417752Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:36:55.2417752Z"
+  }
+}

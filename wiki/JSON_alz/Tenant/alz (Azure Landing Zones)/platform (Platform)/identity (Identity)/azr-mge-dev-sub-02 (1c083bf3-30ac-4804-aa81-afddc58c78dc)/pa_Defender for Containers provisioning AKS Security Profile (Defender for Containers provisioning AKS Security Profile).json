@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "principalId": "ebb4952e-6c2b-4a98-b018-349935a41bda",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Defender for Containers provisioning AKS Security Profile",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/64def556-fbad-4622-930e-72d1d5589bf5",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "parameters": {},
+    "description": "This policy assignment was automatically created by Microsoft Defender for Cloud for agent installation as configured in Defender for Cloud auto provisioning.",
+    "metadata": {
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:11:02.8850035Z",
+      "updatedBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "updatedOn": "2024-08-13T16:11:10.0214747Z"
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/Defender for Containers provisioning AKS Security Profile",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Defender for Containers provisioning AKS Security Profile",
+  "location": "centralus",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:11:02.5017042Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:11:09.7664011Z"
+  }
+}

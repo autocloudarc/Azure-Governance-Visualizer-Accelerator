@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure impact Reporter role",
+  "type": "BuiltInRole",
+  "description": "built-in role for azure impact write access",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Impact/WorkloadImpacts/*",
+        "Microsoft.Impact/ImpactCategories/read",
+        "Microsoft.Impact/TopologyImpacts/*",
+        "Microsoft.Impact/getUploadToken/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-28T00:36:17.1232767Z",
+  "updatedOn": "2025-09-29T15:12:01.645218Z",
+  "createdBy": null,
+  "updatedBy": null
+}

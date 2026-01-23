@@ -1,0 +1,37 @@
+{
+  "identity": {
+    "type": "None"
+  },
+  "properties": {
+    "displayName": "Deny network interfaces having a public IP associated",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/83a86a26-fd1f-447c-b59d-e51f44264114",
+    "scope": "/providers/Microsoft.Management/managementGroups/corp",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This policy denies network interfaces from having a public IP associated to it under the assigned scope.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:30.860004Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "Network interfaces must not have a public IP associated."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/corp/providers/Microsoft.Authorization/policyAssignments/Deny-Public-IP-On-NIC",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Deny-Public-IP-On-NIC",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:30.8337813Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:30.8337813Z"
+  }
+}

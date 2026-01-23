@@ -1,0 +1,22 @@
+{
+  "roleName": "Reader",
+  "type": "BuiltInRole",
+  "description": "View all resources, but does not allow you to make any changes.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2015-02-02T21:55:09.8806423Z",
+  "updatedOn": "2021-11-11T20:13:47.8628684Z",
+  "createdBy": null,
+  "updatedBy": null
+}

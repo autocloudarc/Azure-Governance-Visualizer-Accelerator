@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "SRE Agent Standard User",
+    "type": "BuiltInRole",
+    "description": "Grants access to interact with the SRE Agent to triage incidents and run diagnostics.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.App/agents/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.App/agents/threads/read",
+          "Microsoft.App/agents/graph/read",
+          "Microsoft.App/agents/memory/read",
+          "Microsoft.App/agents/incidentManagement/read",
+          "Microsoft.App/agents/threads/write",
+          "Microsoft.App/agents/graph/write",
+          "Microsoft.App/agents/memory/write",
+          "Microsoft.App/agents/scheduledtasks/read",
+          "Microsoft.App/agents/scheduledtasks/write",
+          "Microsoft.App/agents/scheduledtasks/delete"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-11T20:20:07.911196Z",
+    "updatedOn": "2025-12-10T16:32:40.2124722Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2d84a65a-63b2-4343-bbb6-31105d857bc1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2d84a65a-63b2-4343-bbb6-31105d857bc1"
+}

@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Azure Sphere Publisher",
+    "type": "BuiltInRole",
+    "description": "Allows user to read and download Azure Sphere resources and upload images.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureSphere/*/read",
+          "Microsoft.AzureSphere/catalogs/countDevices/action",
+          "Microsoft.AzureSphere/catalogs/listDeviceGroups/action",
+          "Microsoft.AzureSphere/catalogs/listDeviceInsights/action",
+          "Microsoft.AzureSphere/catalogs/listDevices/action",
+          "Microsoft.AzureSphere/catalogs/products/countDevices/action",
+          "Microsoft.AzureSphere/catalogs/products/deviceGroups/countDevices/action",
+          "Microsoft.AzureSphere/catalogs/certificates/retrieveProofOfPossessionNonce/action",
+          "Microsoft.AzureSphere/catalogs/certificates/retrieveCertChain/action",
+          "Microsoft.AzureSphere/catalogs/images/write",
+          "Microsoft.AzureSphere/catalogs/uploadImage/action",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Insights/DiagnosticSettings/Read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-05-08T15:10:38.0395671Z",
+    "updatedOn": "2024-01-29T16:00:37.3526635Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6d994134-994b-4a59-9974-f479f0b227fb",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6d994134-994b-4a59-9974-f479f0b227fb"
+}

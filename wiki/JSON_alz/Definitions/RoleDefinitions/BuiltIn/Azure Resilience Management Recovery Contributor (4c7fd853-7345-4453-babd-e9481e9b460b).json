@@ -1,0 +1,34 @@
+{
+  "roleName": "Azure Resilience Management Recovery Contributor",
+  "type": "BuiltInRole",
+  "description": "Contributor Role of Azure Resilience Management Recovery Service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Automation/automationAccounts/runbooks/read",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/write",
+        "Microsoft.Insights/alertRules/",
+        "Microsoft.Management/ServiceGroups/read",
+        "Microsoft.Relationships/ServiceGroupMember/read",
+        "Microsoft.Relationships/ServiceGroupMember/write",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-09T15:45:59.6881578Z",
+  "updatedOn": "2025-10-22T15:31:31.339395Z",
+  "createdBy": null,
+  "updatedBy": null
+}

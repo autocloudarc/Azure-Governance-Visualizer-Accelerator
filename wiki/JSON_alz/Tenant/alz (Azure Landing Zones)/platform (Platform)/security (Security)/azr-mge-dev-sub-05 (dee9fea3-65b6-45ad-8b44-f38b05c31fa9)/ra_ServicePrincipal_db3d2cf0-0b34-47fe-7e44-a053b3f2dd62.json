@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/db3d2cf0-0b34-47fe-7e44-a053b3f2dd62",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "7164a0fa-ff9a-43b9-9b63-8dc8e1003b50",
+  "ObjectType": "ServicePrincipal"
+}

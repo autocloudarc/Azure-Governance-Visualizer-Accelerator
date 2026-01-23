@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "roleName": "Auto Actions Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows users to manage Auto Actions resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ComputeSchedule/locations/OperationStatuses/write",
+          "Microsoft.ComputeSchedule/autoActions/write",
+          "Microsoft.ComputeSchedule/autoActions/delete",
+          "Microsoft.ComputeSchedule/autoActions/attachResources/action",
+          "Microsoft.ComputeSchedule/autoActions/cancelNextOccurrence/action",
+          "Microsoft.ComputeSchedule/autoActions/detachResources/action",
+          "Microsoft.ComputeSchedule/autoActions/disable/action",
+          "Microsoft.ComputeSchedule/autoActions/enable/action",
+          "Microsoft.ComputeSchedule/autoActions/listResources/action",
+          "Microsoft.ComputeSchedule/autoActions/patchResources/action",
+          "Microsoft.ComputeSchedule/autoActions/triggerManualOccurrence/action",
+          "Microsoft.ComputeSchedule/autoActions/occurrences/cancel/action",
+          "Microsoft.ComputeSchedule/autoActions/occurrences/delay/action",
+          "Microsoft.ComputeSchedule/autoActions/occurrences/listResources/action",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-02-19T16:26:40.4653211Z",
+    "updatedOn": "2025-02-19T16:26:40.4653211Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a8d01690-9418-4783-8ca2-9f0f1791783d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a8d01690-9418-4783-8ca2-9f0f1791783d"
+}

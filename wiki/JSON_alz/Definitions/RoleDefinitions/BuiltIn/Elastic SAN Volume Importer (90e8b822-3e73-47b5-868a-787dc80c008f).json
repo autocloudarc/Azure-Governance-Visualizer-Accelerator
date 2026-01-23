@@ -1,0 +1,35 @@
+{
+  "roleName": "Elastic SAN Volume Importer",
+  "type": "BuiltInRole",
+  "description": "Allows for Importing Elastic San Volume",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/*/read",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/volumes/write",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/volumes/delete",
+        "Microsoft.ElasticSan/elasticSans/volumeGroups/preRestore/action",
+        "Microsoft.ElasticSan/locations/*",
+        "Microsoft.Compute/locations/*",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Compute/disks/beginGetAccess/action",
+        "Microsoft.Compute/disks/endGetAccess/action",
+        "Microsoft.Compute/snapshots/read",
+        "Microsoft.Compute/snapshots/beginGetAccess/action",
+        "Microsoft.Compute/snapshots/endGetAccess/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-09-07T15:27:01.5805616Z",
+  "updatedOn": "2025-04-22T15:07:09.9564709Z",
+  "createdBy": null,
+  "updatedBy": null
+}

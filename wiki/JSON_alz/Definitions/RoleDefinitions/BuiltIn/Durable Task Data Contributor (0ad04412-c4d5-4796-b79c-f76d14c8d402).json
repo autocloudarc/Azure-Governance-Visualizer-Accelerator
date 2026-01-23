@@ -1,0 +1,22 @@
+{
+  "roleName": "Durable Task Data Contributor",
+  "type": "BuiltInRole",
+  "description": "Durable Task role for all data access operations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DurableTask/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-08-16T21:35:11.3906589Z",
+  "updatedOn": "2024-08-16T21:35:11.3906589Z",
+  "createdBy": null,
+  "updatedBy": null
+}

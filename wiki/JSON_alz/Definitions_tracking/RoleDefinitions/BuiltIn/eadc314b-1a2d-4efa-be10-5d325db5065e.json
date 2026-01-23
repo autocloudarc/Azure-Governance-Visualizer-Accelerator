@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "Azure AI Project Manager",
+    "type": "BuiltInRole",
+    "description": "Lets you perform developer actions and management actions on Azure AI Foundry Projects. Allows for making role assignments, but limited to Cognitive Service User role.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Authorization/roleAssignments/delete",
+          "Microsoft.CognitiveServices/accounts/*/read",
+          "Microsoft.CognitiveServices/accounts/projects/*",
+          "Microsoft.CognitiveServices/locations/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/*"
+        ],
+        "notDataActions": [],
+        "conditionVersion": "2.0",
+        "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
+      }
+    ],
+    "createdOn": "2025-04-23T15:12:37.588061Z",
+    "updatedOn": "2025-05-02T00:17:24.4878908Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/eadc314b-1a2d-4efa-be10-5d325db5065e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "eadc314b-1a2d-4efa-be10-5d325db5065e"
+}

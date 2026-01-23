@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Liftr Elastic Owner",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage Elastic resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Elastic/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-17T15:20:12.8880473Z",
+    "updatedOn": "2025-07-17T15:20:12.8880473Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/225efd4d-4ca0-42a1-ae53-5f233ba23c73",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "225efd4d-4ca0-42a1-ae53-5f233ba23c73"
+}

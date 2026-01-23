@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Device Update Agent",
+  "type": "BuiltInRole",
+  "description": "Provide full access to all Azure Device Update agent operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DeviceUpdate/updateAccounts/agents/requestUpdate/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-09-02T15:07:07.8698996Z",
+  "updatedOn": "2024-09-02T15:07:07.8698996Z",
+  "createdBy": null,
+  "updatedBy": null
+}

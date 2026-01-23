@@ -1,0 +1,29 @@
+{
+  "roleName": "Network-Subnet-Contributor (alz)",
+  "type": "CustomRole",
+  "description": "Enterprise-scale custom Role Definition. Grants full access to manage Virtual Network subnets, but no other network resources.",
+  "assignableScopes": [
+    "/providers/Microsoft.Management/managementGroups/alz"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Network/*/read",
+        "Microsoft.Network/virtualNetworks/subnets/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-21T00:36:53.1136522Z",
+  "updatedOn": "2026-01-21T00:36:53.1136522Z",
+  "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+  "updatedBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590"
+}

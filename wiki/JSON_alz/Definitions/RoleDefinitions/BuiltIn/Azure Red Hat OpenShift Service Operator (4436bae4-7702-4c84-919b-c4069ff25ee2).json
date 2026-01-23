@@ -1,0 +1,31 @@
+{
+  "roleName": "Azure Red Hat OpenShift Service Operator",
+  "type": "BuiltInRole",
+  "description": "Maintain machine health, network configuration, monitoring, and other features that are specific to an OpenShift cluster's continued functionality as a managed service.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/natGateways/join/action",
+        "Microsoft.Network/routeTables/join/action",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/serviceEndpointPolicies/join/action",
+        "Microsoft.Network/networkIntentPolicies/join/action",
+        "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action",
+        "Microsoft.Storage/storageAccounts/listKeys/action",
+        "Microsoft.Storage/storageAccounts/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-31T16:20:01.5179336Z",
+  "updatedOn": "2025-06-04T15:24:42.2882337Z",
+  "createdBy": null,
+  "updatedBy": null
+}

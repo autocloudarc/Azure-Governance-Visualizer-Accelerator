@@ -1,0 +1,37 @@
+{
+  "identity": {
+    "type": "None"
+  },
+  "properties": {
+    "displayName": "Public network access should be disabled for PaaS services",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Deny-PublicPaaSEndpoints",
+    "scope": "/providers/Microsoft.Management/managementGroups/corp",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This policy initiative is a group of policies that prevents creation of Azure PaaS services with exposed public endpoints",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:50.6443184Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "Public network access must be disabled for PaaS services."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/corp/providers/Microsoft.Authorization/policyAssignments/Deny-Public-Endpoints",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Deny-Public-Endpoints",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:50.374401Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:50.374401Z"
+  }
+}

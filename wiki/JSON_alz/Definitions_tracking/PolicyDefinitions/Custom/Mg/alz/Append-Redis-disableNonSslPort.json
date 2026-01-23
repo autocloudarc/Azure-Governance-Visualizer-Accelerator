@@ -1,0 +1,74 @@
+{
+  "properties": {
+    "displayName": "Azure Cache for Redis Append and the enforcement that enableNonSslPort is disabled.",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Azure Cache for Redis Append and the enforcement that enableNonSslPort is disabled. Enables secure server to client by enforce  minimal Tls Version to secure the connection between your database server and your client applications helps protect against 'man in the middle' attacks by encrypting the data stream between the server and your application. This configuration enforces that SSL is always enabled for accessing your database server.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Cache",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.0.1",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:03.6600918Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "Enable or disable the execution of the policy minimum TLS version Azure Cache for Redis",
+          "displayName": "Effect Azure Cache for Redis"
+        },
+        "allowedValues": [
+          "Append",
+          "Disabled"
+        ],
+        "defaultValue": "Append"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Cache/redis",
+            "field": "type"
+          },
+          {
+            "anyOf": [
+              {
+                "equals": "true",
+                "field": "Microsoft.Cache/Redis/enableNonSslPort"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "details": [
+          {
+            "field": "Microsoft.Cache/Redis/enableNonSslPort",
+            "value": false
+          }
+        ],
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Append-Redis-disableNonSslPort",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Append-Redis-disableNonSslPort",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:03.6031169Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:03.6031169Z"
+  }
+}

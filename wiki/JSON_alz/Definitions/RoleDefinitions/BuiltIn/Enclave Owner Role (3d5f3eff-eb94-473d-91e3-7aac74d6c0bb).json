@@ -1,0 +1,59 @@
+{
+  "roleName": "Enclave Owner Role",
+  "type": "BuiltInRole",
+  "description": "Enclave Owner Role to access the resources of Microsoft.Mission stored with RPSAAS.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Mission/Locations/OperationStatuses/read",
+        "Microsoft.Mission/Locations/OperationStatuses/write",
+        "Microsoft.Mission/Operations/read",
+        "Microsoft.Mission/virtualEnclaves/read",
+        "Microsoft.Mission/virtualEnclaves/write",
+        "Microsoft.Mission/virtualEnclaves/delete",
+        "Microsoft.Mission/virtualEnclaves/workloads/read",
+        "Microsoft.Mission/virtualEnclaves/workloads/write",
+        "Microsoft.Mission/virtualEnclaves/workloads/delete",
+        "Microsoft.Mission/communities/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Mission/communities/communityEndpoints/read",
+        "Microsoft.Mission/communities/transitHubs/read",
+        "Microsoft.Mission/enclaveConnections/read",
+        "Microsoft.Mission/enclaveConnections/write",
+        "Microsoft.Mission/enclaveConnections/delete",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/write",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/delete",
+        "Microsoft.Mission/approvals/read",
+        "Microsoft.Mission/approvals/write",
+        "Microsoft.Mission/approvals/delete",
+        "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
+        "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
+        "Microsoft.Mission/virtualenclaves/setMaintenanceMode/action",
+        "Microsoft.Mission/virtualEnclaves/setSubnetConfiguration/action",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/connect/action",
+        "Microsoft.Mission/enclaveConnections/setSourceCidr/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-12-06T16:25:52.526304Z",
+  "updatedOn": "2025-09-15T15:09:06.0035487Z",
+  "createdBy": null,
+  "updatedBy": null
+}

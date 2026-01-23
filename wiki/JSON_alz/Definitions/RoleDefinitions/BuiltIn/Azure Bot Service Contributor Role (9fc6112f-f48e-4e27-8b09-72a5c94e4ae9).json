@@ -1,0 +1,58 @@
+{
+  "roleName": "Azure Bot Service Contributor Role",
+  "type": "BuiltInRole",
+  "description": "To perform actions on the bots by copilot studio platform and extensibility team",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.BotService/listAuthServiceProviders/action",
+        "Microsoft.BotService/listauthserviceproviders/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/botServices/read",
+        "Microsoft.BotService/botServices/write",
+        "Microsoft.BotService/botServices/delete",
+        "Microsoft.BotService/botServices/channels/write",
+        "Microsoft.BotService/botServices/channels/read",
+        "Microsoft.BotService/botServices/channels/listchannelwithkeys/action",
+        "Microsoft.BotService/botServices/channels/delete",
+        "Microsoft.BotService/botServices/channels/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/botServices/connections/read",
+        "Microsoft.BotService/botServices/connections/write",
+        "Microsoft.BotService/botServices/connections/delete",
+        "Microsoft.BotService/botServices/connections/listwithsecrets/write",
+        "Microsoft.BotService/botServices/connections/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/botServices/createemailsigninurl/action",
+        "Microsoft.BotService/botServices/privateEndpointConnectionsApproval/action",
+        "Microsoft.BotService/botServices/joinPerimeter/action",
+        "Microsoft.BotService/botServices/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/checknameavailability/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/hostsettings/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/botServices/privateEndpointConnectionProxies/write",
+        "Microsoft.BotService/botServices/privateEndpointConnectionProxies/delete",
+        "Microsoft.BotService/botServices/privateEndpointConnectionProxies/validate/action",
+        "Microsoft.BotService/botServices/privateEndpointConnections/write",
+        "Microsoft.BotService/botServices/privateEndpointConnections/delete",
+        "Microsoft.BotService/listqnamakerendpointkeys/providers/Microsoft.Insights/diagnosticSettings/write",
+        "Microsoft.BotService/botServices/networkSecurityPerimeterConfigurations/reconcile/action",
+        "Microsoft.BotService/botServices/networkSecurityPerimeterAssociationProxies/write",
+        "Microsoft.BotService/botServices/networkSecurityPerimeterAssociationProxies/delete",
+        "Microsoft.BotService/locations/notifyNetworkSecurityPerimeterUpdatesAvailable/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.BotService/botServices/channels/regeneratekeys/action",
+        "Microsoft.BotService/botServices/Connections/listWithSecrets/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-09-13T05:43:35.3471462Z",
+  "updatedOn": "2025-01-31T16:56:52.7807707Z",
+  "createdBy": null,
+  "updatedBy": null
+}

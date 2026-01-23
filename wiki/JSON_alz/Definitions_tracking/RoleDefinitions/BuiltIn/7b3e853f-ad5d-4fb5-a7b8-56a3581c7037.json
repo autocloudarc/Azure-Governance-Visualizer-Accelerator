@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "IPAM Pool User",
+    "type": "BuiltInRole",
+    "description": "Read IPAM Pools and child resources. Create and remove associations. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Network/networkManagers/ipamPools/*/read",
+          "Microsoft.Network/networkManagers/ipamPools/*/action",
+          "Microsoft.Network/networkManagers/ipamPools/*/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-08-22T15:03:01.8181632Z",
+    "updatedOn": "2024-10-15T15:28:55.9466167Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7b3e853f-ad5d-4fb5-a7b8-56a3581c7037",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7b3e853f-ad5d-4fb5-a7b8-56a3581c7037"
+}

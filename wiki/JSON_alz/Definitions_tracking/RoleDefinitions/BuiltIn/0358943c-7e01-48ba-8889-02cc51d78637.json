@@ -1,0 +1,61 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Machine API Operator",
+    "type": "BuiltInRole",
+    "description": "Manage the lifecycle of specific-purpose custom resource definitions (CRD), controllers, and Azure RBAC objects that extend the Kubernetes API to declares the desired state of machines in a cluster.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/availabilitySets/delete",
+          "Microsoft.Compute/availabilitySets/read",
+          "Microsoft.Compute/availabilitySets/write",
+          "Microsoft.Compute/diskEncryptionSets/read",
+          "Microsoft.Compute/disks/delete",
+          "Microsoft.Compute/galleries/images/versions/read",
+          "Microsoft.Compute/skus/read",
+          "Microsoft.Compute/virtualMachines/delete",
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Compute/virtualMachines/write",
+          "Microsoft.Compute/capacityReservationGroups/deploy/action",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+          "Microsoft.Network/applicationSecurityGroups/read",
+          "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+          "Microsoft.Network/loadBalancers/read",
+          "Microsoft.Network/loadBalancers/write",
+          "Microsoft.Network/networkInterfaces/delete",
+          "Microsoft.Network/networkInterfaces/join/action",
+          "Microsoft.Network/networkInterfaces/loadBalancers/read",
+          "Microsoft.Network/networkInterfaces/read",
+          "Microsoft.Network/networkInterfaces/write",
+          "Microsoft.Network/networkSecurityGroups/read",
+          "Microsoft.Network/networkSecurityGroups/write",
+          "Microsoft.Network/publicIPAddresses/delete",
+          "Microsoft.Network/publicIPAddresses/join/action",
+          "Microsoft.Network/publicIPAddresses/read",
+          "Microsoft.Network/publicIPAddresses/write",
+          "Microsoft.Network/routeTables/read",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action",
+          "Microsoft.Network/loadBalancers/frontendIPConfigurations/join/action",
+          "Microsoft.Network/loadBalancers/inboundNATRules/join/action",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-31T16:20:01.524932Z",
+    "updatedOn": "2025-03-21T13:51:48.8357398Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/0358943c-7e01-48ba-8889-02cc51d78637",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "0358943c-7e01-48ba-8889-02cc51d78637"
+}

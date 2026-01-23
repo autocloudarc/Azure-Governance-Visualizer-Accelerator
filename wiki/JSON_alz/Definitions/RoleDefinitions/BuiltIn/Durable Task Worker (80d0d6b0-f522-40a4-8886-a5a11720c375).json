@@ -1,0 +1,22 @@
+{
+  "roleName": "Durable Task Worker",
+  "type": "BuiltInRole",
+  "description": "Used by worker applications to interact with the Durable Task service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DurableTask/schedulers/taskhubs/orchestrations/execute/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-10-07T15:14:27.418415Z",
+  "updatedOn": "2025-07-11T20:47:55.855613Z",
+  "createdBy": null,
+  "updatedBy": null
+}

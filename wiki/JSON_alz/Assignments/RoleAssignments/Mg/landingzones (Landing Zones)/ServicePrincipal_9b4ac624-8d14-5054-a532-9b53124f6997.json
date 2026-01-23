@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/9b4ac624-8d14-5054-a532-9b53124f6997",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-AppServices0",
+  "SignInName": null,
+  "RoleDefinitionName": "Managed Identity Operator",
+  "RoleDefinitionId": "f1a07417-d97a-45cb-824c-7a7467783830",
+  "ObjectId": "a7787ead-50d0-4207-a061-ffc63777afd8",
+  "ObjectType": "ServicePrincipal"
+}

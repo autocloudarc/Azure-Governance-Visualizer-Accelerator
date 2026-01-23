@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/984982a0-4677-4724-b199-156fe69f76d0",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "storageDataScanner",
+  "SignInName": null,
+  "RoleDefinitionName": "Storage Blob Data Reader",
+  "RoleDefinitionId": "2a2b9908-6ea1-4ae2-8e65-a410df84e7d1",
+  "ObjectId": "6dcb3a76-70b1-42aa-87fd-9f2b131a5970",
+  "ObjectType": "ServicePrincipal"
+}

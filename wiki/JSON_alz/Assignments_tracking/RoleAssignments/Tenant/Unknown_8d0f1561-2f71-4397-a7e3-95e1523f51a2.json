@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/8d0f1561-2f71-4397-a7e3-95e1523f51a2",
+  "Scope": "/",
+  "DisplayName": null,
+  "SignInName": null,
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "a829b1b4-a9cf-4a4c-bea6-5de6be9284d0",
+  "ObjectType": "Unknown"
+}

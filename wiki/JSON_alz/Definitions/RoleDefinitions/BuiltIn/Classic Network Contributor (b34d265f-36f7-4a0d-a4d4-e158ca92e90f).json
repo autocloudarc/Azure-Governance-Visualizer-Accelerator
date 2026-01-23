@@ -1,0 +1,28 @@
+{
+  "roleName": "Classic Network Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage classic networks, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ClassicNetwork/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2015-02-02T21:55:09.8806423Z",
+  "updatedOn": "2021-11-11T20:13:26.4433301Z",
+  "createdBy": null,
+  "updatedBy": null
+}

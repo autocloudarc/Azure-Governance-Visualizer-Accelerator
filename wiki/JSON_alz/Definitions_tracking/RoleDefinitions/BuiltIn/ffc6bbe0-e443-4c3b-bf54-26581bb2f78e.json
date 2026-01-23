@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "App Compliance Automation Reader",
+    "type": "BuiltInRole",
+    "description": "Allows read-only access to App Compliance Automation tool for Microsoft 365",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-04-14T05:39:53.8670787Z",
+    "updatedOn": "2025-04-21T15:02:44.9081102Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ffc6bbe0-e443-4c3b-bf54-26581bb2f78e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ffc6bbe0-e443-4c3b-bf54-26581bb2f78e"
+}

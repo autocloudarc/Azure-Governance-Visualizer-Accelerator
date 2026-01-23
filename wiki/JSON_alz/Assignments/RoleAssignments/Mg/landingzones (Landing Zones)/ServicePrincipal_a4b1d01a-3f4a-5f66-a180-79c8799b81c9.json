@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/a4b1d01a-3f4a-5f66-a180-79c8799b81c9",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-ServiceBus0",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Service Bus Data Owner",
+  "RoleDefinitionId": "090c5cfd-751d-490a-894a-3ce6f1109419",
+  "ObjectId": "7f5ed711-5393-4763-8164-6071a8b825c9",
+  "ObjectType": "ServicePrincipal"
+}

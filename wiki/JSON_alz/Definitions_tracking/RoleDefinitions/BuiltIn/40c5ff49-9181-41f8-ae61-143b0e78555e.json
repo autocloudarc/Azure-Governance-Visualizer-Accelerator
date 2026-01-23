@@ -1,0 +1,63 @@
+{
+  "properties": {
+    "roleName": "Desktop Virtualization Power On Off Contributor",
+    "type": "BuiltInRole",
+    "description": "Provide permission to the Azure Virtual Desktop Resource Provider to start and stop virtual machines.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.AzureStackHCI/operations/read",
+          "Microsoft.AzureStackHCI/virtualMachineInstances/read",
+          "Microsoft.AzureStackHCI/virtualMachineInstances/restart/action",
+          "Microsoft.AzureStackHCI/virtualMachineInstances/start/action",
+          "Microsoft.AzureStackHCI/virtualMachineInstances/stop/action",
+          "Microsoft.Compute/virtualMachines/deallocate/action",
+          "Microsoft.Compute/virtualMachines/instanceView/read",
+          "Microsoft.Compute/virtualMachines/powerOff/action",
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Compute/virtualMachines/restart/action",
+          "Microsoft.Compute/virtualMachines/start/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesCancelOperations/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteDeallocate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteHibernate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteStart/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationErrors/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationStatus/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitDeallocate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitHibernate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitStart/action",
+          "Microsoft.ComputeSchedule/register/action",
+          "Microsoft.DesktopVirtualization/hostpools/read",
+          "Microsoft.DesktopVirtualization/hostpools/sessionhosts/read",
+          "Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/delete",
+          "Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/read",
+          "Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/sendMessage/action",
+          "Microsoft.DesktopVirtualization/hostpools/sessionhosts/write",
+          "Microsoft.DesktopVirtualization/hostpools/write",
+          "Microsoft.HybridCompute/locations/operationresults/read",
+          "Microsoft.HybridCompute/locations/operationstatus/read",
+          "Microsoft.HybridCompute/machines/read",
+          "Microsoft.HybridCompute/operations/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Insights/eventtypes/values/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-06-29T03:46:13.8314771Z",
+    "updatedOn": "2024-08-16T18:32:41.4531347Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/40c5ff49-9181-41f8-ae61-143b0e78555e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "40c5ff49-9181-41f8-ae61-143b0e78555e"
+}

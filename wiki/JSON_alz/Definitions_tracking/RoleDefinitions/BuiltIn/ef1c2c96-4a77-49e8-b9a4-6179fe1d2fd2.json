@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "API Management Workspace Reader",
+    "type": "BuiltInRole",
+    "description": "Has read-only access to entities in the workspace. This role should be assigned on the workspace scope.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ApiManagement/service/workspaces/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/diagnosticSettings/*/read",
+          "Microsoft.insights/logs/read",
+          "Microsoft.insights/logs/ApiManagementGatewayLogs/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-03-22T15:15:20.4542963Z",
+    "updatedOn": "2025-05-15T15:41:09.1080182Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ef1c2c96-4a77-49e8-b9a4-6179fe1d2fd2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ef1c2c96-4a77-49e8-b9a4-6179fe1d2fd2"
+}

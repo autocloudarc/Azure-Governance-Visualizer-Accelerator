@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Hybrid Cluster User Role",
+    "type": "BuiltInRole",
+    "description": "List cluster user credential action.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridContainerService/provisionedClusterInstances/read",
+          "Microsoft.HybridContainerService/provisionedClusterInstances/listUserKubeconfig/action",
+          "Microsoft.Kubernetes/connectedClusters/Read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-12-01T16:27:57.023565Z",
+    "updatedOn": "2023-12-01T16:27:57.023565Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/fc3f91a1-40bf-4439-8c46-45edbd83563a",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "fc3f91a1-40bf-4439-8c46-45edbd83563a"
+}

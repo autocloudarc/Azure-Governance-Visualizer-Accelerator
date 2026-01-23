@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "AI Model Scanner Operator",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for AI access to AI services and resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.MachineLearningServices/workspaces/read",
+          "Microsoft.MachineLearningServices/workspaces/models/read",
+          "Microsoft.MachineLearningServices/workspaces/models/versions/read",
+          "Microsoft.MachineLearningServices/workspaces/datastores/read",
+          "Microsoft.MachineLearningServices/workspaces/metadata/artifacts/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-06-12T15:37:37.9541964Z",
+    "updatedOn": "2025-08-05T15:14:56.2474712Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8b9beb50-e28c-4879-8472-24c9d328085f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8b9beb50-e28c-4879-8472-24c9d328085f"
+}

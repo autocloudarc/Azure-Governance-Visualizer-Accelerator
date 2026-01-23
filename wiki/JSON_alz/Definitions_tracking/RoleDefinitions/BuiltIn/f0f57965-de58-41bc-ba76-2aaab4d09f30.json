@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Hybrid Connectivity contributor role",
+    "type": "BuiltInRole",
+    "description": "Microsoft.HybridConnectivity contributor role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridConnectivity/endpoints/listIngressGatewayCredentials/action",
+          "Microsoft.HybridConnectivity/publicCloudConnectors/delete",
+          "Microsoft.HybridConnectivity/publicCloudConnectors/testPermissions/action",
+          "Microsoft.HybridConnectivity/publicCloudConnectors/write",
+          "Microsoft.HybridConnectivity/solutionConfigurations/delete",
+          "Microsoft.HybridConnectivity/solutionConfigurations/syncNow/action",
+          "Microsoft.HybridConnectivity/solutionConfigurations/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-09T15:23:12.0827015Z",
+    "updatedOn": "2025-09-09T15:23:12.0827015Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f0f57965-de58-41bc-ba76-2aaab4d09f30",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f0f57965-de58-41bc-ba76-2aaab4d09f30"
+}

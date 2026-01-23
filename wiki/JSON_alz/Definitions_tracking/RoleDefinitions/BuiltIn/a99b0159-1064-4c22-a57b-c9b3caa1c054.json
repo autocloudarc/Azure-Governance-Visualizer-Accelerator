@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure Spring Apps Remote Debugging Role",
+    "type": "BuiltInRole",
+    "description": "Azure Spring Apps Remote Debugging Role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AppPlatform/Spring/apps/deployments/remotedebugging/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-09-23T11:23:41.716385Z",
+    "updatedOn": "2022-09-23T11:23:41.716385Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a99b0159-1064-4c22-a57b-c9b3caa1c054",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a99b0159-1064-4c22-a57b-c9b3caa1c054"
+}

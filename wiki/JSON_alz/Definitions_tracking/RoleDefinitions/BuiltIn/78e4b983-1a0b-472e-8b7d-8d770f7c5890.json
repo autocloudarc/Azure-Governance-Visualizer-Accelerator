@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "DeID Data Owner",
+    "type": "BuiltInRole",
+    "description": "Full access to DeID data. This role is in preview and subject to change",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthDataAIServices/DeidServices/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-06-07T21:23:54.9017124Z",
+    "updatedOn": "2024-06-07T21:23:54.9017124Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/78e4b983-1a0b-472e-8b7d-8d770f7c5890",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "78e4b983-1a0b-472e-8b7d-8d770f7c5890"
+}

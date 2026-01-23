@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/sandbox/providers/microsoft.authorization/roleassignments/11d7473f-13d8-4fe3-be55-b992cb6fe9b2",
+  "Scope": "/providers/Microsoft.Management/managementGroups/sandbox",
+  "DisplayName": "id-alz-mgmt-eastus2-apply-001",
+  "SignInName": null,
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+  "ObjectType": "ServicePrincipal"
+}

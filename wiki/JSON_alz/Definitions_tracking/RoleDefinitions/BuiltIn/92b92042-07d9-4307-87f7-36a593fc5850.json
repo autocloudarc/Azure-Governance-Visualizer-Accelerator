@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "roleName": "Azure File Sync Administrator",
+    "type": "BuiltInRole",
+    "description": "Provides full access to manage all Azure File Sync (Storage Sync Service) resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.StorageSync/register/action",
+          "Microsoft.StorageSync/unregister/action",
+          "Microsoft.StorageSync/locations/*",
+          "Microsoft.StorageSync/deployments/preflight/action",
+          "Microsoft.StorageSync/storageSyncServices/*",
+          "Microsoft.StorageSync/operations/read",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Insights/AlertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+          "Microsoft.Storage/storageAccounts/fileServices/read",
+          "Microsoft.Support/*",
+          "Microsoft.Authorization/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": [],
+        "conditionVersion": "2.0",
+        "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals {c12c1c16-33a1-487b-954d-41c89c60f349, 69566ab7-960f-475b-8e7c-b3118f30c6bd, 17d1049b-9a84-46fb-8f53-869881c3d3ab}))"
+      }
+    ],
+    "createdOn": "2025-03-28T21:17:46.7594601Z",
+    "updatedOn": "2025-11-11T16:10:12.0708457Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/92b92042-07d9-4307-87f7-36a593fc5850",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "92b92042-07d9-4307-87f7-36a593fc5850"
+}

@@ -1,0 +1,34 @@
+{
+  "roleName": "Compute Gallery Artifacts Publisher",
+  "type": "BuiltInRole",
+  "description": "This is the role for publishing gallery artifacts.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/galleries/*",
+        "Microsoft.Compute/locations/capsOperations/read",
+        "Microsoft.Compute/locations/communityGalleries/*",
+        "Microsoft.Compute/locations/sharedGalleries/*",
+        "Microsoft.Compute/images/*",
+        "Microsoft.Compute/virtualMachines/write",
+        "Microsoft.Compute/disks/write",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [
+        "Microsoft.Compute/galleries/share/action"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-06-21T00:16:23.240823Z",
+  "updatedOn": "2024-06-21T00:16:23.240823Z",
+  "createdBy": null,
+  "updatedBy": null
+}

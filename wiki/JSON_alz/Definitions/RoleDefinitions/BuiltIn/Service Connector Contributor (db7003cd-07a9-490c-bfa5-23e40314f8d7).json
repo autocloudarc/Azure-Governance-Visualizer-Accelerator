@@ -1,0 +1,36 @@
+{
+  "roleName": "Service Connector Contributor",
+  "type": "BuiltInRole",
+  "description": "Can Manage Service Connector.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ServiceLinker/linkers/read",
+        "Microsoft.ServiceLinker/linkers/delete",
+        "Microsoft.ServiceLinker/linkers/write",
+        "Microsoft.ServiceLinker/linkers/listConfigurations/action",
+        "Microsoft.ServiceLinker/linkers/validateLinker/action",
+        "Microsoft.ServiceLinker/dryruns/delete",
+        "Microsoft.ServiceLinker/dryruns/write",
+        "Microsoft.ServiceLinker/linkers/generateConfigurations/action",
+        "Microsoft.ServiceLinker/locations/connectors/delete",
+        "Microsoft.ServiceLinker/locations/connectors/generateConfigurations/action",
+        "Microsoft.ServiceLinker/locations/connectors/validate/action",
+        "Microsoft.ServiceLinker/locations/connectors/write",
+        "Microsoft.ServiceLinker/locations/dryruns/delete",
+        "Microsoft.ServiceLinker/locations/dryruns/write",
+        "Microsoft.ServiceLinker/locations/operationStatuses/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-08-29T15:27:16.4040041Z",
+  "updatedOn": "2025-05-19T15:05:35.7772312Z",
+  "createdBy": null,
+  "updatedBy": null
+}

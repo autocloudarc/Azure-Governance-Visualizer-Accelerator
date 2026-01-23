@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "AnyBuild Builder",
+    "type": "BuiltInRole",
+    "description": "Basic user role for AnyBuild. This role allows listing of agent information and execution of remote build capabilities.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AnyBuild/clusters/build/write",
+          "Microsoft.AnyBuild/clusters/build/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-04-20T22:07:00.4963853Z",
+    "updatedOn": "2021-11-11T20:15:08.4254134Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a2138dac-4907-4679-a376-736901ed8ad8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a2138dac-4907-4679-a376-736901ed8ad8"
+}

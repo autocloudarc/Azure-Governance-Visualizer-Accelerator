@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Namespace Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows users to create and manage Azure Kubernetes Service namespace resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.ContainerService/managedClusters/managedNamespaces/*",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-06-13T18:21:47.9477266Z",
+    "updatedOn": "2025-06-13T18:21:47.9477266Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/289d8817-ee69-43f1-a0af-43a45505b488",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "289d8817-ee69-43f1-a0af-43a45505b488"
+}

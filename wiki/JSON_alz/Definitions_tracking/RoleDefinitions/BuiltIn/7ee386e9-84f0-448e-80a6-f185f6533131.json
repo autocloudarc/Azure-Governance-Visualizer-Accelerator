@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Storage Queue Delegator",
+    "type": "BuiltInRole",
+    "description": "Allows for generation of a user delegation key, which can then be used to create a shared access signature for an Azure Storage queue that is signed with Entra ID credentials.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/queueServices/generateUserDelegationKey/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-23T22:11:07.2205788Z",
+    "updatedOn": "2025-05-23T22:11:07.2205788Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7ee386e9-84f0-448e-80a6-f185f6533131",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7ee386e9-84f0-448e-80a6-f185f6533131"
+}

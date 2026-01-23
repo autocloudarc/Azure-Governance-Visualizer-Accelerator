@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "roleName": "API Management Service Operator Role",
+    "type": "BuiltInRole",
+    "description": "Can manage service but not the APIs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ApiManagement/service/*/read",
+          "Microsoft.ApiManagement/service/backup/action",
+          "Microsoft.ApiManagement/service/delete",
+          "Microsoft.ApiManagement/service/managedeployments/action",
+          "Microsoft.ApiManagement/service/read",
+          "Microsoft.ApiManagement/service/restore/action",
+          "Microsoft.ApiManagement/service/updatecertificate/action",
+          "Microsoft.ApiManagement/service/updatehostname/action",
+          "Microsoft.ApiManagement/service/write",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [
+          "Microsoft.ApiManagement/service/users/keys/read"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2016-11-09T00:03:42.1194019Z",
+    "updatedOn": "2021-11-11T20:13:11.5244023Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e022efe7-f5ba-4159-bbe4-b44f577e9b61",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e022efe7-f5ba-4159-bbe4-b44f577e9b61"
+}

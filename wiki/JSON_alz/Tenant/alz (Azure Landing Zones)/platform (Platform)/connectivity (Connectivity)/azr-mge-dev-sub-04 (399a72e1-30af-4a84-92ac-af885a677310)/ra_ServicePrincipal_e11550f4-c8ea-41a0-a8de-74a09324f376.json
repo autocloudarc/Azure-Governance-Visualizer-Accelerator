@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/e11550f4-c8ea-41a0-a8de-74a09324f376",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning ARC k8s Enabled",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Kubernetes Agent Operator",
+  "RoleDefinitionId": "8bb6f106-b146-4ee6-a3f9-b9c5a96e0ae5",
+  "ObjectId": "d2712173-b6ca-49e0-997f-a42883ba2297",
+  "ObjectType": "ServicePrincipal"
+}

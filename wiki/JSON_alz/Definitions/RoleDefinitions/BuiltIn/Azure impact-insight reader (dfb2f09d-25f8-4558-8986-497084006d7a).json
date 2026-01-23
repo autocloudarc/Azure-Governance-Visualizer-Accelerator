@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure impact-insight reader",
+  "type": "BuiltInRole",
+  "description": "built-in role for azure impact-insight read access",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Impact/WorkloadImpacts/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-22T16:09:33.1745465Z",
+  "updatedOn": "2024-01-22T16:09:33.1745465Z",
+  "createdBy": null,
+  "updatedBy": null
+}

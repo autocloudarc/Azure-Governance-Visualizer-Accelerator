@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/48306fcf-4eab-44f3-ccc1-376b255c1260",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning AKS Security Profile",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Kubernetes Agent Operator",
+  "RoleDefinitionId": "8bb6f106-b146-4ee6-a3f9-b9c5a96e0ae5",
+  "ObjectId": "fc25dcbb-ab32-4687-ba79-d3bd0909343c",
+  "ObjectType": "ServicePrincipal"
+}

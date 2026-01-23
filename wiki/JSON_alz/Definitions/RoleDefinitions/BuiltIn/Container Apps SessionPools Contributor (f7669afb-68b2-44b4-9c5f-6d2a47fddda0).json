@@ -1,0 +1,39 @@
+{
+  "roleName": "Container Apps SessionPools Contributor",
+  "type": "BuiltInRole",
+  "description": "Full management of Container Apps SessionPools, including creation, deletion, and updates.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.App/sessionPools/*/read",
+        "Microsoft.App/sessionPools/*/write",
+        "Microsoft.App/sessionPools/*/delete",
+        "Microsoft.App/sessionPools/*/action",
+        "microsoft.App/managedEnvironments/read",
+        "Microsoft.App/managedEnvironments/*/read",
+        "Microsoft.App/managedEnvironments/join/action",
+        "Microsoft.App/managedEnvironments/checknameavailability/action",
+        "microsoft.App/connectedEnvironments/read",
+        "Microsoft.App/connectedEnvironments/*/read",
+        "Microsoft.App/connectedEnvironments/join/action",
+        "Microsoft.App/connectedEnvironments/checknameavailability/action",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [
+        "Microsoft.App/sessionPools/fetchMcpServerCredentials/action",
+        "Microsoft.App/sessionPools/rotateMcpServerCredentials/action"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-08-14T16:23:28.4420428Z",
+  "updatedOn": "2025-10-27T15:00:59.9122743Z",
+  "createdBy": null,
+  "updatedBy": null
+}

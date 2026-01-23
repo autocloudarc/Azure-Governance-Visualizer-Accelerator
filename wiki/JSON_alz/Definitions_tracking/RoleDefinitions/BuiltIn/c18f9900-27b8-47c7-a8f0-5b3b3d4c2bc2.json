@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Microsoft Sentinel Business Applications Agent Operator",
+    "type": "BuiltInRole",
+    "description": "List and update actions on a business applications system. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.SecurityInsights/businessApplicationAgents/read",
+          "Microsoft.SecurityInsights/businessApplicationAgents/write",
+          "Microsoft.SecurityInsights/businessApplicationAgents/systems/read",
+          "Microsoft.SecurityInsights/businessApplicationAgents/systems/write",
+          "Microsoft.SecurityInsights/businessApplicationAgents/systems/listActions/action",
+          "Microsoft.SecurityInsights/businessApplicationAgents/systems/reportActionStatus/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-04-05T08:06:44.3219877Z",
+    "updatedOn": "2024-06-06T15:32:14.8579262Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c18f9900-27b8-47c7-a8f0-5b3b3d4c2bc2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c18f9900-27b8-47c7-a8f0-5b3b3d4c2bc2"
+}

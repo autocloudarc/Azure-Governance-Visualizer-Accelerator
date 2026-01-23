@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Azure Resilience Management Drills Reader",
+    "type": "BuiltInRole",
+    "description": "Reader Role of Azure Resilience Management Drills Service",
+    "assignableScopes": [
+      "/",
+      "/providers/Microsoft.Management/serviceGroups"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.AzureResilienceManagement/drills/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-12T15:18:35.5188405Z",
+    "updatedOn": "2025-09-19T10:42:29.7354336Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d2e8fe82-9212-490f-af3e-34bb52d87d3d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d2e8fe82-9212-490f-af3e-34bb52d87d3d"
+}

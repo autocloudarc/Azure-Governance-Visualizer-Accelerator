@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Container Apps ConnectedEnvironments Contributor",
+    "type": "BuiltInRole",
+    "description": "Full management of Container Apps ConnectedEnvironments, including creation, deletion, and updates.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.App/connectedEnvironments/*",
+          "Microsoft.App/connectedEnvironments/*/read",
+          "Microsoft.App/connectedEnvironments/*/write",
+          "Microsoft.App/connectedEnvironments/*/delete",
+          "Microsoft.App/connectedEnvironments/*/action",
+          "Microsoft.App/connectedEnvironments/daprComponents/listSecrets/action",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-24T15:25:05.8876197Z",
+    "updatedOn": "2024-10-24T15:25:05.8876197Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6f4fe6fc-f04f-4d97-8528-8bc18c848dca",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6f4fe6fc-f04f-4d97-8528-8bc18c848dca"
+}

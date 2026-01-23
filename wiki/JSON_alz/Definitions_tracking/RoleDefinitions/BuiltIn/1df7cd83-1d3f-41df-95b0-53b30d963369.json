@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure API Center Credential Access Reader",
+    "type": "BuiltInRole",
+    "description": "Allows for access to Azure API Center data plane get credentials operations.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ApiCenter/services/workspaces/apis/versions/securityRequirements/read",
+          "Microsoft.ApiCenter/services/workspaces/apis/versions/securityRequirements/getCredentials/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-21T17:38:36.0006049Z",
+    "updatedOn": "2025-03-21T17:38:36.0006049Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1df7cd83-1d3f-41df-95b0-53b30d963369",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1df7cd83-1d3f-41df-95b0-53b30d963369"
+}

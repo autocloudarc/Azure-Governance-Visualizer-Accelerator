@@ -1,0 +1,23 @@
+{
+  "roleName": "ARN Service Event Grid Subscriber Role",
+  "type": "BuiltInRole",
+  "description": "Allows ARN to subscribe to partner event grid topics",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.EventGrid/EventSubscriptions/write",
+        "Microsoft.EventGrid/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-11-06T19:16:27.9314138Z",
+  "updatedOn": "2025-11-06T19:16:27.9314138Z",
+  "createdBy": null,
+  "updatedBy": null
+}

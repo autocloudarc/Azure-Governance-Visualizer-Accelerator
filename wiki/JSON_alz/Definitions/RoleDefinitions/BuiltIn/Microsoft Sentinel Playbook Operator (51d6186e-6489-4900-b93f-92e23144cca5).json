@@ -1,0 +1,25 @@
+{
+  "roleName": "Microsoft Sentinel Playbook Operator",
+  "type": "BuiltInRole",
+  "description": "Microsoft Sentinel Playbook Operator",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Logic/workflows/read",
+        "Microsoft.Logic/workflows/triggers/listCallbackUrl/action",
+        "Microsoft.Web/sites/hostruntime/webhooks/api/workflows/triggers/listCallbackUrl/action",
+        "Microsoft.Web/sites/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-20T19:20:30.6118766Z",
+  "updatedOn": "2022-12-07T20:30:39.3980234Z",
+  "createdBy": null,
+  "updatedBy": null
+}

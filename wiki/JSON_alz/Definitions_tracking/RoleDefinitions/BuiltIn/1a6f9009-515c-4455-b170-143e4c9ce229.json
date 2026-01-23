@@ -1,0 +1,47 @@
+{
+  "properties": {
+    "roleName": "Azure Stack HCI Edge Machine Contributor Role",
+    "type": "BuiltInRole",
+    "description": "Microsoft.AzureStackHCI Edge Machine Contributor Role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureStackHCI/EdgeMachines/*",
+          "Microsoft.AzureStackHCI/locations/ValidateOwnershipVouchers/action",
+          "Microsoft.Edge/Sites/read",
+          "Microsoft.Edge/Sites/write",
+          "Microsoft.Edge/configurationReferences/read",
+          "Microsoft.Edge/configurationReferences/write",
+          "Microsoft.Edge/Configurations/*/read",
+          "Microsoft.Edge/Configurations/*/write",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/deployments/delete",
+          "Microsoft.Resources/deployments/cancel/action",
+          "Microsoft.Resources/deployments/validate/action",
+          "Microsoft.Resources/deployments/whatIf/action",
+          "Microsoft.Resources/deployments/exportTemplate/action",
+          "Microsoft.Resources/deployments/operations/read",
+          "Microsoft.Resources/deployments/operationstatuses/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-01-31T17:57:03.7837888Z",
+    "updatedOn": "2026-01-19T16:13:22.6030164Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1a6f9009-515c-4455-b170-143e4c9ce229",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1a6f9009-515c-4455-b170-143e4c9ce229"
+}

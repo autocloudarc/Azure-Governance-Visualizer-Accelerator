@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Managed Application Publisher Operator",
+    "type": "BuiltInRole",
+    "description": "Allows the publisher to read resources in the managed resource group for Managed Application and request JIT access for additional operations. This role is only used by the Managed Application service to provide access to publishers.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Solutions/jitRequests/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-09-06T00:33:58.3651522Z",
+    "updatedOn": "2025-05-02T17:25:59.4961965Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b9331d33-8a36-4f8c-b097-4f54124fdb44",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b9331d33-8a36-4f8c-b097-4f54124fdb44"
+}

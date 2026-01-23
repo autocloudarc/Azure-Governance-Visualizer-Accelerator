@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Batch Account Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you view all resources including pools and jobs in the Batch account.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Batch/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Batch/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-10-17T15:43:50.3319289Z",
+  "updatedOn": "2025-08-08T11:47:10.1981637Z",
+  "createdBy": null,
+  "updatedBy": null
+}

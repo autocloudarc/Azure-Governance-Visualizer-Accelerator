@@ -1,0 +1,56 @@
+{
+  "properties": {
+    "roleName": "AVS on Fleet VIS Role",
+    "type": "BuiltInRole",
+    "description": "Do not remove this role from your resource because it is critical to enable your AVS private cloud to operate. If the role is removed, it will cause your AVS private cloud control plane to no longer operate correctly. The role is used to enable the AVS private cloud control plane to inject address prefix changes of the private clouds attached virtual network to SDN and support peering sync feature. This role is not intended for use cases outside of assignment to the associated AVS identity in your entra-id tenant.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Network/networkInterfaces/read",
+          "Microsoft.Network/networkInterfaces/write",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/write",
+          "Microsoft.Network/virtualNetworks/peer/action",
+          "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/read",
+          "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/write",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Network/routeTables/join/action",
+          "Microsoft.Network/serviceEndpointPolicies/join/action",
+          "Microsoft.Network/natGateways/join/action",
+          "Microsoft.Network/networkIntentPolicies/join/action",
+          "Microsoft.Network/ddosProtectionPlans/join/action",
+          "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action",
+          "Microsoft.BareMetal/peeringSettings/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/read",
+          "Microsoft.Authorization/roleAssignments/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      },
+      {
+        "actions": [
+          "Microsoft.Authorization/roleAssignments/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": [],
+        "conditionVersion": "2.0",
+        "condition": "(!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR @Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{49fc33c1886f4b21a00e1d9993234734}"
+      }
+    ],
+    "createdOn": "2025-01-14T16:18:32.7067643Z",
+    "updatedOn": "2025-06-12T06:42:22.4670933Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/49fc33c1-886f-4b21-a00e-1d9993234734",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "49fc33c1-886f-4b21-a00e-1d9993234734"
+}

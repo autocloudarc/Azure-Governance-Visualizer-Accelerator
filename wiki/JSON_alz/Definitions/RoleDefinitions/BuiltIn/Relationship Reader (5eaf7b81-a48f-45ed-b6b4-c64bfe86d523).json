@@ -1,0 +1,22 @@
+{
+  "roleName": "Relationship Reader",
+  "type": "BuiltInRole",
+  "description": "Role definition allowing read access to all relationship types",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Relationships/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-28T15:14:09.6739689Z",
+  "updatedOn": "2025-10-28T15:14:09.6739689Z",
+  "createdBy": null,
+  "updatedBy": null
+}

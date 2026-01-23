@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "MySQL Backup And Export Operator",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage backup and export resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DBforMySQL/flexibleServers/validateBackup/action",
+          "Microsoft.DBforMySQL/flexibleServers/backupAndExport/action",
+          "Microsoft.DBforMySQL/locations/operationResults/read",
+          "Microsoft.DBforMySQL/locations/azureAsyncOperation/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-02-06T16:01:22.3871138Z",
+    "updatedOn": "2023-05-15T15:01:03.12045Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d18ad5f3-1baf-4119-b49b-d944edb1f9d0",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d18ad5f3-1baf-4119-b49b-d944edb1f9d0"
+}

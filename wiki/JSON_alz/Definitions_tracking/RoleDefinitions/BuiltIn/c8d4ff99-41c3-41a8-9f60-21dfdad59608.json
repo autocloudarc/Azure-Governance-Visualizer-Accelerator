@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "AcrQuarantineWriter",
+    "type": "BuiltInRole",
+    "description": "acr quarantine data writer",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/quarantine/read",
+          "Microsoft.ContainerRegistry/registries/quarantine/write"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerRegistry/registries/quarantinedArtifacts/read",
+          "Microsoft.ContainerRegistry/registries/quarantinedArtifacts/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-03-16T00:26:37.587182Z",
+    "updatedOn": "2021-11-11T20:13:11.3488079Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c8d4ff99-41c3-41a8-9f60-21dfdad59608",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c8d4ff99-41c3-41a8-9f60-21dfdad59608"
+}

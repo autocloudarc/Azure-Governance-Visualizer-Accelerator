@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "displayName": "Azure Defender for SQL should be enabled for unprotected MySQL flexible servers",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "description": "Audit MySQL flexible servers without Advanced Data Security",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "Security Center"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "AuditIfNotExists"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "equals": "Microsoft.DBforMySQL/flexibleservers"
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.DBforMySQL/flexibleservers/advancedThreatProtectionSettings",
+          "name": "Default",
+          "existenceCondition": {
+            "field": "Microsoft.DBforMySQL/flexibleServers/advancedThreatProtectionSettings/state",
+            "equals": "Enabled"
+          }
+        }
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/3bc8a0d5-38e0-4a3d-a657-2cb64468fc34",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "3bc8a0d5-38e0-4a3d-a657-2cb64468fc34"
+}

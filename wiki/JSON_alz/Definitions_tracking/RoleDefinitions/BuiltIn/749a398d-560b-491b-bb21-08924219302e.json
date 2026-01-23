@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Load Test Contributor",
+    "type": "BuiltInRole",
+    "description": "View, create, update, delete and execute load tests. View and list load test resources but can not make any changes.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.LoadTestService/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Insights/alertRules/*"
+        ],
+        "notActions": [
+          "Microsoft.LoadTestService/PlaywrightWorkspaces/*",
+          "Microsoft.LoadTestService/locations/PlaywrightQuotas/*"
+        ],
+        "dataActions": [
+          "Microsoft.LoadTestService/loadtests/*",
+          "Microsoft.LoadTestService/testProfiles/*",
+          "Microsoft.LoadTestService/testProfileRuns/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-11-09T08:11:21.0936461Z",
+    "updatedOn": "2025-09-30T15:23:50.5068016Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/749a398d-560b-491b-bb21-08924219302e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "749a398d-560b-491b-bb21-08924219302e"
+}

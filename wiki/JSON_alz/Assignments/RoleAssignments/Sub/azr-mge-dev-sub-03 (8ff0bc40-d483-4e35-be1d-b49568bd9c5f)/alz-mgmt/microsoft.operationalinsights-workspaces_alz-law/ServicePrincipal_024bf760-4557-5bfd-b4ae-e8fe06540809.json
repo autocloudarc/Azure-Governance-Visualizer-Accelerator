@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.operationalinsights/workspaces/alz-law/providers/microsoft.authorization/roleassignments/024bf760-4557-5bfd-b4ae-e8fe06540809",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.OperationalInsights/workspaces/alz-law",
+  "DisplayName": "Deploy-AzSqlDb-Auditing",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "32ba4a2b-8a18-4bae-81f4-04f5323b950d",
+  "ObjectType": "ServicePrincipal"
+}

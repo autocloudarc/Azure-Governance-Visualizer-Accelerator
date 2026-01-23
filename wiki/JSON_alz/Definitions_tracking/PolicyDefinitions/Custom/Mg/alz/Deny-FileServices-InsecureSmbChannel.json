@@ -1,0 +1,78 @@
+{
+  "properties": {
+    "displayName": "File Services with insecure SMB channel encryption should be denied",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy denies the use of insecure channel encryption (AES-128-CCM) when using File Services on a storage account.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Storage",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.0.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:36:56.64579Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "The effect determines what happens when the policy rule is evaluated to match",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "notAllowedChannelEncryption": {
+        "type": "String",
+        "metadata": {
+          "description": "The list of channelEncryption not allowed.",
+          "displayName": "SMB channel encryption supported by server. Valid values are AES-128-CCM, AES-128-GCM, AES-256-GCM."
+        },
+        "allowedValues": [
+          "AES-128-CCM",
+          "AES-128-GCM",
+          "AES-256-GCM"
+        ],
+        "defaultValue": "AES-128-CCM"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Storage/storageAccounts/fileServices",
+            "field": "type"
+          },
+          {
+            "contains": "[parameters('notAllowedChannelEncryption')]",
+            "field": "Microsoft.Storage/storageAccounts/fileServices/protocolSettings.smb.channelEncryption"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-FileServices-InsecureSmbChannel",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Deny-FileServices-InsecureSmbChannel",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:36:56.6264147Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:36:56.6264147Z"
+  }
+}

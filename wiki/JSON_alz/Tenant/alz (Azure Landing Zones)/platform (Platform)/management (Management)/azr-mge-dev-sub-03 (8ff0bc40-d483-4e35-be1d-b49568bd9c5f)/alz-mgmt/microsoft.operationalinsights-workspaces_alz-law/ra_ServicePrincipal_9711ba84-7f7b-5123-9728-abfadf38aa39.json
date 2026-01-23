@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.operationalinsights/workspaces/alz-law/providers/microsoft.authorization/roleassignments/9711ba84-7f7b-5123-9728-abfadf38aa39",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.OperationalInsights/workspaces/alz-law",
+  "DisplayName": "Deploy-AzActivity-Log",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Contributor",
+  "RoleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+  "ObjectId": "64a5556e-e809-46ca-98ad-41a4aeef802f",
+  "ObjectType": "ServicePrincipal"
+}

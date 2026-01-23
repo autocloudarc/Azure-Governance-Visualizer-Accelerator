@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "AcrQuarantineReader",
+    "type": "BuiltInRole",
+    "description": "acr quarantine data reader",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/quarantine/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerRegistry/registries/quarantinedArtifacts/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-03-16T00:27:39.9596835Z",
+    "updatedOn": "2021-11-11T20:13:10.3188052Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/cdda3590-29a3-44f6-95f2-9f980659eb04",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "cdda3590-29a3-44f6-95f2-9f980659eb04"
+}

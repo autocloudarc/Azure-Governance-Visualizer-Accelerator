@@ -1,0 +1,34 @@
+{
+  "roleName": "Deployment Environments User",
+  "type": "BuiltInRole",
+  "description": "Provides access to manage environment resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DevCenter/projects/read",
+        "Microsoft.DevCenter/projects/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [
+        "Microsoft.DevCenter/projects/pools/read",
+        "Microsoft.DevCenter/projects/pools/schedules/read"
+      ],
+      "dataActions": [
+        "Microsoft.DevCenter/projects/users/environments/userRead/action",
+        "Microsoft.DevCenter/projects/users/environments/userWrite/action",
+        "Microsoft.DevCenter/projects/users/environments/userDelete/action",
+        "Microsoft.DevCenter/projects/users/environments/userActionManage/action",
+        "Microsoft.DevCenter/projects/users/environments/userOutputsRead/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-22T01:04:20.3753915Z",
+  "updatedOn": "2023-11-11T03:17:04.9397265Z",
+  "createdBy": null,
+  "updatedBy": null
+}

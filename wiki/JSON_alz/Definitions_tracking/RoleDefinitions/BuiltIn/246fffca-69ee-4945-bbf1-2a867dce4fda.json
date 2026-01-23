@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Microsoft.WeightsAndBiases Contributor Role",
+    "type": "BuiltInRole",
+    "description": "Provides access to all Microsoft.WeightsAndBiases related operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.WeightsAndBiases/checkNameAvailability/action",
+          "Microsoft.WeightsAndBiases/register/action",
+          "Microsoft.WeightsAndBiases/unregister/action",
+          "Microsoft.WeightsAndBiases/instances/read",
+          "Microsoft.WeightsAndBiases/instances/write",
+          "Microsoft.WeightsAndBiases/instances/delete",
+          "Microsoft.WeightsAndBiases/locations/operationStatuses/read",
+          "Microsoft.WeightsAndBiases/locations/operationStatuses/write",
+          "Microsoft.WeightsAndBiases/operations/read",
+          "Microsoft.WeightsAndBiases/registeredSubscriptions/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-07T15:23:21.148266Z",
+    "updatedOn": "2025-08-07T15:23:21.148266Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/246fffca-69ee-4945-bbf1-2a867dce4fda",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "246fffca-69ee-4945-bbf1-2a867dce4fda"
+}

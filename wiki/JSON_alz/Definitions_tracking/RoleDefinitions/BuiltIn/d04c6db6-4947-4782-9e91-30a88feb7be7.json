@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure Spring Cloud Config Server Reader",
+    "type": "BuiltInRole",
+    "description": "Allow read access to Azure Spring Cloud Config Server",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AppPlatform/Spring/configService/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-08-26T01:50:51.5123701Z",
+    "updatedOn": "2021-11-11T20:15:19.3155517Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d04c6db6-4947-4782-9e91-30a88feb7be7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d04c6db6-4947-4782-9e91-30a88feb7be7"
+}

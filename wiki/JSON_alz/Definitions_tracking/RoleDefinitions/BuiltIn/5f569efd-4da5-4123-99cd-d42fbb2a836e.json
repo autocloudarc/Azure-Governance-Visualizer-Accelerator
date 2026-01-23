@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Microsoft.AzureStackHCI EdgeMachine Reader",
+    "type": "BuiltInRole",
+    "description": "Microsoft.AzureStackHCI EdgeMachine Reader",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureStackHCI/EdgeMachines/Read/*",
+          "Microsoft.AzureStackHCI/EdgeMachines/Jobs/Read/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-16T08:59:07.7169017Z",
+    "updatedOn": "2025-05-16T08:59:07.7169017Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5f569efd-4da5-4123-99cd-d42fbb2a836e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5f569efd-4da5-4123-99cd-d42fbb2a836e"
+}

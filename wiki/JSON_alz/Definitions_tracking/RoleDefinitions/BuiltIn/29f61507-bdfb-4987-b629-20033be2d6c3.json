@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Healthcare Apis contributor",
+    "type": "BuiltInRole",
+    "description": "Allows all actions on healthcareapis provider resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HealthcareApis/services/*",
+          "Microsoft.HealthcareApis/workspaces/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-16T15:09:02.9870186Z",
+    "updatedOn": "2025-07-16T15:09:02.9870186Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/29f61507-bdfb-4987-b629-20033be2d6c3",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "29f61507-bdfb-4987-b629-20033be2d6c3"
+}

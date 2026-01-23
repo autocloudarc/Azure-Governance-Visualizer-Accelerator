@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services Metrics Advisor User",
+    "type": "BuiltInRole",
+    "description": "Access to the project.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.CognitiveServices/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/accounts/MetricsAdvisor/*"
+        ],
+        "notDataActions": [
+          "Microsoft.CognitiveServices/accounts/MetricsAdvisor/stats/*"
+        ]
+      }
+    ],
+    "createdOn": "2020-09-10T07:47:59.6195639Z",
+    "updatedOn": "2021-11-11T20:14:43.8780761Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3b20f47b-3825-43cb-8114-4bd2201156a8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3b20f47b-3825-43cb-8114-4bd2201156a8"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/32e4b8bb-2482-47ae-a3d3-be86a3aea481",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "SqlVmAndArcSqlServersProtection",
+  "SignInName": null,
+  "RoleDefinitionName": "Managed Identity Operator",
+  "RoleDefinitionId": "f1a07417-d97a-45cb-824c-7a7467783830",
+  "ObjectId": "e3f26cc9-d2d7-4bee-8ceb-d3d8866650e5",
+  "ObjectType": "ServicePrincipal"
+}

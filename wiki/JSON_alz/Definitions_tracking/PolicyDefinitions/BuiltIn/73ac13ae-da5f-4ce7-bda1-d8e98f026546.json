@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "displayName": "Block All Azure Resource Creation",
+    "policyType": "BuiltIn",
+    "mode": "All",
+    "description": "Block All Azure Resource Creation",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "System Policy"
+    },
+    "policyRule": {
+      "if": {
+        "source": "action",
+        "like": "*/write"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/73ac13ae-da5f-4ce7-bda1-d8e98f026546",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "73ac13ae-da5f-4ce7-bda1-d8e98f026546"
+}

@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Healthcare Agent Contributer",
+    "type": "BuiltInRole",
+    "description": "Manage Helathcare Agent resources - list, view details, edit and delete resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HealthBot/healthBots/Read",
+          "Microsoft.HealthBot/healthBots/Write",
+          "Microsoft.HealthBot/healthBots/Delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-09T15:45:59.6881578Z",
+    "updatedOn": "2025-10-09T15:45:59.6881578Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/13d06eae-ec82-4345-bcd6-c38625ddffbc",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "13d06eae-ec82-4345-bcd6-c38625ddffbc"
+}

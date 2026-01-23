@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure API Center Data Reader",
+  "type": "BuiltInRole",
+  "description": "Allows for access to Azure API Center data plane read operations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.ApiCenter/services/*/read",
+        "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/exportSpecification/action",
+        "Microsoft.ApiCenter/services/workspaces/search/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-12T20:39:09.6504931Z",
+  "updatedOn": "2025-04-23T15:12:36.2442777Z",
+  "createdBy": null,
+  "updatedBy": null
+}

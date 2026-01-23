@@ -1,0 +1,23 @@
+{
+  "roleName": "Edge Order Partner Inventory Manager Service Role",
+  "type": "BuiltInRole",
+  "description": "Manage inventory metadata and inventory links associated with Edge Order Partner scenarios. Enables configuration and control of inventory resources for tracking and fulfillment purposes",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.EdgeOrderPartner/locations/productFamilies/inventories/manageLink/action",
+        "Microsoft.EdgeOrderPartner/locations/productFamilies/inventories/manageInventoryMetadata/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-13T15:27:47.7311537Z",
+  "updatedOn": "2025-09-08T15:10:30.2853795Z",
+  "createdBy": null,
+  "updatedBy": null
+}

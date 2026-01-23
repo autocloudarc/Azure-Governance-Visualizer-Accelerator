@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Container Apps Contributor",
+    "type": "BuiltInRole",
+    "description": "Full management of Container Apps, including creation, deletion, and updates.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.App/containerApps/*/read",
+          "Microsoft.App/containerApps/*/write",
+          "Microsoft.App/containerApps/*/delete",
+          "Microsoft.App/containerApps/*/action",
+          "Microsoft.App/managedEnvironments/read",
+          "Microsoft.App/managedEnvironments/*/read",
+          "Microsoft.App/managedEnvironments/join/action",
+          "Microsoft.App/managedEnvironments/checknameavailability/action",
+          "Microsoft.App/connectedEnvironments/read",
+          "Microsoft.App/connectedEnvironments/*/read",
+          "Microsoft.App/connectedEnvironments/join/action",
+          "Microsoft.App/connectedEnvironments/checknameavailability/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-14T16:23:28.4390439Z",
+    "updatedOn": "2024-08-14T16:23:28.4390439Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/358470bc-b998-42bd-ab17-a7e34c199c0f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "358470bc-b998-42bd-ab17-a7e34c199c0f"
+}

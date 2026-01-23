@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Microsoft Sentinel Playbook Operator",
+    "type": "BuiltInRole",
+    "description": "Microsoft Sentinel Playbook Operator",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Logic/workflows/read",
+          "Microsoft.Logic/workflows/triggers/listCallbackUrl/action",
+          "Microsoft.Web/sites/hostruntime/webhooks/api/workflows/triggers/listCallbackUrl/action",
+          "Microsoft.Web/sites/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-09-20T19:20:30.6118766Z",
+    "updatedOn": "2022-12-07T20:30:39.3980234Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/51d6186e-6489-4900-b93f-92e23144cca5",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "51d6186e-6489-4900-b93f-92e23144cca5"
+}

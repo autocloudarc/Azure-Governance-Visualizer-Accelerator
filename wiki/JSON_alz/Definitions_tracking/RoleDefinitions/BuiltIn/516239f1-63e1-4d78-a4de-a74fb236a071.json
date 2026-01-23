@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "App Configuration Data Reader",
+    "type": "BuiltInRole",
+    "description": "Allows read access to App Configuration data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AppConfiguration/configurationStores/*/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-10-25T18:45:33.7975332Z",
+    "updatedOn": "2021-11-11T20:14:11.5885341Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/516239f1-63e1-4d78-a4de-a74fb236a071",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "516239f1-63e1-4d78-a4de-a74fb236a071"
+}

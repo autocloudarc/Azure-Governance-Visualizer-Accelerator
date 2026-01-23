@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "Managed Identity Federated Identity Credential Contributor",
+    "type": "BuiltInRole",
+    "description": "Create, Read, Update, and Delete User Assigned Identity Federated Identity Credentials(FIC)",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ManagedIdentity/userAssignedIdentities/read",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/write",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/delete",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-24T15:12:43.4865666Z",
+    "updatedOn": "2025-03-24T15:12:43.4865666Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7e559ce2-48d7-4b27-9128-fa1b247f1308",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7e559ce2-48d7-4b27-9128-fa1b247f1308"
+}

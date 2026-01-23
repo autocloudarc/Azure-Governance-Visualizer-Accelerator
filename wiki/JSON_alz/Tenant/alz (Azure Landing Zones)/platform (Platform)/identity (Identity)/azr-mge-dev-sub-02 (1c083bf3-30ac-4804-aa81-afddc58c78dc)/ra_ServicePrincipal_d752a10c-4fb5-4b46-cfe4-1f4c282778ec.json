@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/d752a10c-4fb5-4b46-cfe4-1f4c282778ec",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Connected Machine Resource Administrator",
+  "RoleDefinitionId": "cd570a14-e51a-42ad-bac8-bafd67325302",
+  "ObjectId": "bdb637b4-220c-43e3-8799-de2b19952905",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Storage Queue Data Reader",
+    "type": "BuiltInRole",
+    "description": "Allows for read access to Azure Storage queues and queue messages",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/queueServices/queues/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/queueServices/queues/messages/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2017-12-21T00:01:24.7972312Z",
+    "updatedOn": "2021-11-11T20:13:56.0178497Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/19e7f393-937e-4f77-808e-94535e297925",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "19e7f393-937e-4f77-808e-94535e297925"
+}

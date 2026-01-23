@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.operationalinsights/workspaces/alz-law/providers/microsoft.authorization/roleassignments/dcfece09-f994-52ff-a19b-5594aa09eb96",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.OperationalInsights/workspaces/alz-law",
+  "DisplayName": "Deploy-Diag-LogsCat",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "f49137a2-3586-48ed-b5ec-28f2b3ea8f8b",
+  "ObjectType": "ServicePrincipal"
+}

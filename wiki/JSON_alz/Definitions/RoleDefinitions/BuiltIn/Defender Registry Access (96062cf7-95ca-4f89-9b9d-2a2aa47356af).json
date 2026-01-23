@@ -1,0 +1,31 @@
+{
+  "roleName": "Defender Registry Access",
+  "type": "BuiltInRole",
+  "description": "Grants Microsoft Defender for Cloud access to Azure Container Registry for security assessment of container images",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/pull/read",
+        "Microsoft.ContainerRegistry/registries/push/write",
+        "Microsoft.ContainerRegistry/registries/artifacts/delete"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.ContainerRegistry/registries/repositories/metadata/read",
+        "Microsoft.ContainerRegistry/registries/repositories/content/read",
+        "Microsoft.ContainerRegistry/registries/repositories/metadata/write",
+        "Microsoft.ContainerRegistry/registries/repositories/content/write",
+        "Microsoft.ContainerRegistry/registries/repositories/metadata/delete",
+        "Microsoft.ContainerRegistry/registries/repositories/content/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-01-19T17:59:50.7903056Z",
+  "updatedOn": "2026-01-12T16:06:06.1709367Z",
+  "createdBy": null,
+  "updatedBy": null
+}

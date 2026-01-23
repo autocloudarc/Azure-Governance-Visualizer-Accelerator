@@ -1,0 +1,27 @@
+{
+  "roleName": "Monitored Objects Contributor",
+  "type": "BuiltInRole",
+  "description": "Can read and update Monitored Objects and associated Data Collection Rules.",
+  "assignableScopes": [
+    "/providers/Microsoft.Insights"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Insights/monitoredObjects/read",
+        "Microsoft.Insights/monitoredObjects/write",
+        "Microsoft.Insights/monitoredObjects/delete",
+        "Microsoft.Insights/dataCollectionRuleAssociations/delete",
+        "Microsoft.Insights/dataCollectionRuleAssociations/read",
+        "Microsoft.Insights/dataCollectionRuleAssociations/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-01-21T18:03:29.913896Z",
+  "updatedOn": "2022-01-21T18:03:29.913896Z",
+  "createdBy": null,
+  "updatedBy": null
+}

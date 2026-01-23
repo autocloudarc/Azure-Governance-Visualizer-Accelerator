@@ -1,0 +1,28 @@
+{
+  "roleName": "App Configuration Contributor",
+  "type": "BuiltInRole",
+  "description": "Grants permission for all management operations, except purge, for App Configuration resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppConfiguration/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [
+        "Microsoft.AppConfiguration/locations/deletedConfigurationStores/purge/action"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-09-16T15:00:44.4010948Z",
+  "updatedOn": "2024-09-16T15:00:44.4010948Z",
+  "createdBy": null,
+  "updatedBy": null
+}

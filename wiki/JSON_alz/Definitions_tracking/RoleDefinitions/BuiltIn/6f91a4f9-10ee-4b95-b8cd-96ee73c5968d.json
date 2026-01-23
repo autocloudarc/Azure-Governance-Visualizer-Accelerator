@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Defender API Security",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for Cloud access to computes to provide API security",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Security/pricings/read",
+          "Microsoft.Security/apiCollections/read",
+          "Microsoft.ApiManagement/service/read",
+          "Microsoft.ApiManagement/service/apis/read",
+          "Microsoft.ApiManagement/service/apis/operations/read",
+          "Microsoft.ApiManagement/service/apiVersionSets/read",
+          "Microsoft.ApiManagement/service/apis/diagnostics/read",
+          "Microsoft.ApiManagement/service/apis/diagnostics/write",
+          "Microsoft.ApiManagement/service/apis/diagnostics/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-11-14T05:22:59.2306511Z",
+    "updatedOn": "2025-11-14T05:22:59.2306511Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6f91a4f9-10ee-4b95-b8cd-96ee73c5968d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6f91a4f9-10ee-4b95-b8cd-96ee73c5968d"
+}

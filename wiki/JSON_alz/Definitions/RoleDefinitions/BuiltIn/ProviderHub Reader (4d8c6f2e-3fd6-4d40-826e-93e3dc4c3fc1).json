@@ -1,0 +1,25 @@
+{
+  "roleName": "ProviderHub Reader",
+  "type": "BuiltInRole",
+  "description": "Allows you to view all Microsoft.ProviderHub resources created through the Resource Provider Platform, but does not allow you to make any changes to the resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ProviderHub/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-03T15:20:27.7899871Z",
+  "updatedOn": "2024-07-03T15:20:27.7899871Z",
+  "createdBy": null,
+  "updatedBy": null
+}

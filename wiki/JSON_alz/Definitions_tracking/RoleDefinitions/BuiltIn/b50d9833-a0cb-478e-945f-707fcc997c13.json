@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Disk Restore Operator",
+    "type": "BuiltInRole",
+    "description": "Provides permission to backup vault to perform disk restore.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Compute/disks/write",
+          "Microsoft.Compute/disks/read",
+          "Microsoft.Compute/disks/beginGetAccess/action",
+          "Microsoft.Compute/disks/endGetAccess/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-12-15T12:18:31.8481619Z",
+    "updatedOn": "2025-08-22T09:39:48.6607823Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b50d9833-a0cb-478e-945f-707fcc997c13",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b50d9833-a0cb-478e-945f-707fcc997c13"
+}

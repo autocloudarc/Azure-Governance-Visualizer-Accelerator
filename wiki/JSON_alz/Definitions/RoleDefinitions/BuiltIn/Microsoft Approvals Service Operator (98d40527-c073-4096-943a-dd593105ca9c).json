@@ -1,0 +1,27 @@
+{
+  "roleName": "Microsoft Approvals Service Operator",
+  "type": "BuiltInRole",
+  "description": "Performs Approvals service-level management operations including service onboarding and configuration.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Approvals/approvalSettings/read",
+        "Microsoft.Approvals/approvalSettings/write",
+        "Microsoft.Approvals/approvalSettings/delete",
+        "Microsoft.Approvals/approvalWorkflowDefinitions/read",
+        "Microsoft.Approvals/approvalWorkflowDefinitions/approvalWorkflowInstances/read",
+        "Microsoft.Approvals/approvalWorkflowAssignments/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-08T23:04:52.446609Z",
+  "updatedOn": "2026-01-08T23:04:52.446609Z",
+  "createdBy": null,
+  "updatedBy": null
+}

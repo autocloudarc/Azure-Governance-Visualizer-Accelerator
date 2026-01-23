@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services Speech User",
+    "type": "BuiltInRole",
+    "description": "Access to the real-time speech recognition and batch transcription APIs, real-time speech synthesis and long audio APIs, as well as to read the data/test/model/endpoint for custom models, but can’t create, delete or modify the data/test/model/endpoint for custom models.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.CognitiveServices/*/read",
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.Authorization/roleDefinitions/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/accounts/SpeechServices/*/read",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/*/transcriptions/read",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/*/transcriptions/write",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/*/transcriptions/delete",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/*/transcriptions/action",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/*/frontend/action",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/text-dependent/*/action",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/text-independent/*/action",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/voiceagent/realtime/*",
+          "Microsoft.CognitiveServices/accounts/SpeechServices/voicelive/realtime/*",
+          "Microsoft.CognitiveServices/accounts/CustomVoice/*/read",
+          "Microsoft.CognitiveServices/accounts/CustomVoice/evaluations/*",
+          "Microsoft.CognitiveServices/accounts/CustomVoice/longaudiosynthesis/*",
+          "Microsoft.CognitiveServices/accounts/AudioContentCreation/*",
+          "Microsoft.CognitiveServices/accounts/TTSPlayer/*",
+          "Microsoft.CognitiveServices/accounts/VideoTranslation/*",
+          "Microsoft.CognitiveServices/accounts/CustomAvatar/*/read",
+          "Microsoft.CognitiveServices/accounts/BatchAvatar/*",
+          "Microsoft.CognitiveServices/accounts/BatchTextToSpeech/*"
+        ],
+        "notDataActions": [
+          "Microsoft.CognitiveServices/accounts/CustomVoice/datasets/files/read",
+          "Microsoft.CognitiveServices/accounts/CustomVoice/datasets/utterances/read"
+        ]
+      }
+    ],
+    "createdOn": "2021-03-30T11:28:27.4339032Z",
+    "updatedOn": "2025-10-21T15:21:23.9516757Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f2dc8367-1007-4938-bd23-fe263f013447",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f2dc8367-1007-4938-bd23-fe263f013447"
+}

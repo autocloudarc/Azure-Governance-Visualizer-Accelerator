@@ -1,0 +1,57 @@
+{
+  "properties": {
+    "roleName": "SqlMI Migration Role",
+    "type": "BuiltInRole",
+    "description": "Role for SqlMI migration",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Sql/managedInstances/read",
+          "Microsoft.Sql/managedInstances/write",
+          "Microsoft.Sql/managedInstances/databases/read",
+          "Microsoft.Sql/managedInstances/databases/write",
+          "Microsoft.Sql/managedInstances/databases/delete",
+          "Microsoft.Sql/managedInstances/metrics/read",
+          "Microsoft.DataMigration/locations/operationResults/read",
+          "Microsoft.DataMigration/locations/operationStatuses/read",
+          "Microsoft.DataMigration/locations/sqlMigrationServiceOperationResults/read",
+          "Microsoft.DataMigration/databaseMigrations/write",
+          "Microsoft.DataMigration/databaseMigrations/read",
+          "Microsoft.DataMigration/databaseMigrations/delete",
+          "Microsoft.DataMigration/databaseMigrations/cancel/action",
+          "Microsoft.DataMigration/databaseMigrations/cutover/action",
+          "Microsoft.DataMigration/sqlMigrationServices/write",
+          "Microsoft.DataMigration/sqlMigrationServices/delete",
+          "Microsoft.DataMigration/sqlMigrationServices/read",
+          "Microsoft.DataMigration/sqlMigrationServices/listAuthKeys/action",
+          "Microsoft.DataMigration/sqlMigrationServices/regenerateAuthKeys/action",
+          "Microsoft.DataMigration/sqlMigrationServices/deleteNode/action",
+          "Microsoft.DataMigration/sqlMigrationServices/listMonitoringData/action",
+          "Microsoft.DataMigration/sqlMigrationServices/listMigrations/read",
+          "Microsoft.DataMigration/sqlMigrationServices/MonitoringData/read",
+          "Microsoft.DataMigration/register/action",
+          "Microsoft.DataMigration/operations/read",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/listkeys/action",
+          "Microsoft.Storage/storageAccounts/blobServices/read",
+          "Microsoft.Storage/storageAccounts/blobServices/write",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "Microsoft.DataMigration/sqlMigrationServices/validateIR/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-02-01T16:14:46.1546624Z",
+    "updatedOn": "2025-10-10T16:38:33.0168753Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1d335eef-eee1-47fe-a9e0-53214eba8872",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1d335eef-eee1-47fe-a9e0-53214eba8872"
+}

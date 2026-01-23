@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "displayName": "DenyAction implementation on Diagnostic Logs.",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "DenyAction implementation on Diagnostic Logs.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Monitoring",
+      "deprecated": false,
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.0.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:02.1551369Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {},
+    "policyRule": {
+      "if": {
+        "equals": "Microsoft.Insights/diagnosticSettings",
+        "field": "type"
+      },
+      "then": {
+        "details": {
+          "actionNames": [
+            "delete"
+          ]
+        },
+        "effect": "denyAction"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/DenyAction-DiagnosticLogs",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "DenyAction-DiagnosticLogs",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:02.094353Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:02.094353Z"
+  }
+}

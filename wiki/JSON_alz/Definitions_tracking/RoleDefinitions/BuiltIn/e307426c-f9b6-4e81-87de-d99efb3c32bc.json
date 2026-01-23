@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Desktop Virtualization Host Pool Contributor",
+    "type": "BuiltInRole",
+    "description": "Contributor of the Desktop Virtualization Host Pool.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DesktopVirtualization/hostpools/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-12-11T21:40:57.2976187Z",
+    "updatedOn": "2021-11-11T20:14:55.1057701Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e307426c-f9b6-4e81-87de-d99efb3c32bc",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e307426c-f9b6-4e81-87de-d99efb3c32bc"
+}

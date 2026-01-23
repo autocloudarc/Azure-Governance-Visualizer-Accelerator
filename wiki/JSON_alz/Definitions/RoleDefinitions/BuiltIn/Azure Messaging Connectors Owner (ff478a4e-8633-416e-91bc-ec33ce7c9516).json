@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Messaging Connectors Owner",
+  "type": "BuiltInRole",
+  "description": "Allows for full access to Azure Messaging Connectors resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.MessagingConnectors/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.MessagingConnectors/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-10-24T15:25:05.8876197Z",
+  "updatedOn": "2024-10-24T15:25:05.8876197Z",
+  "createdBy": null,
+  "updatedBy": null
+}

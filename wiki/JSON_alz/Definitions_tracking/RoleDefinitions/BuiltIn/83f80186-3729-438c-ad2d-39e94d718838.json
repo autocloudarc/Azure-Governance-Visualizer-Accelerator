@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Service Fabric Managed Cluster Contributor",
+    "type": "BuiltInRole",
+    "description": "Deploy and manage your Service Fabric Managed Cluster resources. Includes managed clusters, node types, application types, application type versions, applications, and services.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ServiceFabric/managedclusters/*",
+          "Microsoft.ServiceFabric/operations/read",
+          "Microsoft.ServiceFabric/locations/clusterVersions/read",
+          "Microsoft.ServiceFabric/locations/environments/clusterVersions/read",
+          "Microsoft.ServiceFabric/locations/operationresults/read",
+          "Microsoft.ServiceFabric/locations/operations/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-09-18T15:11:06.79416Z",
+    "updatedOn": "2025-10-13T15:11:13.9709948Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/83f80186-3729-438c-ad2d-39e94d718838",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "83f80186-3729-438c-ad2d-39e94d718838"
+}

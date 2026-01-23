@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Dynamics 365 Customer Insights Service Role",
+    "type": "BuiltInRole",
+    "description": "Enables Diagnostic Logging setup for Customer Insights instances.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.D365CustomerInsights/instances/write",
+          "Microsoft.D365CustomerInsights/instances/providers/Microsoft.Insights/diagnosticSettings/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-12T14:55:56.592157Z",
+    "updatedOn": "2025-09-12T14:55:56.592157Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/89f7a3ec-e9d0-40eb-9b96-c016a5c2a53f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "89f7a3ec-e9d0-40eb-9b96-c016a5c2a53f"
+}

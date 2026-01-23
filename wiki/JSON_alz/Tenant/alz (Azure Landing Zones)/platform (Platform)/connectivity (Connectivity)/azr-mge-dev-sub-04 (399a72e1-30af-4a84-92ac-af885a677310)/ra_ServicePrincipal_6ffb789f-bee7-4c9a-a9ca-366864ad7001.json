@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/6ffb789f-bee7-4c9a-a9ca-366864ad7001",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "CloudPosture/securityOperators/DefenderCSPMSecurityOperator",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender CSPM Storage Scanner Operator",
+  "RoleDefinitionId": "8480c0f0-4509-4229-9339-7c10018cb8c4",
+  "ObjectId": "22925100-5144-42ce-9259-18ecd377ebb6",
+  "ObjectType": "ServicePrincipal"
+}

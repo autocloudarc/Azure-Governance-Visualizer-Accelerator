@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Application Group Contributor",
+    "type": "BuiltInRole",
+    "description": "Contributor of the Application Group.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DesktopVirtualization/applicationgroups/*",
+          "Microsoft.DesktopVirtualization/hostpools/read",
+          "Microsoft.DesktopVirtualization/hostpools/sessionhosts/read",
+          "Microsoft.DesktopVirtualization/workspaces/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-12-03T23:26:00.2784962Z",
+    "updatedOn": "2021-11-11T20:14:52.9432015Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ca6382a4-1721-4bcf-a114-ff0c70227b6b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ca6382a4-1721-4bcf-a114-ff0c70227b6b"
+}

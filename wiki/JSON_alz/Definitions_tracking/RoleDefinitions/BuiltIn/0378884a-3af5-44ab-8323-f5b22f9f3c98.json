@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Device Update Content Administrator",
+    "type": "BuiltInRole",
+    "description": "Gives you full access to content operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.Insights/alertRules/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DeviceUpdate/accounts/instances/updates/read",
+          "Microsoft.DeviceUpdate/accounts/instances/updates/write",
+          "Microsoft.DeviceUpdate/accounts/instances/updates/delete"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-08-21T23:58:18.42555Z",
+    "updatedOn": "2021-11-11T20:14:41.1433368Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/0378884a-3af5-44ab-8323-f5b22f9f3c98",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "0378884a-3af5-44ab-8323-f5b22f9f3c98"
+}

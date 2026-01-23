@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.insights/datacollectionrules/alz-dcr-vm-insights/providers/microsoft.authorization/roleassignments/05f8058e-a969-5019-a458-f993c1b50b47",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.Insights/dataCollectionRules/alz-dcr-vm-insights",
+  "DisplayName": "Deploy-VMSS-Monitoring",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "e3ac9c21-008c-40d9-8758-7b3e699a5add",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,25 @@
+{
+  "roleName": "Workload Orchestration IT Admin",
+  "type": "BuiltInRole",
+  "description": "Grants you access to manage the IT Admin operations for Workload Orchestration",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Edge/contexts/eventGridFilters/delete",
+        "Microsoft.Edge/contexts/eventGridFilters/read",
+        "Microsoft.Edge/contexts/eventGridFilters/write",
+        "Microsoft.Edge/contexts/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-05-08T21:21:48.1436137Z",
+  "updatedOn": "2025-05-08T21:21:48.1436137Z",
+  "createdBy": null,
+  "updatedBy": null
+}

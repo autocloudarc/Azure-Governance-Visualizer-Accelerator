@@ -1,0 +1,29 @@
+{
+  "roleName": "Migrate Arc Discovery Reader - Preview",
+  "type": "BuiltInRole",
+  "description": "Read metadata of Azure Arc enabled server resources and metadata, performance and migration suitability of Arc enabled SQL server resources. Users creating Azure Migrate project that uses Arc resource discovery require this role on Arc scope of the project. To enable periodic sync, Azure Migrate project managed identity must be assigned this role. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.AzureArcData/sqlServerInstances/read",
+        "Microsoft.AzureArcData/sqlServerInstances/databases/read",
+        "Microsoft.AzureArcData/sqlServerInstances/availabilityGroups/read",
+        "Microsoft.AzureArcData/sqlServerInstances/getTelemetry/action",
+        "Microsoft.AzureArcData/sqlServerInstances/availabilityGroups/getDetailView/action",
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/machines/extensions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-10T10:50:20.3203574Z",
+  "updatedOn": "2025-10-10T10:50:20.3203574Z",
+  "createdBy": null,
+  "updatedBy": null
+}

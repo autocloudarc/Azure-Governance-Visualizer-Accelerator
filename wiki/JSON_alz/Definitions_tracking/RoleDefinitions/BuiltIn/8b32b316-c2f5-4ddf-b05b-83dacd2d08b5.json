@@ -1,0 +1,57 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Image Registry Operator",
+    "type": "BuiltInRole",
+    "description": "Enables permissions for the operator to manage a singleton instance of the OpenShift image registry. It manages all configuration of the registry, including creating storage.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/blobServices/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/delete",
+          "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/write",
+          "Microsoft.Storage/storageAccounts/delete",
+          "Microsoft.Storage/storageAccounts/listKeys/action",
+          "Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action",
+          "Microsoft.Resources/tags/write",
+          "Microsoft.Network/privateEndpoints/write",
+          "Microsoft.Network/privateEndpoints/read",
+          "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/write",
+          "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/read",
+          "Microsoft.Network/privateDnsZones/read",
+          "Microsoft.Network/privateDnsZones/write",
+          "Microsoft.Network/privateDnsZones/join/action",
+          "Microsoft.Network/privateDnsZones/A/write",
+          "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
+          "Microsoft.Network/privateDnsZones/virtualNetworkLinks/read",
+          "Microsoft.Network/networkInterfaces/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/virtualNetworks/join/action"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/move/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-31T16:20:01.5089317Z",
+    "updatedOn": "2025-07-28T15:04:34.5318242Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8b32b316-c2f5-4ddf-b05b-83dacd2d08b5",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8b32b316-c2f5-4ddf-b05b-83dacd2d08b5"
+}

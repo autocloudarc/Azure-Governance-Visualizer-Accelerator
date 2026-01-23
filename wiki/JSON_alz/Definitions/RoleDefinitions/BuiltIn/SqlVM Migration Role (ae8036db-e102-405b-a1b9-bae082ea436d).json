@@ -1,0 +1,48 @@
+{
+  "roleName": "SqlVM Migration Role",
+  "type": "BuiltInRole",
+  "description": "Role for SqlVM migration",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DataMigration/locations/operationResults/read",
+        "Microsoft.DataMigration/locations/operationStatuses/read",
+        "Microsoft.DataMigration/locations/sqlMigrationServiceOperationResults/read",
+        "Microsoft.DataMigration/databaseMigrations/write",
+        "Microsoft.DataMigration/databaseMigrations/read",
+        "Microsoft.DataMigration/databaseMigrations/delete",
+        "Microsoft.DataMigration/databaseMigrations/cancel/action",
+        "Microsoft.DataMigration/databaseMigrations/cutover/action",
+        "Microsoft.DataMigration/sqlMigrationServices/write",
+        "Microsoft.DataMigration/sqlMigrationServices/delete",
+        "Microsoft.DataMigration/sqlMigrationServices/read",
+        "Microsoft.DataMigration/sqlMigrationServices/listAuthKeys/action",
+        "Microsoft.DataMigration/sqlMigrationServices/regenerateAuthKeys/action",
+        "Microsoft.DataMigration/sqlMigrationServices/deleteNode/action",
+        "Microsoft.DataMigration/sqlMigrationServices/listMonitoringData/action",
+        "Microsoft.DataMigration/sqlMigrationServices/listMigrations/read",
+        "Microsoft.DataMigration/sqlMigrationServices/MonitoringData/read",
+        "Microsoft.DataMigration/register/action",
+        "Microsoft.DataMigration/operations/read",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Storage/storageAccounts/listkeys/action",
+        "Microsoft.Storage/storageAccounts/blobServices/read",
+        "Microsoft.Storage/storageAccounts/blobServices/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.SqlVirtualMachine/sqlVirtualMachines/read",
+        "Microsoft.SqlVirtualMachine/sqlVirtualMachines/write",
+        "Microsoft.DataMigration/sqlMigrationServices/validateIR/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-02-01T16:14:48.7360987Z",
+  "updatedOn": "2025-10-10T16:38:33.0288742Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "EventGrid Data Receiver",
+    "type": "BuiltInRole",
+    "description": "Allows receive access to event grid events.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.EventGrid/eventSubscriptions/read",
+          "Microsoft.EventGrid/topicTypes/eventSubscriptions/read",
+          "Microsoft.EventGrid/locations/eventSubscriptions/read",
+          "Microsoft.EventGrid/locations/topicTypes/eventSubscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.EventGrid/namespaces/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.EventGrid/events/receive/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-10-30T15:07:29.583163Z",
+    "updatedOn": "2023-10-30T15:07:29.583163Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/78cbd9e7-9798-4e2e-9b5a-547d9ebb31fb",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "78cbd9e7-9798-4e2e-9b5a-547d9ebb31fb"
+}

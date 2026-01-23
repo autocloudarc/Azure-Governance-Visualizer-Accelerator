@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.insights/datacollectionrules/alz-dcr-vm-insights/providers/microsoft.authorization/roleassignments/20f9407a-ecb4-5232-a05a-a17a9b8b279f",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.Insights/dataCollectionRules/alz-dcr-vm-insights",
+  "DisplayName": "Deploy-VM-Monitoring",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Contributor",
+  "RoleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+  "ObjectId": "81b00aeb-4e32-4c27-b3db-05d69d83e58b",
+  "ObjectType": "ServicePrincipal"
+}

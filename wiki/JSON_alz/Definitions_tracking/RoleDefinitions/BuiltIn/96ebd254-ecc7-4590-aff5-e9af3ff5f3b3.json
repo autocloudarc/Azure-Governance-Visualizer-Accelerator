@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Dedicated Host Contributor Role",
+    "type": "BuiltInRole",
+    "description": "This is the role created for DedicatedHosts Contributor",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/hostGroups/read",
+          "Microsoft.Compute/hostGroups/write",
+          "Microsoft.Compute/hostGroups/delete",
+          "Microsoft.Compute/hostGroups/hosts/read",
+          "Microsoft.Compute/hostGroups/hosts/write",
+          "Microsoft.Compute/hostGroups/hosts/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-12T15:15:43.6782429Z",
+    "updatedOn": "2025-03-12T15:15:43.6782429Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/96ebd254-ecc7-4590-aff5-e9af3ff5f3b3",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "96ebd254-ecc7-4590-aff5-e9af3ff5f3b3"
+}

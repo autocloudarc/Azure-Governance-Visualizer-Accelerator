@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Device Update Content Reader",
+    "type": "BuiltInRole",
+    "description": "Gives you read access to content operations, but does not allow making changes",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.Insights/alertRules/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DeviceUpdate/accounts/instances/updates/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-08-22T00:02:43.3299181Z",
+    "updatedOn": "2021-11-11T20:14:41.6754856Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d1ee9a80-8b14-47f0-bdc2-f4a351625a7b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d1ee9a80-8b14-47f0-bdc2-f4a351625a7b"
+}

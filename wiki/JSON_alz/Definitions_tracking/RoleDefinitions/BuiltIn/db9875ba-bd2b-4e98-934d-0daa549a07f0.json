@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Workload Orchestration Solution External Validator",
+    "type": "BuiltInRole",
+    "description": "Grants you access to fetch targets, solution templates, solutions and update the external validation status",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Edge/targets/read",
+          "Microsoft.Edge/solutionTemplates/read",
+          "Microsoft.Edge/solutionTemplates/versions/read",
+          "Microsoft.Edge/targets/solutions/versions/read",
+          "Microsoft.Edge/targets/updateExternalValidationStatus/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-04-23T15:12:36.2442777Z",
+    "updatedOn": "2025-04-23T15:12:36.2442777Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/db9875ba-bd2b-4e98-934d-0daa549a07f0",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "db9875ba-bd2b-4e98-934d-0daa549a07f0"
+}

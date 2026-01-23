@@ -1,0 +1,26 @@
+{
+  "roleName": "Power Platform Account Contributor",
+  "type": "BuiltInRole",
+  "description": "Create, Read, Update, and Delete Power Platform Account resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.PowerPlatform/accounts/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-14T15:08:46.4434553Z",
+  "updatedOn": "2025-04-14T15:08:46.4434553Z",
+  "createdBy": null,
+  "updatedBy": null
+}

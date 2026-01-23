@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "roleName": "Reservation Purchaser",
+    "type": "BuiltInRole",
+    "description": "Lets you purchase reservations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.Capacity/catalogs/read",
+          "Microsoft.Capacity/register/action",
+          "Microsoft.Compute/register/action",
+          "Microsoft.Consumption/register/action",
+          "Microsoft.Consumption/reservationRecommendationDetails/read",
+          "Microsoft.Consumption/reservationRecommendations/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.SQL/register/action",
+          "Microsoft.Support/supporttickets/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-10-23T20:22:48.9217751Z",
+    "updatedOn": "2022-04-14T04:21:57.2843545Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f7b75c60-3036-4b75-91c3-6b41c27c1689",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f7b75c60-3036-4b75-91c3-6b41c27c1689"
+}

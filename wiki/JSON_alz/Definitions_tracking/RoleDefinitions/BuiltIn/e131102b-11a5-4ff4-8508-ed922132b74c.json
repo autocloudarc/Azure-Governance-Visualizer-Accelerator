@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Azure Resilience Management Drills Contributor",
+    "type": "BuiltInRole",
+    "description": "Contributor Role of Azure Resilience Management Drills Service",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.AzureResilienceManagement/drills/*/action",
+          "Microsoft.AzureResilienceManagement/drills/*/delete",
+          "Microsoft.AzureResilienceManagement/drills/*/read",
+          "Microsoft.AzureResilienceManagement/drills/*/write",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-12T15:18:35.5208409Z",
+    "updatedOn": "2025-11-03T16:09:42.3425976Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e131102b-11a5-4ff4-8508-ed922132b74c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e131102b-11a5-4ff4-8508-ed922132b74c"
+}

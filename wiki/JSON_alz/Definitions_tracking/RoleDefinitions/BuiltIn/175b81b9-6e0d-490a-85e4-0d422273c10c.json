@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "App Configuration Reader",
+    "type": "BuiltInRole",
+    "description": "Grants permission for read operations for App Configuration resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AppConfiguration/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-09-16T15:00:44.1461191Z",
+    "updatedOn": "2024-09-16T15:00:44.1461191Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/175b81b9-6e0d-490a-85e4-0d422273c10c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "175b81b9-6e0d-490a-85e4-0d422273c10c"
+}

@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Elastic SAN Network Admin",
+    "type": "BuiltInRole",
+    "description": "Allows access to create Private Endpoints on SAN resources, and to read SAN resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ElasticSan/elasticSans/*/read",
+          "Microsoft.ElasticSan/elasticSans/PrivateEndpointConnectionsApproval/action",
+          "Microsoft.ElasticSan/elasticSans/privateEndpointConnections/write",
+          "Microsoft.ElasticSan/elasticSans/privateEndpointConnections/delete",
+          "Microsoft.ElasticSan/locations/asyncoperations/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-07-12T15:16:18.4725463Z",
+    "updatedOn": "2023-07-25T15:17:34.8207971Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/fa6cecf6-5db3-4c43-8470-c540bcb4eafa",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "fa6cecf6-5db3-4c43-8470-c540bcb4eafa"
+}

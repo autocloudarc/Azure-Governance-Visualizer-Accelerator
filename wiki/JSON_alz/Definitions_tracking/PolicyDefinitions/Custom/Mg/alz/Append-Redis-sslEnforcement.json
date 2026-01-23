@@ -1,0 +1,87 @@
+{
+  "properties": {
+    "displayName": "Azure Cache for Redis Append a specific min TLS version requirement and enforce TLS.",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Append a specific min TLS version requirement and enforce SSL on Azure Cache for Redis. Enables secure server to client by enforce  minimal Tls Version to secure the connection between your database server and your client applications helps protect against 'man in the middle' attacks by encrypting the data stream between the server and your application. This configuration enforces that SSL is always enabled for accessing your database server.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Cache",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.1.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:36:54.8018834Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "Enable or disable the execution of the policy minimum TLS version Azure Cache for Redis",
+          "displayName": "Effect Azure Cache for Redis"
+        },
+        "allowedValues": [
+          "Append",
+          "Disabled"
+        ],
+        "defaultValue": "Append"
+      },
+      "minimumTlsVersion": {
+        "type": "String",
+        "metadata": {
+          "description": "Select version minimum TLS version Azure Cache for Redis to enforce",
+          "displayName": "Select version for Redis server"
+        },
+        "allowedValues": [
+          "1.2",
+          "1.1",
+          "1.0"
+        ],
+        "defaultValue": "1.2"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Cache/redis",
+            "field": "type"
+          },
+          {
+            "anyOf": [
+              {
+                "field": "Microsoft.Cache/Redis/minimumTlsVersion",
+                "less": "[parameters('minimumTlsVersion')]"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "details": [
+          {
+            "field": "Microsoft.Cache/Redis/minimumTlsVersion",
+            "value": "[parameters('minimumTlsVersion')]"
+          }
+        ],
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Append-Redis-sslEnforcement",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Append-Redis-sslEnforcement",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:36:54.7779867Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:36:54.7779867Z"
+  }
+}

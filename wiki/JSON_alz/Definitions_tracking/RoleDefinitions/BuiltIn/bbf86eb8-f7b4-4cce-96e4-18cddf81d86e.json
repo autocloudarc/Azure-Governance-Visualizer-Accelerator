@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Attestation Contributor",
+    "type": "BuiltInRole",
+    "description": "Can read write or delete the attestation provider instance",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Attestation/attestationProviders/attestation/read",
+          "Microsoft.Attestation/attestationProviders/attestation/write",
+          "Microsoft.Attestation/attestationProviders/attestation/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-04-19T00:24:09.3354177Z",
+    "updatedOn": "2021-11-11T20:13:59.7271218Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/bbf86eb8-f7b4-4cce-96e4-18cddf81d86e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "bbf86eb8-f7b4-4cce-96e4-18cddf81d86e"
+}

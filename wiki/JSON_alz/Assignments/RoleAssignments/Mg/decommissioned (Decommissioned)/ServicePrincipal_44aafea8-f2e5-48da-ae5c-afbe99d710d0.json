@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/decommissioned/providers/microsoft.authorization/roleassignments/44aafea8-f2e5-48da-ae5c-afbe99d710d0",
+  "Scope": "/providers/Microsoft.Management/managementGroups/decommissioned",
+  "DisplayName": "id-alz-mgmt-eastus2-apply-001",
+  "SignInName": null,
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+  "ObjectType": "ServicePrincipal"
+}

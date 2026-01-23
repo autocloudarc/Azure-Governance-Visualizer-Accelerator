@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Security Assessment Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you push assessments to Security Center",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Security/assessments/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-02-13T08:23:47.7656161Z",
+    "updatedOn": "2021-11-11T20:14:19.3021974Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/612c2aa1-cb24-443b-ac28-3ab7272de6f5",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "612c2aa1-cb24-443b-ac28-3ab7272de6f5"
+}

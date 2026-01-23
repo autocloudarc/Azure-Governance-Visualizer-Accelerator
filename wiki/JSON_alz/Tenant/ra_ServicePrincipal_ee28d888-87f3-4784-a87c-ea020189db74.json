@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/ee28d888-87f3-4784-a87c-ea020189db74",
+  "Scope": "/",
+  "DisplayName": "ado-user-cap-01",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "a8a72541-fb63-4da2-98c7-4c06b0966a51",
+  "ObjectType": "ServicePrincipal"
+}

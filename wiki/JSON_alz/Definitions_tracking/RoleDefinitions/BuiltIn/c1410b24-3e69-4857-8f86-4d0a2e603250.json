@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Quantum Workspace Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Create, read, and modify jobs and other Workspace data. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Quantum/Workspaces/read",
+          "Microsoft.Quantum/locations/offerings/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Quantum/Workspaces/jobs/read",
+          "Microsoft.Quantum/Workspaces/jobs/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-11-19T16:16:06.9625778Z",
+    "updatedOn": "2024-11-19T16:16:06.9625778Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c1410b24-3e69-4857-8f86-4d0a2e603250",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c1410b24-3e69-4857-8f86-4d0a2e603250"
+}

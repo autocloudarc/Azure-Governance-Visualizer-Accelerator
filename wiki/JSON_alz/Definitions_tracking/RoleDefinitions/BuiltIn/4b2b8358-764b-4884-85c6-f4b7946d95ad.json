@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "EdgeMarketPlace role",
+    "type": "BuiltInRole",
+    "description": "Microsoft.EdgeMarketPlace role.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EdgeMarketplace/locations/operationStatuses/write",
+          "Microsoft.EdgeMarketplace/locations/operationStatuses/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2026-01-21T16:22:20.6262737Z",
+    "updatedOn": "2026-01-21T16:22:20.6262737Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4b2b8358-764b-4884-85c6-f4b7946d95ad",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4b2b8358-764b-4884-85c6-f4b7946d95ad"
+}

@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Copilot User",
+  "type": "BuiltInRole",
+  "description": "Enables users access to Azure Copilot.",
+  "assignableScopes": [
+    "/providers/Microsoft.PortalServices"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.PortalServices/copilotSettings/conversations/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-05-08T15:20:23.5376364Z",
+  "updatedOn": "2025-10-23T23:27:34.1023721Z",
+  "createdBy": null,
+  "updatedBy": null
+}

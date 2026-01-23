@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "Microsoft.AzureStackHCI Device Pool Machine Manager",
+    "type": "BuiltInRole",
+    "description": "Microsoft.AzureStackHCI Device Pool Machine Manager ",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridConnectivity/endpoints/write",
+          "Microsoft.HybridConnectivity/endpoints/read",
+          "Microsoft.HybridConnectivity/endpoints/delete",
+          "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write",
+          "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read",
+          "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/delete",
+          "Microsoft.HybridConnectivity/endpoints/listCredentials/action",
+          "Microsoft.HybridCompute/machines/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-29T15:31:03.5205691Z",
+    "updatedOn": "2025-09-24T15:22:44.6489008Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b6d9c0f6-d69f-472b-91b4-7a6838c6d1cb",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b6d9c0f6-d69f-472b-91b4-7a6838c6d1cb"
+}

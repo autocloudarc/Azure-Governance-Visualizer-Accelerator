@@ -1,0 +1,23 @@
+{
+  "roleName": "Impact Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read-only access to reported impacts and impact categories",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Impact/WorkloadImpacts/read",
+        "Microsoft.Impact/ImpactCategories/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-28T00:51:29.5105806Z",
+  "updatedOn": "2022-11-14T18:04:31.5896097Z",
+  "createdBy": null,
+  "updatedBy": null
+}

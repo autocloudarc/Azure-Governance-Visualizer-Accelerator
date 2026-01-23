@@ -1,0 +1,26 @@
+{
+  "roleName": "Elastic SAN Reader",
+  "type": "BuiltInRole",
+  "description": "Allows for control path read access to Azure Elastic SAN",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ElasticSan/elasticSans/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-06-01T09:07:18.102055Z",
+  "updatedOn": "2022-08-23T19:38:11.070975Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Liftr Dell Owner role",
+    "type": "BuiltInRole",
+    "description": "Provides access to all Dell related operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Dell.Storage/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-31T15:19:47.9320424Z",
+    "updatedOn": "2025-07-31T15:19:47.9320424Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d683b71b-2b91-4fc1-a43e-b53b3d85bed9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d683b71b-2b91-4fc1-a43e-b53b3d85bed9"
+}

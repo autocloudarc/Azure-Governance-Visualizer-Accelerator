@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "principalId": "d35778f7-af04-4a2e-8705-9beed4b30a2e",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Container Instance",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-ContainerInstance",
+    "scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This initiative assignment enables additional ALZ guardrails for Container Instance.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:47.7954381Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": [
+      {
+        "message": "Recommended guardrails should be enforced for Container Instance."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-GR-ContInst0",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Enforce-GR-ContInst0",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:47.3025598Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:47.3025598Z"
+  }
+}

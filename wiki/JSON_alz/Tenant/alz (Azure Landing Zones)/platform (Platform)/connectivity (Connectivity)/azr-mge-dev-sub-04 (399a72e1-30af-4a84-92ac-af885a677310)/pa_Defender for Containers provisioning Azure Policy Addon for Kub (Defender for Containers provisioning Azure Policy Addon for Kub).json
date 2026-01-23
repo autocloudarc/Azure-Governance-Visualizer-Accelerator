@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "principalId": "632a4d89-8100-4094-9e7c-b1b20a2c14e6",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Defender for Containers provisioning Azure Policy Addon for Kub",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a8eff44f-8c92-45c3-a3fb-9880802d67a7",
+    "scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+    "parameters": {},
+    "description": "This policy assignment was automatically created by Microsoft Defender for Cloud for agent installation as configured in Defender for Cloud auto provisioning.",
+    "metadata": {
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:12:00.7204273Z",
+      "updatedBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "updatedOn": "2024-08-13T16:12:11.2529691Z"
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/Microsoft.Authorization/policyAssignments/Defender for Containers provisioning Azure Policy Addon for Kub",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Defender for Containers provisioning Azure Policy Addon for Kub",
+  "location": "centralus",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:12:00.2321372Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:12:11.0289819Z"
+  }
+}

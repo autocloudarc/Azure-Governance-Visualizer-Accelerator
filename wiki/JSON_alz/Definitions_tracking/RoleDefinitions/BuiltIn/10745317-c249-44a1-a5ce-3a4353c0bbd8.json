@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Device Provisioning Service Data Reader",
+    "type": "BuiltInRole",
+    "description": "Allows for full read access to Device Provisioning Service data-plane properties.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Devices/provisioningServices/*/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-08-09T19:53:12.1374732Z",
+    "updatedOn": "2021-11-11T20:15:18.0905503Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/10745317-c249-44a1-a5ce-3a4353c0bbd8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "10745317-c249-44a1-a5ce-3a4353c0bbd8"
+}

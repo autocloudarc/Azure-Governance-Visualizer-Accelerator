@@ -1,0 +1,26 @@
+{
+  "roleName": "Reservations Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you read and manage reservations but cannot delegate reservation-related roles",
+  "assignableScopes": [
+    "/providers/Microsoft.Capacity"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Capacity/*/read",
+        "Microsoft.Capacity/*/action",
+        "Microsoft.Capacity/*/write",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-06-17T15:17:30.0681428Z",
+  "updatedOn": "2025-06-17T15:17:30.0681428Z",
+  "createdBy": null,
+  "updatedBy": null
+}

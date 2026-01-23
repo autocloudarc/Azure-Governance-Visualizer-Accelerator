@@ -1,0 +1,30 @@
+{
+  "roleName": "Oracle Subscriptions Manager Built-in Role",
+  "type": "BuiltInRole",
+  "description": "Grants full access to manage all Oracle Subscriptions resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Oracle.Database/oracleSubscriptions/*/read",
+        "Oracle.Database/oracleSubscriptions/*/write",
+        "Oracle.Database/oracleSubscriptions/*/delete",
+        "Oracle.Database/oracleSubscriptions/*/action",
+        "Oracle.Database/Locations/*/read",
+        "Oracle.Database/Locations/*/write",
+        "Oracle.Database/Operations/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-26T15:15:04.8802611Z",
+  "updatedOn": "2024-04-08T15:07:44.8273943Z",
+  "createdBy": null,
+  "updatedBy": null
+}

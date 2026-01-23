@@ -1,0 +1,41 @@
+{
+  "identity": {
+    "type": "None"
+  },
+  "properties": {
+    "displayName": "Subnets should be private",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7bca8353-aa3b-429b-904a-9229c4385837",
+    "scope": "/providers/Microsoft.Management/managementGroups/platform",
+    "notScopes": [],
+    "parameters": {
+      "effect": {
+        "value": "Audit"
+      }
+    },
+    "description": "Ensure your subnets are secure by default by preventing default outbound access. For more information go to https://aka.ms/defaultoutboundaccessretirement",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:38.8721624Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": [
+      {
+        "message": "Subnets should be private."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/platform/providers/Microsoft.Authorization/policyAssignments/Enforce-Subnet-Private",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Enforce-Subnet-Private",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:38.8107009Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:38.8107009Z"
+  }
+}

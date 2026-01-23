@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure API Center Compliance Manager",
+    "type": "BuiltInRole",
+    "description": "Allows managing API compliance in Azure API Center service.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ApiCenter/services/*/read",
+          "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/updateAnalysisState/action",
+          "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/exportSpecification/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-25T15:06:22.7412927Z",
+    "updatedOn": "2024-03-25T15:06:22.7412927Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ede9aaa3-4627-494e-be13-4aa7c256148d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ede9aaa3-4627-494e-be13-4aa7c256148d"
+}

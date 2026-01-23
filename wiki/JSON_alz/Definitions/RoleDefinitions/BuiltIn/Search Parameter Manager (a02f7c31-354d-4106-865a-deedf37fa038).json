@@ -1,0 +1,25 @@
+{
+  "roleName": "Search Parameter Manager",
+  "type": "BuiltInRole",
+  "description": "Role allows user or principal access to $status and $reindex to update search parameters",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/reindex/action",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/write",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/searchparameter/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-07-31T15:06:45.6740185Z",
+  "updatedOn": "2023-07-31T15:06:45.6740185Z",
+  "createdBy": null,
+  "updatedBy": null
+}

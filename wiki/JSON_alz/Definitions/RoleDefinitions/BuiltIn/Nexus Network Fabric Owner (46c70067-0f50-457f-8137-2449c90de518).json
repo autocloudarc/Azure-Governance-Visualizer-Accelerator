@@ -1,0 +1,29 @@
+{
+  "roleName": "Nexus Network Fabric Owner",
+  "type": "BuiltInRole",
+  "description": "Provides owner access to nexus network fabric resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ManagedNetworkFabric/*/read",
+        "Microsoft.ManagedNetworkFabric/*/write",
+        "Microsoft.ManagedNetworkFabric/*/action",
+        "Microsoft.ManagedNetworkFabric/*/delete",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-22T15:11:45.0202582Z",
+  "updatedOn": "2025-07-22T15:11:45.0202582Z",
+  "createdBy": null,
+  "updatedBy": null
+}

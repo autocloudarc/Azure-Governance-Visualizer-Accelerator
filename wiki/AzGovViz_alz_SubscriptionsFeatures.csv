@@ -1,0 +1,5 @@
+"subscriptionId";"mgPath";"feature"
+"1c083bf3-30ac-4804-aa81-afddc58c78dc";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9,alz,platform,identity";"Microsoft.SqlVirtualMachine/BulkRegistration"
+"399a72e1-30af-4a84-92ac-af885a677310";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9,alz,platform,connectivity";"Microsoft.SqlVirtualMachine/BulkRegistration"
+"8ff0bc40-d483-4e35-be1d-b49568bd9c5f";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9,alz,platform,management";"Microsoft.SqlVirtualMachine/BulkRegistration"
+"dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9,alz,platform,security";"Microsoft.SqlVirtualMachine/BulkRegistration"

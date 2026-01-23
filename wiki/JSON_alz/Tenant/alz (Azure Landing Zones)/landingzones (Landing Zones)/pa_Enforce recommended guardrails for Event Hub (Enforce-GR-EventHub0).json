@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "principalId": "39725792-272d-44a1-b66a-c87a5e3d7a73",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Event Hub",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-EventHub",
+    "scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This initiative assignment enables additional ALZ guardrails for Event Hub.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:53.8694944Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": [
+      {
+        "message": "Recommended guardrails should be enforced for Event Hub."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-GR-EventHub0",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Enforce-GR-EventHub0",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:53.4120427Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:53.4120427Z"
+  }
+}

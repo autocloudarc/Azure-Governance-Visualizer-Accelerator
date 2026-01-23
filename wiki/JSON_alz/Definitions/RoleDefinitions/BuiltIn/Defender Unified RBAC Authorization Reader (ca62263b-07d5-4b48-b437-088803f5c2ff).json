@@ -1,0 +1,20 @@
+{
+  "roleName": "Defender Unified RBAC Authorization Reader",
+  "type": "BuiltInRole",
+  "description": "Defender Unified RBAC Authorization Reader. This role is managed and assigned automatically by the Defender Unified RBAC system. Manual assignment of this role is not recommended, as the Defender Unified RBAC system may modify or remove it at any time based on system requirements.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-09-01T15:03:55.5085788Z",
+  "updatedOn": "2025-09-01T15:03:55.5085788Z",
+  "createdBy": null,
+  "updatedBy": null
+}

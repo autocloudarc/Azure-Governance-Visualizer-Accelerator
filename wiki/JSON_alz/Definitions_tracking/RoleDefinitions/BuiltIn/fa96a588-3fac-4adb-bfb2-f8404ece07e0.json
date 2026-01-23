@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "roleName": "Liftr Dynatrace Contributor",
+    "type": "BuiltInRole",
+    "description": "Provides access to Dynatrace Control Plane Operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Dynatrace.Observability/checkNameAvailability/action",
+          "Dynatrace.Observability/register/action",
+          "Dynatrace.Observability/unregister/action",
+          "Dynatrace.Observability/getMarketplaceSaaSResourceDetails/action",
+          "Dynatrace.Observability/locations/read",
+          "Dynatrace.Observability/locations/operationStatuses/read",
+          "Dynatrace.Observability/locations/operationStatuses/write",
+          "Dynatrace.Observability/monitors/read",
+          "Dynatrace.Observability/monitors/write",
+          "Dynatrace.Observability/monitors/delete",
+          "Dynatrace.Observability/monitors/listMonitoredResources/action",
+          "Dynatrace.Observability/monitors/getVMHostPayload/action",
+          "Dynatrace.Observability/monitors/listHosts/action",
+          "Dynatrace.Observability/monitors/listAppServices/action",
+          "Dynatrace.Observability/monitors/getSSODetails/action",
+          "Dynatrace.Observability/monitors/listLinkableEnvironments/action",
+          "Dynatrace.Observability/monitors/getMetricStatus/action",
+          "Dynatrace.Observability/monitors/manageAgentInstallation/action",
+          "Dynatrace.Observability/monitors/monitoredSubscriptions/read",
+          "Dynatrace.Observability/monitors/monitoredSubscriptions/write",
+          "Dynatrace.Observability/monitors/singleSignOnConfigurations/write",
+          "Dynatrace.Observability/monitors/singleSignOnConfigurations/read",
+          "Dynatrace.Observability/monitors/tagRules/read",
+          "Dynatrace.Observability/monitors/tagRules/write",
+          "Dynatrace.Observability/registeredSubscriptions/read",
+          "Dynatrace.Observability/operations/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-18T04:57:22.1534858Z",
+    "updatedOn": "2025-08-04T15:10:35.5335883Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/fa96a588-3fac-4adb-bfb2-f8404ece07e0",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "fa96a588-3fac-4adb-bfb2-f8404ece07e0"
+}

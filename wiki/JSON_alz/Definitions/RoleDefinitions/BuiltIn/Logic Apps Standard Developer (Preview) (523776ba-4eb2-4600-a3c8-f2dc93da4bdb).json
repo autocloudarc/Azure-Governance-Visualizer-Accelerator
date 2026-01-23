@@ -1,0 +1,46 @@
+{
+  "roleName": "Logic Apps Standard Developer (Preview)",
+  "type": "BuiltInRole",
+  "description": "You can create and edit workflows, connections, and settings for a Standard logic app. You can't make changes outside the workflow scope.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Web/*/read",
+        "Microsoft.Web/connections/*",
+        "Microsoft.Web/customApis/*",
+        "Microsoft.Web/sites/config/list/Action",
+        "microsoft.web/sites/config/Write",
+        "microsoft.web/sites/config/web/appsettings/delete",
+        "microsoft.web/sites/config/web/appsettings/write",
+        "microsoft.web/sites/deployWorkflowArtifacts/action",
+        "microsoft.web/sites/hostruntime/*",
+        "microsoft.web/sites/listworkflowsconnections/action",
+        "Microsoft.Web/sites/publish/Action",
+        "microsoft.web/sites/slots/config/appsettings/write",
+        "Microsoft.Web/sites/slots/config/list/Action",
+        "microsoft.web/sites/slots/config/web/appsettings/delete",
+        "microsoft.web/sites/slots/deployWorkflowArtifacts/action",
+        "microsoft.web/sites/slots/listworkflowsconnections/action",
+        "Microsoft.Web/sites/slots/publish/Action",
+        "microsoft.web/sites/workflows/*",
+        "microsoft.web/sites/workflowsconfiguration/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-08-11T18:29:26.2014706Z",
+  "updatedOn": "2024-04-04T21:09:40.8283445Z",
+  "createdBy": null,
+  "updatedBy": null
+}

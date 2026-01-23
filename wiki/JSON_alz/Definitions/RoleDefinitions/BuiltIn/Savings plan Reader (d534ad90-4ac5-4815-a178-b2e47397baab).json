@@ -1,0 +1,24 @@
+{
+  "roleName": "Savings plan Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you read savings plans",
+  "assignableScopes": [
+    "/providers/Microsoft.BillingBenefits"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.BillingBenefits/savingsPlanOrders/read",
+        "Microsoft.BillingBenefits/savingsPlanOrders/savingsPlans/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-12T15:09:01.5283924Z",
+  "updatedOn": "2024-04-23T15:07:32.8290714Z",
+  "createdBy": null,
+  "updatedBy": null
+}

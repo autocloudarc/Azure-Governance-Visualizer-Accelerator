@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Azure Deployment Stack Owner",
+    "type": "BuiltInRole",
+    "description": "Allows a user to manage deployment stacks, including those with deny assignments.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/deploymentStacks/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-05-16T23:13:29.6757377Z",
+    "updatedOn": "2024-05-16T23:13:29.6757377Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/adb29209-aa1d-457b-a786-c913953d2891",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "adb29209-aa1d-457b-a786-c913953d2891"
+}

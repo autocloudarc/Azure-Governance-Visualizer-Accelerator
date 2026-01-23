@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "CosmosBackupOperator",
+    "type": "BuiltInRole",
+    "description": "Can submit restore request for a Cosmos DB database or a container for an account",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DocumentDB/databaseAccounts/backup/action",
+          "Microsoft.DocumentDB/databaseAccounts/restore/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-12-07T19:47:14.965156Z",
+    "updatedOn": "2021-11-11T20:13:28.4333692Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/db7b14f2-5adf-42da-9f96-f2ee17bab5cb",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "db7b14f2-5adf-42da-9f96-f2ee17bab5cb"
+}

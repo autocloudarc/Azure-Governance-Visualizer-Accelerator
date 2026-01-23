@@ -1,0 +1,20 @@
+{
+  "roleName": "Azure Center for SAP solutions Management role",
+  "type": "BuiltInRole",
+  "description": "This role has permissions which allow users to register existing systems, view and manage systems.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-01-13T11:09:47.8459997Z",
+  "updatedOn": "2023-02-03T07:40:22.4872528Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,31 @@
+{
+  "roleName": "Azure Device Registry Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows for full access to IoT devices within Azure Device Registry Namespace.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "microsoft.deviceregistry/namespaces/read",
+        "microsoft.deviceregistry/namespaces/devices/*",
+        "microsoft.deviceregistry/namespaces/discovereddevices/*",
+        "microsoft.deviceregistry/namespaces/credentials/read",
+        "microsoft.deviceregistry/namespaces/credentials/policies/read",
+        "microsoft.devices/iothubs/certificates/*",
+        "microsoft.devices/iothubs/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "microsoft.deviceregistry/namespaces/credentials/policies/issueCertificate/action",
+        "microsoft.devices/iothubs/devices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-10T01:48:34.1935795Z",
+  "updatedOn": "2025-10-23T23:27:34.1023721Z",
+  "createdBy": null,
+  "updatedBy": null
+}

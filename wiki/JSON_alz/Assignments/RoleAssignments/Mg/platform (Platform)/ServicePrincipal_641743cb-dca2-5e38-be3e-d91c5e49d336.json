@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/641743cb-dca2-5e38-be3e-d91c5e49d336",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-VirtualDesk0",
+  "SignInName": null,
+  "RoleDefinitionName": "Desktop Virtualization Host Pool Contributor",
+  "RoleDefinitionId": "e307426c-f9b6-4e81-87de-d99efb3c32bc",
+  "ObjectId": "4ed2bce2-6b8f-4621-89e9-afa50d16c46a",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/bf26f7d4-8268-5513-9da8-0087127c4849",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-CosmosDb0",
+  "SignInName": null,
+  "RoleDefinitionName": "DocumentDB Account Contributor",
+  "RoleDefinitionId": "5bd9cd88-fe45-4216-938b-f97437e15450",
+  "ObjectId": "ff39fdcb-ddbd-4956-aadb-74c21959c173",
+  "ObjectType": "ServicePrincipal"
+}

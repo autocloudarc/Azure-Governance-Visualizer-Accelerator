@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "Savings plan Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you read and manage savings plans but cannot delegate savings plan-related roles",
+    "assignableScopes": [
+      "/providers/Microsoft.BillingBenefits"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.BillingBenefits/savingsPlanOrders/read",
+          "Microsoft.BillingBenefits/savingsPlanOrders/action",
+          "Microsoft.BillingBenefits/savingsPlanOrders/write",
+          "Microsoft.BillingBenefits/savingsPlanOrders/savingsPlans/read",
+          "Microsoft.BillingBenefits/savingsPlanOrders/savingsPlans/write",
+          "Microsoft.BillingBenefits/savingsPlanOrders/*/action",
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.Authorization/roleDefinitions/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-04-23T15:07:34.4895362Z",
+    "updatedOn": "2024-04-23T15:07:34.4895362Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/28c0d4cd-558d-4de9-91a0-faa18e7b3266",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "28c0d4cd-558d-4de9-91a0-faa18e7b3266"
+}

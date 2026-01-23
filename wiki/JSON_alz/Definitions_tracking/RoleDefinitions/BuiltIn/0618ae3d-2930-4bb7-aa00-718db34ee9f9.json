@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "Azure Monitor Dashboards with Grafana Contributor",
+    "type": "BuiltInRole",
+    "description": "Can manage dashboards with Grafana.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Dashboard/dashboards/read",
+          "Microsoft.Dashboard/dashboards/write",
+          "Microsoft.Dashboard/dashboards/delete",
+          "Microsoft.Dashboard/dashboards/dashboardDefinitions/read",
+          "Microsoft.Dashboard/dashboards/dashboardDefinitions/write",
+          "Microsoft.Dashboard/dashboards/dashboardDefinitions/delete",
+          "Microsoft.Dashboard/locations/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/deployments/delete",
+          "Microsoft.Resources/deployments/cancel/action",
+          "Microsoft.Resources/deployments/validate/action",
+          "Microsoft.Resources/deployments/whatIf/action",
+          "Microsoft.Resources/deployments/exportTemplate/action",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-04-30T15:37:26.9778094Z",
+    "updatedOn": "2025-11-04T16:13:14.1996523Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/0618ae3d-2930-4bb7-aa00-718db34ee9f9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "0618ae3d-2930-4bb7-aa00-718db34ee9f9"
+}

@@ -1,0 +1,27 @@
+{
+  "roleName": "Storage File Data Privileged Contributor",
+  "type": "BuiltInRole",
+  "description": "Customer has read, write, delete and modify NTFS permission access on Azure Storage file shares.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read",
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/write",
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/delete",
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/modifypermissions/action",
+        "Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action",
+        "Microsoft.Storage/storageAccounts/fileServices/writeFileBackupSemantics/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-03-24T20:51:46.4662516Z",
+  "updatedOn": "2023-04-07T19:31:53.4135545Z",
+  "createdBy": null,
+  "updatedBy": null
+}

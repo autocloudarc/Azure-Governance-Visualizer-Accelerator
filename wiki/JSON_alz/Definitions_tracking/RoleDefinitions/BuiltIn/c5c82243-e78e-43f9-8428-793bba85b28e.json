@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Defender For Container Registries Operator",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for Cloud access to Azure Container Registries",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/pull/read",
+          "Microsoft.ContainerRegistry/registries/metadata/read",
+          "Microsoft.ContainerRegistry/registries/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerRegistry/registries/repositories/content/read",
+          "Microsoft.ContainerRegistry/registries/repositories/metadata/read",
+          "Microsoft.ContainerRegistry/registries/catalog/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-14T15:40:32.9991692Z",
+    "updatedOn": "2025-09-12T13:08:55.2962061Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c5c82243-e78e-43f9-8428-793bba85b28e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c5c82243-e78e-43f9-8428-793bba85b28e"
+}

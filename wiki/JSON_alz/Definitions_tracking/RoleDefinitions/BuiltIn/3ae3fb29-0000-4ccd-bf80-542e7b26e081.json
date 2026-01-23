@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Load Test Reader",
+    "type": "BuiltInRole",
+    "description": "View and list all load tests and load test resources but can not make any changes",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.LoadTestService/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Insights/alertRules/*"
+        ],
+        "notActions": [
+          "Microsoft.LoadTestService/PlaywrightWorkspaces/*",
+          "Microsoft.LoadTestService/locations/PlaywrightQuotas/*"
+        ],
+        "dataActions": [
+          "Microsoft.LoadTestService/loadtests/readTest/action",
+          "Microsoft.LoadTestService/testProfiles/read",
+          "Microsoft.LoadTestService/testProfileRuns/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-11-10T06:14:08.3903105Z",
+    "updatedOn": "2025-09-30T15:23:50.5058011Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3ae3fb29-0000-4ccd-bf80-542e7b26e081",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3ae3fb29-0000-4ccd-bf80-542e7b26e081"
+}

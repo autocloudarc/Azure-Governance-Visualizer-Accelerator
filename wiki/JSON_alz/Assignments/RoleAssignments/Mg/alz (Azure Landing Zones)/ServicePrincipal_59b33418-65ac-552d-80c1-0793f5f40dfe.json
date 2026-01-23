@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/59b33418-65ac-552d-80c1-0793f5f40dfe",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-MDEndpointsAMA",
+  "SignInName": null,
+  "RoleDefinitionName": "Security Admin",
+  "RoleDefinitionId": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+  "ObjectId": "ec0f767e-03c8-4d5a-a4a8-27aff9951fa1",
+  "ObjectType": "ServicePrincipal"
+}

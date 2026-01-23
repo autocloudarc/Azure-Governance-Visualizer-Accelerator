@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/164da090-4a2d-580a-a623-53027bb37df7",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-SvcHealth-BuiltIn",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Policy Contributor",
+  "RoleDefinitionId": "47be4a87-7950-4631-9daf-b664a405f074",
+  "ObjectId": "d3c29b08-f4fd-4660-b8ae-b96018c98846",
+  "ObjectType": "ServicePrincipal"
+}

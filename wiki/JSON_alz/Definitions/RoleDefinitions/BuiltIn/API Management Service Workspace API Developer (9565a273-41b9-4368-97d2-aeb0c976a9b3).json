@@ -1,0 +1,30 @@
+{
+  "roleName": "API Management Service Workspace API Developer",
+  "type": "BuiltInRole",
+  "description": "Has read access to tags and products and write access to allow: assigning APIs to products, assigning tags to products and APIs. This role should be assigned on the service scope.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ApiManagement/service/tags/read",
+        "Microsoft.ApiManagement/service/tags/apiLinks/*",
+        "Microsoft.ApiManagement/service/tags/operationLinks/*",
+        "Microsoft.ApiManagement/service/tags/productLinks/*",
+        "Microsoft.ApiManagement/service/products/read",
+        "Microsoft.ApiManagement/service/products/apiLinks/*",
+        "Microsoft.ApiManagement/service/read",
+        "Microsoft.ApiManagement/service/authorizationServers/read",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-03-22T15:15:22.2253607Z",
+  "updatedOn": "2024-08-30T15:40:51.7523528Z",
+  "createdBy": null,
+  "updatedBy": null
+}

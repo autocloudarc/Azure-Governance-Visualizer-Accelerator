@@ -1,0 +1,23 @@
+{
+  "roleName": "Storage Account Encryption Scope Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Allows management of Encryption Scopes on a Storage Account",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/encryptionScopes/read",
+        "Microsoft.Storage/storageAccounts/encryptionScopes/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-12-12T16:08:00.75889Z",
+  "updatedOn": "2024-01-11T19:07:46.4940261Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,22 @@
+{
+  "roleName": "DICOM Data Reader",
+  "type": "BuiltInRole",
+  "description": "Read and search DICOM data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthcareApis/workspaces/dicomservices/resources/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-06-17T20:58:30.1630494Z",
+  "updatedOn": "2021-11-11T20:15:13.0154948Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,26 @@
+{
+  "roleName": "Azure Programmable Connectivity Gateway User",
+  "type": "BuiltInRole",
+  "description": "Allows access to all Gateway dataplane APIs.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-08T16:07:20.7530393Z",
+  "updatedOn": "2024-01-08T16:07:20.7530393Z",
+  "createdBy": null,
+  "updatedBy": null
+}

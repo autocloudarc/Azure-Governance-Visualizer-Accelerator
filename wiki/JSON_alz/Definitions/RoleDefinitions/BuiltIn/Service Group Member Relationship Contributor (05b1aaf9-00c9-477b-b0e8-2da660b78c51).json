@@ -1,0 +1,24 @@
+{
+  "roleName": "Service Group Member Relationship Contributor",
+  "type": "BuiltInRole",
+  "description": "Role definition allowing read, write and delete access to Service Group Member relationship types",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Relationships/serviceGroupMember/read",
+        "Microsoft.Relationships/serviceGroupMember/write",
+        "Microsoft.Relationships/serviceGroupMember/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-28T15:14:09.6739689Z",
+  "updatedOn": "2025-10-28T15:14:09.6739689Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/b9369b64-0efd-4f06-bc9f-571a300bcd1c",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "StorageAccounts/securityOperators/DefenderForStorageSecurityOperator",
+  "SignInName": null,
+  "RoleDefinitionName": "EventGrid Contributor",
+  "RoleDefinitionId": "1e241071-0855-49ea-94dc-649edcd759de",
+  "ObjectId": "07542a4c-708b-452b-8157-af073e42f8e0",
+  "ObjectType": "ServicePrincipal"
+}

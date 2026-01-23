@@ -1,0 +1,34 @@
+{
+  "roleName": "Gcp Connector contributor role",
+  "type": "BuiltInRole",
+  "description": "Microsoft.GcpConnector contributor role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.GcpConnector/bigQueryDatasets/delete",
+        "Microsoft.GcpConnector/bigQueryDatasets/write",
+        "Microsoft.GcpConnector/cloudFunctions/delete",
+        "Microsoft.GcpConnector/cloudFunctions/write",
+        "Microsoft.GcpConnector/computeInstances/delete",
+        "Microsoft.GcpConnector/computeInstances/write",
+        "Microsoft.GcpConnector/containerClusters/delete",
+        "Microsoft.GcpConnector/containerClusters/write",
+        "Microsoft.GcpConnector/Locations/OperationStatuses/write",
+        "Microsoft.GcpConnector/sqlAdminInstances/delete",
+        "Microsoft.GcpConnector/sqlAdminInstances/write",
+        "Microsoft.GcpConnector/storageBuckets/delete",
+        "Microsoft.GcpConnector/storageBuckets/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-11-07T02:23:47.058207Z",
+  "updatedOn": "2025-11-07T02:23:47.058207Z",
+  "createdBy": null,
+  "updatedBy": null
+}

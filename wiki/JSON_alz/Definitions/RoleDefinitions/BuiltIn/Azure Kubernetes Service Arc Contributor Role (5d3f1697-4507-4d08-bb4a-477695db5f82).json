@@ -1,0 +1,58 @@
+{
+  "roleName": "Azure Kubernetes Service Arc Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Grants access to read and write Azure Kubernetes Services hybrid clusters",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridContainerService/Locations/operationStatuses/read",
+        "Microsoft.HybridContainerService/Locations/operationStatuses/write",
+        "Microsoft.HybridContainerService/Operations/read",
+        "Microsoft.HybridContainerService/kubernetesVersions/read",
+        "Microsoft.HybridContainerService/kubernetesVersions/write",
+        "Microsoft.HybridContainerService/kubernetesVersions/delete",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/read",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/write",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/delete",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/read",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/write",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/agentPools/delete",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/upgradeProfiles/read",
+        "Microsoft.HybridContainerService/skus/read",
+        "Microsoft.HybridContainerService/skus/write",
+        "Microsoft.HybridContainerService/skus/delete",
+        "Microsoft.HybridContainerService/virtualNetworks/read",
+        "Microsoft.HybridContainerService/virtualNetworks/write",
+        "Microsoft.HybridContainerService/virtualNetworks/delete",
+        "Microsoft.ExtendedLocation/customLocations/deploy/action",
+        "Microsoft.ExtendedLocation/customLocations/read",
+        "Microsoft.Kubernetes/connectedClusters/Read",
+        "Microsoft.Kubernetes/connectedClusters/Write",
+        "Microsoft.Kubernetes/connectedClusters/Delete",
+        "Microsoft.Kubernetes/connectedClusters/listClusterUserCredential/action",
+        "Microsoft.AzureStackHCI/clusters/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/deployments/delete",
+        "Microsoft.Resources/deployments/cancel/action",
+        "Microsoft.Resources/deployments/validate/action",
+        "Microsoft.Resources/deployments/whatIf/action",
+        "Microsoft.Resources/deployments/exportTemplate/action",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/deployments/operationstatuses/read",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/hybridIdentityMetadata/delete",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/hybridIdentityMetadata/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-08T00:33:15.790369Z",
+  "updatedOn": "2025-09-26T18:26:26.9209491Z",
+  "createdBy": null,
+  "updatedBy": null
+}

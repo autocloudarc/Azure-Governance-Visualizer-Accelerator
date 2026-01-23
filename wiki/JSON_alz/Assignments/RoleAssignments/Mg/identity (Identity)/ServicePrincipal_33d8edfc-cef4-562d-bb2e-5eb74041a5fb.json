@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/identity/providers/microsoft.authorization/roleassignments/33d8edfc-cef4-562d-bb2e-5eb74041a5fb",
+  "Scope": "/providers/Microsoft.Management/managementGroups/identity",
+  "DisplayName": "Deploy-VM-Backup",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine Contributor",
+  "RoleDefinitionId": "9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+  "ObjectId": "58b4675a-f317-4f50-a9d9-d94a7a1ed1b3",
+  "ObjectType": "ServicePrincipal"
+}

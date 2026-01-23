@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services Face Recognizer",
+    "type": "BuiltInRole",
+    "description": "Lets you perform detect, verify, identify, group, and find similar operations on Face API. This role does not allow create or delete operations, which makes it well suited for endpoints that only need inferencing capabilities, following 'least privilege' best practices.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/accounts/Face/detect/action",
+          "Microsoft.CognitiveServices/accounts/Face/verify/action",
+          "Microsoft.CognitiveServices/accounts/Face/identify/action",
+          "Microsoft.CognitiveServices/accounts/Face/group/action",
+          "Microsoft.CognitiveServices/accounts/Face/findsimilars/action",
+          "Microsoft.CognitiveServices/accounts/Face/detectliveness/multimodal/action",
+          "Microsoft.CognitiveServices/accounts/Face/detectliveness/singlemodal/action",
+          "Microsoft.CognitiveServices/accounts/Face/detectlivenesswithverify/singlemodal/action",
+          "Microsoft.CognitiveServices/accounts/Face/*/sessions/action",
+          "Microsoft.CognitiveServices/accounts/Face/*/sessions/delete",
+          "Microsoft.CognitiveServices/accounts/Face/*/sessions/read",
+          "Microsoft.CognitiveServices/accounts/Face/*/sessions/audit/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-03-31T01:51:41.3557295Z",
+    "updatedOn": "2023-11-13T16:11:26.3607611Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/9894cab4-e18a-44aa-828b-cb588cd6f2d7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "9894cab4-e18a-44aa-828b-cb588cd6f2d7"
+}

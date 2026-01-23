@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Container Apps SessionPools Reader",
+    "type": "BuiltInRole",
+    "description": "Read access to ContainerApps sessionpools.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.App/sessionPools/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-14T16:23:28.440043Z",
+    "updatedOn": "2024-08-14T16:23:28.440043Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/af61e8fc-2633-4b95-bed3-421ad6826515",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "af61e8fc-2633-4b95-bed3-421ad6826515"
+}

@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Azure Resilience Management Drills Administrator",
+    "type": "BuiltInRole",
+    "description": "Administrator Role of Azure Resilience Management Drills Service",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.AzureResilienceManagement/drills/*/action",
+          "Microsoft.AzureResilienceManagement/drills/*/delete",
+          "Microsoft.AzureResilienceManagement/drills/*/read",
+          "Microsoft.AzureResilienceManagement/drills/*/write",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-12T15:18:35.5478412Z",
+    "updatedOn": "2025-11-03T16:09:42.3425976Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c914561b-1575-4601-af9c-a1356bf59818",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c914561b-1575-4601-af9c-a1356bf59818"
+}

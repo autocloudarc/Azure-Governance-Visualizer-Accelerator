@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Stream Analytics Contributor",
+    "type": "BuiltInRole",
+    "description": "Contributor access to Clusters and Streaming Jobs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.StreamAnalytics/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-03T16:47:55.6818914Z",
+    "updatedOn": "2024-10-03T16:47:55.6818914Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6e0c8711-85a0-4490-8365-8ec13c4560b4",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6e0c8711-85a0-4490-8365-8ec13c4560b4"
+}

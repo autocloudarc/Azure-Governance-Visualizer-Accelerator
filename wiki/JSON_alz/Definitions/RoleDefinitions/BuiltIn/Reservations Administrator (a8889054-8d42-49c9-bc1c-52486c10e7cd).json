@@ -1,0 +1,28 @@
+{
+  "roleName": "Reservations Administrator",
+  "type": "BuiltInRole",
+  "description": "Lets one read and manage all the reservations in a tenant",
+  "assignableScopes": [
+    "/providers/Microsoft.Capacity"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Capacity/*/read",
+        "Microsoft.Capacity/*/action",
+        "Microsoft.Capacity/*/write",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-07-21T08:08:28.9420006Z",
+  "updatedOn": "2022-04-09T02:54:25.714188Z",
+  "createdBy": null,
+  "updatedBy": null
+}

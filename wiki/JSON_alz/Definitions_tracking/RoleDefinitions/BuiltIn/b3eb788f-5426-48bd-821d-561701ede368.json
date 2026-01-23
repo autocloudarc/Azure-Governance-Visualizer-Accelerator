@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Conversation Session User",
+    "type": "BuiltInRole",
+    "description": "Allows sending a message to the agent and receive a response, using the conversation session API",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthBot/healthBots/ConversationSession/Action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-24T15:33:29.3967334Z",
+    "updatedOn": "2025-07-24T15:33:29.3967334Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b3eb788f-5426-48bd-821d-561701ede368",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b3eb788f-5426-48bd-821d-561701ede368"
+}

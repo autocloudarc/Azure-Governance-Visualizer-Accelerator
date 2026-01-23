@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Connector Reader",
+    "type": "BuiltInRole",
+    "description": "Read connectors and their associated resources, such as impacts and insights.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Impact/Connectors/Read",
+          "Microsoft.Impact/WorkloadImpacts/Read",
+          "Microsoft.Impact/WorkloadImpacts/Insights/Read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-07-12T08:35:40.76413Z",
+    "updatedOn": "2024-07-12T08:35:40.76413Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6cdbb904-5ff3-429d-8169-7d7818b91bd8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6cdbb904-5ff3-429d-8169-7d7818b91bd8"
+}

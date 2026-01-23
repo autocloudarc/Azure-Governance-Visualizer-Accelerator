@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "principalId": "c209b4a6-8ebd-4b71-a2d4-e325cfca5c53",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Customer Managed Keys",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Encryption-CMK_20250218",
+    "scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This initiative assignment enables additional ALZ guardrails for Customer Managed Keys.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:29.560135Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": [
+      {
+        "message": "Recommended guardrails should be enforced for Customer Managed Keys."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-Encrypt-CMK0",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Enforce-Encrypt-CMK0",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:28.9314467Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:28.9314467Z"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "properties": {
+    "roleName": "Communication and Email Service Owner",
+    "type": "BuiltInRole",
+    "description": "Create, read, modify, and delete Communications and Email Service resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Communication/CheckNameAvailability/action",
+          "Microsoft.Communication/Locations/OperationStatuses/read",
+          "Microsoft.Communication/Locations/OperationStatuses/write",
+          "Microsoft.Communication/Operations/read",
+          "Microsoft.Communication/CommunicationServices/read",
+          "Microsoft.Communication/CommunicationServices/write",
+          "Microsoft.Communication/CommunicationServices/delete",
+          "Microsoft.Communication/CommunicationServices/ListKeys/action",
+          "Microsoft.Communication/CommunicationServices/RegenerateKey/action",
+          "Microsoft.Communication/CommunicationServices/LinkNotificationHub/action",
+          "Microsoft.Communication/CommunicationServices/EventGridFilters/read",
+          "Microsoft.Communication/CommunicationServices/EventGridFilters/write",
+          "Microsoft.Communication/CommunicationServices/EventGridFilters/delete",
+          "Microsoft.Communication/EmailServices/read",
+          "Microsoft.Communication/EmailServices/write",
+          "Microsoft.Communication/EmailServices/delete",
+          "Microsoft.Communication/EmailServices/Domains/read",
+          "Microsoft.Communication/EmailServices/Domains/write",
+          "Microsoft.Communication/EmailServices/Domains/delete",
+          "Microsoft.Communication/EmailServices/Domains/SenderUsernames/read",
+          "Microsoft.Communication/EmailServices/Domains/SenderUsernames/write",
+          "Microsoft.Communication/EmailServices/Domains/SenderUsernames/delete",
+          "Microsoft.Communication/EmailServices/Domains/SuppressionLists/read",
+          "Microsoft.Communication/EmailServices/Domains/SuppressionLists/write",
+          "Microsoft.Communication/EmailServices/Domains/SuppressionLists/delete",
+          "Microsoft.Communication/EmailServices/Domains/SuppressionLists/SuppressionListAddresses/read",
+          "Microsoft.Communication/EmailServices/Domains/SuppressionLists/SuppressionListAddresses/write",
+          "Microsoft.Communication/EmailServices/Domains/SuppressionLists/SuppressionListAddresses/delete",
+          "Microsoft.Communication/EmailServices/Domains/InitiateVerification/action",
+          "Microsoft.Communication/EmailServices/Domains/CancelVerification/action",
+          "Microsoft.Communication/EmailServices/Domains/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-11-20T16:26:51.8504583Z",
+    "updatedOn": "2024-11-20T16:26:51.8504583Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/09976791-48a7-449e-bb21-39d1a415f350",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "09976791-48a7-449e-bb21-39d1a415f350"
+}

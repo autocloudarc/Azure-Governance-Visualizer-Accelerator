@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Portal Dashboard Writer Role",
+    "type": "BuiltInRole",
+    "description": "Can write an Azure Portal Dashboard",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Portal/dashboards/read",
+          "Microsoft.Portal/dashboards/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-09T15:31:49.3691696Z",
+    "updatedOn": "2025-07-24T23:26:13.7221446Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/78eacb5e-e318-4560-85a9-e6a724ca60c9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "78eacb5e-e318-4560-85a9-e6a724ca60c9"
+}

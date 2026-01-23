@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "roleName": "Storage Account Backup Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you perform backup and restore operations using Azure Backup on the storage account.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Authorization/locks/read",
+          "Microsoft.Authorization/locks/write",
+          "Microsoft.Authorization/locks/delete",
+          "Microsoft.Features/features/read",
+          "Microsoft.Features/providers/features/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Storage/operations/read",
+          "Microsoft.Storage/storageAccounts/objectReplicationPolicies/delete",
+          "Microsoft.Storage/storageAccounts/objectReplicationPolicies/read",
+          "Microsoft.Storage/storageAccounts/objectReplicationPolicies/write",
+          "Microsoft.Storage/storageAccounts/objectReplicationPolicies/restorePointMarkers/write",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+          "Microsoft.Storage/storageAccounts/blobServices/read",
+          "Microsoft.Storage/storageAccounts/blobServices/write",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/restoreBlobRanges/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-11-02T23:32:50.4203469Z",
+    "updatedOn": "2022-04-20T07:52:04.6883613Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e5e2a7ff-d759-4cd2-bb51-3152d37e2eb1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e5e2a7ff-d759-4cd2-bb51-3152d37e2eb1"
+}

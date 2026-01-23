@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "displayName": "[Deprecated]: Vulnerabilities in container security configurations should be remediated",
+    "policyType": "BuiltIn",
+    "mode": "All",
+    "description": "Audit Docker security vulnerabilities and display recommendations in Azure Security Center. This policy is deprecated due to Azure Monitoring agent deprecation. Learn more at aka.ms/policydefdeprecation.",
+    "metadata": {
+      "version": "3.1.0-deprecated",
+      "category": "Security Center",
+      "deprecated": true
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "Disabled"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "in": [
+          "Microsoft.Compute/virtualMachines",
+          "Microsoft.ClassicCompute/virtualMachines",
+          "Microsoft.Compute/virtualMachineScaleSets"
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]",
+        "details": {
+          "type": "Microsoft.Security/assessments",
+          "name": "0677209d-e675-2c6f-e91a-54cef2878663",
+          "existenceCondition": {
+            "field": "Microsoft.Security/assessments/status.code",
+            "in": [
+              "NotApplicable",
+              "Healthy"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/e8cbc669-f12d-49eb-93e7-9273119e9933",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "e8cbc669-f12d-49eb-93e7-9273119e9933"
+}

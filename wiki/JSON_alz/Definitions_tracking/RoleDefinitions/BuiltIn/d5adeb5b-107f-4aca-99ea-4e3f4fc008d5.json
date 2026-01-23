@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Container Apps ConnectedEnvironments Reader",
+    "type": "BuiltInRole",
+    "description": "Read access to Container Apps ConnectedEnvironments.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.App/connectedEnvironments/read",
+          "Microsoft.App/connectedEnvironments/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-21T15:04:46.4162795Z",
+    "updatedOn": "2024-10-21T15:04:46.4162795Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d5adeb5b-107f-4aca-99ea-4e3f4fc008d5",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d5adeb5b-107f-4aca-99ea-4e3f4fc008d5"
+}

@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Defender Settings Contributor",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for Cloud access to Defender Settings",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "microsoft.security/pricings/read",
+          "microsoft.security/pricings/write",
+          "microsoft.security/pricings/securityoperators/read",
+          "microsoft.security/securityoperators/read",
+          "microsoft.security/register/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-11-17T16:01:32.5669506Z",
+    "updatedOn": "2025-11-17T16:01:32.5669506Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7d0c0268-1199-449b-a52e-75c20879f46b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7d0c0268-1199-449b-a52e-75c20879f46b"
+}

@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Federated Credential",
+    "type": "BuiltInRole",
+    "description": "Create, update and delete federated credentials on user assigned managed identities in order to build a trust relationship between the managed identity, OpenID Connect (OIDC), and the service account.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ManagedIdentity/userAssignedIdentities/read",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/write",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
+          "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-04-15T15:14:13.2906962Z",
+    "updatedOn": "2025-03-12T15:15:43.6782429Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ef318e2a-8334-4a05-9e4a-295a196c6a6e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ef318e2a-8334-4a05-9e4a-295a196c6a6e"
+}

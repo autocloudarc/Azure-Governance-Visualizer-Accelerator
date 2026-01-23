@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/1034b018-6b7e-5f50-abe4-fc055d45ca7a",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Enforce-ACSB",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "c8234718-816c-4fe9-b023-f5dda473b612",
+  "ObjectType": "ServicePrincipal"
+}

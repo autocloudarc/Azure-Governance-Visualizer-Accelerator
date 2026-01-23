@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "Azure Resilience Management Recovery Administrator",
+    "type": "BuiltInRole",
+    "description": "Administrator Role of Azure Resilience Management Recovery Service",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Automation/automationAccounts/runbooks/read",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
+          "Microsoft.AzureResilienceManagement/recoveryPlans/*/write",
+          "Microsoft.Insights/alertRules/",
+          "Microsoft.Management/ServiceGroups/read",
+          "Microsoft.Relationships/ServiceGroupMember/read",
+          "Microsoft.Relationships/ServiceGroupMember/write",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-09T15:45:59.6891571Z",
+    "updatedOn": "2025-10-22T15:31:32.0926044Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/481d9636-d9f0-468b-b93d-6056318e6f36",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "481d9636-d9f0-468b-b93d-6056318e6f36"
+}

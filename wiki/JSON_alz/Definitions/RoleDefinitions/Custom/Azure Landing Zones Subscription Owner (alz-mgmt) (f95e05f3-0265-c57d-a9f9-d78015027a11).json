@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Landing Zones Subscription Owner (alz-mgmt)",
+  "type": "CustomRole",
+  "description": "This is a custom role created by the Azure Landing Zones Accelerator for Writing in platform subscriptions.",
+  "assignableScopes": [
+    "/providers/Microsoft.Management/managementGroups/54d665dd-30f1-45c5-a8d5-d6ffcdb518f9"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-20T23:23:07.2002424Z",
+  "updatedOn": "2026-01-20T23:23:07.2002424Z",
+  "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+  "updatedBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9"
+}

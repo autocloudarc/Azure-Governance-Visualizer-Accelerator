@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Agent Pool Manager Role",
+    "type": "BuiltInRole",
+    "description": "Role for agentpool related actions",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/managedClusters/agentPools/read",
+          "Microsoft.ContainerService/managedClusters/agentPools/write",
+          "Microsoft.ContainerService/managedClusters/agentPools/delete",
+          "Microsoft.ContainerService/managedClusters/agentPools/upgradeNodeImageVersion/action",
+          "Microsoft.ContainerService/managedClusters/agentPools/abort/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-07T01:22:11.2026443Z",
+    "updatedOn": "2025-03-07T01:22:11.2026443Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1b7f3653-4324-473a-9165-bc55e4d04ba8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1b7f3653-4324-473a-9165-bc55e4d04ba8"
+}

@@ -1,0 +1,28 @@
+{
+  "roleName": "Azure Red Hat OpenShift Network Operator",
+  "type": "BuiltInRole",
+  "description": "Install and upgrade the networking components on an OpenShift cluster.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkInterfaces/write",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+        "Microsoft.Network/loadBalancers/backendAddressPools/read",
+        "Microsoft.Compute/virtualMachines/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-31T16:20:01.524932Z",
+  "updatedOn": "2025-05-07T15:20:42.3588756Z",
+  "createdBy": null,
+  "updatedBy": null
+}

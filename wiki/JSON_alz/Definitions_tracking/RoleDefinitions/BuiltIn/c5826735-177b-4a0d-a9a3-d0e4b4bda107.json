@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "ToolchainOrchestrator Viewer Role",
+    "type": "BuiltInRole",
+    "description": "Grant access to view all Toolchain orchestrator resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.ToolchainOrchestrator/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-06-21T07:53:15.2955453Z",
+    "updatedOn": "2024-07-01T15:03:41.8457839Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c5826735-177b-4a0d-a9a3-d0e4b4bda107",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c5826735-177b-4a0d-a9a3-d0e4b4bda107"
+}

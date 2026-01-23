@@ -1,0 +1,48 @@
+{
+  "roleName": "Liftr Datadog Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides access to Datadog Control Plane Operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Datadog/register/action",
+        "Microsoft.Datadog/unregister/action",
+        "Microsoft.Datadog/agreements/read",
+        "Microsoft.Datadog/agreements/write",
+        "Microsoft.Datadog/locations/read",
+        "Microsoft.Datadog/locations/operationStatuses/read",
+        "Microsoft.Datadog/locations/operationStatuses/write",
+        "Microsoft.Datadog/monitors/read",
+        "Microsoft.Datadog/monitors/write",
+        "Microsoft.Datadog/monitors/delete",
+        "Microsoft.Datadog/monitors/listApiKeys/action",
+        "Microsoft.Datadog/monitors/getDefaultKey/action",
+        "Microsoft.Datadog/monitors/setDefaultKey/action",
+        "Microsoft.Datadog/monitors/refreshSetPasswordLink/action",
+        "Microsoft.Datadog/monitors/listLinkedResources/action",
+        "Microsoft.Datadog/monitors/listHosts/read",
+        "Microsoft.Datadog/monitors/listLinkedResources/read",
+        "Microsoft.Datadog/monitors/listMonitoredResources/read",
+        "Microsoft.Datadog/monitors/monitoredSubscriptions/read",
+        "Microsoft.Datadog/monitors/monitoredSubscriptions/write",
+        "Microsoft.Datadog/monitors/singleSignOnConfigurations/write",
+        "Microsoft.Datadog/monitors/singleSignOnConfigurations/read",
+        "Microsoft.Datadog/monitors/tagRules/read",
+        "Microsoft.Datadog/monitors/tagRules/write",
+        "Microsoft.Datadog/registeredSubscriptions/read",
+        "Microsoft.Datadog/subscriptionStatuses/read",
+        "Microsoft.Datadog/operations/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-17T15:20:12.5450411Z",
+  "updatedOn": "2025-08-04T15:10:35.5335883Z",
+  "createdBy": null,
+  "updatedBy": null
+}

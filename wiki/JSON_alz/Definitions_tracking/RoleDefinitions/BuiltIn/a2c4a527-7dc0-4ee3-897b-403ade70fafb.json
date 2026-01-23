@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Video Indexer Restricted Viewer",
+    "type": "BuiltInRole",
+    "description": "Has access to view and search through all video's insights and transcription in the Video Indexer portal. No access to model customization, embedding of widget, downloading videos, or sharing the account.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.VideoIndexer/*/read",
+          "Microsoft.VideoIndexer/accounts/*/action"
+        ],
+        "notActions": [
+          "Microsoft.VideoIndexer/*/write",
+          "Microsoft.VideoIndexer/*/delete",
+          "Microsoft.VideoIndexer/accounts/generateAccessToken/action"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-08-09T22:16:43.154985Z",
+    "updatedOn": "2022-08-09T22:16:43.154985Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a2c4a527-7dc0-4ee3-897b-403ade70fafb",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a2c4a527-7dc0-4ee3-897b-403ade70fafb"
+}

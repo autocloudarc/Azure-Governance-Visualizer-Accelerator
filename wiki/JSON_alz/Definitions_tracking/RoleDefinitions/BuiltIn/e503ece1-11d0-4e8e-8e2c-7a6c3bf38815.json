@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "AzureML Compute Operator",
+    "type": "BuiltInRole",
+    "description": "Can access and perform CRUD operations on Machine Learning Services managed compute resources (including Notebook VMs).",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.MachineLearningServices/workspaces/computes/*",
+          "Microsoft.MachineLearningServices/workspaces/notebooks/vm/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-09-27T19:16:52.1052938Z",
+    "updatedOn": "2022-09-27T19:16:52.1052938Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e503ece1-11d0-4e8e-8e2c-7a6c3bf38815",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e503ece1-11d0-4e8e-8e2c-7a6c3bf38815"
+}

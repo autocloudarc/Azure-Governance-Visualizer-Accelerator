@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Service Group Reader",
+    "type": "BuiltInRole",
+    "description": "Role Definition for reader of a Service Group",
+    "assignableScopes": [
+      "/providers/Microsoft.Management/serviceGroups"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read",
+          "Microsoft.Authorization/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-18T18:43:56.1898722Z",
+    "updatedOn": "2025-06-20T19:26:52.9273685Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/de754d53-652d-4c75-a67f-1e48d8b49c97",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "de754d53-652d-4c75-a67f-1e48d8b49c97"
+}

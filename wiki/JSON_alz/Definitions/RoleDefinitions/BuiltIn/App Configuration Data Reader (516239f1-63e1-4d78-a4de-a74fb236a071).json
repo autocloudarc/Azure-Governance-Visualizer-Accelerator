@@ -1,0 +1,22 @@
+{
+  "roleName": "App Configuration Data Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read access to App Configuration data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppConfiguration/configurationStores/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-10-25T18:45:33.7975332Z",
+  "updatedOn": "2021-11-11T20:14:11.5885341Z",
+  "createdBy": null,
+  "updatedBy": null
+}

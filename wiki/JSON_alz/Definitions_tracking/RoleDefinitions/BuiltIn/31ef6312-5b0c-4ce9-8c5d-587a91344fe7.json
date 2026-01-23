@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "SSH PublicKeys Reader Role",
+    "type": "BuiltInRole",
+    "description": "This is the role created for SSH PublicKeys Reader",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/sshpublickeys/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-02-25T16:07:58.8393898Z",
+    "updatedOn": "2025-02-25T16:07:58.8393898Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/31ef6312-5b0c-4ce9-8c5d-587a91344fe7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "31ef6312-5b0c-4ce9-8c5d-587a91344fe7"
+}

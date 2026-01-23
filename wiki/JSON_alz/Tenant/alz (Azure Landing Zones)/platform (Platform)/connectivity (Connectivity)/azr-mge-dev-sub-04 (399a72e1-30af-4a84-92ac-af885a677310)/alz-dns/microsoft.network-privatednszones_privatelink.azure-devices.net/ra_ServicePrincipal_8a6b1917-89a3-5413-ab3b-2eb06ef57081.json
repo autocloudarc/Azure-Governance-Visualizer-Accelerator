@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/resourcegroups/alz-dns/providers/microsoft.network/privatednszones/privatelink.azure-devices.net/providers/microsoft.authorization/roleassignments/8a6b1917-89a3-5413-ab3b-2eb06ef57081",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/resourceGroups/alz-dns/providers/Microsoft.Network/privateDnsZones/privatelink.azure-devices.net",
+  "DisplayName": "Deploy-Private-DNS-Zones",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "c53367bf-c70d-47fe-800a-d39cec62b490",
+  "ObjectType": "ServicePrincipal"
+}

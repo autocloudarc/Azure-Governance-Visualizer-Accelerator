@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Azure Data Transfer Owner",
+    "type": "BuiltInRole",
+    "description": "Create, read, modify, and delete pipelines, connections, and flows in Azure Data Transfer. Also perform any appropriate control plane operations for managing Azure Data Transfer resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureDataTransfer/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-28T15:04:34.5308244Z",
+    "updatedOn": "2025-07-28T15:04:34.5308244Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/eded264d-1796-4e25-8500-a78427f8a316",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "eded264d-1796-4e25-8500-a78427f8a316"
+}

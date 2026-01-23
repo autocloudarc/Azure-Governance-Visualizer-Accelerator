@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "roleName": "Oracle.Database Autonomous Database Administrator",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage all Autonomous Database resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Oracle.Database/autonomousDatabases/*/read",
+          "Oracle.Database/autonomousDatabases/*/write",
+          "Oracle.Database/autonomousDatabases/*/delete",
+          "Oracle.Database/autonomousDatabases/*/action",
+          "Oracle.Database/Locations/*/read",
+          "Oracle.Database/Locations/*/write",
+          "Oracle.Database/Operations/read",
+          "Oracle.Database/oracleSubscriptions/*/read",
+          "Oracle.Database/oracleSubscriptions/*/action",
+          "Oracle.Database/resourceAnchors/*",
+          "Oracle.Database/networkAnchors/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Network/locations/operations/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-12-04T16:02:04.8857247Z",
+    "updatedOn": "2025-05-27T15:14:00.1232362Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/59c05558-2358-462d-ba19-afbd7118936d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "59c05558-2358-462d-ba19-afbd7118936d"
+}

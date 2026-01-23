@@ -1,0 +1,25 @@
+{
+  "roleName": "Firmware Analysis Admin",
+  "type": "BuiltInRole",
+  "description": "Administrative user that can upload/view firmwares & configure firmware workspaces",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTFirmwareDefense/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-06-13T15:14:24.0812321Z",
+  "updatedOn": "2025-09-11T15:45:10.6013839Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Cluster User Role",
+    "type": "BuiltInRole",
+    "description": "List cluster user credential action.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
+          "Microsoft.ContainerService/managedClusters/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-08-15T22:04:53.4037241Z",
+    "updatedOn": "2021-11-11T20:13:20.4351976Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4abbcc35-e782-43d8-92c5-2d3f1bd2253f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4abbcc35-e782-43d8-92c5-2d3f1bd2253f"
+}

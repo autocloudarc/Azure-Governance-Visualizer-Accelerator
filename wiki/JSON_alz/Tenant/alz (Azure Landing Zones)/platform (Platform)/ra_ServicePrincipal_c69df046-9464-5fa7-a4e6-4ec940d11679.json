@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/c69df046-9464-5fa7-a4e6-4ec940d11679",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-Kubernetes0",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Kubernetes Service Policy Add-on Deployment",
+  "RoleDefinitionId": "18ed5180-3e48-46fd-8541-4ea054d57064",
+  "ObjectId": "4874bce3-231a-4e4c-90ef-d2e56e15caa5",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Container Registry Credential Set Reader",
+    "type": "BuiltInRole",
+    "description": "Read the configuration of Credential Sets in Container Registry. This permission doesn't allow permission to see content inside Azure Key vault only the content inside Container Registry. This permission doesn't grant permission to read Cache Rules.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/credentialSets/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-04-08T15:14:41.7765088Z",
+    "updatedOn": "2025-04-08T15:14:41.7765088Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/29093635-9924-4f2c-913b-650a12949526",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "29093635-9924-4f2c-913b-650a12949526"
+}

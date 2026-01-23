@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Common Edge Admin",
+    "type": "BuiltInRole",
+    "description": "Common Edge Admin Role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Edge/connectivityStatuses/delete",
+          "Microsoft.Edge/connectivityStatuses/write",
+          "Microsoft.Edge/locations/operationStatuses/write",
+          "Microsoft.Edge/updates/delete",
+          "Microsoft.Edge/updates/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-11T15:45:10.4903815Z",
+    "updatedOn": "2025-09-11T15:45:10.4903815Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b256d512-9a3a-4a96-9366-9f54f900e58b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b256d512-9a3a-4a96-9366-9f54f900e58b"
+}

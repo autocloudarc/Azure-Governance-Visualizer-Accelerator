@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Spring Apps Connect Role",
+  "type": "BuiltInRole",
+  "description": "Azure Spring Apps Connect Role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/apps/deployments/connect/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-23T11:08:28.467483Z",
+  "updatedOn": "2022-09-23T11:08:28.467483Z",
+  "createdBy": null,
+  "updatedBy": null
+}

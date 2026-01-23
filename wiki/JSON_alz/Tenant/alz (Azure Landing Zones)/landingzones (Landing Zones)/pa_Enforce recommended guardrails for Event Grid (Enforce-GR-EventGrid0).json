@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "principalId": "b39055a7-c519-4346-b960-b1fb68d9a540",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Event Grid",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-EventGrid",
+    "scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This initiative assignment enables additional ALZ guardrails for Event Grid.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:29.6789755Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": [
+      {
+        "message": "Recommended guardrails should be enforced for Event Grid."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-GR-EventGrid0",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Enforce-GR-EventGrid0",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:29.0837674Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:29.0837674Z"
+  }
+}

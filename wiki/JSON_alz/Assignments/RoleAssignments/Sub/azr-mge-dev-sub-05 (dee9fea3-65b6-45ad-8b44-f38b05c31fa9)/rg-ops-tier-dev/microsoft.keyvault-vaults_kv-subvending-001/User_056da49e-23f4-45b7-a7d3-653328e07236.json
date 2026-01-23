@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/resourcegroups/rg-ops-tier-dev/providers/microsoft.keyvault/vaults/kv-subvending-001/providers/microsoft.authorization/roleassignments/056da49e-23f4-45b7-a7d3-653328e07236",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/resourceGroups/rg-ops-tier-dev/providers/Microsoft.KeyVault/vaults/kv-subvending-001",
+  "DisplayName": "System Administrator",
+  "SignInName": "autocloudarc@autocloudarc.dev",
+  "RoleDefinitionName": "Key Vault Administrator",
+  "RoleDefinitionId": "00482a5a-887f-4fb3-b363-3b7fe8e74483",
+  "ObjectId": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+  "ObjectType": "User"
+}

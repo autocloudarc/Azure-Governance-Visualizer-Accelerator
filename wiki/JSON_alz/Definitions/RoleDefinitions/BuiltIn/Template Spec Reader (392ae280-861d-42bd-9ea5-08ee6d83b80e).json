@@ -1,0 +1,22 @@
+{
+  "roleName": "Template Spec Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read access to Template Specs at the assigned scope.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/templateSpecs/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-08T01:58:14.2969628Z",
+  "updatedOn": "2022-09-08T01:58:14.2969628Z",
+  "createdBy": null,
+  "updatedBy": null
+}

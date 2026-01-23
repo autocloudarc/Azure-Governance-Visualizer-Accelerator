@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "roleName": "Container Apps Operator",
+    "type": "BuiltInRole",
+    "description": "Read, logstream and exec into Container Apps.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.App/containerApps/*/read",
+          "Microsoft.App/containerApps/*/action",
+          "Microsoft.App/managedEnvironments/read",
+          "Microsoft.App/managedEnvironments/*/read",
+          "Microsoft.App/managedEnvironments/join/action",
+          "Microsoft.App/managedEnvironments/checknameavailability/action",
+          "Microsoft.App/connectedEnvironments/read",
+          "Microsoft.App/connectedEnvironments/*/read",
+          "Microsoft.App/connectedEnvironments/join/action",
+          "Microsoft.App/connectedEnvironments/checknameavailability/action"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.App/containerApps/logstream/action",
+          "Microsoft.App/containerApps/exec/action",
+          "Microsoft.App/containerApps/debug/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-14T16:23:28.4380427Z",
+    "updatedOn": "2024-11-14T16:17:08.9697226Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f3bd1b5c-91fa-40e7-afe7-0c11d331232c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f3bd1b5c-91fa-40e7-afe7-0c11d331232c"
+}

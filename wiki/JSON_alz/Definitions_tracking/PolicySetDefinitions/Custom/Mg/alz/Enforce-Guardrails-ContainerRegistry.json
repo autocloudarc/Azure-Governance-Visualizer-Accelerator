@@ -1,0 +1,260 @@
+{
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Container Registry",
+    "policyType": "Custom",
+    "description": "This policy initiative is a group of policies that ensures Container Apps is compliant per regulated Landing Zones.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Container Registry",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.1.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:13.1237757Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "containerRegistryAnAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "containerRegistryArmAudience": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "containerRegistryExports": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "containerRegistryLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "containerRegistryModifyAnAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "containerRegistryModifyArmAudience": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "containerRegistryModifyLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "containerRegistryModifyPublicNetworkAccess": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "containerRegistryModifyRepositoryToken": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "containerRegistryRepositoryToken": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "containerRegistrySkuPrivateLink": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "containerRegistryUnrestrictedNetworkAccess": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Modify-ContainerRegistry-Local-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/79fdfe03-ffcb-4e55-b4d0-b925b8241759",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryModifyLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-ContainerRegistry-Repo-Token",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a9b426fe-8856-4945-8600-18c5dd1cca2a",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryModifyRepositoryToken')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Arm-Audience",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/42781ec6-6127-4c30-bdfa-fb423a0047d3",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryArmAudience')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-ContainerRegistry-Arm-Audience",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/785596ed-054f-41bc-aaec-7f3d0ba05725",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryModifyArmAudience')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Sku-PrivateLink",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bd560fc0-3c69-498a-ae9f-aa8eb7de0e13",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistrySkuPrivateLink')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-ContainerRegistry-Anonymous-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cced2946-b08a-44fe-9fd9-e4ed8a779897",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryModifyAnAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Anonymous-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9f2dea28-e834-476c-99c5-3507b4728395",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryAnAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Exports",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/524b0254-c285-4903-bee6-bb8126cde579",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryExports')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Local-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/dc921057-6b28-4fbe-9b83-f7bec05db6c2",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Repo-Token",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ff05e24e-195c-447e-b322-5e90c9f9f366",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryRepositoryToken')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-ContainerRegistry-Unrestricted-Network-Access",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d0793b48-0edc-4296-a390-4c75d1bdfd71",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryUnrestrictedNetworkAccess')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-ContainerRegistry-Public-Network-Access",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a3701552-92ea-433e-9d17-33b7f1208fc9",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('containerRegistryModifyPublicNetworkAccess')]"
+          }
+        },
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": []
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-ContainerRegistry",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "Enforce-Guardrails-ContainerRegistry",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:13.0480004Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:13.0480004Z"
+  }
+}

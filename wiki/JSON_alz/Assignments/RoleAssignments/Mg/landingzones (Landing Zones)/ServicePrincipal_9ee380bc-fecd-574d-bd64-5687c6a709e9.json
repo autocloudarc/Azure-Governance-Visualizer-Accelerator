@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/9ee380bc-fecd-574d-bd64-5687c6a709e9",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-OpenAI0",
+  "SignInName": null,
+  "RoleDefinitionName": "Cognitive Services OpenAI Contributor",
+  "RoleDefinitionId": "a001fd3d-188f-4b5d-821b-7da978bf7442",
+  "ObjectId": "1e5cbafe-7f0d-4697-a29b-19d3c03e487f",
+  "ObjectType": "ServicePrincipal"
+}

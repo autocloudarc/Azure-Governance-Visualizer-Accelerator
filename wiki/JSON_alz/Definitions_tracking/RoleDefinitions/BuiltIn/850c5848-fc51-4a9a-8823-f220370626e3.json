@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Fleet Manager Hub Cluster User Role",
+    "type": "BuiltInRole",
+    "description": "Grants read access to Azure Kubernetes Fleet Manager as well as the Kubernetes config file to connect to the fleet-managed hub cluster.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/fleets/listCredentials/action",
+          "Microsoft.ContainerService/fleets/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-11T23:38:50.5154238Z",
+    "updatedOn": "2025-09-11T23:38:50.5154238Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/850c5848-fc51-4a9a-8823-f220370626e3",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "850c5848-fc51-4a9a-8823-f220370626e3"
+}

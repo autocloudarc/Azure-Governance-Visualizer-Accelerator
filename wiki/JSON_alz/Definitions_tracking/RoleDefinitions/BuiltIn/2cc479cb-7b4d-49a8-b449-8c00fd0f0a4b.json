@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Web Plan Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage the web plans for websites, but not access to them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.Web/serverFarms/*",
+          "Microsoft.Web/hostingEnvironments/Join/Action",
+          "Microsoft.Insights/autoscalesettings/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-02-02T21:55:09.8806423Z",
+    "updatedOn": "2022-09-05T17:12:49.4643439Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2cc479cb-7b4d-49a8-b449-8c00fd0f0a4b"
+}

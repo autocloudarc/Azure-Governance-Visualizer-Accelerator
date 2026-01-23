@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "KubernetesRuntime Load Balancer Contributor Role",
+    "type": "BuiltInRole",
+    "description": "Read, write, and delete load balancers in an Arc connected Kubernetes cluster",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.KubernetesRuntime/loadBalancers/read",
+          "Microsoft.KubernetesRuntime/loadBalancers/write",
+          "Microsoft.KubernetesRuntime/loadBalancers/delete",
+          "Microsoft.KubernetesRuntime/bgpPeers/read",
+          "Microsoft.KubernetesRuntime/bgpPeers/write",
+          "Microsoft.KubernetesRuntime/bgpPeers/delete",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.KubernetesRuntime/locations/operationStatuses/write",
+          "Microsoft.KubernetesRuntime/services/write",
+          "Microsoft.KubernetesRuntime/services/delete",
+          "Microsoft.KubernetesRuntime/bfdProfiles/write",
+          "Microsoft.KubernetesRuntime/bfdProfiles/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-27T15:13:33.329785Z",
+    "updatedOn": "2025-07-15T15:04:43.2975321Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1a5682fc-4f12-4b25-927e-e8cfed0c539e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1a5682fc-4f12-4b25-927e-e8cfed0c539e"
+}

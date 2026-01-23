@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Usage Billing Contributor",
+    "type": "BuiltInRole",
+    "description": "Contributor access to Accounts",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.UsageBilling/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-04-22T15:07:09.9554699Z",
+    "updatedOn": "2025-04-22T15:07:09.9554699Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/33cdeeac-0940-4f85-9317-7e2432c17289",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "33cdeeac-0940-4f85-9317-7e2432c17289"
+}

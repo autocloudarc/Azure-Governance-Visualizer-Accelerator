@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "Website Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage websites (not web plans), but not access to them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Insights/components/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.Web/certificates/*",
+          "Microsoft.Web/listSitesAssignedToHostName/read",
+          "Microsoft.Web/register/action",
+          "Microsoft.Web/serverFarms/join/action",
+          "Microsoft.Web/serverFarms/read",
+          "Microsoft.Web/sites/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-05-12T23:10:23.6193952Z",
+    "updatedOn": "2024-08-06T15:15:41.2486928Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "de139f84-1756-47ae-9be6-808fbbe84772"
+}

@@ -1,0 +1,26 @@
+{
+  "roleName": "CrossConnectionManager",
+  "type": "BuiltInRole",
+  "description": "Allows for read, write access to ExpressRoute CrossConnections",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ClassicNetwork/expressRouteCrossConnections/*",
+        "Microsoft.Network/expressRouteCrossConnections/*",
+        "Microsoft.Features/providers/features/read"
+      ],
+      "notActions": [
+        "Microsoft.Network/expressRouteCrossConnections/delete"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-19T15:23:13.6726125Z",
+  "updatedOn": "2024-03-19T15:23:13.6726125Z",
+  "createdBy": null,
+  "updatedBy": null
+}

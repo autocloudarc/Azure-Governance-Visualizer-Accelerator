@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "roleName": "AppGw for Containers Configuration Manager",
+    "type": "BuiltInRole",
+    "description": "Allows access and configuration updates to Application Gateway for Containers resource.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ServiceNetworking/trafficControllers/read",
+          "Microsoft.ServiceNetworking/trafficControllers/write",
+          "Microsoft.ServiceNetworking/trafficControllers/delete",
+          "Microsoft.ServiceNetworking/trafficControllers/frontends/read",
+          "Microsoft.ServiceNetworking/trafficControllers/frontends/write",
+          "Microsoft.ServiceNetworking/trafficControllers/frontends/delete",
+          "Microsoft.ServiceNetworking/trafficControllers/associations/read",
+          "Microsoft.ServiceNetworking/trafficControllers/associations/write",
+          "Microsoft.ServiceNetworking/trafficControllers/associations/delete",
+          "Microsoft.ServiceNetworking/trafficControllers/*/read",
+          "Microsoft.ServiceNetworking/trafficControllers/*/write",
+          "Microsoft.ServiceNetworking/trafficControllers/*/delete",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ServiceNetworking/trafficControllers/serviceRoutingConfigurations/read",
+          "Microsoft.ServiceNetworking/trafficControllers/serviceRoutingConfigurations/write",
+          "Microsoft.ServiceNetworking/trafficControllers/serviceRoutingConfigurations/delete"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-10-06T05:17:45.6989401Z",
+    "updatedOn": "2024-10-30T15:35:07.021944Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/fbc52c3f-28ad-4303-a892-8a056630b8f1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "fbc52c3f-28ad-4303-a892-8a056630b8f1"
+}

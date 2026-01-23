@@ -1,0 +1,148 @@
+{
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Automation Account",
+    "policyType": "Custom",
+    "description": "This policy initiative is a group of policies that ensures Automation Account is compliant per regulated Landing Zones.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Automation",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.1.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:12.0202504Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "aaLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Disabled",
+          "Deny"
+        ],
+        "defaultValue": "Deny"
+      },
+      "aaManagedIdentity": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      },
+      "aaModifyLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "aaModifyPublicNetworkAccess": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "aaVariablesEncryption": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Disabled",
+          "Deny"
+        ],
+        "defaultValue": "Deny"
+      },
+      "autoHotPatch": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Disabled",
+          "Deny"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Deny-Windows-Vm-HotPatch",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6d02d2f7-e38b-4bdc-96f3-adc0a8726abc",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('autoHotPatch')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Aa-Managed-Identity",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/dea83a72-443c-4292-83d5-54a2f98749c0",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('aaManagedIdentity')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Aa-Local-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/48c5f1cb-14ad-4797-8e3b-f78ab3f8d700",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('aaLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Aa-Variables-Encrypt",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/3657f5a0-770e-44a3-b44e-9431ba1e9735",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('aaVariablesEncryption')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-Aa-Local-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/30d1d58e-8f96-47a5-8564-499a3f3cca81",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('aaModifyLocalAUth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-Aa-Public-Network-Access",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/23b36a7c-9d26-4288-a8fd-c1d2fa284d8c",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('aaModifyPublicNetworkAccess')]"
+          }
+        },
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": []
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-Automation",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "Enforce-Guardrails-Automation",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:11.9481183Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:11.9481183Z"
+  }
+}

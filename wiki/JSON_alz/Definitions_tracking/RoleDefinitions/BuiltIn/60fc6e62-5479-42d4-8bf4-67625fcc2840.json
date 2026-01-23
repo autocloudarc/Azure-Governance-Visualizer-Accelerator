@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Disk Pool Operator",
+    "type": "BuiltInRole",
+    "description": "Used by the StoragePool Resource Provider to manage Disks added to a Disk Pool.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/disks/write",
+          "Microsoft.Compute/disks/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-07-08T17:26:05.1079972Z",
+    "updatedOn": "2021-11-11T20:15:13.9154612Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/60fc6e62-5479-42d4-8bf4-67625fcc2840",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "60fc6e62-5479-42d4-8bf4-67625fcc2840"
+}

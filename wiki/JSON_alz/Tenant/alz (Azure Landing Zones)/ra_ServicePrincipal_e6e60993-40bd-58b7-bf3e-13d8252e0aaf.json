@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/e6e60993-40bd-58b7-bf3e-13d8252e0aaf",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-MDFC-OssDb",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "2c5561ee-d8d7-49ce-bcdf-cd4a76b10b2b",
+  "ObjectType": "ServicePrincipal"
+}

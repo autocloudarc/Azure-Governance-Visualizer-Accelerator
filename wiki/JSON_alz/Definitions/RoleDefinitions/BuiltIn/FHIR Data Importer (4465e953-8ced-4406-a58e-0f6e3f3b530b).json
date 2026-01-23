@@ -1,0 +1,23 @@
+{
+  "roleName": "FHIR Data Importer",
+  "type": "BuiltInRole",
+  "description": "Role allows user or principal to read and import FHIR Data",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/import/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-04-19T14:05:02.2341374Z",
+  "updatedOn": "2022-04-21T15:21:45.3114429Z",
+  "createdBy": null,
+  "updatedBy": null
+}

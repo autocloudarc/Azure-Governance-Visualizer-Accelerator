@@ -1,0 +1,25 @@
+{
+  "roleName": "Lab Services Reader",
+  "type": "BuiltInRole",
+  "description": "The lab services reader role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.LabServices/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-11T00:55:30.4208618Z",
+  "updatedOn": "2021-11-11T20:15:28.9592032Z",
+  "createdBy": null,
+  "updatedBy": null
+}

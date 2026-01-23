@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "principalId": "4ed2bce2-6b8f-4621-89e9-afa50d16c46a",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Virtual Desktop",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-VirtualDesktop",
+    "scope": "/providers/Microsoft.Management/managementGroups/platform",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This initiative assignment enables additional ALZ guardrails for Virtual Desktop.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:31.4378885Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": [
+      {
+        "message": "Recommended guardrails should be enforced for Virtual Desktop."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/platform/providers/Microsoft.Authorization/policyAssignments/Enforce-GR-VirtualDesk0",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Enforce-GR-VirtualDesk0",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:30.9518444Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:30.9518444Z"
+  }
+}

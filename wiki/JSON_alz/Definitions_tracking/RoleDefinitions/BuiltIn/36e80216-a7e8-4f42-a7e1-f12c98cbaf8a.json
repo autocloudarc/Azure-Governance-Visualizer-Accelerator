@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Azure impact Reporter role",
+    "type": "BuiltInRole",
+    "description": "built-in role for azure impact write access",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Impact/WorkloadImpacts/*",
+          "Microsoft.Impact/ImpactCategories/read",
+          "Microsoft.Impact/TopologyImpacts/*",
+          "Microsoft.Impact/getUploadToken/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-10-28T00:36:17.1232767Z",
+    "updatedOn": "2025-09-29T15:12:01.645218Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/36e80216-a7e8-4f42-a7e1-f12c98cbaf8a",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "36e80216-a7e8-4f42-a7e1-f12c98cbaf8a"
+}

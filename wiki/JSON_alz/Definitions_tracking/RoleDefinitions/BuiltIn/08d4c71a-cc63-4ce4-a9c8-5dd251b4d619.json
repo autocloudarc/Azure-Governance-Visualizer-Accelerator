@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "roleName": "Azure Container Storage Operator",
+    "type": "BuiltInRole",
+    "description": "Role required by a Managed Identity for Azure Container Storage operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ElasticSan/elasticSans/*",
+          "Microsoft.ElasticSan/locations/asyncoperations/read",
+          "Microsoft.Network/routeTables/join/action",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Network/virtualNetworks/write",
+          "Microsoft.Network/virtualNetworks/delete",
+          "Microsoft.Network/virtualNetworks/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Compute/virtualMachines/write",
+          "Microsoft.Compute/virtualMachineScaleSets/read",
+          "Microsoft.Compute/virtualMachineScaleSets/write",
+          "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/write",
+          "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/read",
+          "Microsoft.Resources/subscriptions/providers/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Network/virtualNetworks/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-07T18:16:04.1237431Z",
+    "updatedOn": "2024-03-22T22:01:01.7377883Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/08d4c71a-cc63-4ce4-a9c8-5dd251b4d619",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "08d4c71a-cc63-4ce4-a9c8-5dd251b4d619"
+}

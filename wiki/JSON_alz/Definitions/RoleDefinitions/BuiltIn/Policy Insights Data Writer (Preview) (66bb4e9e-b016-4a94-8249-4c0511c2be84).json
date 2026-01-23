@@ -1,0 +1,28 @@
+{
+  "roleName": "Policy Insights Data Writer (Preview)",
+  "type": "BuiltInRole",
+  "description": "Allows read access to resource policies and write access to resource component policy events.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/policyassignments/read",
+        "Microsoft.Authorization/policydefinitions/read",
+        "Microsoft.Authorization/policyexemptions/read",
+        "Microsoft.Authorization/policysetdefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.PolicyInsights/checkDataPolicyCompliance/action",
+        "Microsoft.PolicyInsights/policyEvents/logDataEvents/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-09-19T19:35:20.9504127Z",
+  "updatedOn": "2021-11-11T20:14:09.4235132Z",
+  "createdBy": null,
+  "updatedBy": null
+}

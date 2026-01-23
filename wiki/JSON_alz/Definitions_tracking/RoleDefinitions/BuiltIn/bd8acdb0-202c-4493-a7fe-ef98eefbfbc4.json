@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Storage Actions Contributor",
+    "type": "BuiltInRole",
+    "description": "Used by the Storage Actions author to create, read, update, and delete Storage Actions",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.StorageActions/storageTasks/read",
+          "Microsoft.StorageActions/storageTasks/write",
+          "Microsoft.StorageActions/storageTasks/delete",
+          "Microsoft.StorageActions/storageTasks/storageTaskAssignments/read",
+          "Microsoft.StorageActions/storageTasks/reports/read",
+          "Microsoft.StorageActions/locations/previewActions/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-17T15:25:54.0420614Z",
+    "updatedOn": "2025-09-17T15:25:54.0420614Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/bd8acdb0-202c-4493-a7fe-ef98eefbfbc4",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "bd8acdb0-202c-4493-a7fe-ef98eefbfbc4"
+}

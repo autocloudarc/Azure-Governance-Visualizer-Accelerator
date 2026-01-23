@@ -1,0 +1,27 @@
+{
+  "roleName": "ProviderHub Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows you to create and manage Microsoft.ProviderHub resources through the Resource Provider Platform. Does not allow you to assign roles in Azure RBAC.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ProviderHub/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-03T15:20:27.4637413Z",
+  "updatedOn": "2024-07-03T15:20:27.4637413Z",
+  "createdBy": null,
+  "updatedBy": null
+}

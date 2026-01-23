@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/8b6d8209-f87b-5cfa-8876-b7c21b89b4e3",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-EventHub0",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Event Hubs Data Owner",
+  "RoleDefinitionId": "f526a384-b230-433a-b45c-95f59c4a2dec",
+  "ObjectId": "08eb96a8-0902-4fc2-b7c1-ae765d8c7156",
+  "ObjectType": "ServicePrincipal"
+}

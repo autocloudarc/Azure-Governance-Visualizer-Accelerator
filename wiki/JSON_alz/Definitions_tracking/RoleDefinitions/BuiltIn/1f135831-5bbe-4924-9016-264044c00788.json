@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "Windows 365 Network Interface Contributor",
+    "type": "BuiltInRole",
+    "description": "This role is used by Windows 365 to provision required network resources and join Microsoft-hosted VMs to network interfaces.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/resourcegroups/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/deployments/delete",
+          "Microsoft.Resources/deployments/operations/read",
+          "Microsoft.Resources/deployments/operationstatuses/read",
+          "Microsoft.Network/locations/operations/read",
+          "Microsoft.Network/locations/operationResults/read",
+          "Microsoft.Network/locations/usages/read",
+          "Microsoft.Network/networkInterfaces/write",
+          "Microsoft.Network/networkInterfaces/read",
+          "Microsoft.Network/networkInterfaces/delete",
+          "Microsoft.Network/networkInterfaces/join/action",
+          "Microsoft.Network/networkInterfaces/effectiveNetworkSecurityGroups/action",
+          "Microsoft.Network/networkInterfaces/effectiveRouteTable/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-03-27T15:08:58.3984832Z",
+    "updatedOn": "2023-07-27T15:18:15.2012422Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1f135831-5bbe-4924-9016-264044c00788",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1f135831-5bbe-4924-9016-264044c00788"
+}

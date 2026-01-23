@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Nexus Network Fabric Service Writer",
+    "type": "BuiltInRole",
+    "description": "Read-write access to Nexus Network Fabric Service",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ManagedNetworkFabric/*/read",
+          "Microsoft.ManagedNetworkFabric/*/write",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-05-13T15:04:37.4782279Z",
+    "updatedOn": "2024-05-13T15:04:37.4782279Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a5eb8433-97a5-4a06-80b2-a877e1622c31",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a5eb8433-97a5-4a06-80b2-a877e1622c31"
+}

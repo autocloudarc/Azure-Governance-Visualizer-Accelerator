@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/5a2de5c4-1621-5c72-8469-ed455903e097",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-SQL0",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Server Contributor",
+  "RoleDefinitionId": "6d8ee4ec-f05a-4a1d-8b00-a9b17e38b437",
+  "ObjectId": "b294b13b-7150-469b-8cd5-03d09546d627",
+  "ObjectType": "ServicePrincipal"
+}

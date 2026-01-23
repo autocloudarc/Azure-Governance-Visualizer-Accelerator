@@ -1,0 +1,32 @@
+{
+  "roleName": "CDN Profile Reader",
+  "type": "BuiltInRole",
+  "description": "Can view CDN profiles and their endpoints, but can't make changes.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Cdn/edgenodes/read",
+        "Microsoft.Cdn/operationresults/*",
+        "Microsoft.Cdn/profiles/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Cdn/profiles/afdendpoints/validateCustomDomain/action",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Cdn/profiles/CheckResourceUsage/action",
+        "Microsoft.Cdn/profiles/endpoints/CheckResourceUsage/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2016-01-23T02:48:46.4996252Z",
+  "updatedOn": "2024-01-29T16:00:37.3526635Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Azure Batch Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Grants permissions to manage Batch pools and jobs but not to modify accounts.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Batch/batchAccounts/read",
+          "Microsoft.Batch/batchAccounts/applications/*",
+          "Microsoft.Batch/batchAccounts/certificates/*",
+          "Microsoft.Batch/batchAccounts/certificateOperationResults/*",
+          "Microsoft.Batch/batchAccounts/pools/*",
+          "Microsoft.Batch/batchAccounts/poolOperationResults/*",
+          "Microsoft.Batch/locations/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Batch/batchAccounts/jobSchedules/*",
+          "Microsoft.Batch/batchAccounts/jobs/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-17T15:43:50.3319289Z",
+    "updatedOn": "2024-10-17T15:43:50.3319289Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6aaa78f1-f7de-44ca-8722-c64a23943cae",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6aaa78f1-f7de-44ca-8722-c64a23943cae"
+}

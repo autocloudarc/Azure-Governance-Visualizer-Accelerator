@@ -1,0 +1,27 @@
+{
+  "roleName": "Astronomer Astro Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides access to Astronomer.Astro Control Plane Operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Astronomer.Astro/register/action",
+        "Astronomer.Astro/unregister/action",
+        "Astronomer.Astro/operations/read",
+        "Astronomer.Astro/organizations/read",
+        "Astronomer.Astro/organizations/write",
+        "Astronomer.Astro/organizations/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-09T05:42:15.2079083Z",
+  "updatedOn": "2026-01-09T05:42:15.2079083Z",
+  "createdBy": null,
+  "updatedBy": null
+}

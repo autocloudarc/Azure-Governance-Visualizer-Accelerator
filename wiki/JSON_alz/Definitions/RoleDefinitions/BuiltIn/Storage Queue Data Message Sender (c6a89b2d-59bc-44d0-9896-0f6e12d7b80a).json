@@ -1,0 +1,22 @@
+{
+  "roleName": "Storage Queue Data Message Sender",
+  "type": "BuiltInRole",
+  "description": "Allows for sending of Azure Storage queue messages",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/queueServices/queues/messages/add/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-01-28T22:28:34.7459724Z",
+  "updatedOn": "2021-11-11T20:13:55.8325508Z",
+  "createdBy": null,
+  "updatedBy": null
+}

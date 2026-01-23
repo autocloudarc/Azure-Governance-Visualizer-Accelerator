@@ -1,0 +1,23 @@
+{
+  "roleName": "Hybrid Server Resource Administrator",
+  "type": "BuiltInRole",
+  "description": "Can read, write, delete, and re-onboard Hybrid servers to the Hybrid Resource Provider.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridCompute/machines/*",
+        "Microsoft.HybridCompute/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-04-29T21:39:32.3132923Z",
+  "updatedOn": "2021-11-11T20:14:00.2548257Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/c147cb4c-b5b7-558c-8dbe-69cee9c3cfa1",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-KeyVaultSup0",
+  "SignInName": null,
+  "RoleDefinitionName": "Key Vault Contributor",
+  "RoleDefinitionId": "f25e0fa2-a7c8-4377-a976-54943a77a395",
+  "ObjectId": "d4353230-7404-41bb-9cb7-885bdaa6c8e9",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,25 @@
+{
+  "roleName": "Project Babylon Data Curator",
+  "type": "BuiltInRole",
+  "description": "The Microsoft.ProjectBabylon data curator can create, read, modify and delete catalog data objects and establish relationships between objects. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ProjectBabylon/accounts/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.ProjectBabylon/accounts/data/read",
+        "Microsoft.ProjectBabylon/accounts/data/write"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-11-14T02:31:33.7988825Z",
+  "updatedOn": "2021-11-11T20:14:51.4929515Z",
+  "createdBy": null,
+  "updatedBy": null
+}

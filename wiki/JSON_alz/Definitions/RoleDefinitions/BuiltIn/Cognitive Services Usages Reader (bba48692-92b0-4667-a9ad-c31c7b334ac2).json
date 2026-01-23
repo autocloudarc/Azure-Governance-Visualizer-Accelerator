@@ -1,0 +1,22 @@
+{
+  "roleName": "Cognitive Services Usages Reader",
+  "type": "BuiltInRole",
+  "description": "Minimal permission to view Cognitive Services usages.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/locations/usages/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-07-18T15:21:40.0260836Z",
+  "updatedOn": "2023-07-18T15:21:40.0260836Z",
+  "createdBy": null,
+  "updatedBy": null
+}

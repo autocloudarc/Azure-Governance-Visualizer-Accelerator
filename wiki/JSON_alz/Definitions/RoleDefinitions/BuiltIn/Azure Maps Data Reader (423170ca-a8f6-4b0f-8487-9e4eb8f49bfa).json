@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Maps Data Reader",
+  "type": "BuiltInRole",
+  "description": "Grants access to read map related data from an Azure maps account.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Maps/accounts/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-10-05T19:47:03.472307Z",
+  "updatedOn": "2021-11-11T20:13:20.9582685Z",
+  "createdBy": null,
+  "updatedBy": null
+}

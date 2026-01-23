@@ -1,0 +1,45 @@
+{
+  "properties": {
+    "roleName": "Microsoft Sentinel Contributor",
+    "type": "BuiltInRole",
+    "description": "Microsoft Sentinel Contributor",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.SecurityInsights/*",
+          "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+          "Microsoft.OperationalInsights/workspaces/*/read",
+          "Microsoft.OperationalInsights/workspaces/savedSearches/*",
+          "Microsoft.OperationsManagement/solutions/read",
+          "Microsoft.OperationalInsights/workspaces/query/read",
+          "Microsoft.OperationalInsights/workspaces/query/*/read",
+          "Microsoft.OperationalInsights/workspaces/dataSources/read",
+          "Microsoft.OperationalInsights/querypacks/*/read",
+          "Microsoft.Insights/workbooks/*",
+          "Microsoft.Insights/myworkbooks/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [
+          "Microsoft.SecurityInsights/ConfidentialWatchlists/*",
+          "Microsoft.OperationalInsights/workspaces/query/ConfidentialWatchlist/*"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-08-28T16:39:03.8725173Z",
+    "updatedOn": "2022-08-02T00:12:09.1707121Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ab8e14d6-4a74-4a29-9ba8-549422addade",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ab8e14d6-4a74-4a29-9ba8-549422addade"
+}

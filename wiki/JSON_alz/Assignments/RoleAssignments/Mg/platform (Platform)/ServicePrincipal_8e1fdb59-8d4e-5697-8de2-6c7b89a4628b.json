@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/8e1fdb59-8d4e-5697-8de2-6c7b89a4628b",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-VM-ChangeTrack",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "8e09f885-e656-4949-bf97-82eb3c4e43a3",
+  "ObjectType": "ServicePrincipal"
+}

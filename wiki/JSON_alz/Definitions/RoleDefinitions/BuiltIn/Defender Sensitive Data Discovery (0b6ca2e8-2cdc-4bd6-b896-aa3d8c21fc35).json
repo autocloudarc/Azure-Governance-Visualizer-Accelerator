@@ -1,0 +1,28 @@
+{
+  "roleName": "Defender Sensitive Data Discovery",
+  "type": "BuiltInRole",
+  "description": "Grants permissions for Microsoft Defender for Cloud Sensitive Data Discovery plan features",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/write",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/fileServices/shares/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-10-17T15:43:50.3319289Z",
+  "updatedOn": "2025-11-18T16:10:12.034037Z",
+  "createdBy": null,
+  "updatedBy": null
+}

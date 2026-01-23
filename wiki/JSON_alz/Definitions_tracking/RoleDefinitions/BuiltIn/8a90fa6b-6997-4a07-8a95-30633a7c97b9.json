@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "DeID Batch Data Owner",
+    "type": "BuiltInRole",
+    "description": "Create and manage DeID batch jobs. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthDataAIServices/DeidServices/Batch/write",
+          "Microsoft.HealthDataAIServices/DeidServices/Batch/delete",
+          "Microsoft.HealthDataAIServices/DeidServices/Batch/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-09-29T20:09:57.8639021Z",
+    "updatedOn": "2023-09-29T20:09:57.8639021Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8a90fa6b-6997-4a07-8a95-30633a7c97b9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8a90fa6b-6997-4a07-8a95-30633a7c97b9"
+}

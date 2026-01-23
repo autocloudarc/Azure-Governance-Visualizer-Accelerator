@@ -1,0 +1,55 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Cloud Controller Manager",
+    "type": "BuiltInRole",
+    "description": "Manage and update the cloud controller manager deployed on top of OpenShift.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+          "Microsoft.Network/loadBalancers/read",
+          "Microsoft.Network/loadBalancers/write",
+          "Microsoft.Network/networkInterfaces/read",
+          "Microsoft.Network/networkInterfaces/write",
+          "Microsoft.Network/networkSecurityGroups/read",
+          "Microsoft.Network/networkSecurityGroups/write",
+          "Microsoft.Network/publicIPAddresses/join/action",
+          "Microsoft.Network/publicIPAddresses/read",
+          "Microsoft.Network/publicIPAddresses/write",
+          "Microsoft.Network/publicIPAddresses/delete",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Network/publicIPPrefixes/join/action",
+          "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Network/privatelinkservices/write",
+          "Microsoft.Network/privatelinkservices/read",
+          "Microsoft.Network/privatelinkservices/delete",
+          "Microsoft.Network/loadBalancers/loadBalancingRules/read",
+          "Microsoft.Network/serviceEndpointPolicies/join/action",
+          "Microsoft.Network/natGateways/join/action",
+          "Microsoft.Network/networkIntentPolicies/join/action",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Network/routeTables/join/action",
+          "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-31T16:20:01.5239321Z",
+    "updatedOn": "2025-11-11T16:10:12.0728459Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a1f96423-95ce-4224-ab27-4e3dc72facd4",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a1f96423-95ce-4224-ab27-4e3dc72facd4"
+}

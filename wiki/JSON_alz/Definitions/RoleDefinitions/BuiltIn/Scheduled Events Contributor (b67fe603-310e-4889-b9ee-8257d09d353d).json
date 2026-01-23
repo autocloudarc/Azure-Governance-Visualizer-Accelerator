@@ -1,0 +1,25 @@
+{
+  "roleName": "Scheduled Events Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides access to scheduled event actions",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Maintenance/scheduledevents/acknowledge/action",
+        "Microsoft.Compute/VirtualMachines/read",
+        "Microsoft.Compute/VirtualMachineScaleSets/read",
+        "Microsoft.Compute/AvailabilitySets/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-04-24T15:11:03.2385683Z",
+  "updatedOn": "2024-05-06T15:07:27.9162114Z",
+  "createdBy": null,
+  "updatedBy": null
+}

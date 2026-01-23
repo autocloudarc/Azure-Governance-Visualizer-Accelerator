@@ -1,0 +1,25 @@
+{
+  "roleName": "Guest Configuration Resource Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you read, write Guest Configuration Resource.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/write",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/read",
+        "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-01-13T21:31:41.9626667Z",
+  "updatedOn": "2022-02-10T19:22:44.9057916Z",
+  "createdBy": null,
+  "updatedBy": null
+}

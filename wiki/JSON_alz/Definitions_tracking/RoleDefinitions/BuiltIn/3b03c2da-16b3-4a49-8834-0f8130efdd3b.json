@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Log Analytics Data Reader",
+    "type": "BuiltInRole",
+    "description": "Log Analytics Data Reader can query and search the logs it is allowed to view over Log Analytics workspaces and tables",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.OperationalInsights/workspaces/query/read",
+          "Microsoft.OperationalInsights/workspaces/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.OperationalInsights/workspaces/tables/data/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-12T10:05:25.3336787Z",
+    "updatedOn": "2025-09-12T10:05:25.3336787Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3b03c2da-16b3-4a49-8834-0f8130efdd3b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3b03c2da-16b3-4a49-8834-0f8130efdd3b"
+}

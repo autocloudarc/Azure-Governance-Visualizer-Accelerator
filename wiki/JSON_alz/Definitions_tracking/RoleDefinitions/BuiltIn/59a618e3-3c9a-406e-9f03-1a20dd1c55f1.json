@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Chaos Studio Target Contributor",
+    "type": "BuiltInRole",
+    "description": "Can onboard targets and manage capabilities but cannot create, run, or see details for experiments",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Chaos/targets/write",
+          "Microsoft.Chaos/targets/delete",
+          "Microsoft.Chaos/targets/read",
+          "Microsoft.Chaos/targets/capabilities/write",
+          "Microsoft.Chaos/targets/capabilities/delete",
+          "Microsoft.Chaos/targets/capabilities/read",
+          "Microsoft.Chaos/locations/targetTypes/read",
+          "Microsoft.Chaos/locations/targetTypes/capabilityTypes/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-02-17T16:06:31.768946Z",
+    "updatedOn": "2025-02-17T16:06:31.768946Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/59a618e3-3c9a-406e-9f03-1a20dd1c55f1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "59a618e3-3c9a-406e-9f03-1a20dd1c55f1"
+}

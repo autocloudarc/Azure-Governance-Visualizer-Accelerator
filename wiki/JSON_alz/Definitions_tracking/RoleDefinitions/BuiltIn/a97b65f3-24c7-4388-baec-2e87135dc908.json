@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services User",
+    "type": "BuiltInRole",
+    "description": "Lets you read and list keys of Cognitive Services.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.CognitiveServices/*/read",
+          "Microsoft.CognitiveServices/accounts/listkeys/action",
+          "Microsoft.Insights/alertRules/read",
+          "Microsoft.Insights/diagnosticSettings/read",
+          "Microsoft.Insights/logDefinitions/read",
+          "Microsoft.Insights/metricdefinitions/read",
+          "Microsoft.Insights/metrics/read",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-08-08T23:23:43.7701274Z",
+    "updatedOn": "2021-11-11T20:13:27.5316443Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a97b65f3-24c7-4388-baec-2e87135dc908",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a97b65f3-24c7-4388-baec-2e87135dc908"
+}

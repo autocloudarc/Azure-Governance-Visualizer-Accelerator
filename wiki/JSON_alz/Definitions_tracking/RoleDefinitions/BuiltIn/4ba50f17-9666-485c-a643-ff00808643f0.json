@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "FHIR SMART User",
+    "type": "BuiltInRole",
+    "description": "Role allows user to access FHIR Service according to SMART on FHIR specification",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthcareApis/services/fhir/resources/read",
+          "Microsoft.HealthcareApis/services/fhir/resources/readById/action",
+          "Microsoft.HealthcareApis/services/fhir/resources/search/action",
+          "Microsoft.HealthcareApis/services/fhir/resources/smart/action",
+          "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read",
+          "Microsoft.HealthcareApis/workspaces/fhirservices/resources/readById/action",
+          "Microsoft.HealthcareApis/workspaces/fhirservices/resources/search/action",
+          "Microsoft.HealthcareApis/workspaces/fhirservices/resources/smart/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-10-26T19:22:25.1242244Z",
+    "updatedOn": "2025-10-13T15:11:13.9709948Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4ba50f17-9666-485c-a643-ff00808643f0",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4ba50f17-9666-485c-a643-ff00808643f0"
+}

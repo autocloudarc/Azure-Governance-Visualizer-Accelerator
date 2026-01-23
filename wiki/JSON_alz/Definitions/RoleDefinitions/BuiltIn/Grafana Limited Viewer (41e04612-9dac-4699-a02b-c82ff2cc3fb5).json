@@ -1,0 +1,22 @@
+{
+  "roleName": "Grafana Limited Viewer",
+  "type": "BuiltInRole",
+  "description": "View home page.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Dashboard/grafana/ActAsGrafanaLimitedViewer/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-19T05:11:50.7830427Z",
+  "updatedOn": "2024-07-19T05:11:50.7830427Z",
+  "createdBy": null,
+  "updatedBy": null
+}

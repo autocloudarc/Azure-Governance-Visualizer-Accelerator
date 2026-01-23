@@ -1,0 +1,26 @@
+"storageAccount";"kind";"skuName";"skuTier";"location";"creationTime";"allowBlobPublicAccess";"publicNetworkAccess";"SubscriptionId";"SubscriptionName";"subscriptionQuotaId";"subscriptionMGPath";"resourceGroup";"networkAclsdefaultAction";"staticWebsitesState";"staticWebsitesResponse";"containersCanBeListed";"containersCount";"containers";"containersAnonymousContainerCount";"containersAnonymousContainer";"containersAnonymousBlobCount";"containersAnonymousBlob";"ipRulesCount";"ipRulesIPAddressList";"virtualNetworkRulesCount";"virtualNetworkRulesList";"resourceAccessRulesCount";"resourceAccessRules";"bypass";"supportsHttpsTrafficOnly";"minimumTlsVersion";"allowSharedKeyAccess";"requireInfrastructureEncryption";"allowedCopyScope";"allowCrossTenantReplication";"dnsEndpointType";"usedCapacity";"cost";"metercategory";"curreny"
+"mcaps8b44f38b05c31fa9";"StorageV2";"Standard_LRS";"Standard";"westus2";"01/21/2026 01:07:02";"False";"Disabled";"dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"azr-mge-dev-sub-05";"Internal_2014-09-01";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9/alz/platform/security/dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"McapsGovernance";"Allow";"False";"n/a";"False";"n/a";"";"0";"";"0";"";"0";"";"0";"";"1";"{
+  ""resource"": [
+    ""/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/Microsoft.Security/datascanners/storageDataScanner""
+  ]
+}";"AzureServices";"True";"TLS1_2";"False";"likely False";"From any Storage Account";"False";"standard";"0.0000003483146429061889648438";"";"";""
+"mcaps92acaf885a677310";"StorageV2";"Standard_LRS";"Standard";"westus2";"01/21/2026 02:10:33";"False";"Disabled";"399a72e1-30af-4a84-92ac-af885a677310";"azr-mge-dev-sub-04";"Internal_2014-09-01";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9/alz/platform/connectivity/399a72e1-30af-4a84-92ac-af885a677310";"McapsGovernance";"Allow";"False";"n/a";"False";"n/a";"";"0";"";"0";"";"0";"";"0";"";"1";"{
+  ""resource"": [
+    ""/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/Microsoft.Security/datascanners/storageDataScanner""
+  ]
+}";"AzureServices";"True";"TLS1_2";"False";"likely False";"From any Storage Account";"False";"standard";"0.0000003483146429061889648438";"";"";""
+"mcapsaa81afddc58c78dc";"StorageV2";"Standard_LRS";"Standard";"westus2";"01/21/2026 02:10:32";"False";"Disabled";"1c083bf3-30ac-4804-aa81-afddc58c78dc";"azr-mge-dev-sub-02";"Internal_2014-09-01";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9/alz/platform/identity/1c083bf3-30ac-4804-aa81-afddc58c78dc";"McapsGovernance";"Allow";"False";"n/a";"False";"n/a";"";"0";"";"0";"";"0";"";"0";"";"1";"{
+  ""resource"": [
+    ""/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Security/datascanners/storageDataScanner""
+  ]
+}";"AzureServices";"True";"TLS1_2";"False";"likely False";"From any Storage Account";"False";"standard";"0.0000003483146429061889648438";"";"";""
+"mcapsbe1db49568bd9c5f";"StorageV2";"Standard_LRS";"Standard";"westus2";"01/21/2026 02:10:31";"False";"Disabled";"8ff0bc40-d483-4e35-be1d-b49568bd9c5f";"azr-mge-dev-sub-03";"Internal_2014-09-01";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9/alz/platform/management/8ff0bc40-d483-4e35-be1d-b49568bd9c5f";"McapsGovernance";"Allow";"False";"n/a";"False";"n/a";"";"0";"";"0";"";"0";"";"0";"";"1";"{
+  ""resource"": [
+    ""/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/Microsoft.Security/datascanners/storageDataScanner""
+  ]
+}";"AzureServices";"True";"TLS1_2";"False";"likely False";"From any Storage Account";"False";"standard";"n/a";"";"";""
+"sta1803";"StorageV2";"Standard_LRS";"Standard";"eastus2";"11/11/2025 23:07:18";"False";"Disabled";"dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"azr-mge-dev-sub-05";"Internal_2014-09-01";"54d665dd-30f1-45c5-a8d5-d6ffcdb518f9/alz/platform/security/dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"rg-ops-tier-dev";"Allow";"False";"n/a";"False";"n/a";"";"0";"";"0";"";"0";"";"0";"";"1";"{
+  ""resource"": [
+    ""/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/Microsoft.Security/datascanners/storageDataScanner""
+  ]
+}";"AzureServices";"True";"TLS1_2";"False";"False";"AAD";"False";"Standard";"0.0000003483146429061889648438";"";"";""

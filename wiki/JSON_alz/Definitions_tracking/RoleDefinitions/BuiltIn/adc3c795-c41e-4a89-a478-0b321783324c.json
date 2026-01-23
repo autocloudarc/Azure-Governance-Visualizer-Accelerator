@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Microsoft.AzureStackHCI Device Pool Manager",
+    "type": "BuiltInRole",
+    "description": "Microsoft.AzureStackHCI Device Pool Manager ",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureStackHCI/DevicePools/read",
+          "Microsoft.AzureStackHCI/DevicePools/ClaimDevices/action",
+          "Microsoft.AzureStackHCI/DevicePools/ReleaseDevices/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-16T08:59:07.7169017Z",
+    "updatedOn": "2025-05-16T08:59:07.7169017Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/adc3c795-c41e-4a89-a478-0b321783324c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "adc3c795-c41e-4a89-a478-0b321783324c"
+}

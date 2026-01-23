@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Azure Arc Kubernetes Cluster Admin",
+    "type": "BuiltInRole",
+    "description": "Lets you manage all resources in the cluster.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Kubernetes/connectedClusters/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-06-12T20:55:30.9910462Z",
+    "updatedOn": "2021-11-11T20:14:34.1743694Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8393591c-06b9-48a2-a542-1bd6b377f6a2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8393591c-06b9-48a2-a542-1bd6b377f6a2"
+}

@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Container Registry Credential Set Administrator",
+    "type": "BuiltInRole",
+    "description": "Create, Read, Update, and Delete Credential Sets in Container Registry. This role doesn't affect the needed permissions for storing content inside Azure Key Vault. This role also doesn't grant permissions to manage Cache Rules.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/credentialSets/read",
+          "Microsoft.ContainerRegistry/registries/credentialSets/write",
+          "Microsoft.ContainerRegistry/registries/credentialSets/delete",
+          "Microsoft.ContainerRegistry/registries/credentialSets/operationStatuses/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-04-08T15:14:41.7755138Z",
+    "updatedOn": "2025-04-08T15:14:41.7755138Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f094fb07-0703-4400-ad6a-e16dd8000e14",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f094fb07-0703-4400-ad6a-e16dd8000e14"
+}

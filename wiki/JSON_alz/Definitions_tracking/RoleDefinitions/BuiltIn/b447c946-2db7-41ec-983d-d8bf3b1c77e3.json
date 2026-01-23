@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "IoT Hub Data Reader",
+    "type": "BuiltInRole",
+    "description": "Allows for full read access to IoT Hub data-plane properties",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Devices/IotHubs/*/read",
+          "Microsoft.Devices/IotHubs/fileUpload/notifications/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-04-22T18:03:29.8843192Z",
+    "updatedOn": "2021-11-11T20:15:08.6054154Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b447c946-2db7-41ec-983d-d8bf3b1c77e3",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b447c946-2db7-41ec-983d-d8bf3b1c77e3"
+}

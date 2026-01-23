@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Spring Cloud Data Reader",
+  "type": "BuiltInRole",
+  "description": "Allow read access to Azure Spring Cloud Data",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-03-25T11:12:12.678601Z",
+  "updatedOn": "2021-11-11T20:15:05.3368606Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Kubernetes Agent Subscription Level Operator",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for Cloud subscription level permissions needed to activate Containers plan",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/write",
+          "Microsoft.OperationalInsights/workspaces/write",
+          "Microsoft.OperationalInsights/workspaces/read",
+          "Microsoft.OperationalInsights/workspaces/listKeys/action",
+          "Microsoft.OperationalInsights/workspaces/sharedkeys/action",
+          "Microsoft.OperationalInsights/workspaces/sharedkeys/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-11-15T10:04:56.4175374Z",
+    "updatedOn": "2024-12-13T11:27:18.3550673Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ada52afe-776a-4b4d-a8f2-55670d3d8178",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ada52afe-776a-4b4d-a8f2-55670d3d8178"
+}
