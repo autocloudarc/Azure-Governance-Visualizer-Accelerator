@@ -33,8 +33,8 @@ param clientSecret string
 @description('The AzGovViz management group ID')
 param managementGroupId string
 
-@description('The authorized groups IDs to access the web app')
-param authorizedGroupId string
+@description('The authorized user object ID to access the web app')
+param authorizedUserId string
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2024-11-01' = {
   name: appServicePlanName
@@ -87,15 +87,10 @@ resource webApp 'Microsoft.Web/sites@2024-11-01' = {
             clientSecretSettingName: 'AzureAdClientSecret'
           }
           validation: {
-            jwtClaimChecks: {
-              allowedGroups: [
-                authorizedGroupId
-              ]
-            }
             defaultAuthorizationPolicy: {
               allowedPrincipals: {
-                groups: [
-                  authorizedGroupId
+                identities: [
+                  authorizedUserId
                 ]
               }
             }
