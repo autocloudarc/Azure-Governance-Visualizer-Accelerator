@@ -3,8 +3,8 @@ name: DeployAzGovVizAccelerator
 on:
   workflow_dispatch:
     inputs:
-      authorizedGroupId:
-        description: 'Authorized Group object Id to access the AzGovViz webapp'
+      authorizedUserId:
+        description: "Authorized User object Id to access the AzGovViz webapp"
         required: true
 jobs:
   AzureGovernanceVisualizer:
@@ -15,7 +15,6 @@ jobs:
       contents: write
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -37,4 +36,3 @@ jobs:
           template: ./bicep/webApp.bicep
           parameters: ./bicep/webApp.parameters.json webAppName="${{vars.WEB_APP_NAME}}" managementGroupId="${{secrets.MANAGEMENT_GROUP_ID}}" clientId="${{ secrets.ENTRA_CLIENT_ID }}" clientSecret="${{ secrets.ENTRA_CLIENT_SECRET }}" authorizedGroupId="${{github.event.inputs.AuthorizedGroupId}}"
           failOnStdErr: false
-

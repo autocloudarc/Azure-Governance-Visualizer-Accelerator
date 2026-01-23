@@ -779,11 +779,15 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 
 [] 18. Configure the appropriate GitHub action permissions in the GitHub org to allow GitHub Actions to run.
 
-[] 19. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file. Run workflows in order: DeployAzGovVizAccelerator → wait for SyncAzGovViz → DeployAzGovViz.
+[] 19. If present, replace the "Authorized Group object Id to access the AzGovViz webapp" (authorizedGroupId:) DeployAzGovAccelerator workflow parameter with "Authorized User Obect Id" ( authorizedUserId:) and provide the object id value for the current user as the default.
 
-[] 20. Provide a comprehensive summary of the action taken so far and suggest next steps.
+[] 20. Ensure that the DeployAzGovVizAccelerator and SyncAccelerator workflows are enabled and allowed, otherwise, alert user.
 
-[] 21. After the next suggested steps list is provided, please prompt the user to review and then to allow proceeding with these next steps.
+[] 21. Deploy the GitHub action to provision the visualizer web app in azure as described in the README.md file. Run workflows in order: DeployAzGovVizAccelerator → wait for success -> SyncAcclerator.
+
+[] 22. Provide a comprehensive summary of the action taken so far and suggest next steps.
+
+[] 23. After the next suggested steps list is provided, please prompt the user to review and then to allow proceeding with these next steps, but indicate that the workflow must be triggered manually.
 
 **CRITICAL REMINDERS FOR THE AGENT:**
 
@@ -792,6 +796,7 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 - Always use management group IDs (not display names) for MANAGEMENT_GROUP_ID
 - Always verify all 6 secrets + 2 variables before running workflows (step 17)
 - Use full repo paths in all gh CLI commands: `--repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
+- Instead of using the "Authorized Group object Id to access the AzGovViz webapp" parameter for the workflow, replace it
 
 ### Keep the Azure Governance Visualizer code up-to-date
 
