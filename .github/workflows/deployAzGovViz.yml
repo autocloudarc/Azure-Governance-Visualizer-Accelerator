@@ -18,7 +18,7 @@ env:
   WebAppSubscriptionId: ${{ secrets.SUBSCRIPTION_ID }}
   WebAppResourceGroup: ${{ vars.RESOURCE_GROUP_NAME }}
   WebAppName: ${{ vars.WEB_APP_NAME }}
-  ALLOW_PUBLIC_REPO: false #set to true if you want to allow running in a public repository (use with caution)
+  ALLOW_PUBLIC_REPO: true #set to true if you want to allow running in a public repository (use with caution)
 
 on:
   #schedule:
@@ -35,7 +35,6 @@ permissions:
   pull-requests: write
 
 jobs:
-
   AzureGovernanceVisualizer:
     if: ${{ github.repository != 'Azure/Azure-Governance-Visualizer-Accelerator' }}
     runs-on: ubuntu-latest
