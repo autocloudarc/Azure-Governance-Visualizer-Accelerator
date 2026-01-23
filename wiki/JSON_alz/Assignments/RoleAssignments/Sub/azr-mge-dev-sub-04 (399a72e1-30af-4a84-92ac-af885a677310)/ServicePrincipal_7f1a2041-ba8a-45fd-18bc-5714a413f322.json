@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/7f1a2041-ba8a-45fd-18bc-5714a413f322",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning Azure Policy Addon for Kub",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Containers Sensor",
+  "RoleDefinitionId": "5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "ObjectId": "632a4d89-8100-4094-9e7c-b1b20a2c14e6",
+  "ObjectType": "ServicePrincipal"
+}

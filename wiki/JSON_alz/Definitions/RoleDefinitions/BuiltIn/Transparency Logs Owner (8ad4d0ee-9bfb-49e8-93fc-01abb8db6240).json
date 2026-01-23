@@ -1,0 +1,24 @@
+{
+  "roleName": "Transparency Logs Owner",
+  "type": "BuiltInRole",
+  "description": "Grants full access to manage Transparency Log resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Sovereign/transparencyLogs/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-18T17:06:03.4011538Z",
+  "updatedOn": "2024-07-18T17:06:03.4011538Z",
+  "createdBy": null,
+  "updatedBy": null
+}

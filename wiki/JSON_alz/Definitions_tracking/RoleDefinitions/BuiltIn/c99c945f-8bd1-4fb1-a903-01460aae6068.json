@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Azure Stack HCI Connected InfraVMs",
+    "type": "BuiltInRole",
+    "description": "Role of Arc Integration for Azure Stack HCI Infrastructure Virtual Machines.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridCompute/*/read",
+          "Microsoft.HybridCompute/machines/write",
+          "Microsoft.HybridCompute/machines/delete",
+          "Microsoft.HybridCompute/machines/extensions/read",
+          "Microsoft.HybridCompute/machines/extensions/write",
+          "Microsoft.HybridCompute/machines/extensions/delete",
+          "Microsoft.HybridCompute/machines/UpgradeExtensions/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-07-04T15:33:28.3954303Z",
+    "updatedOn": "2024-07-16T15:12:08.313718Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c99c945f-8bd1-4fb1-a903-01460aae6068",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c99c945f-8bd1-4fb1-a903-01460aae6068"
+}

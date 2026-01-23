@@ -1,0 +1,22 @@
+{
+  "roleName": "Container Registry Cache Rule Reader",
+  "type": "BuiltInRole",
+  "description": "Read the configuration of Cache Rules in Container Registry. This permission doesn't grant permission to read Credential Sets.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/cacheRules/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-08T15:14:41.7775086Z",
+  "updatedOn": "2025-04-08T15:14:41.7775086Z",
+  "createdBy": null,
+  "updatedBy": null
+}

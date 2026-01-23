@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/01c6ca0d-4d98-5221-bcb2-7b1e583e1092",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-MDFC-Config-H224",
+  "SignInName": null,
+  "RoleDefinitionName": "Security Admin",
+  "RoleDefinitionId": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+  "ObjectId": "f44fb9d8-b77d-4dd3-bc10-3cf07f7486db",
+  "ObjectType": "ServicePrincipal"
+}

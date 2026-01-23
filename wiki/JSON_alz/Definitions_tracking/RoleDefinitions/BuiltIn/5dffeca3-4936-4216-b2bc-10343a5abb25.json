@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Schema Registry Contributor",
+    "type": "BuiltInRole",
+    "description": "Read, write, and delete Schema Registry groups and schemas.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EventHub/namespaces/schemagroups/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.EventHub/namespaces/schemas/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-09-13T06:48:26.6032931Z",
+    "updatedOn": "2025-05-05T15:00:28.9984613Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5dffeca3-4936-4216-b2bc-10343a5abb25",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5dffeca3-4936-4216-b2bc-10343a5abb25"
+}

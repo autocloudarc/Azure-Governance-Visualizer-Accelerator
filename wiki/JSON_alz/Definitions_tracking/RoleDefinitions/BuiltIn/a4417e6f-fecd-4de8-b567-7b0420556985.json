@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Key Vault Certificates Officer",
+    "type": "BuiltInRole",
+    "description": "Perform any action on the certificates of a key vault, except manage permissions. Only works for key vaults that use the 'Azure role-based access control' permission model.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.KeyVault/checkNameAvailability/read",
+          "Microsoft.KeyVault/deletedVaults/read",
+          "Microsoft.KeyVault/locations/*/read",
+          "Microsoft.KeyVault/vaults/*/read",
+          "Microsoft.KeyVault/operations/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.KeyVault/vaults/certificatecas/*",
+          "Microsoft.KeyVault/vaults/certificates/*",
+          "Microsoft.KeyVault/vaults/certificatecontacts/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-05-19T17:52:47.2499247Z",
+    "updatedOn": "2023-06-12T15:03:21.0577597Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a4417e6f-fecd-4de8-b567-7b0420556985",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a4417e6f-fecd-4de8-b567-7b0420556985"
+}

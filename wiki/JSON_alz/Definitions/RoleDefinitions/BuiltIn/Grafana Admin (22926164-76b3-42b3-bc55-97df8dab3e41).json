@@ -1,0 +1,22 @@
+{
+  "roleName": "Grafana Admin",
+  "type": "BuiltInRole",
+  "description": "Manage server-wide settings and manage access to resources such as organizations, users, and licenses.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Dashboard/grafana/ActAsGrafanaAdmin/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-07-15T21:32:35.380234Z",
+  "updatedOn": "2024-07-19T04:57:48.3613041Z",
+  "createdBy": null,
+  "updatedBy": null
+}

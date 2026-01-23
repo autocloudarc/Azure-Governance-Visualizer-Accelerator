@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/b8b2edf5-fa89-51e2-9dca-3e42101e096c",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-AppServices0",
+  "SignInName": null,
+  "RoleDefinitionName": "Website Contributor",
+  "RoleDefinitionId": "de139f84-1756-47ae-9be6-808fbbe84772",
+  "ObjectId": "a7787ead-50d0-4207-a061-ffc63777afd8",
+  "ObjectType": "ServicePrincipal"
+}

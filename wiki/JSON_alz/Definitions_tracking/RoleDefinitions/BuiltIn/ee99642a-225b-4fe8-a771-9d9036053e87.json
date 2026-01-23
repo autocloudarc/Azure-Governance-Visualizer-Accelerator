@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Arc Container Storage Contributor",
+    "type": "BuiltInRole",
+    "description": "Create, read, modify, and delete Arc Container Storage resources on connected clusters. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ArcContainerStorage/edgeStorageConfigurations/read",
+          "Microsoft.ArcContainerStorage/edgeStorageConfigurations/write",
+          "Microsoft.ArcContainerStorage/edgeStorageConfigurations/delete",
+          "Microsoft.ArcContainerStorage/edgeVolumes/read",
+          "Microsoft.ArcContainerStorage/edgeVolumes/write",
+          "Microsoft.ArcContainerStorage/edgeVolumes/delete",
+          "Microsoft.ArcContainerStorage/edgeVolumes/ingestSubvolumes/read",
+          "Microsoft.ArcContainerStorage/edgeVolumes/ingestSubvolumes/write",
+          "Microsoft.ArcContainerStorage/edgeVolumes/ingestSubvolumes/delete",
+          "Microsoft.ArcContainerStorage/locations/operationStatuses/read",
+          "Microsoft.ArcContainerStorage/locations/operationStatuses/write"
+        ],
+        "notActions": [
+          "Microsoft.ArcContainerStorage/register/action",
+          "Microsoft.ArcContainerStorage/unregister/action"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-12-16T16:24:39.1955519Z",
+    "updatedOn": "2025-12-16T16:24:39.1955519Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ee99642a-225b-4fe8-a771-9d9036053e87",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ee99642a-225b-4fe8-a771-9d9036053e87"
+}

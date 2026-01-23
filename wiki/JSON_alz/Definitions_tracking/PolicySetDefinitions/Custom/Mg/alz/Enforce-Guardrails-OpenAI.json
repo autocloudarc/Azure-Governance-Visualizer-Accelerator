@@ -1,0 +1,241 @@
+{
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Open AI (Cognitive Service)",
+    "policyType": "Custom",
+    "description": "This policy initiative is a group of policies that ensures Open AI (Cognitive Service) is compliant per regulated Landing Zones.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Cognitive Services",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.2.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:27.0669751Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "azureAiDiagSettings": {
+        "type": "string",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "AuditIfNotExists"
+      },
+      "azureAiDisableLocalKey": {
+        "type": "string",
+        "allowedValues": [
+          "DeployIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "DeployIfNotExists"
+      },
+      "azureAiDisableLocalKey2": {
+        "type": "string",
+        "allowedValues": [
+          "DeployIfNotExists",
+          "Disabled"
+        ],
+        "defaultValue": "DeployIfNotExists"
+      },
+      "azureAiNetworkAccess": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "azureAiPrivateLink": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      },
+      "cognitiveServicesCustomerStorage": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "cognitiveServicesDisableLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "cognitiveServicesManagedIdentity": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "cognitiveServicesModifyDisableLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "cognitiveServicesNetworkAcls": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "cognitiveServicesOutboundNetworkAccess": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Deny-OpenAi-OutboundNetworkAccess",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-CognitiveServices-RestrictOutboundNetworkAccess",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('cognitiveServicesOutboundNetworkAccess')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-OpenAi-NetworkAcls",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-CognitiveServices-NetworkAcls",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('cognitiveServicesNetworkAcls')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Cognitive-Services-Managed-Identity",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/fe3fd216-4f83-4fc1-8984-2bbec80a3418",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('cognitiveServicesManagedIdentity')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Cognitive-Services-Local-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/71ef260a-8f18-47b7-abcb-62d0673d94dc",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('cognitiveServicesDisableLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Cognitive-Services-Cust-Storage",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/46aa9b05-0e60-4eae-a88b-1e9d374fa515",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('cognitiveServicesCustomerStorage')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-Cognitive-Services-Local-Auth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/14de9e63-1b31-492e-a5a3-c3f7fd57f555",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('cognitiveServicesModifyDisableLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-AzureAI-Network-Access",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/037eea7a-bd0a-46c5-9a66-03aea78705d3",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('azureAiNetworkAccess')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Audit-AzureAI-Private-Link",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d6759c02-b87f-42b7-892e-71b3f471d782",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('azureAiPrivateLink')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Dine-AzureAI-Local-Key",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/d45520cb-31ca-44ba-8da2-fcf914608544",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('azureAiDisableLocalKey')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Dine-AzureAI-Local-Key2",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/55eff01b-f2bd-4c32-9203-db285f709d30",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('azureAiDisableLocalKey2')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Aine-AzureAI-Diag-Settings",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1b4d1c4e-934c-4703-944c-27c82c06bebb",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('azureAiDiagSettings')]"
+          }
+        },
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": []
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-OpenAI",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "Enforce-Guardrails-OpenAI",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:26.9198765Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:26.9198765Z"
+  }
+}

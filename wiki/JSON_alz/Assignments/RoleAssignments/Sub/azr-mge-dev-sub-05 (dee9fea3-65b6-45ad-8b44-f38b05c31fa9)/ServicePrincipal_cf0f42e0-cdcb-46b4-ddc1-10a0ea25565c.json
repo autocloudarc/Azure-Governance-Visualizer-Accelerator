@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/cf0f42e0-cdcb-46b4-ddc1-10a0ea25565c",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "Defender for Containers provisioning AKS Security Profile",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "4ecad9be-15a3-4b6a-b243-ce7eecfbeb06",
+  "ObjectType": "ServicePrincipal"
+}

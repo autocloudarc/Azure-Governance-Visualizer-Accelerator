@@ -1,0 +1,28 @@
+{
+  "roleName": "Playwright Workspace Contributor",
+  "type": "BuiltInRole",
+  "description": "View and list Playwright Workspace resources but can not make any changes. Can manage service access tokens and execute Playwright tests.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Loadtestservice/playwrightworkspaces/*/read",
+        "Microsoft.Loadtestservice/locations/playwrightquotas/*",
+        "Microsoft.Loadtestservice/playwrightworkspaces/AccessTokens/*",
+        "Microsoft.Loadtestservice/playwrightworkspaces/TestRuns/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-11-13T18:19:31.1511695Z",
+  "updatedOn": "2025-11-13T18:19:31.1511695Z",
+  "createdBy": null,
+  "updatedBy": null
+}

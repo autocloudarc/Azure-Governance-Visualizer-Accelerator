@@ -1,0 +1,22 @@
+{
+  "roleName": "Online Experimentation Contributor",
+  "type": "BuiltInRole",
+  "description": "Grants permissions for all management operations to Online Experimentation resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.OnlineExperimentation/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-01T15:25:07.1438851Z",
+  "updatedOn": "2025-04-01T15:25:07.1438851Z",
+  "createdBy": null,
+  "updatedBy": null
+}

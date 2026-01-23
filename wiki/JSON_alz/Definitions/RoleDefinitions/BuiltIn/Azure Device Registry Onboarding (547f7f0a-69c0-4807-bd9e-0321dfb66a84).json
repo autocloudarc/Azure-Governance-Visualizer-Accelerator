@@ -1,0 +1,31 @@
+{
+  "roleName": "Azure Device Registry Onboarding",
+  "type": "BuiltInRole",
+  "description": "Allows for full access to Azure Device Registry Namespace and X.509 certificate provisioning.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DeviceRegistry/namespaces/read",
+        "Microsoft.DeviceRegistry/namespaces/write",
+        "Microsoft.DeviceRegistry/namespaces/delete",
+        "Microsoft.DeviceRegistry/namespaces/credentials/*",
+        "Microsoft.DeviceRegistry/namespaces/credentials/policies/*",
+        "Microsoft.Devices/iothubs/*",
+        "Microsoft.Devices/provisioningServices/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/provisioningServices/enrollments/*",
+        "Microsoft.Devices/provisioningServices/enrollmentGroups/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-14T15:21:57.0839779Z",
+  "updatedOn": "2025-10-23T23:27:34.1023721Z",
+  "createdBy": null,
+  "updatedBy": null
+}

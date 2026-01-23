@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "CDN Endpoint Contributor",
+    "type": "BuiltInRole",
+    "description": "Can manage CDN endpoints, but can't grant access to other users.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Cdn/edgenodes/read",
+          "Microsoft.Cdn/operationresults/*",
+          "Microsoft.Cdn/profiles/endpoints/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2016-01-23T02:48:46.4996252Z",
+    "updatedOn": "2023-12-08T08:08:47.9865402Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/426e0c7f-0c7e-4658-b36f-ff54d6c29b45",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "426e0c7f-0c7e-4658-b36f-ff54d6c29b45"
+}

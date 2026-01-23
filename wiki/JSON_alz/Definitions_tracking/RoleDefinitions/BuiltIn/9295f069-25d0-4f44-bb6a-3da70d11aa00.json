@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure Edge Hardware Center Administrator",
+    "type": "BuiltInRole",
+    "description": "Grants you access to take actions as an edge order administrator",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EdgeOrder/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-07T15:26:18.9896197Z",
+    "updatedOn": "2024-08-07T15:26:18.9896197Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/9295f069-25d0-4f44-bb6a-3da70d11aa00",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "9295f069-25d0-4f44-bb6a-3da70d11aa00"
+}

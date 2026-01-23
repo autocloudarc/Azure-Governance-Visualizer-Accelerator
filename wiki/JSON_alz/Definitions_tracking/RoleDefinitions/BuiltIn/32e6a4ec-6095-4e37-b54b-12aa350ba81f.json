@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Service Group Contributor",
+    "type": "BuiltInRole",
+    "description": "Role Definition for contributor of a Service Group",
+    "assignableScopes": [
+      "/providers/Microsoft.Management/serviceGroups"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*"
+        ],
+        "notActions": [
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Authorization/roleAssignments/delete"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-18T18:43:56.1898722Z",
+    "updatedOn": "2024-10-18T18:43:56.1898722Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/32e6a4ec-6095-4e37-b54b-12aa350ba81f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "32e6a4ec-6095-4e37-b54b-12aa350ba81f"
+}

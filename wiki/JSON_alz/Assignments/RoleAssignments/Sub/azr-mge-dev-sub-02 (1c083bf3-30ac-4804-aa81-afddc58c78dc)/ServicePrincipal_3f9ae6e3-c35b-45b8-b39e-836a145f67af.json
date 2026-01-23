@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/3f9ae6e3-c35b-45b8-b39e-836a145f67af",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "Microsoft Defender for Cloud Servers Scanner Resource Provider",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Agentless VM Scan",
+  "RoleDefinitionId": "d24ecba3-c1f4-40fa-a7bb-4588a071e8fd",
+  "ObjectId": "65d577d2-0846-488c-94ff-5a5b872010f2",
+  "ObjectType": "ServicePrincipal"
+}

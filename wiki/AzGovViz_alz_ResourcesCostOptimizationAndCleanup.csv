@@ -1,0 +1,6 @@
+"type";"subscriptionId";"Resource";"Intent"
+"microsoft.network/virtualnetworks";"399a72e1-30af-4a84-92ac-af885a677310";"/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/resourceGroups/alz-connectivity-centralus/providers/Microsoft.Network/virtualNetworks/alz-hub-centralus";"misconfiguration"
+"microsoft.network/publicipaddresses";"399a72e1-30af-4a84-92ac-af885a677310";"/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/resourceGroups/alz-connectivity-eastus2/providers/Microsoft.Network/publicIPAddresses/pip-bastion-hub-eastus2";"cost savings"
+"microsoft.network/virtualnetworks";"399a72e1-30af-4a84-92ac-af885a677310";"/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/resourceGroups/alz-connectivity-eastus2/providers/Microsoft.Network/virtualNetworks/alz-hub-eastus2/subnets/AzureBastionSubnet";"misconfiguration"
+"microsoft.resources/subscriptions/resourcegroups";"dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/resourceGroups/rg-app-tier-dev";"clean up"
+"microsoft.resources/subscriptions/resourcegroups";"dee9fea3-65b6-45ad-8b44-f38b05c31fa9";"/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/resourceGroups/rg-web-tier-dev";"clean up"

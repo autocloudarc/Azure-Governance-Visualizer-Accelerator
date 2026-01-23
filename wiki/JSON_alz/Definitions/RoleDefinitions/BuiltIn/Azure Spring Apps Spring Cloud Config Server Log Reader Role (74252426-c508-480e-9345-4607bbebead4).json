@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Spring Apps Spring Cloud Config Server Log Reader Role",
+  "type": "BuiltInRole",
+  "description": "Read real-time logs for Spring Cloud Config Server in Azure Spring Apps",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppPlatform/Spring/read",
+        "Microsoft.AppPlatform/Spring/configServers/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/configService/logstream/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-05-30T15:22:33.0533129Z",
+  "updatedOn": "2024-05-30T15:22:33.0533129Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "Secrets Store Extension Owner",
+    "type": "BuiltInRole",
+    "description": "Read, create and modify secretsync and secretproviderclass objects. Register and deregister the provider from the subscription.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.SecretSyncController/register/action",
+          "Microsoft.SecretSyncController/unregister/action",
+          "Microsoft.SecretSyncController/azureKeyVaultSecretProviderClasses/read",
+          "Microsoft.SecretSyncController/azureKeyVaultSecretProviderClasses/write",
+          "Microsoft.SecretSyncController/azureKeyVaultSecretProviderClasses/delete",
+          "Microsoft.SecretSyncController/locations/operationStatuses/read",
+          "Microsoft.SecretSyncController/locations/operationStatuses/write",
+          "Microsoft.SecretSyncController/operations/read",
+          "Microsoft.SecretSyncController/secretSyncs/read",
+          "Microsoft.SecretSyncController/secretSyncs/write",
+          "Microsoft.SecretSyncController/secretSyncs/delete",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-02T11:22:50.2327585Z",
+    "updatedOn": "2025-05-02T11:22:50.2327585Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5c227a58-cff3-4b51-9fa3-51bdafb6ca55",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5c227a58-cff3-4b51-9fa3-51bdafb6ca55"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/8901f16e-37f9-59d1-862c-de2cecba983b",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-GuestAttest",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine Contributor",
+  "RoleDefinitionId": "9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+  "ObjectId": "29bd59a9-c37e-4b19-b27d-e06f92316ec7",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,28 @@
+{
+  "roleName": "CosmosDB Fleet Analytics Storage Data Writer",
+  "type": "BuiltInRole",
+  "description": "Write telemetry data from the Fleet Analytics Synapse workspace to customer-provided storage accounts or Fabric Lakehouses.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-28T15:04:34.5328242Z",
+  "updatedOn": "2025-08-29T01:46:07.6161348Z",
+  "createdBy": null,
+  "updatedBy": null
+}

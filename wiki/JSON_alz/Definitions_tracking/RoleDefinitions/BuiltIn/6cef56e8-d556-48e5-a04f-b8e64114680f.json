@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "AcrImageSigner",
+    "type": "BuiltInRole",
+    "description": "Planned DEPRECATION on March 31, 2028. Grant the signing permission for content trust. As content trust is being deprecated and will be completely removed on March 31, 2028, this role will also be removed. Refer to https://aka.ms/acr/dctdeprecation for details and transition guidance.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/sign/write"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerRegistry/registries/trustedCollections/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-03-15T23:23:08.4038322Z",
+    "updatedOn": "2025-10-06T15:09:00.3564306Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6cef56e8-d556-48e5-a04f-b8e64114680f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6cef56e8-d556-48e5-a04f-b8e64114680f"
+}

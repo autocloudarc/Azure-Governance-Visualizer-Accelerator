@@ -1,0 +1,29 @@
+{
+  "roleName": "Flux Configurations Contributor",
+  "type": "BuiltInRole",
+  "description": "Can create, update, get, list and delete Flux Configurations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.KubernetesConfiguration/fluxConfigurations/write",
+        "Microsoft.KubernetesConfiguration/fluxConfigurations/read",
+        "Microsoft.KubernetesConfiguration/fluxConfigurations/delete",
+        "Microsoft.KubernetesConfiguration/fluxConfigurations/operations/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-02T15:37:59.6052783Z",
+  "updatedOn": "2025-04-02T15:37:59.6052783Z",
+  "createdBy": null,
+  "updatedBy": null
+}

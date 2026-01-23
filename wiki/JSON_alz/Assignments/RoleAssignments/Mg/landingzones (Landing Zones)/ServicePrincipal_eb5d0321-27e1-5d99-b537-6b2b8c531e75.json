@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/eb5d0321-27e1-5d99-b537-6b2b8c531e75",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-VMSS-ChangeTrack",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "f0bfbe2c-1f01-4aff-a4d9-c8664f38b691",
+  "ObjectType": "ServicePrincipal"
+}

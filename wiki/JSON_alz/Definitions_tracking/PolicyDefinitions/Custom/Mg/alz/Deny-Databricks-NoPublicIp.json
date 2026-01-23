@@ -1,0 +1,63 @@
+{
+  "properties": {
+    "displayName": "Deny public IPs for Databricks cluster",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies the deployment of workspaces that do not use the noPublicIp feature to host Databricks clusters without public IPs.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud"
+      ],
+      "category": "Databricks",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.0.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:08.8105506Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "Enable or disable the execution of the policy",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Disabled",
+          "Deny"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Databricks/workspaces",
+            "field": "type"
+          },
+          {
+            "field": "Microsoft.DataBricks/workspaces/parameters.enableNoPublicIp.value",
+            "notEquals": true
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-Databricks-NoPublicIp",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Deny-Databricks-NoPublicIp",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:08.7738533Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:08.7738533Z"
+  }
+}

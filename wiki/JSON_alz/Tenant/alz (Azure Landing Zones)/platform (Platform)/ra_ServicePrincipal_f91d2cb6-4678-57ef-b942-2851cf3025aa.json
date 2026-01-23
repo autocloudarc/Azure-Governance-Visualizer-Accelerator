@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/f91d2cb6-4678-57ef-b942-2851cf3025aa",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-CogServ0",
+  "SignInName": null,
+  "RoleDefinitionName": "Search Service Contributor",
+  "RoleDefinitionId": "7ca78c08-252a-4471-8644-bb5ff32d4ba0",
+  "ObjectId": "e61d8f94-6754-42ca-92e1-174e079e37e9",
+  "ObjectType": "ServicePrincipal"
+}

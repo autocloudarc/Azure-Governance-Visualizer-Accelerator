@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "principalId": "0e0c4910-eba1-43b4-8dcf-fedf8e56335c",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Defender for Containers provisioning ARC k8s Enabled",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/708b60a6-d253-4fe0-9114-4be4c00f012c",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "parameters": {},
+    "description": "This policy assignment was automatically created by Microsoft Defender for Cloud for agent installation as configured in Defender for Cloud auto provisioning.",
+    "metadata": {
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:11:03.0719702Z",
+      "updatedBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "updatedOn": "2024-08-13T16:11:10.0267975Z"
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/Defender for Containers provisioning ARC k8s Enabled",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Defender for Containers provisioning ARC k8s Enabled",
+  "location": "centralus",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:11:02.5598674Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:11:09.7958887Z"
+  }
+}

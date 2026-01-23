@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Machine Manager Role",
+    "type": "BuiltInRole",
+    "description": "Role for machine related actions",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/managedClusters/agentPools/deleteMachines/action",
+          "Microsoft.ContainerService/managedClusters/agentPools/machines/read",
+          "Microsoft.ContainerService/managedClusters/agentPools/machines/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-15T23:33:48.2383927Z",
+    "updatedOn": "2025-05-15T23:33:48.2383927Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8e253927-1f29-4d89-baa2-c3a549eff423",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8e253927-1f29-4d89-baa2-c3a549eff423"
+}

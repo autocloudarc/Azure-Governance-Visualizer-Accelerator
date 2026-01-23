@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Microsoft Approvals Workflow Contributor",
+    "type": "BuiltInRole",
+    "description": "Performs approval workflow management operations including workflow creation, execution and deletion.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Approvals/approvalSettings/read",
+          "Microsoft.Approvals/approvalWorkflowDefinitions/read",
+          "Microsoft.Approvals/approvalWorkflowDefinitions/write",
+          "Microsoft.Approvals/approvalWorkflowDefinitions/delete",
+          "Microsoft.Approvals/approvalWorkflowDefinitions/approvalWorkflowInstances/read",
+          "Microsoft.Approvals/approvalWorkflowDefinitions/approvalWorkflowInstances/write",
+          "Microsoft.Approvals/approvalWorkflowAssignments/read",
+          "Microsoft.Approvals/approvalWorkflowAssignments/write",
+          "Microsoft.Approvals/approvalWorkflowAssignments/delete",
+          "Microsoft.Approvals/invokeAndFetchApprovalRequest/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2026-01-08T22:49:34.0951705Z",
+    "updatedOn": "2026-01-08T22:49:34.0951705Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/92318126-08be-45d0-a1b2-532e6c7d52ce",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "92318126-08be-45d0-a1b2-532e6c7d52ce"
+}

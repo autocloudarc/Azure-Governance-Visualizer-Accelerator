@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity",
+    "type": "BuiltInRole",
+    "description": "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Network/routeTables/read",
+          "Microsoft.Network/routeTables/join/action",
+          "Microsoft.Network/natGateways/read",
+          "Microsoft.Network/natGateways/join/action",
+          "Microsoft.Network/networkSecurityGroups/read",
+          "Microsoft.Network/networkSecurityGroups/join/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-05T15:00:29.6918916Z",
+    "updatedOn": "2025-05-05T15:00:29.6918916Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c0ff367d-66d8-445e-917c-583feb0ef0d4",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c0ff367d-66d8-445e-917c-583feb0ef0d4"
+}

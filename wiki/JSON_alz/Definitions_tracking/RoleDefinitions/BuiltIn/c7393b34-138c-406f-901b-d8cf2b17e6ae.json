@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Managed Application Operator Role",
+    "type": "BuiltInRole",
+    "description": "Lets you read and perform actions on Managed Application resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read",
+          "Microsoft.Solutions/applications/read",
+          "Microsoft.Solutions/*/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-07-27T00:59:33.7988813Z",
+    "updatedOn": "2021-11-11T20:13:38.5973763Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c7393b34-138c-406f-901b-d8cf2b17e6ae",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c7393b34-138c-406f-901b-d8cf2b17e6ae"
+}

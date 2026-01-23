@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Compute Gallery Image Reader",
+    "type": "BuiltInRole",
+    "description": "This is the role for reading gallery images.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/galleries/images/read",
+          "Microsoft.Compute/galleries/images/versions/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-12T16:09:21.7547431Z",
+    "updatedOn": "2024-08-28T15:23:36.0811004Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/cf7c76d2-98a3-4358-a134-615aa78bf44d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "cf7c76d2-98a3-4358-a134-615aa78bf44d"
+}

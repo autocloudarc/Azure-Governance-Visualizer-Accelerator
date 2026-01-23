@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Backup MUA Operator",
+    "type": "BuiltInRole",
+    "description": "Backup MultiUser-Authorization. Allows user to perform critical operation protected by resourceguard",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DataProtection/*/action",
+          "Microsoft.DataProtection/*/read",
+          "Microsoft.Authorization/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-11T15:04:28.0520383Z",
+    "updatedOn": "2024-03-11T15:04:28.0520383Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f54b6d04-23c6-443e-b462-9c16ab7b4a52",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f54b6d04-23c6-443e-b462-9c16ab7b4a52"
+}

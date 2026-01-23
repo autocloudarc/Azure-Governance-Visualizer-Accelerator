@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Project Babylon Data Source Administrator",
+    "type": "BuiltInRole",
+    "description": "The Microsoft.ProjectBabylon data source administrator can manage data sources and data scans. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ProjectBabylon/accounts/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ProjectBabylon/accounts/scan/read",
+          "Microsoft.ProjectBabylon/accounts/scan/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-11-14T02:34:01.8401954Z",
+    "updatedOn": "2021-11-11T20:14:51.8529643Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/05b7651b-dc44-475e-b74d-df3db49fae0f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "05b7651b-dc44-475e-b74d-df3db49fae0f"
+}

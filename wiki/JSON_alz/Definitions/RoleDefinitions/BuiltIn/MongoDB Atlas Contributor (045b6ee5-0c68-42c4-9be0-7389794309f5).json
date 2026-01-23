@@ -1,0 +1,31 @@
+{
+  "roleName": "MongoDB Atlas Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides access to MongoDB.Atlas Control Plane Operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "MongoDB.Atlas/checkNameAvailability/action",
+        "MongoDB.Atlas/register/action",
+        "MongoDB.Atlas/unregister/action",
+        "MongoDB.Atlas/operations/read",
+        "MongoDB.Atlas/locations/operationStatuses/read",
+        "MongoDB.Atlas/locations/operationStatuses/write",
+        "MongoDB.Atlas/registeredSubscriptions/read",
+        "MongoDB.Atlas/organizations/read",
+        "MongoDB.Atlas/organizations/write",
+        "MongoDB.Atlas/organizations/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-12-12T18:20:09.4928601Z",
+  "updatedOn": "2025-12-12T18:20:09.4928601Z",
+  "createdBy": null,
+  "updatedBy": null
+}

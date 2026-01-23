@@ -1,0 +1,34 @@
+{
+  "roleName": "Azure IoT Operations Administrator",
+  "type": "BuiltInRole",
+  "description": "View, create, edit and delete AIO resources. Manage all resources, including instance and its downstream resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.IoTOperations/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.DeviceRegistry/Assets/*",
+        "Microsoft.DeviceRegistry/AssetEndpointProfiles/*",
+        "Microsoft.DeviceRegistry/Namespaces/Assets/*",
+        "Microsoft.DeviceRegistry/Namespaces/Devices/*",
+        "Microsoft.DeviceRegistry/Namespaces/DiscoveredAssets/*",
+        "Microsoft.DeviceRegistry/Namespaces/DiscoveredDevices/*",
+        "Microsoft.DeviceRegistry/SchemaRegistries/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Edge/sites/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-04T19:56:27.5917227Z",
+  "updatedOn": "2025-07-16T15:09:06.8534788Z",
+  "createdBy": null,
+  "updatedBy": null
+}

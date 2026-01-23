@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Cognitive Search Serverless Data Contributor (Deprecated)",
+    "type": "BuiltInRole",
+    "description": "This role has been deprecated",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveSearch/indexes/schema/*",
+          "Microsoft.CognitiveSearch/indexes/documents/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-05-16T15:12:24.3943867Z",
+    "updatedOn": "2024-02-07T16:10:08.516731Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7ac06ca7-21ca-47e3-a67b-cbd6e6223baf",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7ac06ca7-21ca-47e3-a67b-cbd6e6223baf"
+}

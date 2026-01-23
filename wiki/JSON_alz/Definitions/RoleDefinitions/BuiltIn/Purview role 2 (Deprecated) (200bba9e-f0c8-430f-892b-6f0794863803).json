@@ -1,0 +1,25 @@
+{
+  "roleName": "Purview role 2 (Deprecated)",
+  "type": "BuiltInRole",
+  "description": "Deprecated role.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Purview/accounts/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Purview/accounts/scan/read",
+        "Microsoft.Purview/accounts/scan/write"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-11-14T02:40:05.0975648Z",
+  "updatedOn": "2022-01-04T00:47:22.9678219Z",
+  "createdBy": null,
+  "updatedBy": null
+}

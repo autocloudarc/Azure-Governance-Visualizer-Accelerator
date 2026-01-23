@@ -1,0 +1,33 @@
+{
+  "roleName": "Standby Container Group Pool Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows users to manage standby container group pool resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ContainerInstance/containerGroupProfiles/read",
+        "Microsoft.ContainerInstance/containerGroupProfiles/revisions/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.StandbyPool/Locations/OperationStatuses/read",
+        "Microsoft.StandbyPool/Operations/read",
+        "Microsoft.StandbyPool/standbyContainerGroupPools/delete",
+        "Microsoft.StandbyPool/standbyContainerGroupPools/read",
+        "Microsoft.StandbyPool/standbyContainerGroupPools/runtimeViews/read",
+        "Microsoft.StandbyPool/standbyContainerGroupPools/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-06-18T15:22:31.7393554Z",
+  "updatedOn": "2024-06-18T15:22:31.7393554Z",
+  "createdBy": null,
+  "updatedBy": null
+}

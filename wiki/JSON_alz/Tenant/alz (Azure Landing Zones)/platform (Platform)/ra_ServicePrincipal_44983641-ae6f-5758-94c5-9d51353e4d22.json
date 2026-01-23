@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/44983641-ae6f-5758-94c5-9d51353e4d22",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-VMSS-Monitoring",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine Contributor",
+  "RoleDefinitionId": "9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+  "ObjectId": "e3ac9c21-008c-40d9-8758-7b3e699a5add",
+  "ObjectType": "ServicePrincipal"
+}

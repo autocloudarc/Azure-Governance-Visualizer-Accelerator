@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/6bca0a5c-b408-58f3-8ea0-fe57d8c8c32e",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-APIM0",
+  "SignInName": null,
+  "RoleDefinitionName": "API Management Service Contributor",
+  "RoleDefinitionId": "312a565d-c81f-4fd8-895a-4e21e48d571c",
+  "ObjectId": "74b3f5b3-2917-4e99-a549-df49f32b9c4d",
+  "ObjectType": "ServicePrincipal"
+}

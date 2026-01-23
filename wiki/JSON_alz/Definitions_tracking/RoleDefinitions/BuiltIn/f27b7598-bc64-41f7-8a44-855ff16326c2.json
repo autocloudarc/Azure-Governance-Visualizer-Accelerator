@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Messaging Catalog Data Owner",
+    "type": "BuiltInRole",
+    "description": "Allows for full access to Azure Messaging Catalog resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.MessagingCatalog/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.MessagingCatalog/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-28T15:27:28.8416423Z",
+    "updatedOn": "2024-03-28T15:27:28.8416423Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f27b7598-bc64-41f7-8a44-855ff16326c2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f27b7598-bc64-41f7-8a44-855ff16326c2"
+}

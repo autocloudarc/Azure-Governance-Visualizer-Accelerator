@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Workload Orchestration Administrator",
+    "type": "BuiltInRole",
+    "description": "Workload Orchestration Administrator Role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Edge/contexts/*",
+          "Microsoft.Edge/configTemplates/*",
+          "Microsoft.Edge/solutionTemplates/*",
+          "Microsoft.Edge/configurations/*",
+          "Microsoft.Edge/configurationreferences/*",
+          "Microsoft.Edge/schemas/*",
+          "Microsoft.Edge/schemaReferences/*",
+          "Microsoft.Edge/targets/*",
+          "Microsoft.Edge/jobs/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-26T15:16:15.5456529Z",
+    "updatedOn": "2025-09-05T04:19:47.2321784Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/cbb820e9-e561-45bb-84c2-ef45d0a13f7d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "cbb820e9-e561-45bb-84c2-ef45d0a13f7d"
+}

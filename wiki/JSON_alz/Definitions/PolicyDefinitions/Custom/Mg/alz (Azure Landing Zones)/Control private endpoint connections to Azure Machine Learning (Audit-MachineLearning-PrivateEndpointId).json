@@ -1,0 +1,62 @@
+{
+  "displayName": "Control private endpoint connections to Azure Machine Learning",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Audit private endpoints that are created in other subscriptions and/or tenants for Azure Machine Learning.",
+  "metadata": {
+    "alzCloudEnvironments": [
+      "AzureCloud"
+    ],
+    "category": "Machine Learning",
+    "source": "https://github.com/Azure/Enterprise-Scale/",
+    "version": "1.0.0",
+    "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+    "createdOn": "2026-01-21T00:37:08.7317652Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable or disable the execution of the policy",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.MachineLearningServices/workspaces/privateEndpointConnections",
+          "field": "type"
+        },
+        {
+          "equals": "Approved",
+          "field": "Microsoft.MachineLearningServices/workspaces/privateEndpointConnections/privateLinkServiceConnectionState.status"
+        },
+        {
+          "anyOf": [
+            {
+              "exists": false,
+              "field": "Microsoft.MachineLearningServices/workspaces/privateEndpointConnections/privateEndpoint.id"
+            },
+            {
+              "notEquals": "[subscription().subscriptionId]",
+              "value": "[split(concat(field('Microsoft.MachineLearningServices/workspaces/privateEndpointConnections/privateEndpoint.id'), '//'), '/')[2]]"
+            }
+          ]
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

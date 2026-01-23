@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider",
+    "type": "BuiltInRole",
+    "description": "Enables permissions to allow cluster API to manage nodes, networks and disks for OpenShift cluster.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/disks/delete",
+          "Microsoft.Compute/disks/read",
+          "Microsoft.Compute/disks/write",
+          "Microsoft.Compute/diskEncryptionSets/read",
+          "Microsoft.Compute/availabilitySets/delete",
+          "Microsoft.Compute/availabilitySets/read",
+          "Microsoft.Compute/availabilitySets/write",
+          "Microsoft.Compute/virtualMachines/delete",
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Compute/virtualMachines/write",
+          "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+          "Microsoft.Network/networkInterfaces/delete",
+          "Microsoft.Network/networkInterfaces/join/action",
+          "Microsoft.Network/networkInterfaces/read",
+          "Microsoft.Network/networkInterfaces/write",
+          "Microsoft.Network/virtualNetworks/subnets/join/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-31T15:13:32.5336838Z",
+    "updatedOn": "2025-08-05T15:14:56.2474712Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/88366f10-ed47-4cc0-9fab-c8a06148393e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "88366f10-ed47-4cc0-9fab-c8a06148393e"
+}

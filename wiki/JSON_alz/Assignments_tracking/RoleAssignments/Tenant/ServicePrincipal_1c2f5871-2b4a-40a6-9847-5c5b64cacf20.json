@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/1c2f5871-2b4a-40a6-9847-5c5b64cacf20",
+  "Scope": "/",
+  "DisplayName": "Microsoft Demos",
+  "SignInName": null,
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "3ba76acc-be40-4508-a9cb-2853c9ef3396",
+  "ObjectType": "ServicePrincipal"
+}

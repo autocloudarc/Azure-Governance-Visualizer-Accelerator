@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/d28b9f60-3c52-4ed7-91ee-9fceee051a56",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "Defender for Containers provisioning ARC k8s Enabled",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Kubernetes Service Contributor Role",
+  "RoleDefinitionId": "ed7f3fbd-7b88-4dd4-9017-9adb7ce333f8",
+  "ObjectId": "11918318-515f-4faf-849d-2f5c1ed854da",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Spring Cloud Service Registry Reader",
+  "type": "BuiltInRole",
+  "description": "Allow read access to Azure Spring Cloud Service Registry",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/eurekaService/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-20T04:40:17.9785063Z",
+  "updatedOn": "2021-11-11T20:15:18.9655101Z",
+  "createdBy": null,
+  "updatedBy": null
+}

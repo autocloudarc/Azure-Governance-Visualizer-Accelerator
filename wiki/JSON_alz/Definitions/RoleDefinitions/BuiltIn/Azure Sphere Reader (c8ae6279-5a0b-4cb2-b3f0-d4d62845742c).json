@@ -1,0 +1,33 @@
+{
+  "roleName": "Azure Sphere Reader",
+  "type": "BuiltInRole",
+  "description": "Allows user to read Azure Sphere resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AzureSphere/*/read",
+        "Microsoft.AzureSphere/catalogs/countDevices/action",
+        "Microsoft.AzureSphere/catalogs/listDeviceGroups/action",
+        "Microsoft.AzureSphere/catalogs/listDeviceInsights/action",
+        "Microsoft.AzureSphere/catalogs/listDevices/action",
+        "Microsoft.AzureSphere/catalogs/listDeployments/action",
+        "Microsoft.AzureSphere/catalogs/products/countDevices/action",
+        "Microsoft.AzureSphere/catalogs/products/deviceGroups/countDevices/action",
+        "Microsoft.AzureSphere/catalogs/certificates/retrieveCertChain/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/DiagnosticSettings/Read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-05-08T15:10:38.0395671Z",
+  "updatedOn": "2023-05-12T22:22:08.3454165Z",
+  "createdBy": null,
+  "updatedBy": null
+}

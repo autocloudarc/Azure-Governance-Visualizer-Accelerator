@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/6c2f6ce5-c83f-4266-bdbe-46819a8133c9",
+  "Scope": "/",
+  "DisplayName": "spn-fed-ghe-0075",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "39f85f35-a02b-43d2-a0c3-3a963360e007",
+  "ObjectType": "ServicePrincipal"
+}

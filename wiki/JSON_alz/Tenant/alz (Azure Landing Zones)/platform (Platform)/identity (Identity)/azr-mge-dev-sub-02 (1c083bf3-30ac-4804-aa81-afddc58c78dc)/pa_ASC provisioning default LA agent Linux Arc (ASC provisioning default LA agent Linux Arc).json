@@ -1,0 +1,32 @@
+{
+  "identity": {
+    "principalId": "cf96e6be-f825-4d30-9258-7bb0f3c6f655",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "ASC provisioning default LA agent Linux Arc",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bacd7fca-1938-443d-aad6-a786107b1bfb",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "description": "This policy assignment was automatically created by Microsoft Defender for Cloud for agent installation as configured in Defender for Cloud auto provisioning.",
+    "metadata": {
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:34:12.1374289Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/ASC provisioning default LA agent Linux Arc",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "ASC provisioning default LA agent Linux Arc",
+  "location": "centralus",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:34:11.524976Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:34:11.524976Z"
+  }
+}

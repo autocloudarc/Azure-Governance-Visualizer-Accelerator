@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Autonomous Development Platform Data Owner (Preview)",
+    "type": "BuiltInRole",
+    "description": "Grants full access to Autonomous Development Platform data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AutonomousDevelopmentPlatform/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AutonomousDevelopmentPlatform/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-12-15T12:13:59.9702378Z",
+    "updatedOn": "2022-01-04T13:20:26.2040404Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/27f8b550-c507-4db9-86f2-f4b8e816d59d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "27f8b550-c507-4db9-86f2-f4b8e816d59d"
+}

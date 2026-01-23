@@ -1,0 +1,22 @@
+{
+  "roleName": "Clinical Coder Data User",
+  "type": "BuiltInRole",
+  "description": "Allows processing of health data in Clinical Coder",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthBot/healthBots/AIActions/ClinicalCoder/Process/Action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-21T15:34:29.3619602Z",
+  "updatedOn": "2025-08-21T15:34:29.3619602Z",
+  "createdBy": null,
+  "updatedBy": null
+}

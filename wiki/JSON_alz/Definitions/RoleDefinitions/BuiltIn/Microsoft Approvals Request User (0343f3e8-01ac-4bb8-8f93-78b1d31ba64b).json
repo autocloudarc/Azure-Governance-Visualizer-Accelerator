@@ -1,0 +1,26 @@
+{
+  "roleName": "Microsoft Approvals Request User",
+  "type": "BuiltInRole",
+  "description": "Requests approval workflow execution for resource changes.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Approvals/invokeAndFetchApprovalRequest/action",
+        "Microsoft.Approvals/approvalSettings/read",
+        "Microsoft.Approvals/approvalWorkflowDefinitions/read",
+        "Microsoft.Approvals/approvalWorkflowDefinitions/approvalWorkflowInstances/read",
+        "Microsoft.Approvals/approvalWorkflowAssignments/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-08T23:35:23.7948842Z",
+  "updatedOn": "2026-01-08T23:35:23.7948842Z",
+  "createdBy": null,
+  "updatedBy": null
+}

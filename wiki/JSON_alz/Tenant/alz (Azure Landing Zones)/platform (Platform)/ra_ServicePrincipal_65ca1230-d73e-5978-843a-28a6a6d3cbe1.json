@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/65ca1230-d73e-5978-843a-28a6a6d3cbe1",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-AppServices0",
+  "SignInName": null,
+  "RoleDefinitionName": "Managed Identity Operator",
+  "RoleDefinitionId": "f1a07417-d97a-45cb-824c-7a7467783830",
+  "ObjectId": "08a55b11-45d7-469d-b91c-c939d3807428",
+  "ObjectType": "ServicePrincipal"
+}

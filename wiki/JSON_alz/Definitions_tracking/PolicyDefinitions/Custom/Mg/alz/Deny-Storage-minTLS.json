@@ -1,0 +1,104 @@
+{
+  "properties": {
+    "displayName": "[Deprecated] Storage Account set to minimum TLS and Secure transfer should be enabled",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Audit requirement of Secure transfer in your storage account. This policy is superseded by https://www.azadvertizer.net/azpolicyadvertizer/fe83a0eb-a853-422d-aac2-1bffd182c5d0.html and https://www.azadvertizer.net/azpolicyadvertizer/404c3081-a854-4457-ae30-26a93ef643f9.html",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Storage",
+      "deprecated": true,
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "supersededBy": "fe83a0eb-a853-422d-aac2-1bffd182c5d0,404c3081-a854-4457-ae30-26a93ef643f9",
+      "version": "1.0.0-deprecated",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:36:55.218643Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "The effect determines what happens when the policy rule is evaluated to match",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "minimumTlsVersion": {
+        "type": "String",
+        "metadata": {
+          "description": "Select version  minimum TLS version on Azure Storage Account to enforce",
+          "displayName": "Storage Account select minimum TLS version"
+        },
+        "allowedValues": [
+          "TLS1_2",
+          "TLS1_1",
+          "TLS1_0"
+        ],
+        "defaultValue": "TLS1_2"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Storage/storageAccounts",
+            "field": "type"
+          },
+          {
+            "anyOf": [
+              {
+                "allOf": [
+                  {
+                    "less": "2019-04-01",
+                    "value": "[requestContext().apiVersion]"
+                  },
+                  {
+                    "exists": "false",
+                    "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly"
+                  }
+                ]
+              },
+              {
+                "equals": "false",
+                "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly"
+              },
+              {
+                "field": "Microsoft.Storage/storageAccounts/minimumTlsVersion",
+                "notequals": "[parameters('minimumTlsVersion')]"
+              },
+              {
+                "exists": "false",
+                "field": "Microsoft.Storage/storageAccounts/minimumTlsVersion"
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-Storage-minTLS",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Deny-Storage-minTLS",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:36:55.1608646Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:36:55.1608646Z"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/f9112585-d5bc-445d-8445-780ebe37c615",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "SqlVmAndArcSqlServersProtection",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "bf4d9bb1-d0b6-44e6-bab5-78909cdae0c0",
+  "ObjectType": "ServicePrincipal"
+}

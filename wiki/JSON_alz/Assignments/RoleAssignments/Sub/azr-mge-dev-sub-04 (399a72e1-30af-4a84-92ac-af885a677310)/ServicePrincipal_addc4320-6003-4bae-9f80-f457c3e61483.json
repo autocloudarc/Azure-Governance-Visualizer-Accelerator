@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/addc4320-6003-4bae-9f80-f457c3e61483",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "CloudPosture/securityOperators/DefenderCSPMSecurityOperator",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Kubernetes API Access",
+  "RoleDefinitionId": "d5a2ae44-610b-4500-93be-660a0c5f5ca6",
+  "ObjectId": "22925100-5144-42ce-9259-18ecd377ebb6",
+  "ObjectType": "ServicePrincipal"
+}

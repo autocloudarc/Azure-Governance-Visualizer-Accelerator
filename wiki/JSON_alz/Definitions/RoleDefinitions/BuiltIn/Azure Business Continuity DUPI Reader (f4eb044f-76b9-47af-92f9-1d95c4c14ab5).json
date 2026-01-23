@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Business Continuity DUPI Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you view Deleted Unified Protected items in Azure Business Continuity Center.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleDefinitions/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.AzureBusinessContinuity/deletedUnifiedProtectedItems/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-29T15:07:14.0950658Z",
+  "updatedOn": "2025-08-22T13:44:05.5789475Z",
+  "createdBy": null,
+  "updatedBy": null
+}

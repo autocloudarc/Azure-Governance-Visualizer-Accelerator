@@ -1,0 +1,27 @@
+{
+  "roleName": "ToolchainOrchestrator Admin Role",
+  "type": "BuiltInRole",
+  "description": "Grant full access to manage all Toolchain orchestrator resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ToolchainOrchestrator/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-06-21T08:08:21.7019434Z",
+  "updatedOn": "2024-07-01T15:03:41.8477821Z",
+  "createdBy": null,
+  "updatedBy": null
+}

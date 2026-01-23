@@ -1,0 +1,22 @@
+{
+  "roleName": "DeID Realtime Data User",
+  "type": "BuiltInRole",
+  "description": "Execute requests against DeID realtime endpoint. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthDataAIServices/DeidServices/Realtime/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-09-29T20:09:57.8649032Z",
+  "updatedOn": "2023-09-29T20:09:57.8649032Z",
+  "createdBy": null,
+  "updatedBy": null
+}

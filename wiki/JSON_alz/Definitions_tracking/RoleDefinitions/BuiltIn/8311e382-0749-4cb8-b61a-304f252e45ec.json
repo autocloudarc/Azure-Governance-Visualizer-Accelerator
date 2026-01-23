@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "AcrPush",
+    "type": "BuiltInRole",
+    "description": "acr push",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerRegistry/registries/pull/read",
+          "Microsoft.ContainerRegistry/registries/push/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-10-29T17:52:32.5201177Z",
+    "updatedOn": "2021-11-11T20:13:07.4993029Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8311e382-0749-4cb8-b61a-304f252e45ec",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8311e382-0749-4cb8-b61a-304f252e45ec"
+}

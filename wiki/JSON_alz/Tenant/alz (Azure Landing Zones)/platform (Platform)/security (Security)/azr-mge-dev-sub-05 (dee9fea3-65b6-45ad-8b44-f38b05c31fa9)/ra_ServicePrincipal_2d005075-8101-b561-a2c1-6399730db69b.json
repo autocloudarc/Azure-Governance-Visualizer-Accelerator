@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/2d005075-8101-b561-a2c1-6399730db69b",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "id-alz-mgmt-eastus2-plan-001",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Landing Zones Subscription Reader (alz-mgmt)",
+  "RoleDefinitionId": "89737a5a-a182-3c5a-849f-aafd11be99ff",
+  "ObjectId": "8083fb27-b991-474f-b1e6-c2a8e20fcb25",
+  "ObjectType": "ServicePrincipal"
+}

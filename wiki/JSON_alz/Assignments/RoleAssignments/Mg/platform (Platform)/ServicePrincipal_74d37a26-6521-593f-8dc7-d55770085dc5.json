@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/74d37a26-6521-593f-8dc7-d55770085dc5",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-CosmosDb0",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "e1389625-4532-4d0a-8016-019defcbe532",
+  "ObjectType": "ServicePrincipal"
+}

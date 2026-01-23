@@ -1,0 +1,43 @@
+{
+  "roleName": "Azure AI Account Owner",
+  "type": "BuiltInRole",
+  "description": "Grants full access to manage AI projects and accounts. Grants conditional assignment of the Azure AI User role to other user principles.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete",
+        "Microsoft.CognitiveServices/*",
+        "Microsoft.Features/features/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/providers/features/register/action",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/diagnosticSettings/*",
+        "Microsoft.Insights/logDefinitions/read",
+        "Microsoft.Insights/metricdefinitions/read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": [],
+      "conditionVersion": "2.0",
+      "condition": "((!(ActionMatches{'Microsoft.Authorization/roleAssignments/write'})) OR (@Request[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d})) AND ((!(ActionMatches{'Microsoft.Authorization/roleAssignments/delete'})) OR (@Resource[Microsoft.Authorization/roleAssignments:RoleDefinitionId] ForAnyOfAnyValues:GuidEquals{53ca6127-db72-4b80-b1b0-d745d6d5456d}))"
+    }
+  ],
+  "createdOn": "2025-05-02T00:17:24.4878908Z",
+  "updatedOn": "2025-05-02T00:17:24.4878908Z",
+  "createdBy": null,
+  "updatedBy": null
+}

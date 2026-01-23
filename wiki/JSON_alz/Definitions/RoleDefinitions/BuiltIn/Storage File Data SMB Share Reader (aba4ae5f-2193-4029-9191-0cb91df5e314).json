@@ -1,0 +1,22 @@
+{
+  "roleName": "Storage File Data SMB Share Reader",
+  "type": "BuiltInRole",
+  "description": "Allows for read access to Azure File Share over SMB",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-07-01T20:19:31.8620471Z",
+  "updatedOn": "2021-11-11T20:14:04.3642909Z",
+  "createdBy": null,
+  "updatedBy": null
+}

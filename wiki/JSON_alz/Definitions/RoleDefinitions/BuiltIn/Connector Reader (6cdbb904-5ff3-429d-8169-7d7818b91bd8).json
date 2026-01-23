@@ -1,0 +1,24 @@
+{
+  "roleName": "Connector Reader",
+  "type": "BuiltInRole",
+  "description": "Read connectors and their associated resources, such as impacts and insights.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Impact/Connectors/Read",
+        "Microsoft.Impact/WorkloadImpacts/Read",
+        "Microsoft.Impact/WorkloadImpacts/Insights/Read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-12T08:35:40.76413Z",
+  "updatedOn": "2024-07-12T08:35:40.76413Z",
+  "createdBy": null,
+  "updatedBy": null
+}

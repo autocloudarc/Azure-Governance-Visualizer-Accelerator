@@ -1,0 +1,22 @@
+{
+  "roleName": "CosmosDB Fleet Operator Role",
+  "type": "BuiltInRole",
+  "description": "Lets you manage Azure CosmosDB Fleets and related child resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DocumentDB/fleets/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-15T15:04:43.2915323Z",
+  "updatedOn": "2025-07-15T15:04:43.2915323Z",
+  "createdBy": null,
+  "updatedBy": null
+}

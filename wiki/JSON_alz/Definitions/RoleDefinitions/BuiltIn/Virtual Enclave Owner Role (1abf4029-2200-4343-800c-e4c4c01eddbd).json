@@ -1,0 +1,31 @@
+{
+  "roleName": "Virtual Enclave Owner Role",
+  "type": "BuiltInRole",
+  "description": "Virtual Enclave Owner Role to access the resources of Microsoft.Mission stored with RPSAAS.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Mission/Locations/OperationStatuses/read",
+        "Microsoft.Mission/Locations/OperationStatuses/write",
+        "Microsoft.Mission/Operations/read",
+        "Microsoft.Mission/virtualEnclaves/read",
+        "Microsoft.Mission/virtualEnclaves/write",
+        "Microsoft.Mission/virtualEnclaves/delete",
+        "Microsoft.Mission/virtualEnclaves/workloads/read",
+        "Microsoft.Mission/virtualEnclaves/workloads/write",
+        "Microsoft.Mission/virtualEnclaves/workloads/delete",
+        "Microsoft.Mission/communities/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-10T15:32:23.6279754Z",
+  "updatedOn": "2025-07-10T15:32:23.6279754Z",
+  "createdBy": null,
+  "updatedBy": null
+}

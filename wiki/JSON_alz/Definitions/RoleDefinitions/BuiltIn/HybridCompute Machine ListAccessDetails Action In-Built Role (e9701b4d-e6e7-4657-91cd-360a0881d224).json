@@ -1,0 +1,22 @@
+{
+  "roleName": "HybridCompute Machine ListAccessDetails Action In-Built Role",
+  "type": "BuiltInRole",
+  "description": "In-Built Role definition that grants permissions to execute the listAccessDetails action on HybridCompute Machines",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridCompute/machines/listAccessDetails/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-11-11T16:02:05.0085385Z",
+  "updatedOn": "2025-03-13T16:14:43.6460465Z",
+  "createdBy": null,
+  "updatedBy": null
+}

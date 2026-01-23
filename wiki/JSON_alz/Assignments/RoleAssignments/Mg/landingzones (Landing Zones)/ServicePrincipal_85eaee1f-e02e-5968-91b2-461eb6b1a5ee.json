@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/85eaee1f-e02e-5968-91b2-461eb6b1a5ee",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-EventGrid0",
+  "SignInName": null,
+  "RoleDefinitionName": "EventGrid Contributor",
+  "RoleDefinitionId": "1e241071-0855-49ea-94dc-649edcd759de",
+  "ObjectId": "b39055a7-c519-4346-b960-b1fb68d9a540",
+  "ObjectType": "ServicePrincipal"
+}

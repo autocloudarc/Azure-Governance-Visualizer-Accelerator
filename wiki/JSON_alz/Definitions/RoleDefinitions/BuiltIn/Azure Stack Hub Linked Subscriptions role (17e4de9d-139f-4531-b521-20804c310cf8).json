@@ -1,0 +1,26 @@
+{
+  "roleName": "Azure Stack Hub Linked Subscriptions role",
+  "type": "BuiltInRole",
+  "description": "Microsoft.AzureStack Linked Subscriptions role.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AzureStack/linkedSubscriptions/delete",
+        "Microsoft.AzureStack/linkedSubscriptions/linkedProviders/action",
+        "Microsoft.AzureStack/linkedSubscriptions/linkedResourceGroups/action",
+        "Microsoft.AzureStack/linkedSubscriptions/operations/action",
+        "Microsoft.AzureStack/linkedSubscriptions/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-21T16:22:20.6272739Z",
+  "updatedOn": "2026-01-21T16:22:20.6272739Z",
+  "createdBy": null,
+  "updatedBy": null
+}

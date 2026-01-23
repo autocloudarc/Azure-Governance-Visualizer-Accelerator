@@ -1,0 +1,44 @@
+{
+  "roleName": "Oracle.Database Exadata Infrastructure Administrator Built-in Role",
+  "type": "BuiltInRole",
+  "description": "Grants full access to manage all Exadata Infrastructure resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Oracle.Database/cloudExadataInfrastructures/*/read",
+        "Oracle.Database/cloudExadataInfrastructures/*/write",
+        "Oracle.Database/cloudExadataInfrastructures/*/delete",
+        "Oracle.Database/cloudVmClusters/*/read",
+        "Oracle.Database/cloudVmClusters/*/write",
+        "Oracle.Database/cloudVmClusters/*/delete",
+        "Oracle.Database/cloudVmClusters/*/action",
+        "Oracle.Database/Locations/*/read",
+        "Oracle.Database/Locations/*/write",
+        "Oracle.Database/Operations/read",
+        "Oracle.Database/oracleSubscriptions/*/read",
+        "Oracle.Database/oracleSubscriptions/listCloudAccountDetails/action",
+        "Oracle.Database/resourceAnchors/*",
+        "Oracle.Database/networkAnchors/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/locations/operations/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Compute/sshPublicKeys/read",
+        "Microsoft.Compute/sshPublicKeys/write",
+        "Microsoft.Compute/sshPublicKeys/generateKeyPair/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-26T15:15:05.3035903Z",
+  "updatedOn": "2025-05-27T15:14:00.1232362Z",
+  "createdBy": null,
+  "updatedBy": null
+}

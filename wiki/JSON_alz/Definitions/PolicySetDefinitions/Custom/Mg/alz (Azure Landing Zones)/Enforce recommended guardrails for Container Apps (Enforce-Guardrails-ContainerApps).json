@@ -1,0 +1,62 @@
+{
+  "displayName": "Enforce recommended guardrails for Container Apps",
+  "policyType": "Custom",
+  "description": "This policy initiative is a group of policies that ensures Container Apps is compliant per regulated Landing Zones.",
+  "metadata": {
+    "alzCloudEnvironments": [
+      "AzureCloud",
+      "AzureChinaCloud",
+      "AzureUSGovernment"
+    ],
+    "category": "Container Apps",
+    "source": "https://github.com/Azure/Enterprise-Scale/",
+    "version": "1.1.0",
+    "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+    "createdOn": "2026-01-21T00:37:18.8097327Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "containerAppsManagedIdentity": {
+      "type": "string",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    },
+    "containerAppsVnetInjection": {
+      "type": "string",
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    }
+  },
+  "policyDefinitions": [
+    {
+      "policyDefinitionReferenceId": "Deny-ContainerApp-Vnet-Injection",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8b346db6-85af-419b-8557-92cee2c0f9bb",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('containerAppsVnetInjection')]"
+        }
+      },
+      "groupNames": []
+    },
+    {
+      "policyDefinitionReferenceId": "Deny-ContainerApps-Managed-Identity",
+      "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/b874ab2d-72dd-47f1-8cb5-4a306478a4e7",
+      "parameters": {
+        "effect": {
+          "value": "[parameters('containerAppsManagedIdentity')]"
+        }
+      },
+      "groupNames": []
+    }
+  ],
+  "policyDefinitionGroups": []
+}

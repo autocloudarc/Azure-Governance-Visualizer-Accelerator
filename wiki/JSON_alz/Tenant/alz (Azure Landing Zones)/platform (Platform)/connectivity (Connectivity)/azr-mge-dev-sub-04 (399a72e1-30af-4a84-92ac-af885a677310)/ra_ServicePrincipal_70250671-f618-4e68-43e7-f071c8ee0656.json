@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/70250671-f618-4e68-43e7-f071c8ee0656",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning Policy extension for Arc-e",
+  "SignInName": null,
+  "RoleDefinitionName": "Kubernetes Extension Contributor",
+  "RoleDefinitionId": "85cb6faf-e071-4c9b-8136-154b5a04f717",
+  "ObjectId": "896c44db-432a-4586-91ae-28cd483cefb8",
+  "ObjectType": "ServicePrincipal"
+}

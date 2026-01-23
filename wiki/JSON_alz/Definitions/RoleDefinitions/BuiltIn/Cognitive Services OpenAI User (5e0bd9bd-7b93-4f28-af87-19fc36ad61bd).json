@@ -1,0 +1,43 @@
+{
+  "roleName": "Cognitive Services OpenAI User",
+  "type": "BuiltInRole",
+  "description": "Ability to view files, models, deployments. Readers can't make any changes They can inference and create images",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/OpenAI/*/read",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/completions/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/search/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/engines/generate/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/audio/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/search/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/completions/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/chat/completions/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/realtime/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/extensions/chat/completions/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/deployments/embeddings/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/images/generations/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/video/generations/*/action",
+        "Microsoft.CognitiveServices/accounts/OpenAI/video/generations/*/delete",
+        "Microsoft.CognitiveServices/accounts/OpenAI/assistants/*",
+        "Microsoft.CognitiveServices/accounts/OpenAI/responses/*"
+      ],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/OpenAI/stored-completions/read"
+      ]
+    }
+  ],
+  "createdOn": "2022-10-27T00:27:28.391312Z",
+  "updatedOn": "2025-04-29T15:23:34.4953434Z",
+  "createdBy": null,
+  "updatedBy": null
+}

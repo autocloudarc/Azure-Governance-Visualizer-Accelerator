@@ -1,0 +1,26 @@
+{
+  "roleName": "Usage Billing Contributor",
+  "type": "BuiltInRole",
+  "description": "Contributor access to Accounts",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.UsageBilling/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-22T15:07:09.9554699Z",
+  "updatedOn": "2025-04-22T15:07:09.9554699Z",
+  "createdBy": null,
+  "updatedBy": null
+}

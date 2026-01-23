@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Azure Stack Hub registration role",
+    "type": "BuiltInRole",
+    "description": "Microsoft.AzureStack registration role.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureStack/registrations/customerSubscriptions/delete",
+          "Microsoft.AzureStack/registrations/customerSubscriptions/write",
+          "Microsoft.AzureStack/registrations/delete",
+          "Microsoft.AzureStack/registrations/enableRemoteManagement/action",
+          "Microsoft.AzureStack/registrations/getActivationKey/action",
+          "Microsoft.AzureStack/registrations/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2026-01-21T16:22:20.6262737Z",
+    "updatedOn": "2026-01-21T16:22:20.6262737Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/9a0e5da3-6c70-4a35-b13a-715cd5a7919a",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "9a0e5da3-6c70-4a35-b13a-715cd5a7919a"
+}

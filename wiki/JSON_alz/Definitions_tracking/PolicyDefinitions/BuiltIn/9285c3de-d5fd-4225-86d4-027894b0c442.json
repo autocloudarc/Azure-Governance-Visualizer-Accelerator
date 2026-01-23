@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "displayName": "[Deprecated]: Azure Media Services should use customer-managed keys to encrypt data at rest",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "description": "This policy is deprecated because Media Services retirement. Learn more about policy definition deprecation at aka.ms/policydefdeprecation.",
+    "metadata": {
+      "version": "1.1.0-deprecated",
+      "category": "Media Services",
+      "deprecated": true
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Disabled"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Media/mediaservices"
+          },
+          {
+            "field": "Microsoft.Media/mediaservices/encryption.type",
+            "notEquals": "CustomerKey"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/9285c3de-d5fd-4225-86d4-027894b0c442",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "9285c3de-d5fd-4225-86d4-027894b0c442"
+}

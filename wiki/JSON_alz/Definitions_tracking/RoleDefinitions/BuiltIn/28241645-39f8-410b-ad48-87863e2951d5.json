@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Security Detonation Chamber Reader",
+    "type": "BuiltInRole",
+    "description": "Allowed to query submission info and files from Security Detonation Chamber",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.SecurityDetonation/chambers/submissions/read",
+          "Microsoft.SecurityDetonation/chambers/submissions/files/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-03-01T14:06:46.2814905Z",
+    "updatedOn": "2021-11-11T20:15:03.327409Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/28241645-39f8-410b-ad48-87863e2951d5",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "28241645-39f8-410b-ad48-87863e2951d5"
+}

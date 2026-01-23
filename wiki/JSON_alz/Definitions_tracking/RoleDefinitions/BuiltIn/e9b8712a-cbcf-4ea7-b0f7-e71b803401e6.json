@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "SaaS Hub Contributor",
+    "type": "BuiltInRole",
+    "description": "SaaS Hub contributor can manage SaaS Hub resource",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.SaaSHub/cloudservices/read",
+          "Microsoft.SaaSHub/cloudservices/write",
+          "Microsoft.SaaSHub/cloudservices/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-05-03T15:33:04.5437406Z",
+    "updatedOn": "2023-05-12T22:22:08.3454165Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e9b8712a-cbcf-4ea7-b0f7-e71b803401e6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e9b8712a-cbcf-4ea7-b0f7-e71b803401e6"
+}

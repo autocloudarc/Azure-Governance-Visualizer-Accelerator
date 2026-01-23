@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Durable Task Data Reader",
+    "type": "BuiltInRole",
+    "description": "Read all Durable Task Scheduler data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DurableTask/schedulers/taskhubs/orchestrations/read",
+          "Microsoft.DurableTask/schedulers/taskhubs/orchestrations/metadata/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-01-24T21:41:35.9328305Z",
+    "updatedOn": "2025-07-11T20:47:55.855613Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d6a5505f-6ebb-45a4-896e-ac8274cfc0ac",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d6a5505f-6ebb-45a4-896e-ac8274cfc0ac"
+}

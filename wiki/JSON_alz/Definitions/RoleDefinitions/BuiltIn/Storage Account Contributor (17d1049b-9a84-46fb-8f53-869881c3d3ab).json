@@ -1,0 +1,30 @@
+{
+  "roleName": "Storage Account Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage storage accounts, including accessing storage account keys which provide full access to storage account data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/diagnosticSettings/*",
+        "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Storage/storageAccounts/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2015-06-02T00:18:27.3542698Z",
+  "updatedOn": "2021-11-11T20:13:54.2363539Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,106 @@
+{
+  "properties": {
+    "displayName": "Only explicit kinds for Cognitive Services should be allowed",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Azure Cognitive Services should only create explicit allowed kinds.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Cognitive Services",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.0.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:09.2637057Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "allowedKinds": {
+        "type": "array",
+        "metadata": {
+          "description": "Select the allowed resource kinds to be used with Cognitive Services",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "AnomalyDetector",
+          "ComputerVision",
+          "CognitiveServices",
+          "ContentModerator",
+          "CustomVision.Training",
+          "CustomVision.Prediction",
+          "Face",
+          "FormRecognizer",
+          "ImmersiveReader",
+          "LUIS",
+          "Personalizer",
+          "SpeechServices",
+          "TextAnalytics",
+          "TextTranslation",
+          "OpenAI"
+        ],
+        "defaultValue": [
+          "AnomalyDetector",
+          "ComputerVision",
+          "CognitiveServices",
+          "ContentModerator",
+          "CustomVision.Training",
+          "CustomVision.Prediction",
+          "Face",
+          "FormRecognizer",
+          "ImmersiveReader",
+          "LUIS",
+          "Personalizer",
+          "SpeechServices",
+          "TextAnalytics",
+          "TextTranslation",
+          "OpenAI"
+        ]
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "Enable or disable the execution of the policy",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.CognitiveServices/accounts",
+            "field": "type"
+          },
+          {
+            "field": "kind",
+            "notIn": "[parameters('allowedKinds')]"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-CognitiveServices-Resource-Kinds",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Deny-CognitiveServices-Resource-Kinds",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:09.2162526Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:09.2162526Z"
+  }
+}

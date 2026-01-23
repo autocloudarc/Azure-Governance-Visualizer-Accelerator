@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/e1d8d777-bf9a-4e12-f89a-1035f4dd0d7d",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "Defender for Containers provisioning ARC k8s Enabled",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "0e0c4910-eba1-43b4-8dcf-fedf8e56335c",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "Storage DataShare Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows creating and managing storage dataShares to share data from storage accounts in-place. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/listServiceSas/action",
+          "Microsoft.Storage/storageAccounts/blobServices/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "Microsoft.Storage/locations/DataManagementRPOperationStatuses/read",
+          "Microsoft.Storage/locations/DataManagementRPOperationStatuses/write",
+          "Microsoft.Storage/storageAccounts/dataShares/read",
+          "Microsoft.Storage/storageAccounts/dataShares/delete",
+          "Microsoft.Storage/storageAccounts/dataShares/write"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-11-10T16:07:22.2981281Z",
+    "updatedOn": "2025-11-10T16:07:22.2981281Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/35c49d44-ccc1-4b18-8267-cfb3bacdd396",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "35c49d44-ccc1-4b18-8267-cfb3bacdd396"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/d805b946-b9d3-46f3-9ef6-6f009ed4a928",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "System Administrator",
+  "SignInName": "autocloudarc@autocloudarc.dev",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+  "ObjectType": "User"
+}

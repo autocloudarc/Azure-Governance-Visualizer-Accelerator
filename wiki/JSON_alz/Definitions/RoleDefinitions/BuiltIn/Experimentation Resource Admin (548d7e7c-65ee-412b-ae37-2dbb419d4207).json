@@ -1,0 +1,22 @@
+{
+  "roleName": "Experimentation Resource Admin",
+  "type": "BuiltInRole",
+  "description": "Experimentation Resource Admin",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Experimentation/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-06-26T20:41:16.1041869Z",
+  "updatedOn": "2025-06-26T20:41:16.1041869Z",
+  "createdBy": null,
+  "updatedBy": null
+}

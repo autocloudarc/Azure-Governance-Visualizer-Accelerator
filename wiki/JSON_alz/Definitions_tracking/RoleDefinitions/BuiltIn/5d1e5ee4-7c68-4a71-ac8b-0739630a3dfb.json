@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Hybrid Server Onboarding",
+    "type": "BuiltInRole",
+    "description": "Can onboard new Hybrid servers to the Hybrid Resource Provider.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridCompute/machines/read",
+          "Microsoft.HybridCompute/machines/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-04-29T22:36:28.1873756Z",
+    "updatedOn": "2021-11-11T20:14:00.4308999Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5d1e5ee4-7c68-4a71-ac8b-0739630a3dfb",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5d1e5ee4-7c68-4a71-ac8b-0739630a3dfb"
+}

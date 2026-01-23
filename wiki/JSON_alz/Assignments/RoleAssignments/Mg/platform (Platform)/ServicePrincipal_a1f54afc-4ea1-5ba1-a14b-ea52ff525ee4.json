@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/a1f54afc-4ea1-5ba1-a14b-ea52ff525ee4",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-DataFactory0",
+  "SignInName": null,
+  "RoleDefinitionName": "Data Factory Contributor",
+  "RoleDefinitionId": "673868aa-7521-48a0-acc6-0f60742d39f5",
+  "ObjectId": "ac1f47ef-5b18-4c23-b653-2c1640c02af5",
+  "ObjectType": "ServicePrincipal"
+}

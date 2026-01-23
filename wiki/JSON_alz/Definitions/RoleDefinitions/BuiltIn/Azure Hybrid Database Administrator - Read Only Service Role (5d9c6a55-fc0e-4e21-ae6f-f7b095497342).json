@@ -1,0 +1,27 @@
+{
+  "roleName": "Azure Hybrid Database Administrator - Read Only Service Role",
+  "type": "BuiltInRole",
+  "description": "Read only access to Azure hybrid database services resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AzureArcData/*/read",
+        "Microsoft.AzureArcData/sqlServerInstances/getTelemetry/action",
+        "Microsoft.AzureArcData/sqlServerInstances/availabilityGroups/getDetailView/action",
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/machines/extensions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-04-04T17:22:37.1908565Z",
+  "updatedOn": "2024-04-04T17:22:37.1908565Z",
+  "createdBy": null,
+  "updatedBy": null
+}

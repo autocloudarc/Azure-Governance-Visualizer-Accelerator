@@ -1,0 +1,28 @@
+{
+  "roleName": "Issue Contributor",
+  "type": "BuiltInRole",
+  "description": "Can read all issues data and update issues settings.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AlertsManagement/Issues/*",
+        "microsoft.monitor/accounts/issues/*",
+        "Microsoft.AlertsManagement/alerts/*",
+        "Microsoft.Insights/components/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-08T15:14:41.7785089Z",
+  "updatedOn": "2026-01-16T11:51:27.3135304Z",
+  "createdBy": null,
+  "updatedBy": null
+}

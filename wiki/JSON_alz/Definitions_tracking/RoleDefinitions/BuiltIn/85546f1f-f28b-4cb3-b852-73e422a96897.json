@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Liftr PureStorage Owner role",
+    "type": "BuiltInRole",
+    "description": "Provides access to all PureStorage related operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "PureStorage.Block/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-31T15:19:47.9320424Z",
+    "updatedOn": "2025-07-31T15:19:47.9320424Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/85546f1f-f28b-4cb3-b852-73e422a96897",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "85546f1f-f28b-4cb3-b852-73e422a96897"
+}

@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Workbook Reader",
+    "type": "BuiltInRole",
+    "description": "Can read workbooks.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "microsoft.insights/workbooks/read",
+          "microsoft.insights/workbooks/revisions/read",
+          "microsoft.insights/workbooktemplates/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-08-28T20:56:17.680814Z",
+    "updatedOn": "2022-12-12T18:07:19.5792794Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b279062a-9be3-42a0-92ae-8b3cf002ec4d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b279062a-9be3-42a0-92ae-8b3cf002ec4d"
+}

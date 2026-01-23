@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/f6b5348f-7d00-4db0-a1bb-d854d5dbc6db",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "7164a0fa-ff9a-43b9-9b63-8dc8e1003b50",
+  "ObjectType": "ServicePrincipal"
+}

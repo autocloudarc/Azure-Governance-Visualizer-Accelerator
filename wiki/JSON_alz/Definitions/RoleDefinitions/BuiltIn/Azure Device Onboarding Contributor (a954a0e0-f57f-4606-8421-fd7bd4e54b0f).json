@@ -1,0 +1,32 @@
+{
+  "roleName": "Azure Device Onboarding Contributor",
+  "type": "BuiltInRole",
+  "description": "Can read, write, or delete resources for onboarding services, policies, and device states.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DeviceOnboarding/onboardingServices/read",
+        "Microsoft.DeviceOnboarding/onboardingServices/write",
+        "Microsoft.DeviceOnboarding/onboardingServices/delete",
+        "Microsoft.DeviceOnboarding/onboardingServices/policies/read",
+        "Microsoft.DeviceOnboarding/onboardingServices/policies/write",
+        "Microsoft.DeviceOnboarding/onboardingServices/policies/delete",
+        "Microsoft.DeviceOnboarding/deviceStates/read",
+        "Microsoft.DeviceOnboarding/deviceStates/write",
+        "Microsoft.DeviceOnboarding/deviceStates/delete",
+        "Microsoft.DeviceOnboarding/deviceStates/prepareForOnboarding/action",
+        "Microsoft.DeviceOnboarding/locations/operationStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-12-09T16:19:08.8714796Z",
+  "updatedOn": "2025-12-09T16:19:08.8714796Z",
+  "createdBy": null,
+  "updatedBy": null
+}

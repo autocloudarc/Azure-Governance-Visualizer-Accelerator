@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourcegroups/alz-mgmt/providers/microsoft.operationalinsights/workspaces/alz-law/providers/microsoft.authorization/roleassignments/ac4ebe52-2e07-5b53-ad78-a283192d2281",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/resourceGroups/alz-mgmt/providers/Microsoft.OperationalInsights/workspaces/alz-law",
+  "DisplayName": "Deploy-MDFC-Config-H224",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Containers Sensor",
+  "RoleDefinitionId": "5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "ObjectId": "f44fb9d8-b77d-4dd3-bc10-3cf07f7486db",
+  "ObjectType": "ServicePrincipal"
+}

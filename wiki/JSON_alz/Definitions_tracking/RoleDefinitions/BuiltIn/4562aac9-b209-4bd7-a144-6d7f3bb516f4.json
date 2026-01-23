@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Oracle.Database Owner Built-in Role",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage all Oracle.Database resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Oracle.Database/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Network/locations/operations/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Compute/sshPublicKeys/read",
+          "Microsoft.Compute/sshPublicKeys/write",
+          "Microsoft.Compute/sshPublicKeys/generateKeyPair/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-26T15:15:05.077072Z",
+    "updatedOn": "2024-04-05T21:31:52.1474736Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4562aac9-b209-4bd7-a144-6d7f3bb516f4",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4562aac9-b209-4bd7-a144-6d7f3bb516f4"
+}

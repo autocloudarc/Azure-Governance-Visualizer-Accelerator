@@ -1,0 +1,25 @@
+{
+  "roleName": "SSH PublicKeys Contributor Role",
+  "type": "BuiltInRole",
+  "description": "This is the role created for SSH PublicKeys Contributor",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/sshpublickeys/read",
+        "Microsoft.Compute/sshpublickeys/write",
+        "Microsoft.Compute/sshpublickeys/delete",
+        "Microsoft.Compute/sshpublickeys/generatekeypair/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-02-25T16:07:59.0006525Z",
+  "updatedOn": "2025-02-25T16:07:59.0006525Z",
+  "createdBy": null,
+  "updatedBy": null
+}

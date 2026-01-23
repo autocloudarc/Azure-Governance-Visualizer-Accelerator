@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "LocalRulestacksAdministrator role",
+    "type": "BuiltInRole",
+    "description": "Allows users to create, modify, describe, or delete Rulestacks.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "PaloAltoNetworks.Cloudngfw/localRulestacks/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-02-06T16:01:22.3891153Z",
+    "updatedOn": "2023-02-21T16:08:31.3805596Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/bfc3b73d-c6ff-45eb-9a5f-40298295bf20",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "bfc3b73d-c6ff-45eb-9a5f-40298295bf20"
+}

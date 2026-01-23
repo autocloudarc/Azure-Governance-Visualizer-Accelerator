@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "FHIR Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Role allows user or principal full access to FHIR Data",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthcareApis/services/fhir/resources/*",
+          "Microsoft.HealthcareApis/workspaces/fhirservices/resources/*"
+        ],
+        "notDataActions": [
+          "Microsoft.HealthcareApis/services/fhir/resources/smart/action",
+          "Microsoft.HealthcareApis/workspaces/fhirservices/resources/smart/action"
+        ]
+      }
+    ],
+    "createdOn": "2020-03-17T18:35:04.4949547Z",
+    "updatedOn": "2023-08-21T15:00:43.2797853Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5a1fc7df-4bf1-4951-a576-89034ee01acd",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5a1fc7df-4bf1-4951-a576-89034ee01acd"
+}

@@ -1,0 +1,23 @@
+{
+  "roleName": "Microsoft.AzureStackHCI EdgeMachine Reader",
+  "type": "BuiltInRole",
+  "description": "Microsoft.AzureStackHCI EdgeMachine Reader",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AzureStackHCI/EdgeMachines/Read/*",
+        "Microsoft.AzureStackHCI/EdgeMachines/Jobs/Read/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-05-16T08:59:07.7169017Z",
+  "updatedOn": "2025-05-16T08:59:07.7169017Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Connector Writer",
+    "type": "BuiltInRole",
+    "description": "Write connectors and have basic customer permissions like reading authorizations, alert rules and resourceGroups",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Impact/Connectors/Write",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-07T15:00:14.2662314Z",
+    "updatedOn": "2025-07-07T15:00:14.2662314Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c459b115-f629-486b-b359-35feb5568b83",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c459b115-f629-486b-b359-35feb5568b83"
+}

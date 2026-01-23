@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure Device Update Agent",
+    "type": "BuiltInRole",
+    "description": "Provide full access to all Azure Device Update agent operations",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DeviceUpdate/updateAccounts/agents/requestUpdate/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-09-02T15:07:07.8698996Z",
+    "updatedOn": "2024-09-02T15:07:07.8698996Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2a740172-0fc2-4039-972c-b31864cd47d6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2a740172-0fc2-4039-972c-b31864cd47d6"
+}

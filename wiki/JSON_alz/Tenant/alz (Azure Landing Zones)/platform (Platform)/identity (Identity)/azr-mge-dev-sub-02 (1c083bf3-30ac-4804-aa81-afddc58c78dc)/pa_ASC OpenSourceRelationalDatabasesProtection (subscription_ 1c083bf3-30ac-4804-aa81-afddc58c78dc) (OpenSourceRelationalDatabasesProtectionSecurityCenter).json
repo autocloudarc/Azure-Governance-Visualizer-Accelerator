@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "displayName": "ASC OpenSourceRelationalDatabasesProtection (subscription: 1c083bf3-30ac-4804-aa81-afddc58c78dc)",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/e77fc0b3-f7e9-4c58-bc13-cb753ed8e46e",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "description": "This policy assignment was automatically created by Azure Security Center",
+    "metadata": {
+      "assignedBy": "Security Center",
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:10:59.0498943Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/OpenSourceRelationalDatabasesProtectionSecurityCenter",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "OpenSourceRelationalDatabasesProtectionSecurityCenter",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:10:59.0335423Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:10:59.0335423Z"
+  }
+}

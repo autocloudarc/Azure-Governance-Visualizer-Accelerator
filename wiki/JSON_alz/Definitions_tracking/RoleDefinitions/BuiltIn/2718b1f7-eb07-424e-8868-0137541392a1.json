@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Landing Zone Account Reader",
+    "type": "BuiltInRole",
+    "description": "Microsoft.Sovereign Landing Zone Account Reader allowing to read Landing Zone Account, Landing Zone Configurations and Landing Zone Registrations. Also enables read-access to policies and management groups for enabling the full user experience of the Sovereign Services RP in the Azure Portal (as otherwise some elements might not be accessible to end users).",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Sovereign/landingZoneAccounts/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-15T15:28:55.9476171Z",
+    "updatedOn": "2024-10-15T15:28:55.9476171Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2718b1f7-eb07-424e-8868-0137541392a1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2718b1f7-eb07-424e-8868-0137541392a1"
+}

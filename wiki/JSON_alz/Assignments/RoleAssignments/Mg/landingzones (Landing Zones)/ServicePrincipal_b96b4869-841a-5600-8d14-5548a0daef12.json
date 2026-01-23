@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/b96b4869-841a-5600-8d14-5548a0daef12",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enable-DDoS-VNET",
+  "SignInName": null,
+  "RoleDefinitionName": "Network Contributor",
+  "RoleDefinitionId": "4d97b98b-1d4f-4787-a291-c67834d212e7",
+  "ObjectId": "f2ae3276-9433-4996-ad1f-2c43ed2be76a",
+  "ObjectType": "ServicePrincipal"
+}

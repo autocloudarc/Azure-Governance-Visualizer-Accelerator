@@ -1,0 +1,27 @@
+{
+  "roleName": "Artifact Signing Certificate Profile Signer",
+  "type": "BuiltInRole",
+  "description": "Sign files with a certificate profile.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CodeSigning/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CodeSigning/certificateProfiles/Sign/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-16T23:17:53.0002693Z",
+  "updatedOn": "2026-01-12T16:06:05.5159149Z",
+  "createdBy": null,
+  "updatedBy": null
+}

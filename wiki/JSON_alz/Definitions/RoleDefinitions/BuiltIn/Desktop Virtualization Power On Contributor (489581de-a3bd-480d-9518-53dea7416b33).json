@@ -1,0 +1,35 @@
+{
+  "roleName": "Desktop Virtualization Power On Contributor",
+  "type": "BuiltInRole",
+  "description": "Provide permission to the Azure Virtual Desktop Resource Provider to start virtual machines.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/virtualMachines/start/action",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/instanceView/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/operations/read",
+        "Microsoft.HybridCompute/locations/operationresults/read",
+        "Microsoft.HybridCompute/locations/operationstatus/read",
+        "Microsoft.AzureStackHCI/virtualMachineInstances/read",
+        "Microsoft.AzureStackHCI/virtualMachineInstances/start/action",
+        "Microsoft.AzureStackHCI/operations/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-06-29T03:46:13.8314771Z",
+  "updatedOn": "2024-02-13T16:21:42.6510575Z",
+  "createdBy": null,
+  "updatedBy": null
+}

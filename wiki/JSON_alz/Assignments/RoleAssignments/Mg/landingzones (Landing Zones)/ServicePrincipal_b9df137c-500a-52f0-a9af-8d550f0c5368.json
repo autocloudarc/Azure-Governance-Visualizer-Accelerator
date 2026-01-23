@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/b9df137c-500a-52f0-a9af-8d550f0c5368",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-VM-ChangeTrack",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Contributor",
+  "RoleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+  "ObjectId": "055fc92a-a5b1-47ec-9424-714049e87032",
+  "ObjectType": "ServicePrincipal"
+}

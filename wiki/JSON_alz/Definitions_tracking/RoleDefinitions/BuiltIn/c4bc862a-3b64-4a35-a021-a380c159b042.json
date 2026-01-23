@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Bayer Ag Powered Services GDU Solution",
+    "type": "BuiltInRole",
+    "description": "Provide access to GDU Solution by Bayer Ag Powered Services",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AgFoodPlatform/farmBeats/parties/read",
+          "Microsoft.AgFoodPlatform/farmBeats/parties/boundaries/read",
+          "Microsoft.AgFoodPlatform/farmBeats/parties/farms/read",
+          "Microsoft.AgFoodPlatform/farmBeats/parties/fields/read",
+          "Microsoft.AgFoodPlatform/farmBeats/parties/models/resourceTypes/resources/insights/*",
+          "Microsoft.AgFoodPlatform/farmBeats/parties/models/resourceTypes/resources/insightAttachments/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-01-12T12:10:00.3896956Z",
+    "updatedOn": "2024-05-29T15:22:21.435313Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c4bc862a-3b64-4a35-a021-a380c159b042",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c4bc862a-3b64-4a35-a021-a380c159b042"
+}

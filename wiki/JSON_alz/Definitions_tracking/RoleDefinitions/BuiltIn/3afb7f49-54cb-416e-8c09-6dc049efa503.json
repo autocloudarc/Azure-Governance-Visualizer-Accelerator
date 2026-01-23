@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure AI Inference Deployment Operator",
+    "type": "BuiltInRole",
+    "description": "Can perform all actions required to create a resource deployment within a resource group.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Insights/AutoscaleSettings/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-10-30T18:23:40.794418Z",
+    "updatedOn": "2024-03-18T15:10:34.3892458Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3afb7f49-54cb-416e-8c09-6dc049efa503",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3afb7f49-54cb-416e-8c09-6dc049efa503"
+}

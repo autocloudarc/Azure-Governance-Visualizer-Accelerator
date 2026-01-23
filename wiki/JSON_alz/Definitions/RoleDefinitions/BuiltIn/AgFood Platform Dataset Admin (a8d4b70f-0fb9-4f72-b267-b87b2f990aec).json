@@ -1,0 +1,23 @@
+{
+  "roleName": "AgFood Platform Dataset Admin",
+  "type": "BuiltInRole",
+  "description": "Provides access to Dataset APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AgFoodPlatform/farmBeats/datasets/*",
+        "Microsoft.AgFoodPlatform/farmBeats/datasetRecords/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-11-07T16:18:43.4932699Z",
+  "updatedOn": "2023-11-07T16:18:43.4932699Z",
+  "createdBy": null,
+  "updatedBy": null
+}

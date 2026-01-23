@@ -1,0 +1,27 @@
+{
+  "roleName": "GeoCatalog Reader",
+  "type": "BuiltInRole",
+  "description": "View GeoCatalogs, but does not allow you to make any changes.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Orbital/operations/read",
+        "Microsoft.Orbital/geoCatalogs/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-02-28T16:09:25.026582Z",
+  "updatedOn": "2024-02-28T16:09:25.026582Z",
+  "createdBy": null,
+  "updatedBy": null
+}

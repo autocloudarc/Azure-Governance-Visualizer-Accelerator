@@ -1,0 +1,31 @@
+{
+  "roleName": "Container Registry Transfer Pipeline Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides the ability to transfer, import, and export artifacts through configuring registry transfer pipelines that involve intermediary storage accounts and key vaults. Does not provide permissions to push or pull images. Does not provide permissions to create, manage, or list storage accounts or key vaults. Does not provide permissions to perform role assignments.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/exportPipelines/read",
+        "Microsoft.ContainerRegistry/registries/exportPipelines/write",
+        "Microsoft.ContainerRegistry/registries/exportPipelines/delete",
+        "Microsoft.ContainerRegistry/registries/importPipelines/read",
+        "Microsoft.ContainerRegistry/registries/importPipelines/write",
+        "Microsoft.ContainerRegistry/registries/importPipelines/delete",
+        "Microsoft.ContainerRegistry/registries/pipelineRuns/read",
+        "Microsoft.ContainerRegistry/registries/pipelineRuns/write",
+        "Microsoft.ContainerRegistry/registries/pipelineRuns/delete",
+        "Microsoft.ContainerRegistry/registries/pipelineRuns/operationStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-11-07T16:11:39.6645356Z",
+  "updatedOn": "2024-11-07T16:11:39.6645356Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service RBAC Admin",
+    "type": "BuiltInRole",
+    "description": "Lets you manage all resources under cluster/namespace, except update or delete resource quotas and namespaces.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerService/managedClusters/*"
+        ],
+        "notDataActions": [
+          "Microsoft.ContainerService/managedClusters/resourcequotas/write",
+          "Microsoft.ContainerService/managedClusters/resourcequotas/delete",
+          "Microsoft.ContainerService/managedClusters/namespaces/write",
+          "Microsoft.ContainerService/managedClusters/namespaces/delete"
+        ]
+      }
+    ],
+    "createdOn": "2020-07-02T17:50:30.4020311Z",
+    "updatedOn": "2023-05-09T20:10:39.0962004Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3498e952-d568-435e-9b2c-8d77e338d7f7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3498e952-d568-435e-9b2c-8d77e338d7f7"
+}

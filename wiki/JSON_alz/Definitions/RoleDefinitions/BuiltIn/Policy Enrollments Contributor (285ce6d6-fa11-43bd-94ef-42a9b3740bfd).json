@@ -1,0 +1,25 @@
+{
+  "roleName": "Policy Enrollments Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows the creation and modification of policy enrollments",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/policyenrollments/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.PolicyInsights/*",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-17T17:05:37.8594096Z",
+  "updatedOn": "2025-07-17T17:05:37.8594096Z",
+  "createdBy": null,
+  "updatedBy": null
+}

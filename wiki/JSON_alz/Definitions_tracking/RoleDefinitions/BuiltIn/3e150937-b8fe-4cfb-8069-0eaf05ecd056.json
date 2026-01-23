@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "roleName": "Microsoft Sentinel Responder",
+    "type": "BuiltInRole",
+    "description": "Microsoft Sentinel Responder",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.SecurityInsights/*/read",
+          "Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action",
+          "Microsoft.SecurityInsights/automationRules/*",
+          "Microsoft.SecurityInsights/cases/*",
+          "Microsoft.SecurityInsights/incidents/*",
+          "Microsoft.SecurityInsights/entities/runPlaybook/action",
+          "Microsoft.SecurityInsights/threatIntelligence/indicators/appendTags/action",
+          "Microsoft.SecurityInsights/threatIntelligence/indicators/query/action",
+          "Microsoft.SecurityInsights/threatIntelligence/bulkTag/action",
+          "Microsoft.SecurityInsights/threatIntelligence/indicators/appendTags/action",
+          "Microsoft.SecurityInsights/threatIntelligence/indicators/replaceTags/action",
+          "Microsoft.SecurityInsights/threatIntelligence/queryIndicators/action",
+          "Microsoft.SecurityInsights/businessApplicationAgents/systems/undoAction/action",
+          "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+          "Microsoft.OperationalInsights/workspaces/*/read",
+          "Microsoft.OperationalInsights/workspaces/dataSources/read",
+          "Microsoft.OperationalInsights/workspaces/savedSearches/read",
+          "Microsoft.OperationsManagement/solutions/read",
+          "Microsoft.OperationalInsights/workspaces/query/read",
+          "Microsoft.OperationalInsights/workspaces/query/*/read",
+          "Microsoft.OperationalInsights/workspaces/dataSources/read",
+          "Microsoft.OperationalInsights/querypacks/*/read",
+          "Microsoft.Insights/workbooks/read",
+          "Microsoft.Insights/myworkbooks/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [
+          "Microsoft.SecurityInsights/cases/*/Delete",
+          "Microsoft.SecurityInsights/incidents/*/Delete",
+          "Microsoft.SecurityInsights/ConfidentialWatchlists/*",
+          "Microsoft.OperationalInsights/workspaces/query/ConfidentialWatchlist/*"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-08-28T16:54:07.6467264Z",
+    "updatedOn": "2024-04-04T15:52:09.7970103Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3e150937-b8fe-4cfb-8069-0eaf05ecd056"
+}

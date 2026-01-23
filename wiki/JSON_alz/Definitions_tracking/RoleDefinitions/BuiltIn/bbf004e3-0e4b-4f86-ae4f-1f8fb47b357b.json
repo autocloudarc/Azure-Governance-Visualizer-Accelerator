@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Storage File Data SMB Admin",
+    "type": "BuiltInRole",
+    "description": "Allows for admin access equivalent to storage account key for end users over SMB.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read",
+          "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/write",
+          "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/delete",
+          "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/modifypermissions/action",
+          "Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action",
+          "Microsoft.Storage/storageAccounts/fileServices/writeFileBackupSemantics/action",
+          "Microsoft.Storage/storageAccounts/fileServices/takeOwnership/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-01T15:36:17.2116075Z",
+    "updatedOn": "2025-10-01T15:36:17.2116075Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/bbf004e3-0e4b-4f86-ae4f-1f8fb47b357b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "bbf004e3-0e4b-4f86-ae4f-1f8fb47b357b"
+}

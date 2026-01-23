@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Hybrid Cluster Admin Role",
+    "type": "BuiltInRole",
+    "description": "List cluster admin credential action.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridContainerService/provisionedClusterInstances/read",
+          "Microsoft.HybridContainerService/provisionedClusterInstances/listAdminKubeconfig/action",
+          "Microsoft.Kubernetes/connectedClusters/Read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-12-01T16:27:57.0085632Z",
+    "updatedOn": "2023-12-01T16:27:57.0085632Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b5092dac-c796-4349-8681-1a322a31c3f9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b5092dac-c796-4349-8681-1a322a31c3f9"
+}

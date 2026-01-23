@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Native Dynatrace Agent Management Role",
+    "type": "BuiltInRole",
+    "description": "Grants access to manage Dynatrace Agent on compute resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.KubernetesConfiguration/extensions/write",
+          "Microsoft.KubernetesConfiguration/extensions/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-17T15:25:54.0420614Z",
+    "updatedOn": "2025-09-17T15:25:54.0420614Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/55077723-1b30-4603-a70b-68de134cfa20",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "55077723-1b30-4603-a70b-68de134cfa20"
+}

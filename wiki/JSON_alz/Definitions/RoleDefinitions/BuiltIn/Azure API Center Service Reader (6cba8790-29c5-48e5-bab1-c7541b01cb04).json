@@ -1,0 +1,28 @@
+{
+  "roleName": "Azure API Center Service Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read-only access to Azure API Center service.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ApiCenter/services/*/read",
+        "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/exportSpecification/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-25T15:06:22.7402909Z",
+  "updatedOn": "2024-03-25T15:06:22.7402909Z",
+  "createdBy": null,
+  "updatedBy": null
+}

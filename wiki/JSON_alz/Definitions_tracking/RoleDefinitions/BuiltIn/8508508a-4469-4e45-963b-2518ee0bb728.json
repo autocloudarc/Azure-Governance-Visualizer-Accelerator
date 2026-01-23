@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "AgFood Platform Service Contributor",
+    "type": "BuiltInRole",
+    "description": "Provides contribute access to AgFood Platform Service",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AgFoodPlatform/*/action",
+          "Microsoft.AgFoodPlatform/*/read",
+          "Microsoft.AgFoodPlatform/*/write"
+        ],
+        "notDataActions": [
+          "Microsoft.AgFoodPlatform/farmBeats/farmers/write",
+          "Microsoft.AgFoodPlatform/farmBeats/deletionJobs/*/write",
+          "Microsoft.AgFoodPlatform/farmBeats/parties/write",
+          "Microsoft.AgFoodPlatform/farmBeats/datasets/write",
+          "Microsoft.AgFoodPlatform/farmBeats/datasetRecords/write",
+          "Microsoft.AgFoodPlatform/farmBeats/datasets/access/*/action"
+        ]
+      }
+    ],
+    "createdOn": "2020-09-14T10:21:09.7239169Z",
+    "updatedOn": "2023-12-04T16:03:50.558376Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8508508a-4469-4e45-963b-2518ee0bb728",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8508508a-4469-4e45-963b-2518ee0bb728"
+}

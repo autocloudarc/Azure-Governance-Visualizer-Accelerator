@@ -1,0 +1,22 @@
+{
+  "roleName": "Microsoft.OffAzureSpringBoot Service Owner",
+  "type": "BuiltInRole",
+  "description": "Full access to Azure Microsoft.OffAzureSpringBoot Service REST APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.OffAzureSpringBoot/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-21T15:02:41.338673Z",
+  "updatedOn": "2025-08-08T08:00:27.2426095Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,25 @@
+{
+  "roleName": "Network-Management (alz)",
+  "type": "CustomRole",
+  "description": "Platform-wide global connectivity management: virtual networks, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute, and others",
+  "assignableScopes": [
+    "/providers/Microsoft.Management/managementGroups/alz"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "Microsoft.Network/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-21T00:36:53.1097036Z",
+  "updatedOn": "2026-01-21T00:36:53.1097036Z",
+  "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+  "updatedBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590"
+}

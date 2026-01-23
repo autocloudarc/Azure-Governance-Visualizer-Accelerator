@@ -1,0 +1,50 @@
+{
+  "properties": {
+    "roleName": "Avere Contributor",
+    "type": "BuiltInRole",
+    "description": "Can create and manage an Avere vFXT cluster.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Compute/*/read",
+          "Microsoft.Compute/availabilitySets/*",
+          "Microsoft.Compute/proximityPlacementGroups/*",
+          "Microsoft.Compute/virtualMachines/*",
+          "Microsoft.Compute/disks/*",
+          "Microsoft.Network/*/read",
+          "Microsoft.Network/networkInterfaces/*",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Storage/*/read",
+          "Microsoft.Storage/storageAccounts/*",
+          "Microsoft.Support/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/resources/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-03-18T20:00:58.9207889Z",
+    "updatedOn": "2021-11-11T20:13:14.2265665Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4f8fab4f-1852-4a58-a46a-8eaf358af14a",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4f8fab4f-1852-4a58-a46a-8eaf358af14a"
+}

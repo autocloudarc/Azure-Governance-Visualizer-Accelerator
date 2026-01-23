@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure Automanage Contributor",
+    "type": "BuiltInRole",
+    "description": "Azure Automanage Contributor",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Automanage/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-09-11T15:31:21.7247588Z",
+    "updatedOn": "2024-09-11T15:31:21.7247588Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8d6517c1-e434-405c-9f3f-e0ae65085d76",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8d6517c1-e434-405c-9f3f-e0ae65085d76"
+}

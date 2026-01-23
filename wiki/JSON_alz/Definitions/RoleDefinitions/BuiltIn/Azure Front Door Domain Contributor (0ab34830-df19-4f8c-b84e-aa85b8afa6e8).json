@@ -1,0 +1,26 @@
+{
+  "roleName": "Azure Front Door Domain Contributor",
+  "type": "BuiltInRole",
+  "description": "For internal use within Azure. Can manage Azure Front Door domains, but can't grant access to other users.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Cdn/operationresults/profileresults/customdomainresults/read",
+        "Microsoft.Cdn/profiles/customdomains/read",
+        "Microsoft.Cdn/profiles/customdomains/write",
+        "Microsoft.Cdn/profiles/customdomains/delete",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-02-03T15:30:15.5041698Z",
+  "updatedOn": "2023-12-08T09:25:10.8300706Z",
+  "createdBy": null,
+  "updatedBy": null
+}

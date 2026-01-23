@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Microsoft.Windows365.CloudPcDelegatedMsis Writer User",
+    "type": "BuiltInRole",
+    "description": "Built in role to perform Write operations on CloudPcDelegatedMsis resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Windows365/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-15T15:28:55.9466167Z",
+    "updatedOn": "2024-10-15T15:28:55.9466167Z",
+    "createdBy": "dipakmahajan",
+    "updatedBy": "dipakmahajan"
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/21bffb94-04c0-4ed0-b676-68bb926e832b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "21bffb94-04c0-4ed0-b676-68bb926e832b"
+}

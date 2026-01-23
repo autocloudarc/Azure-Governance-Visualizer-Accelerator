@@ -1,0 +1,56 @@
+{
+  "displayName": "Function App should only be accessible over HTTPS",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Use of HTTPS ensures server/service authentication and protects data in transit from network layer eavesdropping attacks.",
+  "metadata": {
+    "alzCloudEnvironments": [
+      "AzureCloud",
+      "AzureChinaCloud",
+      "AzureUSGovernment"
+    ],
+    "category": "App Service",
+    "source": "https://github.com/Azure/Enterprise-Scale/",
+    "version": "1.0.0",
+    "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+    "createdOn": "2026-01-21T00:37:00.5239037Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable or disable the execution of the policy",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "Audit",
+        "Disabled",
+        "Deny"
+      ],
+      "defaultValue": "Deny"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.Web/sites",
+          "field": "type"
+        },
+        {
+          "field": "kind",
+          "like": "functionapp*"
+        },
+        {
+          "equals": "false",
+          "field": "Microsoft.Web/sites/httpsOnly"
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "roleName": "AzureML Data Scientist",
+    "type": "BuiltInRole",
+    "description": "Can perform all actions within an Azure Machine Learning workspace, except for creating or deleting compute resources and modifying the workspace itself.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.MachineLearningServices/workspaces/*/read",
+          "Microsoft.MachineLearningServices/workspaces/*/action",
+          "Microsoft.MachineLearningServices/workspaces/*/delete",
+          "Microsoft.MachineLearningServices/workspaces/*/write"
+        ],
+        "notActions": [
+          "Microsoft.MachineLearningServices/workspaces/delete",
+          "Microsoft.MachineLearningServices/workspaces/write",
+          "Microsoft.MachineLearningServices/workspaces/computes/*/write",
+          "Microsoft.MachineLearningServices/workspaces/computes/*/delete",
+          "Microsoft.MachineLearningServices/workspaces/computes/listKeys/action",
+          "Microsoft.MachineLearningServices/workspaces/listKeys/action",
+          "Microsoft.MachineLearningServices/workspaces/hubs/write",
+          "Microsoft.MachineLearningServices/workspaces/hubs/delete",
+          "Microsoft.MachineLearningServices/workspaces/featurestores/write",
+          "Microsoft.MachineLearningServices/workspaces/featurestores/delete"
+        ],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-07-14T21:51:06.0361218Z",
+    "updatedOn": "2023-05-31T15:20:44.7862907Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f6c7c914-8db3-469d-8ca1-694a8f32e121",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f6c7c914-8db3-469d-8ca1-694a8f32e121"
+}

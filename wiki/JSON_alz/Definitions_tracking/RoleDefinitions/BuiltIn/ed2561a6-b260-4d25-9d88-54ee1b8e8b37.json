@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Guest configuration deploy policy role",
+    "type": "BuiltInRole",
+    "description": "Lets you deploy guest configuration policy on to machines under a subscription or resource group.",
+    "assignableScopes": [
+      "/subscriptions/b5e4748c-f69a-467c-8749-e2f9c8cd3db0",
+      "/subscriptions/4b462a8b-b30d-450b-b924-633ae6190e66",
+      "/subscriptions/f9d04da5-1ab5-4396-881f-ed3dbc0cc47e"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.GuestConfiguration/guestConfigurationAssignments/write",
+          "Microsoft.GuestConfiguration/guestConfigurationAssignments/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-04-08T17:36:13.5487005Z",
+    "updatedOn": "2021-11-11T20:13:34.8564609Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/ed2561a6-b260-4d25-9d88-54ee1b8e8b37",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ed2561a6-b260-4d25-9d88-54ee1b8e8b37"
+}

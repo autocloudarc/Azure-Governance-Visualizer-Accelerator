@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "AgFood Platform Sensor Partner Contributor",
+    "type": "BuiltInRole",
+    "description": "Provides contribute access to manage sensor related entities in AgFood Platform Service",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AgFoodPlatform/farmBeats/sensorPartnerScope/*"
+        ],
+        "notDataActions": [
+          "Microsoft.AgFoodPlatform/farmBeats/sensorPartnerScope/sensors/delete"
+        ]
+      }
+    ],
+    "createdOn": "2022-03-09T11:06:02.2546966Z",
+    "updatedOn": "2022-10-27T09:36:05.2105861Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6b77f0a0-0d89-41cc-acd1-579c22c17a67",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6b77f0a0-0d89-41cc-acd1-579c22c17a67"
+}

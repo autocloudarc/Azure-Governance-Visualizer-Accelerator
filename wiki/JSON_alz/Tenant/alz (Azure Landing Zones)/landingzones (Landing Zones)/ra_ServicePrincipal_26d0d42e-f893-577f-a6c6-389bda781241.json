@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/26d0d42e-f893-577f-a6c6-389bda781241",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-vmArc-ChangeTrack",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Contributor",
+  "RoleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+  "ObjectId": "f846a8ca-f281-4e0e-a93a-4fefbfa022c2",
+  "ObjectType": "ServicePrincipal"
+}

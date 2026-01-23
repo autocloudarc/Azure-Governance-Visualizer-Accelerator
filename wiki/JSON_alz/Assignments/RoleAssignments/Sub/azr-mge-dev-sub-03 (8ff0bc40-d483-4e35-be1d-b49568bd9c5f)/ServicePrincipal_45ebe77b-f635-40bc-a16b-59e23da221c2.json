@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/45ebe77b-f635-40bc-a16b-59e23da221c2",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "CDX-SecurityScanner",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "179fdd30-50b7-4d26-8d04-659ff0f09467",
+  "ObjectType": "ServicePrincipal"
+}

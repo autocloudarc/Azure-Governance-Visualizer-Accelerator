@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/c91803a0-1b97-55e8-8116-03e851eff15a",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-VMSS-ChangeTrack",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "f0bfbe2c-1f01-4aff-a4d9-c8664f38b691",
+  "ObjectType": "ServicePrincipal"
+}

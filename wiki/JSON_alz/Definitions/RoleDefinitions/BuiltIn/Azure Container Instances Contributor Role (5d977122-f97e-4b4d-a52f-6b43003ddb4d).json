@@ -1,0 +1,26 @@
+{
+  "roleName": "Azure Container Instances Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Grants read/write access to container groups provided by Azure Container Instances",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerInstance/containerGroups/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-11T17:43:35.3935391Z",
+  "updatedOn": "2024-07-11T17:43:35.3935391Z",
+  "createdBy": null,
+  "updatedBy": null
+}

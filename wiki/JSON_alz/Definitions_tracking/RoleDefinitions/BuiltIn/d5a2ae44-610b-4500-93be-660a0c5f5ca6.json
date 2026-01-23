@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Defender Kubernetes API Access",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for Cloud access to Azure Kubernetes Services",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write",
+          "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read",
+          "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete",
+          "Microsoft.ContainerService/managedClusters/read",
+          "Microsoft.Features/features/read",
+          "Microsoft.Features/providers/features/read",
+          "Microsoft.Features/providers/features/register/action",
+          "Microsoft.Security/pricings/securityoperators/read",
+          "Microsoft.Security/securityOperators/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-01-13T15:12:20.5820146Z",
+    "updatedOn": "2026-01-09T09:16:14.0527052Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d5a2ae44-610b-4500-93be-660a0c5f5ca6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d5a2ae44-610b-4500-93be-660a0c5f5ca6"
+}

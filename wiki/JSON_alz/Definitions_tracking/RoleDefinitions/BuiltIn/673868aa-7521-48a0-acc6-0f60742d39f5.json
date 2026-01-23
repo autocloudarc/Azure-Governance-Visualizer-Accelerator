@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Data Factory Contributor",
+    "type": "BuiltInRole",
+    "description": "Create and manage data factories, as well as child resources within them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.DataFactory/dataFactories/*",
+          "Microsoft.DataFactory/factories/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.EventGrid/eventSubscriptions/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-02-02T21:55:09.8806423Z",
+    "updatedOn": "2021-11-11T20:13:30.7420174Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/673868aa-7521-48a0-acc6-0f60742d39f5",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "673868aa-7521-48a0-acc6-0f60742d39f5"
+}

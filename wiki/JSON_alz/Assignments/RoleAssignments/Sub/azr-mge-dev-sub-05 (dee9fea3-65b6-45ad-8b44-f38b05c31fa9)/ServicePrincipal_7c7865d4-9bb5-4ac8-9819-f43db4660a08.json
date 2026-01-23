@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/7c7865d4-9bb5-4ac8-9819-f43db4660a08",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "Containers/securityOperators/DefenderForContainersSecurityOperator",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Containers Sensor",
+  "RoleDefinitionId": "5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "ObjectId": "e4ef779f-31f6-49a8-b073-8fb49830cab5",
+  "ObjectType": "ServicePrincipal"
+}

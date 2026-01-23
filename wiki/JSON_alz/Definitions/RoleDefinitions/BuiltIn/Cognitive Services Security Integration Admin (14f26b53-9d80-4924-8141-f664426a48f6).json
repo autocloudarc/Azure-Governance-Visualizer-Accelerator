@@ -1,0 +1,22 @@
+{
+  "roleName": "Cognitive Services Security Integration Admin",
+  "type": "BuiltInRole",
+  "description": "Lets you manage safety providers for Cognitive Services.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-11-11T16:10:12.0728459Z",
+  "updatedOn": "2025-11-11T16:10:12.0728459Z",
+  "createdBy": null,
+  "updatedBy": null
+}

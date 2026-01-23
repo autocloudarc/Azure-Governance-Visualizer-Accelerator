@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "WorkloadBuilder Migration Agent Role",
+    "type": "BuiltInRole",
+    "description": "WorkloadBuilder Migration Agent Role.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.WorkloadBuilder/migrationAgents/Read",
+          "Microsoft.WorkloadBuilder/migrationAgents/Write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-03-11T17:07:20.0828003Z",
+    "updatedOn": "2021-11-11T20:15:04.2456706Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d17ce0a2-0697-43bc-aac5-9113337ab61c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d17ce0a2-0697-43bc-aac5-9113337ab61c"
+}

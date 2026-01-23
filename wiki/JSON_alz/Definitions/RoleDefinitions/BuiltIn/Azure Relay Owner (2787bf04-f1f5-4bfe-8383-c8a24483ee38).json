@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Relay Owner",
+  "type": "BuiltInRole",
+  "description": "Allows for full access to Azure Relay resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Relay/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Relay/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-07-20T15:44:26.3023126Z",
+  "updatedOn": "2021-11-11T20:15:15.7154782Z",
+  "createdBy": null,
+  "updatedBy": null
+}

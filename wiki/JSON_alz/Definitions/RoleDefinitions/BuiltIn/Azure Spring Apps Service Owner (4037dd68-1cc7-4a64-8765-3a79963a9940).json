@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Spring Apps Service Owner",
+  "type": "BuiltInRole",
+  "description": "Full access to Azure Spring Apps Service REST APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppPlatform/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-01T11:10:00.3541158Z",
+  "updatedOn": "2025-08-08T08:00:27.2426095Z",
+  "createdBy": null,
+  "updatedBy": null
+}

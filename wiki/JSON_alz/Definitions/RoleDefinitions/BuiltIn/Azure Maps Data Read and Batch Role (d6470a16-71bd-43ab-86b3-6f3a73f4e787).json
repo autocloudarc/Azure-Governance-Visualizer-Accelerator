@@ -1,0 +1,23 @@
+{
+  "roleName": "Azure Maps Data Read and Batch Role",
+  "type": "BuiltInRole",
+  "description": "This role can be used to assign read and batch actions on Azure Maps.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Maps/accounts/services/*/read",
+        "Microsoft.Maps/accounts/services/batch/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-03-16T22:04:26.5974054Z",
+  "updatedOn": "2023-05-17T15:23:09.9109438Z",
+  "createdBy": null,
+  "updatedBy": null
+}

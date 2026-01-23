@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "New Relic APM Account Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage New Relic Application Performance Management accounts and applications, but not access to them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "NewRelic.APM/accounts/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-02-02T21:55:09.8806423Z",
+    "updatedOn": "2021-11-11T20:13:45.7178576Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5d28c62d-5b37-4476-8438-e587778df237",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5d28c62d-5b37-4476-8438-e587778df237"
+}

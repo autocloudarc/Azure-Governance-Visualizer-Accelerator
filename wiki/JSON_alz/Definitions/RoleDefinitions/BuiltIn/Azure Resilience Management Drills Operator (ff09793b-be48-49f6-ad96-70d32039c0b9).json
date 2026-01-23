@@ -1,0 +1,32 @@
+{
+  "roleName": "Azure Resilience Management Drills Operator",
+  "type": "BuiltInRole",
+  "description": "Operator Role of Azure Resilience Management Drills Service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.AzureResilienceManagement/drills/*/action",
+        "Microsoft.AzureResilienceManagement/drills/*/read",
+        "Microsoft.AzureResilienceManagement/drills/*/write",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
+        "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
+        "Microsoft.Insights/alertRules/",
+        "Microsoft.Monitor/accounts/read",
+        "Microsoft.Monitor/slis/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-12T15:18:35.5118366Z",
+  "updatedOn": "2025-10-21T15:21:23.9506753Z",
+  "createdBy": null,
+  "updatedBy": null
+}

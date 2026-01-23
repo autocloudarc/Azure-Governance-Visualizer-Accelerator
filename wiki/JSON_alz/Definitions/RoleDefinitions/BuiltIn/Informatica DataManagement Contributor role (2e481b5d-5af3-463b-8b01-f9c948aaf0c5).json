@@ -1,0 +1,29 @@
+{
+  "roleName": "Informatica DataManagement Contributor role",
+  "type": "BuiltInRole",
+  "description": "Informatica DataManagement Provider role to manage organizations and child resource.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Informatica.DataManagement/locations/operationStatuses/write",
+        "Informatica.DataManagement/organizations/delete",
+        "Informatica.DataManagement/organizations/getServerlessMetadata/action",
+        "Informatica.DataManagement/organizations/serverlessRuntimes/delete",
+        "Informatica.DataManagement/organizations/serverlessRuntimes/write",
+        "Informatica.DataManagement/organizations/singleSignOnConfigurations/delete",
+        "Informatica.DataManagement/organizations/singleSignOnConfigurations/write",
+        "Informatica.DataManagement/organizations/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-31T13:13:15.0204781Z",
+  "updatedOn": "2025-10-31T13:13:15.0204781Z",
+  "createdBy": null,
+  "updatedBy": null
+}

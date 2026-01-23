@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/1b99b8f6-4ca9-5d15-be5d-9e0e704b2682",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-OpenAI0",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "1e5cbafe-7f0d-4697-a29b-19d3c03e487f",
+  "ObjectType": "ServicePrincipal"
+}

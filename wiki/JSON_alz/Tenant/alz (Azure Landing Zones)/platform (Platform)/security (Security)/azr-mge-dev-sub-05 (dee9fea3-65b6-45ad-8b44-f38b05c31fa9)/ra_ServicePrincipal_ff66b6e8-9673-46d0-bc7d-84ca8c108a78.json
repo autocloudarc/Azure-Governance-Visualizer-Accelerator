@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/ff66b6e8-9673-46d0-bc7d-84ca8c108a78",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "StorageAccounts/securityOperators/DefenderForStorageSecurityOperator",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender for Storage Scanner Operator",
+  "RoleDefinitionId": "0f641de8-0b88-4198-bdef-bd8b45ceba96",
+  "ObjectId": "07542a4c-708b-452b-8157-af073e42f8e0",
+  "ObjectType": "ServicePrincipal"
+}

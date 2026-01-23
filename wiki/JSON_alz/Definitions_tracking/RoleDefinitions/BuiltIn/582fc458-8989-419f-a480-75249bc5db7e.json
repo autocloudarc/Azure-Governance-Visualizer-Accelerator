@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Reservations Reader",
+    "type": "BuiltInRole",
+    "description": "Lets one read all the reservations in a tenant",
+    "assignableScopes": [
+      "/providers/Microsoft.Capacity"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Capacity/*/read",
+          "Microsoft.Authorization/roleAssignments/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-07-21T07:15:00.0522225Z",
+    "updatedOn": "2021-11-11T20:15:16.0804825Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/582fc458-8989-419f-a480-75249bc5db7e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "582fc458-8989-419f-a480-75249bc5db7e"
+}

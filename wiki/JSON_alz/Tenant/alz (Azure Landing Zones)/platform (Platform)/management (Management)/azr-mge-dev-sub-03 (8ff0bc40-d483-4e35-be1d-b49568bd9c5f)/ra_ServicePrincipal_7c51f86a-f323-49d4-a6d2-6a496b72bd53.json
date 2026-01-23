@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/7c51f86a-f323-49d4-a6d2-6a496b72bd53",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "storageDataScanner",
+  "SignInName": null,
+  "RoleDefinitionName": "Storage File Data Privileged Reader",
+  "RoleDefinitionId": "b8eda974-7b85-4f76-af95-65846b26df6d",
+  "ObjectId": "7407ffd8-70e5-41ca-bead-05f389df7be5",
+  "ObjectType": "ServicePrincipal"
+}

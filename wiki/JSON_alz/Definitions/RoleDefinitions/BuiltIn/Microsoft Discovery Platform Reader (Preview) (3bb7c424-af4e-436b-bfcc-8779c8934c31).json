@@ -1,0 +1,26 @@
+{
+  "roleName": "Microsoft Discovery Platform Reader (Preview)",
+  "type": "BuiltInRole",
+  "description": "Grants readonly permissions to view Microsoft.Discovery resources. This role in preview and subjet to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Discovery/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Discovery/*/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-02T15:23:29.3839384Z",
+  "updatedOn": "2025-07-02T15:23:29.3839384Z",
+  "createdBy": null,
+  "updatedBy": null
+}

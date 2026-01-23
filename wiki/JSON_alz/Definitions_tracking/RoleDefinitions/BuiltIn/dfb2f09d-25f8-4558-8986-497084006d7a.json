@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure impact-insight reader",
+    "type": "BuiltInRole",
+    "description": "built-in role for azure impact-insight read access",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Impact/WorkloadImpacts/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-22T16:09:33.1745465Z",
+    "updatedOn": "2024-01-22T16:09:33.1745465Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/dfb2f09d-25f8-4558-8986-497084006d7a",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "dfb2f09d-25f8-4558-8986-497084006d7a"
+}

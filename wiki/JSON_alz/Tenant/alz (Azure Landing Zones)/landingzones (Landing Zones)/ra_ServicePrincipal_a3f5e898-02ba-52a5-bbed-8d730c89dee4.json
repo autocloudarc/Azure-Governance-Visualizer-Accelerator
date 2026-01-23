@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/a3f5e898-02ba-52a5-bbed-8d730c89dee4",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-VMSS-Monitoring",
+  "SignInName": null,
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "080618cd-73bd-4eb3-b022-2e7c2df530b4",
+  "ObjectType": "ServicePrincipal"
+}

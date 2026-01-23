@@ -1,0 +1,22 @@
+{
+  "roleName": "SSH PublicKeys Reader Role",
+  "type": "BuiltInRole",
+  "description": "This is the role created for SSH PublicKeys Reader",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/sshpublickeys/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-02-25T16:07:58.8393898Z",
+  "updatedOn": "2025-02-25T16:07:58.8393898Z",
+  "createdBy": null,
+  "updatedBy": null
+}

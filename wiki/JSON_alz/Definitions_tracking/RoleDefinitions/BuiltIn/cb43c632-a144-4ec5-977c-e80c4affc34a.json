@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services Metrics Advisor Administrator",
+    "type": "BuiltInRole",
+    "description": "Full access to the project, including the system level configuration.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.CognitiveServices/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/accounts/MetricsAdvisor/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-09-10T07:46:47.5804491Z",
+    "updatedOn": "2021-11-11T20:14:43.6930781Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/cb43c632-a144-4ec5-977c-e80c4affc34a",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "cb43c632-a144-4ec5-977c-e80c4affc34a"
+}

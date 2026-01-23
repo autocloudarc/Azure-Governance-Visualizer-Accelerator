@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Grafana Editor",
+    "type": "BuiltInRole",
+    "description": "Create, edit, delete, or view dashboards; create, edit, or delete folders; and edit or view playlists.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Dashboard/grafana/ActAsGrafanaEditor/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-08-05T16:37:32.5299593Z",
+    "updatedOn": "2024-07-19T04:57:48.3613041Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a79a5197-3a5c-4973-a920-486035ffd60f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a79a5197-3a5c-4973-a920-486035ffd60f"
+}

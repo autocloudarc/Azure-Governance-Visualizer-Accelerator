@@ -1,0 +1,38 @@
+{
+  "roleName": "Garnet PubSub Data Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows read and write access to all channels within the Garnet resource",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.DocumentDB/garnetClusters/acl/clientid/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/clientinfo/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/configget/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/echo/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/info/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/keyslot/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/nodes/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/ping/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/slots/read",
+        "Microsoft.DocumentDB/garnetClusters/acl/channels/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/numsub/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/numpat/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/psubscribe/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/publish/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/punsubscribe/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/subscribe/action",
+        "Microsoft.DocumentDB/garnetClusters/acl/unsubscribe/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-09-29T15:12:01.645218Z",
+  "updatedOn": "2025-09-29T15:12:01.645218Z",
+  "createdBy": null,
+  "updatedBy": null
+}

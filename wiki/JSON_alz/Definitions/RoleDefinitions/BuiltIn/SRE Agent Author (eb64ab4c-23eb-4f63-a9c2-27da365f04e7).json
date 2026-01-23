@@ -1,0 +1,32 @@
+{
+  "roleName": "SRE Agent Author",
+  "type": "BuiltInRole",
+  "description": "Allows users to add custom features to the SRE Agent using incident handlers and extended agents.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.App/agents/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.App/agents/threads/read",
+        "Microsoft.App/agents/incidentManagement/read",
+        "Microsoft.App/agents/incidentManagement/write",
+        "Microsoft.App/agents/incidentManagement/delete",
+        "Microsoft.App/agents/extendedAgents/read",
+        "Microsoft.App/agents/extendedAgents/write",
+        "Microsoft.App/agents/extendedAgents/delete"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-29T15:18:11.8652792Z",
+  "updatedOn": "2025-10-29T15:18:11.8652792Z",
+  "createdBy": null,
+  "updatedBy": null
+}

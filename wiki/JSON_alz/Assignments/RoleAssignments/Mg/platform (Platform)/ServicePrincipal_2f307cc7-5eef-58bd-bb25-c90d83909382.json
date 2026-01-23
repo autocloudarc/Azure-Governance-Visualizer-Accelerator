@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/2f307cc7-5eef-58bd-bb25-c90d83909382",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-VMSS-ChangeTrack",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Contributor",
+  "RoleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+  "ObjectId": "ad8d007e-7a4d-4f51-b117-8031fc5c10ae",
+  "ObjectType": "ServicePrincipal"
+}

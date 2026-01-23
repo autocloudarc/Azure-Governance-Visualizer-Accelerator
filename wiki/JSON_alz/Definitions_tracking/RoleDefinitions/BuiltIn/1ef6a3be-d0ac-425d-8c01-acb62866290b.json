@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Compute Gallery Sharing Admin",
+    "type": "BuiltInRole",
+    "description": "This role allows user to share gallery to another subscription/tenant or share it to the public.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/galleries/share/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-03-10T06:37:39.5861946Z",
+    "updatedOn": "2022-03-26T02:42:25.9674154Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1ef6a3be-d0ac-425d-8c01-acb62866290b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1ef6a3be-d0ac-425d-8c01-acb62866290b"
+}

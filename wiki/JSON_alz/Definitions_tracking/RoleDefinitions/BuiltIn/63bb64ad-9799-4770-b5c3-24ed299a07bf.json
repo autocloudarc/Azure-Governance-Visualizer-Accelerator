@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Fleet Manager Contributor Role",
+    "type": "BuiltInRole",
+    "description": "Grants read/write access to Azure resources provided by Azure Kubernetes Fleet Manager, including fleets, fleet members, fleet update strategies, fleet update runs, etc.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/fleets/*",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-08-22T19:30:13.8996497Z",
+    "updatedOn": "2024-03-28T21:19:22.9654862Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/63bb64ad-9799-4770-b5c3-24ed299a07bf",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "63bb64ad-9799-4770-b5c3-24ed299a07bf"
+}

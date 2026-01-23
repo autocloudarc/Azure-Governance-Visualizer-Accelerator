@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "SignalR REST API Owner",
+    "type": "BuiltInRole",
+    "description": "Full access to Azure SignalR Service REST APIs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.SignalRService/SignalR/auth/clientToken/action",
+          "Microsoft.SignalRService/SignalR/hub/*",
+          "Microsoft.SignalRService/SignalR/group/*",
+          "Microsoft.SignalRService/SignalR/clientConnection/*",
+          "Microsoft.SignalRService/SignalR/user/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-07-29T09:35:32.2764751Z",
+    "updatedOn": "2023-08-24T15:22:24.7390261Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/fd53cd77-2268-407a-8f46-7e7863d0f521",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "fd53cd77-2268-407a-8f46-7e7863d0f521"
+}

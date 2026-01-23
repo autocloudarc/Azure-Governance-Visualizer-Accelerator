@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/f15ee650-4f92-4d3f-95e6-49311d985f66",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "SqlVmAndArcSqlServersProtection",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine Contributor",
+  "RoleDefinitionId": "9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+  "ObjectId": "e3f26cc9-d2d7-4bee-8ceb-d3d8866650e5",
+  "ObjectType": "ServicePrincipal"
+}

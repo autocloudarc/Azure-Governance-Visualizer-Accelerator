@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Azure File Sync Reader",
+    "type": "BuiltInRole",
+    "description": "Provides read access to Azure File Sync service (Storage Sync Service).",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.StorageSync/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-28T21:32:49.0720095Z",
+    "updatedOn": "2025-03-28T21:32:49.0720095Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/754c1a27-40dc-4708-8ad4-2bffdeee09e8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "754c1a27-40dc-4708-8ad4-2bffdeee09e8"
+}

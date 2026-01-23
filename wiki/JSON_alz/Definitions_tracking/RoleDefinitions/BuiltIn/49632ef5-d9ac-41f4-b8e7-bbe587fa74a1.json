@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Experimentation Reader",
+    "type": "BuiltInRole",
+    "description": "Experimentation Reader",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Experimentation/experimentWorkspaces/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Experimentation/experimentWorkspaces/read",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-03-25T18:05:14.8375678Z",
+    "updatedOn": "2021-11-11T20:14:24.504239Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/49632ef5-d9ac-41f4-b8e7-bbe587fa74a1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "49632ef5-d9ac-41f4-b8e7-bbe587fa74a1"
+}

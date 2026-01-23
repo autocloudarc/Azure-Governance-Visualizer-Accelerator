@@ -1,0 +1,27 @@
+{
+  "roleName": "Microsoft PowerBI Tenant Operations Role",
+  "type": "BuiltInRole",
+  "description": "Allows management of tenant operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.PowerBI/tenants/workspaces/read",
+        "Microsoft.PowerBI/tenants/workspaces/delete",
+        "Microsoft.PowerBI/tenants/read",
+        "Microsoft.PowerBI/tenants/delete",
+        "Microsoft.PowerBI/tenants/write",
+        "Microsoft.PowerBI/tenants/workspaces/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-09-23T15:05:04.8262456Z",
+  "updatedOn": "2024-09-23T15:05:04.8262456Z",
+  "createdBy": null,
+  "updatedBy": null
+}

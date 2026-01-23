@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Hybrid Network Owner",
+    "type": "BuiltInRole",
+    "description": "Provides owner access to Hybrid Network Resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridNetwork/*",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-16T22:23:23.2382431Z",
+    "updatedOn": "2025-10-16T22:23:23.2382431Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/9d3ef640-3c86-4e0a-8907-8d361559c012",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "9d3ef640-3c86-4e0a-8907-8d361559c012"
+}

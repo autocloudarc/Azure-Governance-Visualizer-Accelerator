@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "principalId": "7684f271-108c-49b0-a260-37a7956a4511",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Deploy Threat Detection on SQL servers",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/36d49e87-48c4-4f2e-beed-ba4ed02b71f5",
+    "scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+    "notScopes": [],
+    "parameters": {},
+    "description": "This policy ensures that Threat Detection is enabled on SQL Servers.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:50.0442826Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "Threat Detection must be deployed on SQL servers."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Threat",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Deploy-SQL-Threat",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:49.505509Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:49.505509Z"
+  }
+}

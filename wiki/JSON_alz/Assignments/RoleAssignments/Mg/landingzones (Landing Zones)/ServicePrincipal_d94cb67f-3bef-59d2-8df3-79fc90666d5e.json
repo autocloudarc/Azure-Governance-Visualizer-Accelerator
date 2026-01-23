@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/d94cb67f-3bef-59d2-8df3-79fc90666d5e",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-AzSqlDb-Auditing",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Security Manager",
+  "RoleDefinitionId": "056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+  "ObjectId": "32ba4a2b-8a18-4bae-81f4-04f5323b950d",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,29 @@
+{
+  "roleName": "Nexus Identity Owner",
+  "type": "BuiltInRole",
+  "description": "Provides owner access to nexusidentity resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.NexusIdentity/*/read",
+        "Microsoft.NexusIdentity/*/write",
+        "Microsoft.NexusIdentity/*/action",
+        "Microsoft.NexusIdentity/*/delete",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-07-22T15:11:45.0202582Z",
+  "updatedOn": "2025-07-22T15:11:45.0202582Z",
+  "createdBy": null,
+  "updatedBy": null
+}

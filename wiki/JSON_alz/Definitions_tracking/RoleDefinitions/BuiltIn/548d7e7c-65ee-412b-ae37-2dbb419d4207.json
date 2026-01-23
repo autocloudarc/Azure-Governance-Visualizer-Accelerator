@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Experimentation Resource Admin",
+    "type": "BuiltInRole",
+    "description": "Experimentation Resource Admin",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Experimentation/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-06-26T20:41:16.1041869Z",
+    "updatedOn": "2025-06-26T20:41:16.1041869Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/548d7e7c-65ee-412b-ae37-2dbb419d4207",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "548d7e7c-65ee-412b-ae37-2dbb419d4207"
+}

@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Chaos Studio Operator",
+    "type": "BuiltInRole",
+    "description": "Can run and see details for experiments but cannot create experiments or manage targets and capabilities.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Chaos/*/read",
+          "Microsoft.Chaos/experiments/start/action",
+          "Microsoft.Chaos/experiments/cancel/action",
+          "Microsoft.Chaos/experiments/executions/getExecutionDetails/action",
+          "Microsoft.Chaos/locations/operationResults/read",
+          "Microsoft.Chaos/locations/operationStatuses/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-23T15:16:12.9511529Z",
+    "updatedOn": "2025-01-09T19:24:51.6852764Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1a40e87e-6645-48e0-b27a-0b115d849a20",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1a40e87e-6645-48e0-b27a-0b115d849a20"
+}

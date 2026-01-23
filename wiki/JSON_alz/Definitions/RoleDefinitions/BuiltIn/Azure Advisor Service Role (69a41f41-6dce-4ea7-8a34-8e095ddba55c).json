@@ -1,0 +1,27 @@
+{
+  "roleName": "Azure Advisor Service Role",
+  "type": "BuiltInRole",
+  "description": "Grants permission to delete and write access for suppressions, configurations and assmessments",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Advisor/suppressions/write",
+        "Microsoft.Advisor/suppressions/delete",
+        "Microsoft.Advisor/recommendations/suppressions/write",
+        "Microsoft.Advisor/recommendations/suppressions/delete",
+        "Microsoft.Advisor/assessments/write",
+        "Microsoft.Advisor/configurations/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-06-26T19:24:54.4927385Z",
+  "updatedOn": "2025-07-22T15:11:45.0202582Z",
+  "createdBy": null,
+  "updatedBy": null
+}

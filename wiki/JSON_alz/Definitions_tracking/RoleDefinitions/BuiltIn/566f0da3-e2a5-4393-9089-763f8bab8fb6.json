@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "Health Safeguards Data User",
+    "type": "BuiltInRole",
+    "description": "Allows processing of health data in all available Health Safeguards",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/ClinicalAnchoring/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/ClinicalCodesValidation/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/ClinicalConflictDetection/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/ClinicalEvidenceVerification/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/ClinicalProvenance/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/ClinicalSemanticValidation/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/DetectHallucinationsAndOmissions/Process/Action",
+          "Microsoft.HealthBot/healthBots/HealthSafeguards/HealthAdaptedFiltering/Process/Action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-28T15:14:04.6443673Z",
+    "updatedOn": "2024-12-10T16:13:44.7172543Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/566f0da3-e2a5-4393-9089-763f8bab8fb6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "566f0da3-e2a5-4393-9089-763f8bab8fb6"
+}

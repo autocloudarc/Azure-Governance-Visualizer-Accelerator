@@ -1,0 +1,23 @@
+{
+  "roleName": "EdgeMarketPlace role",
+  "type": "BuiltInRole",
+  "description": "Microsoft.EdgeMarketPlace role.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.EdgeMarketplace/locations/operationStatuses/write",
+        "Microsoft.EdgeMarketplace/locations/operationStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2026-01-21T16:22:20.6262737Z",
+  "updatedOn": "2026-01-21T16:22:20.6262737Z",
+  "createdBy": null,
+  "updatedBy": null
+}

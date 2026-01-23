@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9/providers/microsoft.authorization/roleassignments/fc9ff0a9-418c-fea1-d06b-aa1820e49b01",
+  "Scope": "/subscriptions/dee9fea3-65b6-45ad-8b44-f38b05c31fa9",
+  "DisplayName": "storageDataScanner",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender for Storage Data Scanner",
+  "RoleDefinitionId": "1e7ca9b1-60d1-4db8-a914-f2ca1ff27c40",
+  "ObjectId": "e8c13c93-9dc3-478d-a77a-844d4244685a",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/4b98ee0a-4375-5e05-869e-26d5ca15a3fc",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-DataExpl0",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Server Contributor",
+  "RoleDefinitionId": "6d8ee4ec-f05a-4a1d-8b00-a9b17e38b437",
+  "ObjectId": "722aad44-e907-4035-b66e-671385dfee62",
+  "ObjectType": "ServicePrincipal"
+}

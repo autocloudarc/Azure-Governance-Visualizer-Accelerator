@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/81f00951-105a-5a94-acb4-b6a42f0912ad",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-KeyVaultSup0",
+  "SignInName": null,
+  "RoleDefinitionName": "Managed HSM contributor",
+  "RoleDefinitionId": "18500a29-7fe2-46b2-a342-b16a415e101d",
+  "ObjectId": "1a330176-d36e-4459-8708-37618d47506b",
+  "ObjectType": "ServicePrincipal"
+}

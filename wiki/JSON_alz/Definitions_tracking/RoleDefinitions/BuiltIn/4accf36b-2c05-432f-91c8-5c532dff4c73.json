@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Logic Apps Standard Reader (Preview)",
+    "type": "BuiltInRole",
+    "description": "You have read-only access to all resources in a Standard logic app and workflows, including the workflow runs and their history.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.Web/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-08-11T18:29:26.2014706Z",
+    "updatedOn": "2024-04-04T21:09:40.8283445Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4accf36b-2c05-432f-91c8-5c532dff4c73",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4accf36b-2c05-432f-91c8-5c532dff4c73"
+}

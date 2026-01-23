@@ -1,0 +1,36 @@
+{
+  "roleName": "Storage Actions Blob Data Operator",
+  "type": "BuiltInRole",
+  "description": "Used by the Storage Actions - Storage Task to list & perform operations on the Storage Account blobs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/write"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/runAsSuperUser/action",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/immutableStorage/runAsSuperUser/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-09-15T15:09:05.8039639Z",
+  "updatedOn": "2025-09-15T15:09:05.8039639Z",
+  "createdBy": null,
+  "updatedBy": null
+}

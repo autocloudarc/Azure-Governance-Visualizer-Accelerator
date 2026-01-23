@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Key Vault Crypto Service Encryption User",
+    "type": "BuiltInRole",
+    "description": "Read metadata of keys and perform wrap/unwrap operations. Only works for key vaults that use the 'Azure role-based access control' permission model.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EventGrid/eventSubscriptions/write",
+          "Microsoft.EventGrid/eventSubscriptions/read",
+          "Microsoft.EventGrid/eventSubscriptions/delete"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.KeyVault/vaults/keys/read",
+          "Microsoft.KeyVault/vaults/keys/wrap/action",
+          "Microsoft.KeyVault/vaults/keys/unwrap/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-05-20T20:55:19.239847Z",
+    "updatedOn": "2021-11-11T20:14:31.8443056Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e147488a-f6f5-4113-8e2d-b22465e65bf6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e147488a-f6f5-4113-8e2d-b22465e65bf6"
+}

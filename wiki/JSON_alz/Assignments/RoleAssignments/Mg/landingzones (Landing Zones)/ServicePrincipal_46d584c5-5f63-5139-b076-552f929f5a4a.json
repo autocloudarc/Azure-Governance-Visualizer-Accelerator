@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/46d584c5-5f63-5139-b076-552f929f5a4a",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-GuestAttest",
+  "SignInName": null,
+  "RoleDefinitionName": "Managed Identity Operator",
+  "RoleDefinitionId": "f1a07417-d97a-45cb-824c-7a7467783830",
+  "ObjectId": "29bd59a9-c37e-4b19-b27d-e06f92316ec7",
+  "ObjectType": "ServicePrincipal"
+}

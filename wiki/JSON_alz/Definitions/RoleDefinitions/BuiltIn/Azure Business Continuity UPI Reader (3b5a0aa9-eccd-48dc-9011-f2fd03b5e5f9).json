@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Business Continuity UPI Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you view Unified Protected items in Azure Business Continuity Center.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleDefinitions/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.AzureBusinessContinuity/unifiedProtectedItems/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-05T15:14:55.7195931Z",
+  "updatedOn": "2025-08-22T13:44:05.5589457Z",
+  "createdBy": null,
+  "updatedBy": null
+}

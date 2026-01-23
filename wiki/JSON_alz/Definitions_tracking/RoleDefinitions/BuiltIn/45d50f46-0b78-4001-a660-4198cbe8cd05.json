@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "roleName": "DevCenter Dev Box User",
+    "type": "BuiltInRole",
+    "description": "Provides access to create and manage dev boxes.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DevCenter/projects/read",
+          "Microsoft.DevCenter/projects/*/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DevCenter/projects/users/devboxes/userStop/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userStart/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userGetRemoteConnection/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userRead/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userWrite/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userDelete/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userUpcomingActionRead/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userUpcomingActionManage/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userActionRead/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userActionManage/action",
+          "Microsoft.DevCenter/projects/users/devboxes/userCustomize/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-04-01T00:43:09.4468117Z",
+    "updatedOn": "2023-10-19T19:09:51.437007Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/45d50f46-0b78-4001-a660-4198cbe8cd05",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "45d50f46-0b78-4001-a660-4198cbe8cd05"
+}

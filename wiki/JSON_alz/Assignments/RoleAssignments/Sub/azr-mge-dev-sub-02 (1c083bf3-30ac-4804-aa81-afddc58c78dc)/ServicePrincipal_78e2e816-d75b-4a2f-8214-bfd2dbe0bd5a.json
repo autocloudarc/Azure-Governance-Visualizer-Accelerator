@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/78e2e816-d75b-4a2f-8214-bfd2dbe0bd5a",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "MCAPSGov-AutomationApp",
+  "SignInName": null,
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "d2d58a6c-d725-401a-944d-19d295b91ed0",
+  "ObjectType": "ServicePrincipal"
+}

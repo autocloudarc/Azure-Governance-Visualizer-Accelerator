@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Connected Cluster Managed Identity CheckAccess Reader",
+    "type": "BuiltInRole",
+    "description": "Built-in role that allows a Connected Cluster managed identity to call the checkAccess API",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-10-30T19:24:08.9641127Z",
+    "updatedOn": "2023-11-08T16:32:10.4885906Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/65a14201-8f6c-4c28-bec4-12619c5a9aaa",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "65a14201-8f6c-4c28-bec4-12619c5a9aaa"
+}

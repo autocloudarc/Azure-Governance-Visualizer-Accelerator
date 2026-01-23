@@ -1,0 +1,22 @@
+{
+  "roleName": "Cognitive Services Data Contributor (Preview)",
+  "type": "BuiltInRole",
+  "description": "Allows to call data plane APIs, but not any control plane APIs for Microsoft Cognitive Services. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-10-21T15:04:45.9033454Z",
+  "updatedOn": "2024-10-21T15:04:45.9033454Z",
+  "createdBy": null,
+  "updatedBy": null
+}

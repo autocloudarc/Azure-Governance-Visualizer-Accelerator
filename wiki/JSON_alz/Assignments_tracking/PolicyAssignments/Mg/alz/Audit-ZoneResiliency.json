@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "type": "None"
+  },
+  "properties": {
+    "displayName": "Resources should be Zone Resilient",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/130fb88f-0fc9-4678-bfe1-31022d71c7d5",
+    "scope": "/providers/Microsoft.Management/managementGroups/alz",
+    "notScopes": [],
+    "parameters": {
+      "allow": {
+        "value": "Both"
+      },
+      "effect": {
+        "value": "Audit"
+      }
+    },
+    "description": "Resources should be Zone Resilient.",
+    "metadata": {
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:44.6557592Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "Resources must be Zone Resilient."
+      }
+    ]
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyAssignments/Audit-ZoneResiliency",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Audit-ZoneResiliency",
+  "location": "eastus2",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:44.5610555Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:44.5610555Z"
+  }
+}

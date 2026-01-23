@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "roleName": "Azure Center for SAP solutions Management role",
+    "type": "BuiltInRole",
+    "description": "This role has permissions which allow users to register existing systems, view and manage systems.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-01-13T11:09:47.8459997Z",
+    "updatedOn": "2023-02-03T07:40:22.4872528Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6d949e1d-41e2-46e3-8920-c6e4f31a8310",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6d949e1d-41e2-46e3-8920-c6e4f31a8310"
+}

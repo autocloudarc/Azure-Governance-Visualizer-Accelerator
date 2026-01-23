@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "PowerApps Administrator",
+    "type": "BuiltInRole",
+    "description": "The user has access to perform administrative actions on all PowerApps resources within the tenant.",
+    "assignableScopes": [
+      "/providers/Microsoft.PowerApps"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.PowerApps/actions/admin/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-09-10T19:13:43.4283052Z",
+    "updatedOn": "2021-11-11T20:13:47.1479093Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/providers/Microsoft.Authorization/roleDefinitions/53be45b2-ad40-43ab-bc1f-2c962ac99ded",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "53be45b2-ad40-43ab-bc1f-2c962ac99ded"
+}

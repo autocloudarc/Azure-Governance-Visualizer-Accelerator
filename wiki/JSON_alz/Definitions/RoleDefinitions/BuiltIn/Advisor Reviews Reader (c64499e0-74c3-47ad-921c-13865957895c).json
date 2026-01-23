@@ -1,0 +1,24 @@
+{
+  "roleName": "Advisor Reviews Reader",
+  "type": "BuiltInRole",
+  "description": "View reviews for a workload and recommendations linked to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Advisor/resiliencyReviews/read",
+        "Microsoft.Advisor/triageRecommendations/read",
+        "Microsoft.Advisor/triageResources/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-10-31T15:13:36.689705Z",
+  "updatedOn": "2025-04-03T19:52:01.8661604Z",
+  "createdBy": null,
+  "updatedBy": null
+}

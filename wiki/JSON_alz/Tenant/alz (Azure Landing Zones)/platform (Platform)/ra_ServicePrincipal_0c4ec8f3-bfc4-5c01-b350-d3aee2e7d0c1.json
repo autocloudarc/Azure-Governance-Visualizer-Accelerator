@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/0c4ec8f3-bfc4-5c01-b350-d3aee2e7d0c1",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-AppServices0",
+  "SignInName": null,
+  "RoleDefinitionName": "Network Contributor",
+  "RoleDefinitionId": "4d97b98b-1d4f-4787-a291-c67834d212e7",
+  "ObjectId": "08a55b11-45d7-469d-b91c-c939d3807428",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,29 @@
+{
+  "roleName": "Marketplace Admin",
+  "type": "BuiltInRole",
+  "description": "Marketplace Admin grants full access to manage Private Azure Marketplace, including read and take action for private marketplace notifications, but does not allow to assign Marketplace Admin role to others",
+  "assignableScopes": [
+    "/providers/Microsoft.Marketplace"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Marketplace/privateStores/write",
+        "Microsoft.Marketplace/privateStores/action",
+        "Microsoft.Marketplace/privateStores/delete",
+        "Microsoft.Marketplace/privateStores/*/read",
+        "Microsoft.Marketplace/privateStores/*/write",
+        "Microsoft.Marketplace/privateStores/*/action",
+        "Microsoft.Marketplace/privateStores/*/delete",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-02-26T14:19:50.9681015Z",
+  "updatedOn": "2021-11-11T20:14:21.0771711Z",
+  "createdBy": null,
+  "updatedBy": null
+}

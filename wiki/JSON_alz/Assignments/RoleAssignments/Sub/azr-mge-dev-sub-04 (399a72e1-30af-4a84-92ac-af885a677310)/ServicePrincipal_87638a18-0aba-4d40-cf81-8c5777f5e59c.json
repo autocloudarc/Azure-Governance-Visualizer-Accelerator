@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/87638a18-0aba-4d40-cf81-8c5777f5e59c",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning ARC k8s Enabled",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Containers Sensor",
+  "RoleDefinitionId": "5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "ObjectId": "d2712173-b6ca-49e0-997f-a42883ba2297",
+  "ObjectType": "ServicePrincipal"
+}

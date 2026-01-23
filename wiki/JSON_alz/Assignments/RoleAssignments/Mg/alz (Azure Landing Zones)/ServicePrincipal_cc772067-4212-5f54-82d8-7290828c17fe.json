@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/cc772067-4212-5f54-82d8-7290828c17fe",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-AzActivity-Log",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "64a5556e-e809-46ca-98ad-41a4aeef802f",
+  "ObjectType": "ServicePrincipal"
+}

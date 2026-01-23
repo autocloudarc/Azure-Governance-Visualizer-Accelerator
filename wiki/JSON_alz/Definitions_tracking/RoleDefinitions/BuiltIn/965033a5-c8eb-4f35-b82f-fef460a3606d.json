@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Storage Table Delegator",
+    "type": "BuiltInRole",
+    "description": "Allows for generation of a user delegation key, which can then be used to create a shared access signature for an Azure Storage table that is signed with Entra ID credentials.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/tableServices/generateUserDelegationKey/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-23T22:11:07.2205788Z",
+    "updatedOn": "2025-05-23T22:11:07.2205788Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/965033a5-c8eb-4f35-b82f-fef460a3606d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "965033a5-c8eb-4f35-b82f-fef460a3606d"
+}

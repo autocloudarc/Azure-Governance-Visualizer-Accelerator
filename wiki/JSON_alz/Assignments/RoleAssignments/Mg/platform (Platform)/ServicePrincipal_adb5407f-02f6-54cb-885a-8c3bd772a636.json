@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/adb5407f-02f6-54cb-885a-8c3bd772a636",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-VM-Monitoring",
+  "SignInName": null,
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "81b00aeb-4e32-4c27-b3db-05d69d83e58b",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Azure Batch Account Contributor",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage all Batch resources, including Batch accounts, pools and jobs.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Batch/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Batch/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-17T15:43:50.3319289Z",
+    "updatedOn": "2025-08-08T12:17:29.9205091Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/29fe4964-1e60-436b-bd3a-77fd4c178b3c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "29fe4964-1e60-436b-bd3a-77fd4c178b3c"
+}

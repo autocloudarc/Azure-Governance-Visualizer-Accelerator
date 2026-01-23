@@ -1,0 +1,71 @@
+{
+  "displayName": "AppService append sites with minimum TLS version to enforce.",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Append the AppService sites object to ensure that min Tls version is set to required minimum TLS version. Please note Append does not enforce compliance use then deny.",
+  "metadata": {
+    "alzCloudEnvironments": [
+      "AzureCloud",
+      "AzureChinaCloud",
+      "AzureUSGovernment"
+    ],
+    "category": "App Service",
+    "source": "https://github.com/Azure/Enterprise-Scale/",
+    "version": "1.2.0",
+    "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+    "createdOn": "2026-01-21T00:37:03.3807763Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable or disable the execution of the policy",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "Append",
+        "Disabled"
+      ],
+      "defaultValue": "Append"
+    },
+    "minTlsVersion": {
+      "type": "String",
+      "metadata": {
+        "description": "Select version  minimum TLS version for a  Web App config to enforce",
+        "displayName": "Select version minimum TLS Web App config"
+      },
+      "allowedValues": [
+        "1.3",
+        "1.2",
+        "1.0",
+        "1.1"
+      ],
+      "defaultValue": "1.2"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "exists": "true",
+          "field": "Microsoft.Web/sites/config/minTlsVersion"
+        },
+        {
+          "field": "Microsoft.Web/sites/config/minTlsVersion",
+          "less": "[parameters('minTlsVersion')]"
+        }
+      ]
+    },
+    "then": {
+      "details": [
+        {
+          "field": "Microsoft.Web/sites/config/minTlsVersion",
+          "value": "[parameters('minTlsVersion')]"
+        }
+      ],
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

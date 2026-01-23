@@ -1,0 +1,22 @@
+{
+  "roleName": "App Compliance Automation Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read-only access to App Compliance Automation tool for Microsoft 365",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-04-14T05:39:53.8670787Z",
+  "updatedOn": "2025-04-21T15:02:44.9081102Z",
+  "createdBy": null,
+  "updatedBy": null
+}

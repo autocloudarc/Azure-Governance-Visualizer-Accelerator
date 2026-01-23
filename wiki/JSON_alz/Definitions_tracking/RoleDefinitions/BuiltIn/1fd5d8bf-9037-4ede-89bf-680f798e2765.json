@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "roleName": "Defender Unified RBAC Authorization Manager",
+    "type": "BuiltInRole",
+    "description": "Defender Unified RBAC Authorization Manager. This role is managed and assigned automatically by the Defender Unified RBAC system. Manual assignment of this role is not recommended, as the Defender Unified RBAC system may modify or remove it at any time based on system requirements.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-09-01T15:03:55.5095824Z",
+    "updatedOn": "2025-09-01T15:03:55.5095824Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1fd5d8bf-9037-4ede-89bf-680f798e2765",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1fd5d8bf-9037-4ede-89bf-680f798e2765"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/microsoft.authorization/roleassignments/730086fd-62af-4320-5ddd-a0c4b1119989",
+  "Scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+  "DisplayName": "Defender for Containers provisioning Azure Policy Addon for Kub",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Kubernetes Agent Operator",
+  "RoleDefinitionId": "8bb6f106-b146-4ee6-a3f9-b9c5a96e0ae5",
+  "ObjectId": "0b4e17b1-fe4a-44d8-a8c3-b53c0e035da0",
+  "ObjectType": "ServicePrincipal"
+}

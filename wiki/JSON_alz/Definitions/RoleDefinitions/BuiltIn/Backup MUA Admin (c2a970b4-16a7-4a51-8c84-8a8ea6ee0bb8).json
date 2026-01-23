@@ -1,0 +1,47 @@
+{
+  "roleName": "Backup MUA Admin",
+  "type": "BuiltInRole",
+  "description": "Backup MultiUser-Authorization. Can create/delete ResourceGuard ",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DataProtection/*/read",
+        "Microsoft.DataProtection/*/resourceGuards/write",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/write",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/delete",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/read",
+        "Microsoft.DataProtection/locations/operationResults/read",
+        "Microsoft.DataProtection/locations/operationStatus/read",
+        "Microsoft.DataProtection/locations/getBackupStatus/action",
+        "Microsoft.DataProtection/locations/checkFeatureSupport/action",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/operationStatus/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/read",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/write",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/delete",
+        "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/unlockDelete/action",
+        "Microsoft.DataProtection/subscriptions/providers/resourceGuards/read",
+        "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/{operationName}/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-11T15:04:28.0520383Z",
+  "updatedOn": "2024-03-11T15:04:28.0520383Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "GeoCatalog Administrator",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage GeoCatalogs, but does not allow you to assign roles in Azure RBAC.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Orbital/operations/read",
+          "Microsoft.Orbital/geoCatalogs/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-02-28T16:09:25.0275812Z",
+    "updatedOn": "2024-02-28T16:09:25.0275812Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c9c97b9c-105d-4bb5-a2a7-7d15666c2484",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c9c97b9c-105d-4bb5-a2a7-7d15666c2484"
+}

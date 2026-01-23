@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Scheduler Job Collections Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage Scheduler job collections, but not access to them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Scheduler/jobcollections/*",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-02-02T21:55:09.8806423Z",
+    "updatedOn": "2021-11-11T20:13:49.8429293Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/188a0f2f-5c9e-469b-ae67-2aa5ce574b94",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "188a0f2f-5c9e-469b-ae67-2aa5ce574b94"
+}

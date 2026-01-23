@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Fleet Manager Hub Agent Role",
+    "type": "BuiltInRole",
+    "description": "Grants access to Azure resources needed by Azure Kubernetes Fleet Manager hub agents.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Network/publicIPAddresses/read",
+          "Microsoft.Network/trafficManagerProfiles/read",
+          "Microsoft.Network/trafficManagerProfiles/write",
+          "Microsoft.Network/trafficManagerProfiles/delete",
+          "Microsoft.Network/trafficManagerProfiles/azureEndpoints/read",
+          "Microsoft.Network/trafficManagerProfiles/azureEndpoints/write",
+          "Microsoft.Network/trafficManagerProfiles/azureEndpoints/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-06T15:13:45.1097573Z",
+    "updatedOn": "2025-05-26T15:05:37.5260157Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/de2b316d-7a2c-4143-b4cd-c148f6a355a1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "de2b316d-7a2c-4143-b4cd-c148f6a355a1"
+}

@@ -1,0 +1,31 @@
+{
+  "roleName": "DevOps Infrastructure Contributor",
+  "type": "BuiltInRole",
+  "description": "Read, write, delete and perform actions on Managed DevOps Pools",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DevOpsInfrastructure/register/action",
+        "Microsoft.DevOpsInfrastructure/unregister/action",
+        "Microsoft.DevOpsInfrastructure/*/read",
+        "Microsoft.DevOpsInfrastructure/Locations/OperationStatuses/write",
+        "Microsoft.DevOpsInfrastructure/pools/write",
+        "Microsoft.DevOpsInfrastructure/pools/delete",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-06-17T15:17:30.0671431Z",
+  "updatedOn": "2025-07-18T00:41:54.8915305Z",
+  "createdBy": null,
+  "updatedBy": null
+}

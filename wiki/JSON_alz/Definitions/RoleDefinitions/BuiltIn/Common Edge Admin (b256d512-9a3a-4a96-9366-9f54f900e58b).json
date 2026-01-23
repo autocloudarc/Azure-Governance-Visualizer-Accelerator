@@ -1,0 +1,26 @@
+{
+  "roleName": "Common Edge Admin",
+  "type": "BuiltInRole",
+  "description": "Common Edge Admin Role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Edge/connectivityStatuses/delete",
+        "Microsoft.Edge/connectivityStatuses/write",
+        "Microsoft.Edge/locations/operationStatuses/write",
+        "Microsoft.Edge/updates/delete",
+        "Microsoft.Edge/updates/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-09-11T15:45:10.4903815Z",
+  "updatedOn": "2025-09-11T15:45:10.4903815Z",
+  "createdBy": null,
+  "updatedBy": null
+}

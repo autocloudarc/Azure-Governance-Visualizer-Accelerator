@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "GroupQuota Reader",
+    "type": "BuiltInRole",
+    "description": "Read GroupQuota requests, get GroupQuota request status, and get groupQuotaLimits.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/read",
+          "MICROSOFT.QUOTA/QUOTAS/READ",
+          "MICROSOFT.QUOTA/USAGES/READ",
+          "MICROSOFT.QUOTA/QUOTAREQUESTS/READ",
+          "MICROSOFT.QUOTA/REGISTER/ACTION",
+          "Microsoft.Quota/GROUPQUOTAS/READ",
+          "Microsoft.Quota/GROUPQUOTAS/subscriptions/READ",
+          "Microsoft.Quota/GROUPQUOTAS/groupQuotaLimits/READ",
+          "Microsoft.Quota/GROUPQUOTAS/quotaAllocations/READ"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-02-12T16:11:24.3956386Z",
+    "updatedOn": "2024-02-12T16:11:24.3956386Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d0f495dc-44ef-4140-aeb0-b89110e6a7c1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d0f495dc-44ef-4140-aeb0-b89110e6a7c1"
+}

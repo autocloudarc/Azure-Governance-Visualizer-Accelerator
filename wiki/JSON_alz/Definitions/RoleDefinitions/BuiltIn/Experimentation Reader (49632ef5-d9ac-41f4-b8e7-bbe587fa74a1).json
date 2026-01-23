@@ -1,0 +1,25 @@
+{
+  "roleName": "Experimentation Reader",
+  "type": "BuiltInRole",
+  "description": "Experimentation Reader",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Experimentation/experimentWorkspaces/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Experimentation/experimentWorkspaces/read",
+        "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-25T18:05:14.8375678Z",
+  "updatedOn": "2021-11-11T20:14:24.504239Z",
+  "createdBy": null,
+  "updatedBy": null
+}

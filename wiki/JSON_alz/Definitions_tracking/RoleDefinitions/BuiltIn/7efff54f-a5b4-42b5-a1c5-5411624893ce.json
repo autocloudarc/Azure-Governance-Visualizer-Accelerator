@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "roleName": "Disk Snapshot Contributor",
+    "type": "BuiltInRole",
+    "description": "Provides permission to backup vault to manage disk snapshots.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Compute/snapshots/delete",
+          "Microsoft.Compute/snapshots/write",
+          "Microsoft.Compute/snapshots/read",
+          "Microsoft.Compute/snapshots/beginGetAccess/action",
+          "Microsoft.Compute/snapshots/endGetAccess/action",
+          "Microsoft.Compute/disks/beginGetAccess/action",
+          "Microsoft.Storage/storageAccounts/listkeys/action",
+          "Microsoft.Storage/storageAccounts/write",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-12-15T12:18:51.4471411Z",
+    "updatedOn": "2021-11-11T20:14:56.9158814Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7efff54f-a5b4-42b5-a1c5-5411624893ce",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7efff54f-a5b4-42b5-a1c5-5411624893ce"
+}

@@ -1,0 +1,131 @@
+{
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Data Factory",
+    "policyType": "Custom",
+    "description": "This policy initiative is a group of policies that ensures Data Factory is compliant per regulated Landing Zones.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Data Factory",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.1.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:15.8132641Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "adfGit": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "adfLinkedServiceKeyVault": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "adfManagedIdentity": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "adfModifyPublicNetworkAccess": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      },
+      "adfSqlIntegration": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Deny-Adf-Managed-Identity",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f78ccdb4-7bf4-4106-8647-270491d2978a",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('adfManagedIdentity')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Adf-Git",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/77d40665-3120-4348-b539-3192ec808307",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('adfGit')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Adf-Linked-Service-Key-Vault",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/127ef6d7-242f-43b3-9eef-947faf1725d0",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('adfLinkedServiceKeyVault')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Adf-Sql-Integration",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0088bc63-6dee-4a9c-9d29-91cfdc848952",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('adfSqlIntegration')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-Adf-Public-Network-Access",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/08b1442b-7789-4130-8506-4f99a97226a7",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('adfModifyPublicNetworkAccess')]"
+          }
+        },
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": []
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-DataFactory",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "Enforce-Guardrails-DataFactory",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:15.755596Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:15.755596Z"
+  }
+}

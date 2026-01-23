@@ -1,0 +1,23 @@
+{
+  "roleName": "Azure Device Onboarding Discovery Contributor",
+  "type": "BuiltInRole",
+  "description": "Can read, write or delete the discovery and it's child resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DeviceOnboarding/discoveryServices/*",
+        "Microsoft.DeviceOnboarding/locations/operationStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-02-21T23:06:48.1932019Z",
+  "updatedOn": "2025-02-21T23:06:48.1932019Z",
+  "createdBy": null,
+  "updatedBy": null
+}

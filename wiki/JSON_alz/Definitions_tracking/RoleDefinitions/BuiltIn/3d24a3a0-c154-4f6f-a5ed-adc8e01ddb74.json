@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "roleName": "Savings plan Purchaser",
+    "type": "BuiltInRole",
+    "description": "Lets you purchase savings plans",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Capacity/register/action",
+          "Microsoft.Capacity/catalogs/read",
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.BillingBenefits/savingsPlanOrders/write",
+          "Microsoft.BIllingBenefits/register/action",
+          "Microsoft.Support/supporttickets/write",
+          "Microsoft.Billing/billingProperty/read",
+          "Microsoft.CostManagement/benefitRecommendations/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-18T15:10:34.3862485Z",
+    "updatedOn": "2024-03-18T15:10:34.3862485Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3d24a3a0-c154-4f6f-a5ed-adc8e01ddb74",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3d24a3a0-c154-4f6f-a5ed-adc8e01ddb74"
+}

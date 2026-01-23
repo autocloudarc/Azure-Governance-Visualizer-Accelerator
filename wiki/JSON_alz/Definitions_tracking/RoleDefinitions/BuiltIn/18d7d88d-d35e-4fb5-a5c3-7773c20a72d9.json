@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "User Access Administrator",
+    "type": "BuiltInRole",
+    "description": "Lets you manage user access to Azure resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read",
+          "Microsoft.Authorization/*",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-02-02T21:55:09.8806423Z",
+    "updatedOn": "2021-11-11T20:13:57.7932023Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9"
+}

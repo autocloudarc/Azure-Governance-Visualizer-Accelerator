@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Search Index Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Grants full access to Azure Cognitive Search index data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Search/searchServices/indexes/documents/*",
+          "Microsoft.Search/searchServices/indexes/contentSecurity/elevatedOperations/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-06-01T22:15:16.5388472Z",
+    "updatedOn": "2026-01-09T20:36:39.9060684Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/8ebe5a00-799e-43f5-93ac-243d3dce84a7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "8ebe5a00-799e-43f5-93ac-243d3dce84a7"
+}

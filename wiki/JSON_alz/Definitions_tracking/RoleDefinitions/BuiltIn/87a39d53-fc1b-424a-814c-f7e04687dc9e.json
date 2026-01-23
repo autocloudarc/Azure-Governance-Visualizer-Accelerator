@@ -1,0 +1,47 @@
+{
+  "properties": {
+    "roleName": "Logic App Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage logic app, but not access to them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.ClassicStorage/storageAccounts/listKeys/action",
+          "Microsoft.ClassicStorage/storageAccounts/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Insights/metricAlerts/*",
+          "Microsoft.Insights/diagnosticSettings/*",
+          "Microsoft.Insights/logdefinitions/*",
+          "Microsoft.Insights/metricDefinitions/*",
+          "Microsoft.Logic/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Storage/storageAccounts/listkeys/action",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Support/*",
+          "Microsoft.Web/connectionGateways/*",
+          "Microsoft.Web/connections/*",
+          "Microsoft.Web/customApis/*",
+          "Microsoft.Web/serverFarms/join/action",
+          "Microsoft.Web/serverFarms/read",
+          "Microsoft.Web/sites/functions/listSecrets/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2016-04-28T21:33:30.4656007Z",
+    "updatedOn": "2021-11-11T20:13:38.2523833Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/87a39d53-fc1b-424a-814c-f7e04687dc9e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "87a39d53-fc1b-424a-814c-f7e04687dc9e"
+}

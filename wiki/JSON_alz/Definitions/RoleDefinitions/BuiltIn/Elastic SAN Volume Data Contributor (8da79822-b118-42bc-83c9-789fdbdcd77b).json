@@ -1,0 +1,26 @@
+{
+  "roleName": "Elastic SAN Volume Data Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows for read and write access to a volume data on Azure Elastic SAN",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ElasticSan/elasticsans/volumeGroups/volumes/write",
+        "Microsoft.ElasticSan/elasticsans/volumeGroups/volumes/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.ElasticSan/elasticsans/volumeGroups/volumes/data/read",
+        "Microsoft.ElasticSan/elasticsans/volumeGroups/volumes/data/write"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-12-19T16:47:38.2892825Z",
+  "updatedOn": "2025-12-19T16:47:38.2892825Z",
+  "createdBy": null,
+  "updatedBy": null
+}

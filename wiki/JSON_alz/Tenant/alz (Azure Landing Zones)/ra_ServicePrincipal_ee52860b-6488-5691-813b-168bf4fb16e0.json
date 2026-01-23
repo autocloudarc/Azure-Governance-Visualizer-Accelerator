@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/ee52860b-6488-5691-813b-168bf4fb16e0",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-MDFC-SqlAtp",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Security Manager",
+  "RoleDefinitionId": "056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+  "ObjectId": "6b963187-5a69-41b8-bdd8-f31549be4d75",
+  "ObjectType": "ServicePrincipal"
+}

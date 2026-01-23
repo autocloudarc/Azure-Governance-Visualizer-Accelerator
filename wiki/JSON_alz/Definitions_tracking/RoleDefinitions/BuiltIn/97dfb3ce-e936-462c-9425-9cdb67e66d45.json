@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Desktop Virtualization App Attach Contributor",
+    "type": "BuiltInRole",
+    "description": "Provide permission to manage app attach resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DesktopVirtualization/hostpools/read",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.DesktopVirtualization/appattachpackages/read",
+          "Microsoft.DesktopVirtualization/appattachpackages/write",
+          "Microsoft.DesktopVirtualization/appattachpackages/delete",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-11-08T16:19:16.0184548Z",
+    "updatedOn": "2024-11-08T16:19:16.0184548Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/97dfb3ce-e936-462c-9425-9cdb67e66d45",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "97dfb3ce-e936-462c-9425-9cdb67e66d45"
+}

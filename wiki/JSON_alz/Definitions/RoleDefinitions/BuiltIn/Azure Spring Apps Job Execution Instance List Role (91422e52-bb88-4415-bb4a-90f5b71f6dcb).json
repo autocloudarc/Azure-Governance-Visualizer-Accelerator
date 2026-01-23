@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Spring Apps Job Execution Instance List Role",
+  "type": "BuiltInRole",
+  "description": "List instances for job executions in Azure Spring Apps",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AppPlatform/Spring/jobs/executions/listInstances/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-05-03T02:44:23.2139801Z",
+  "updatedOn": "2024-05-03T02:44:23.2139801Z",
+  "createdBy": null,
+  "updatedBy": null
+}

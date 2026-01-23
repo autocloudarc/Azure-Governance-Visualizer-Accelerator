@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Grounding with Bing User",
+    "type": "BuiltInRole",
+    "description": "Enable Approved Microsoft Applications to connect to Bing to retrieve and ground responses using real-time data",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Bing/accounts/useGrounding/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-06-26T15:20:32.2766274Z",
+    "updatedOn": "2025-06-26T15:20:32.2766274Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2016c9ed-c18d-4120-93d7-178e583efe92",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2016c9ed-c18d-4120-93d7-178e583efe92"
+}

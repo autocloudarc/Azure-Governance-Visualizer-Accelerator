@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Spring Apps Service Owner",
+    "type": "BuiltInRole",
+    "description": "Full access to Azure Spring Apps Service REST APIs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AppPlatform/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AppPlatform/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-01T11:10:00.3541158Z",
+    "updatedOn": "2025-08-08T08:00:27.2426095Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4037dd68-1cc7-4a64-8765-3a79963a9940",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4037dd68-1cc7-4a64-8765-3a79963a9940"
+}

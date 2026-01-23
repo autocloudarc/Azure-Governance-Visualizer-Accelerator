@@ -1,0 +1,47 @@
+{
+  "properties": {
+    "roleName": "Automation Operator",
+    "type": "BuiltInRole",
+    "description": "Automation Operators are able to start, stop, suspend, and resume jobs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups/read",
+          "Microsoft.Automation/automationAccounts/jobs/read",
+          "Microsoft.Automation/automationAccounts/jobs/resume/action",
+          "Microsoft.Automation/automationAccounts/jobs/stop/action",
+          "Microsoft.Automation/automationAccounts/jobs/streams/read",
+          "Microsoft.Automation/automationAccounts/jobs/suspend/action",
+          "Microsoft.Automation/automationAccounts/jobs/write",
+          "Microsoft.Automation/automationAccounts/jobSchedules/read",
+          "Microsoft.Automation/automationAccounts/jobSchedules/write",
+          "Microsoft.Automation/automationAccounts/linkedWorkspace/read",
+          "Microsoft.Automation/automationAccounts/read",
+          "Microsoft.Automation/automationAccounts/runbooks/read",
+          "Microsoft.Automation/automationAccounts/schedules/read",
+          "Microsoft.Automation/automationAccounts/schedules/write",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Automation/automationAccounts/jobs/output/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2015-08-18T01:05:03.391613Z",
+    "updatedOn": "2021-11-11T20:13:14.0515408Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d3881f73-407a-4167-8283-e981cbba0404",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d3881f73-407a-4167-8283-e981cbba0404"
+}

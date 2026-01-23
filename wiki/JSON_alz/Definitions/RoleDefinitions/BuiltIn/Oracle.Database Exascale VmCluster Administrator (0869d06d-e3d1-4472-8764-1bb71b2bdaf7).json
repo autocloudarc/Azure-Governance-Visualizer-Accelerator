@@ -1,0 +1,41 @@
+{
+  "roleName": "Oracle.Database Exascale VmCluster Administrator",
+  "type": "BuiltInRole",
+  "description": "Grants full access to manage Exascale VmClusters",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Oracle.Database/exascaleDbStorageVaults/read",
+        "Oracle.Database/exadbVmClusters/*/read",
+        "Oracle.Database/exadbVmClusters/*/write",
+        "Oracle.Database/exadbVmClusters/*/delete",
+        "Oracle.Database/exadbVmClusters/*/action",
+        "Oracle.Database/Locations/*/read",
+        "Oracle.Database/Locations/*/write",
+        "Oracle.Database/Operations/read",
+        "Oracle.Database/oracleSubscriptions/*/read",
+        "Oracle.Database/resourceAnchors/*",
+        "Oracle.Database/networkAnchors/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/locations/operations/read",
+        "Microsoft.Compute/sshPublicKeys/read",
+        "Microsoft.Compute/sshPublicKeys/write",
+        "Microsoft.Compute/sshPublicKeys/generateKeyPair/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-08T15:14:41.7745086Z",
+  "updatedOn": "2025-05-27T15:14:00.1222367Z",
+  "createdBy": null,
+  "updatedBy": null
+}

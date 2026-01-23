@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Monitoring Data Reader",
+    "type": "BuiltInRole",
+    "description": "Can access the data in an Azure Monitor Workspace.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Monitor/accounts/data/metrics/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-08-22T17:29:10.2888534Z",
+    "updatedOn": "2022-10-07T22:54:50.720865Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/b0d8363b-8ddd-447d-831f-62ca05bff136",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b0d8363b-8ddd-447d-831f-62ca05bff136"
+}

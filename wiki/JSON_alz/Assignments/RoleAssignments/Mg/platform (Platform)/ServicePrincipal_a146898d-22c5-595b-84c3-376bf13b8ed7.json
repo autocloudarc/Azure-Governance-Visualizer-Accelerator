@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/a146898d-22c5-595b-84c3-376bf13b8ed7",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-MDFC-DefSQL-AMA",
+  "SignInName": null,
+  "RoleDefinitionName": "Monitoring Contributor",
+  "RoleDefinitionId": "749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+  "ObjectId": "c2fa7a41-1841-4efc-b241-092ecd0187ce",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/eb7f63da-7fa1-45f6-80a3-156f5fb2a25b",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "storageDataScanner",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Sensitive Data Discovery",
+  "RoleDefinitionId": "0b6ca2e8-2cdc-4bd6-b896-aa3d8c21fc35",
+  "ObjectId": "7407ffd8-70e5-41ca-bead-05f389df7be5",
+  "ObjectType": "ServicePrincipal"
+}

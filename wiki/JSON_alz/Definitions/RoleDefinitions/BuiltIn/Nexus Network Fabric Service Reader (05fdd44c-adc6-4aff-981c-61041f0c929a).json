@@ -1,0 +1,26 @@
+{
+  "roleName": "Nexus Network Fabric Service Reader",
+  "type": "BuiltInRole",
+  "description": "Read-only access to Nexus Network Fabric Service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ManagedNetworkFabric/*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-05-13T15:04:37.4782279Z",
+  "updatedOn": "2024-05-13T15:04:37.4782279Z",
+  "createdBy": null,
+  "updatedBy": null
+}

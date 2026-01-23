@@ -1,0 +1,49 @@
+{
+  "roleName": "Domain Services Reader",
+  "type": "BuiltInRole",
+  "description": "Can view Azure AD Domain Services and related network configurations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/deployments/operationstatuses/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/AlertRules/Read",
+        "Microsoft.Insights/AlertRules/Incidents/Read",
+        "Microsoft.Insights/Logs/Read",
+        "Microsoft.Insights/Metrics/read",
+        "Microsoft.Insights/DiagnosticSettings/read",
+        "Microsoft.Insights/DiagnosticSettingsCategories/Read",
+        "Microsoft.AAD/domainServices/*/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/read",
+        "Microsoft.Network/virtualNetworks/providers/Microsoft.Insights/diagnosticSettings/read",
+        "Microsoft.Network/virtualNetworks/providers/Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Network/azureFirewalls/read",
+        "Microsoft.Network/ddosProtectionPlans/read",
+        "Microsoft.Network/loadBalancers/read",
+        "Microsoft.Network/loadBalancers/*/read",
+        "Microsoft.Network/natGateways/read",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkSecurityGroups/defaultSecurityRules/read",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        "Microsoft.Network/routeTables/read",
+        "Microsoft.Network/routeTables/routes/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-02-15T19:38:46.904317Z",
+  "updatedOn": "2022-06-27T19:30:44.3629686Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,28 @@
+{
+  "roleName": "Application Insights Snapshot Debugger",
+  "type": "BuiltInRole",
+  "description": "Gives user permission to use Application Insights Snapshot Debugger features",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/components/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/snapshots/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2017-04-19T21:25:12.3728747Z",
+  "updatedOn": "2025-10-27T15:01:00.4185695Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Supercomputer Infrastructure Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage Supercomputer Infrastructure resources, but not access to them.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.SupercomputerInfrastructure/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-06T15:09:00.3554287Z",
+    "updatedOn": "2025-10-06T15:09:00.3554287Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/68899692-f960-4247-af28-82f55b357997",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "68899692-f960-4247-af28-82f55b357997"
+}

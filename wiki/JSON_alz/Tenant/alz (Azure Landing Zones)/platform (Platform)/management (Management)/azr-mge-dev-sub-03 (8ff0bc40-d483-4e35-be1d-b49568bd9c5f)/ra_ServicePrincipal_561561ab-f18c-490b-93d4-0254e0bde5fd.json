@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/561561ab-f18c-490b-93d4-0254e0bde5fd",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "managedenvironments-ar-tenant-connector",
+  "SignInName": null,
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "40b922de-ef06-430f-a397-a32d3fa5afca",
+  "ObjectType": "ServicePrincipal"
+}

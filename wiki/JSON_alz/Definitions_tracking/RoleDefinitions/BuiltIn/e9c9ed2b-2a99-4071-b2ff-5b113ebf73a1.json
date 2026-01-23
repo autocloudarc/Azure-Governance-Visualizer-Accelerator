@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "SpatialMapsAccounts Account Owner",
+    "type": "BuiltInRole",
+    "description": "Lets you manage data in your account, including deleting them",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.MixedReality/spatialMapsAccounts/read",
+          "Microsoft.MixedReality/spatialMapsAccounts/delete",
+          "Microsoft.MixedReality/spatialMapsAccounts/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-08-25T22:37:18.9333563Z",
+    "updatedOn": "2023-08-25T22:37:18.9333563Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e9c9ed2b-2a99-4071-b2ff-5b113ebf73a1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e9c9ed2b-2a99-4071-b2ff-5b113ebf73a1"
+}

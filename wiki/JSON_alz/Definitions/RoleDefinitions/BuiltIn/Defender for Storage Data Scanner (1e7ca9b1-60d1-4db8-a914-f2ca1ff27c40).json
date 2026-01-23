@@ -1,0 +1,31 @@
+{
+  "roleName": "Defender for Storage Data Scanner",
+  "type": "BuiltInRole",
+  "description": "Grants access to read blobs and update index tags. This role is used by the data scanner of Defender for Storage.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/blobServices/read",
+        "Microsoft.Storage/storageAccounts/fileServices/shares/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/tags/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read",
+        "Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-06-22T15:42:45.8377472Z",
+  "updatedOn": "2025-12-18T20:27:32.1171623Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "principalId": "d1c48665-9bee-4196-9849-ac00ebc87b55",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Defender for Containers provisioning Policy extension for Arc-e",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0adc5395-9169-4b9b-8687-af838d69410a",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "parameters": {},
+    "description": "This policy assignment was automatically created by Microsoft Defender for Cloud for agent installation as configured in Defender for Cloud auto provisioning.",
+    "metadata": {
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:11:03.1494757Z",
+      "updatedBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "updatedOn": "2024-08-13T16:11:09.9202654Z"
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/Defender for Containers provisioning Policy extension for Arc-e",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Defender for Containers provisioning Policy extension for Arc-e",
+  "location": "centralus",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:11:02.6287548Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:11:09.5848937Z"
+  }
+}

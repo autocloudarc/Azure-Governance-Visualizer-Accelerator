@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/6c9b4cd3-60df-586b-8a42-b874236169c3",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-vmHybr-Monitoring",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Connected Machine Resource Administrator",
+  "RoleDefinitionId": "cd570a14-e51a-42ad-bac8-bafd67325302",
+  "ObjectId": "7d21f057-956c-43e8-9076-507ca45fb4d8",
+  "ObjectType": "ServicePrincipal"
+}

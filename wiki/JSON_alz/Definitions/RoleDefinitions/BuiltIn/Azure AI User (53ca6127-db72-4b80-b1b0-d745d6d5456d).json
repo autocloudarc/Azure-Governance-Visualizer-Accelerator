@@ -1,0 +1,37 @@
+{
+  "roleName": "Azure AI User",
+  "type": "BuiltInRole",
+  "description": "Grants reader access to AI projects, reader access to AI accounts, and data actions for an AI project.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.CognitiveServices/accounts/listkeys/action",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.Insights/diagnosticSettings/read",
+        "Microsoft.Insights/logDefinitions/read",
+        "Microsoft.Insights/metricdefinitions/read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-05-02T19:43:11.1653331Z",
+  "updatedOn": "2025-12-09T16:19:09.9554238Z",
+  "createdBy": null,
+  "updatedBy": null
+}

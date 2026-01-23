@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Edge Hardware Center Administrator",
+  "type": "BuiltInRole",
+  "description": "Grants you access to take actions as an edge order administrator",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.EdgeOrder/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-08-07T15:26:18.9896197Z",
+  "updatedOn": "2024-08-07T15:26:18.9896197Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Windows 365 Network User",
+    "type": "BuiltInRole",
+    "description": "This role is used by Windows 365 to read virtual networks and join the designated virtual networks.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/usages/read",
+          "Microsoft.Network/virtualNetworks/subnets/join/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-03-27T15:08:56.6070697Z",
+    "updatedOn": "2023-07-27T15:18:15.2012422Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7eabc9a4-85f7-4f71-b8ab-75daaccc1033",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7eabc9a4-85f7-4f71-b8ab-75daaccc1033"
+}

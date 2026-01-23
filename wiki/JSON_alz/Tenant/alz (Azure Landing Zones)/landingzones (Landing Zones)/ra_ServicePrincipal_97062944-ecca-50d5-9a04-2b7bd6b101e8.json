@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/97062944-ecca-50d5-9a04-2b7bd6b101e8",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Deploy-SQL-TDE",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL DB Contributor",
+  "RoleDefinitionId": "9b7fa17d-e63e-47b0-bb0a-15c516ac86ec",
+  "ObjectId": "98dfc5db-225d-4e5a-8be1-73e46a35d234",
+  "ObjectType": "ServicePrincipal"
+}

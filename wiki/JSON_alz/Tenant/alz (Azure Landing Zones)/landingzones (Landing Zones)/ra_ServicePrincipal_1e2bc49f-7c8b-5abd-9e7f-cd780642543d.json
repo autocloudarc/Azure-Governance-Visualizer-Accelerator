@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/1e2bc49f-7c8b-5abd-9e7f-cd780642543d",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-TLS-SSL-Q225",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Managed Instance Contributor",
+  "RoleDefinitionId": "4939a1f6-9ae0-4e48-a1e0-f2cbe897382d",
+  "ObjectId": "0cdd1d82-bc7c-4baf-9e30-7de416a166b8",
+  "ObjectType": "ServicePrincipal"
+}

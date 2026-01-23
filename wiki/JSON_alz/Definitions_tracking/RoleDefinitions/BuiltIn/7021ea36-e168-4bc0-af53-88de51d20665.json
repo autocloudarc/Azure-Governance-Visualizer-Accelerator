@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "roleName": "Garnet Script Data Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows execution and management of scripts on the Garnet resource",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DocumentDB/garnetClusters/acl/clientid/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/clientinfo/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/configget/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/echo/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/info/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/keyslot/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/nodes/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/ping/read",
+          "Microsoft.DocumentDB/garnetClusters/acl/scripteval/action",
+          "Microsoft.DocumentDB/garnetClusters/acl/scriptevalsha/action",
+          "Microsoft.DocumentDB/garnetClusters/acl/scriptexists/action",
+          "Microsoft.DocumentDB/garnetClusters/acl/scriptflush/action",
+          "Microsoft.DocumentDB/garnetClusters/acl/scriptload/action",
+          "Microsoft.DocumentDB/garnetClusters/acl/slots/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-08-28T17:54:36.3747348Z",
+    "updatedOn": "2025-08-28T17:54:36.3747348Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/7021ea36-e168-4bc0-af53-88de51d20665",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "7021ea36-e168-4bc0-af53-88de51d20665"
+}

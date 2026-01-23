@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Resource Policy Contributor",
+    "type": "BuiltInRole",
+    "description": "Users with rights to create/modify resource policy, create support ticket and read resources/hierarchy.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read",
+          "Microsoft.Authorization/policyassignments/*",
+          "Microsoft.Authorization/policydefinitions/*",
+          "Microsoft.Authorization/policyexemptions/*",
+          "Microsoft.Authorization/policyenrollments/*",
+          "Microsoft.Authorization/policysetdefinitions/*",
+          "Microsoft.PolicyInsights/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2017-08-25T19:08:01.3861639Z",
+    "updatedOn": "2025-03-26T15:40:19.7041294Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/36243c78-bf99-498c-9df9-86d9f8d28608",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "36243c78-bf99-498c-9df9-86d9f8d28608"
+}

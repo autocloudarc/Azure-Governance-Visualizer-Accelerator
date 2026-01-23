@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Defender Databricks Operator",
+    "type": "BuiltInRole",
+    "description": "Grants permissions for Microsoft Defender for Cloud feature on Databricks.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Databricks/workspaces/read",
+          "Microsoft.Databricks/workspaces/assignWorkspaceAdmin/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2026-01-09T09:16:14.0527052Z",
+    "updatedOn": "2026-01-09T09:16:14.0527052Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/0e2ecf2a-0574-4b08-89e2-be133aa6303f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "0e2ecf2a-0574-4b08-89e2-be133aa6303f"
+}

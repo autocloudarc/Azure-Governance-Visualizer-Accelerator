@@ -1,0 +1,22 @@
+{
+  "roleName": "IoT Hub Data Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows for full access to IoT Hub data plane operations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/IotHubs/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-04-22T20:37:16.9927761Z",
+  "updatedOn": "2021-11-11T20:15:09.1754206Z",
+  "createdBy": null,
+  "updatedBy": null
+}

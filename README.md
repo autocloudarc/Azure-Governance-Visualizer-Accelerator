@@ -791,8 +791,6 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 
 [] 24. **IMPORTANT: Explain the workflow execution order to the user.** The **DeployAzGovVizAccelerator** workflow only deploys the **empty web app infrastructure** - it does not generate or publish any governance visualization content. After DeployAzGovVizAccelerator completes, **SyncAzGovViz** triggers automatically to sync the latest AzGovViz code. However, to see actual content in the web app, the user **must run DeployAzGovViz** workflow, which will: (1) Run the AzGovViz PowerShell script against the management group, (2) Generate the HTML governance visualization, and (3) Publish it to the Azure Web App. Provide the command: `gh workflow run DeployAzGovViz --repo <org>/Azure-Governance-Visualizer-Accelerator`
 
-[] 25. **IMPORTANT** You must manually grant admin consent in the Azure portal for the app registration azgovviz-accelerator-01. Applications are authorized to call APIs when they are granted permissions by users/admins as part of the consent process. The list of configured permissions should include all the permissions the application needs. Learn more about permissions and consent
-
 **CRITICAL REMINDERS FOR THE AGENT:**
 
 - Do NOT proceed past step 7 unless the web app auth app is confirmed created

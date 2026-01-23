@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Impact Reader",
+    "type": "BuiltInRole",
+    "description": "Allows read-only access to reported impacts and impact categories",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Impact/WorkloadImpacts/read",
+          "Microsoft.Impact/ImpactCategories/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-10-28T00:51:29.5105806Z",
+    "updatedOn": "2022-11-14T18:04:31.5896097Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/68ff5d27-c7f5-4fa9-a21c-785d0df7bd9e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "68ff5d27-c7f5-4fa9-a21c-785d0df7bd9e"
+}

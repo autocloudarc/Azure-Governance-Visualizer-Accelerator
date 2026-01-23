@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Cluster Monitoring User",
+    "type": "BuiltInRole",
+    "description": "List cluster monitoring user credential action.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/managedClusters/listClusterMonitoringUserCredential/action",
+          "Microsoft.ContainerService/managedClusters/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-11-14T18:04:30.1574093Z",
+    "updatedOn": "2023-02-07T16:15:04.0057947Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1afdec4b-e479-420e-99e7-f82237c7c5e6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1afdec4b-e479-420e-99e7-f82237c7c5e6"
+}

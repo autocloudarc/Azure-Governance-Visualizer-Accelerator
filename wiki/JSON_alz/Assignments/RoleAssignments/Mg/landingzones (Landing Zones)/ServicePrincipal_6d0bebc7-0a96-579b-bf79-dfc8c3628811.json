@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/6d0bebc7-0a96-579b-bf79-dfc8c3628811",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-TLS-SSL-Q225",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "0cdd1d82-bc7c-4baf-9e30-7de416a166b8",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,27 @@
+{
+  "roleName": "Compute Fleet Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows users to manage Compute Fleet resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AzureFleet/fleets/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-03-19T15:21:17.459244Z",
+  "updatedOn": "2025-03-19T15:21:17.459244Z",
+  "createdBy": null,
+  "updatedBy": null
+}

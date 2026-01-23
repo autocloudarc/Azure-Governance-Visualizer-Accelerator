@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Event Hubs Data Receiver",
+    "type": "BuiltInRole",
+    "description": "Allows receive access to Azure Event Hubs resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EventHub/*/eventhubs/consumergroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.EventHub/*/receive/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-05-10T06:25:21.1056666Z",
+    "updatedOn": "2021-11-11T20:14:01.3225169Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a638d3c7-ab3a-418d-83e6-5f17a39d4fde",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a638d3c7-ab3a-418d-83e6-5f17a39d4fde"
+}

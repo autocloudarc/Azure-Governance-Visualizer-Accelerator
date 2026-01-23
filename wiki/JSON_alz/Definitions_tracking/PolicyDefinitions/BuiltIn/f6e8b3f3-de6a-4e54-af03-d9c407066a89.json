@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "displayName": "Audit Cognitive Services Kinds to display which services are allowed for non-production use only.",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "description": "This policy audits Cognitive Services to list which are not authorized for production use.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "System Policy"
+    },
+    "parameters": {
+      "resourceKinds": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "resourceKinds",
+          "description": "The resource kinds to audit."
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "field": "kind",
+            "in": "[parameters('resourceKinds')]"
+          }
+        ]
+      },
+      "then": {
+        "effect": "audit"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/f6e8b3f3-de6a-4e54-af03-d9c407066a89",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "f6e8b3f3-de6a-4e54-af03-d9c407066a89"
+}

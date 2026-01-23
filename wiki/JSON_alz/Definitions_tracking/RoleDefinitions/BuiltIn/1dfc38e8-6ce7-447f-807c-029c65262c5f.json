@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Stream Analytics Reader",
+    "type": "BuiltInRole",
+    "description": "Read-only access to Clusters and Streaming Jobs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.StreamAnalytics/streamingjobs/Read",
+          "Microsoft.StreamAnalytics/streamingjobs/*/Read",
+          "Microsoft.StreamAnalytics/clusters/Read",
+          "Microsoft.StreamAnalytics/clusters/*/Read",
+          "Microsoft.StreamAnalytics/clusters/ListStreamingJobs/action",
+          "Microsoft.StreamAnalytics/locations/*/Read",
+          "Microsoft.StreamAnalytics/operations/Read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-10-03T16:47:55.6818914Z",
+    "updatedOn": "2024-10-03T16:47:55.6818914Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1dfc38e8-6ce7-447f-807c-029c65262c5f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1dfc38e8-6ce7-447f-807c-029c65262c5f"
+}

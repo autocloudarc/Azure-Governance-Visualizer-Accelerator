@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "roleName": "Oracle.Database VmCluster Administrator Built-in Role",
+    "type": "BuiltInRole",
+    "description": "Grants full access to manage all VmCluster resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Oracle.Database/cloudVmClusters/*/read",
+          "Oracle.Database/cloudVmClusters/*/write",
+          "Oracle.Database/cloudVmClusters/*/delete",
+          "Oracle.Database/cloudExadataInfrastructures/write",
+          "Oracle.Database/cloudExadataInfrastructures/*/read",
+          "Oracle.Database/Locations/*/read",
+          "Oracle.Database/Locations/*/write",
+          "Oracle.Database/Operations/read",
+          "Oracle.Database/oracleSubscriptions/*/read",
+          "Oracle.Database/resourceAnchors/*",
+          "Oracle.Database/networkAnchors/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write",
+          "Microsoft.Network/locations/operations/read",
+          "Microsoft.Compute/sshPublicKeys/read",
+          "Microsoft.Compute/sshPublicKeys/write",
+          "Microsoft.Compute/sshPublicKeys/generateKeyPair/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-26T15:15:05.083071Z",
+    "updatedOn": "2025-05-27T15:14:00.1232362Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e9ce8739-6fa2-4123-a0a2-0ef41a67806f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e9ce8739-6fa2-4123-a0a2-0ef41a67806f"
+}

@@ -1,0 +1,31 @@
+{
+  "roleName": "Microsoft.WeightsAndBiases Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Provides access to all Microsoft.WeightsAndBiases related operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.WeightsAndBiases/checkNameAvailability/action",
+        "Microsoft.WeightsAndBiases/register/action",
+        "Microsoft.WeightsAndBiases/unregister/action",
+        "Microsoft.WeightsAndBiases/instances/read",
+        "Microsoft.WeightsAndBiases/instances/write",
+        "Microsoft.WeightsAndBiases/instances/delete",
+        "Microsoft.WeightsAndBiases/locations/operationStatuses/read",
+        "Microsoft.WeightsAndBiases/locations/operationStatuses/write",
+        "Microsoft.WeightsAndBiases/operations/read",
+        "Microsoft.WeightsAndBiases/registeredSubscriptions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-07T15:23:21.148266Z",
+  "updatedOn": "2025-08-07T15:23:21.148266Z",
+  "createdBy": null,
+  "updatedBy": null
+}

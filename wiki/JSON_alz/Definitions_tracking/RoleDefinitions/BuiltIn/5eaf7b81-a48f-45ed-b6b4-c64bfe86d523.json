@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Relationship Reader",
+    "type": "BuiltInRole",
+    "description": "Role definition allowing read access to all relationship types",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Relationships/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-28T15:14:09.6739689Z",
+    "updatedOn": "2025-10-28T15:14:09.6739689Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/5eaf7b81-a48f-45ed-b6b4-c64bfe86d523",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5eaf7b81-a48f-45ed-b6b4-c64bfe86d523"
+}

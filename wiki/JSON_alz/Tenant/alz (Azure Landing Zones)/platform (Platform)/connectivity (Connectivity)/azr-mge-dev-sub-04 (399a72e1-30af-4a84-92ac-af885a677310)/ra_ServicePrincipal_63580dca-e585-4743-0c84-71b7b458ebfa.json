@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/63580dca-e585-4743-0c84-71b7b458ebfa",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning Azure Policy Addon for Kub",
+  "SignInName": null,
+  "RoleDefinitionName": "Kubernetes Extension Contributor",
+  "RoleDefinitionId": "85cb6faf-e071-4c9b-8136-154b5a04f717",
+  "ObjectId": "632a4d89-8100-4094-9e7c-b1b20a2c14e6",
+  "ObjectType": "ServicePrincipal"
+}

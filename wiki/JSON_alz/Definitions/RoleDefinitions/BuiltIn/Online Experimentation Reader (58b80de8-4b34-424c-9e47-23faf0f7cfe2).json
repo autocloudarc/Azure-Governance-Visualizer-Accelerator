@@ -1,0 +1,22 @@
+{
+  "roleName": "Online Experimentation Reader",
+  "type": "BuiltInRole",
+  "description": "Grants permission for read operations to Online Experimentation resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.OnlineExperimentation/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-04-01T15:25:07.1448861Z",
+  "updatedOn": "2025-04-01T15:25:07.1448861Z",
+  "createdBy": null,
+  "updatedBy": null
+}

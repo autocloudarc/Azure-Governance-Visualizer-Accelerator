@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "Experimentation Metric Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows for creation, writes and reads to the metric set via the metrics service APIs.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Experimentation/experimentWorkspaces/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/read",
+          "Microsoft.Experimentation/experimentWorkspaces/experimentationGroups/metricwrite/action",
+          "Microsoft.Experimentation/experimentWorkspaces/metricwrite/action",
+          "Microsoft.Experimentation/experimentWorkspaces/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-11-10T20:07:53.7535885Z",
+    "updatedOn": "2021-11-11T20:14:50.9524177Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6188b7c9-7d01-4f99-a59f-c88b630326c0",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6188b7c9-7d01-4f99-a59f-c88b630326c0"
+}

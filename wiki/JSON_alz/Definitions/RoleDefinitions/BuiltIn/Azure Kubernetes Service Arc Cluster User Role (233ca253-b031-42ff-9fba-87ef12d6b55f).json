@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Kubernetes Service Arc Cluster User Role",
+  "type": "BuiltInRole",
+  "description": "List cluster user credential action.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridContainerService/provisionedClusterInstances/read",
+        "Microsoft.HybridContainerService/provisionedClusterInstances/listUserKubeconfig/action",
+        "Microsoft.Kubernetes/connectedClusters/Read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-03-08T00:33:16.7231724Z",
+  "updatedOn": "2024-03-08T00:33:16.7231724Z",
+  "createdBy": null,
+  "updatedBy": null
+}

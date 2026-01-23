@@ -1,0 +1,36 @@
+{
+  "roleName": "Azure Resilience Management Drills Target Resource Contributor",
+  "type": "BuiltInRole",
+  "description": "This role should be assigned at the Service Group Members scope to enable resource read access and configure chaos targets and capabilities for fault injection, failover, and other post-fault actions",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Chaos/locations/targetTypes/capabilityTypes/read",
+        "Microsoft.Chaos/locations/targetTypes/read",
+        "Microsoft.Chaos/targets/capabilities/delete",
+        "Microsoft.Chaos/targets/capabilities/read",
+        "Microsoft.Chaos/targets/capabilities/write",
+        "Microsoft.Chaos/targets/delete",
+        "Microsoft.Chaos/targets/read",
+        "Microsoft.Chaos/targets/write",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/virtualNetworks/read ",
+        "Microsoft.Sql/managedInstances/read",
+        "Microsoft.Web/serverfarms/read",
+        "Microsoft.Web/sites/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-11-03T16:09:42.3315967Z",
+  "updatedOn": "2025-11-03T16:09:42.3315967Z",
+  "createdBy": null,
+  "updatedBy": null
+}

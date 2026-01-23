@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "roleName": "Defender Serverless Scanner",
+    "type": "BuiltInRole",
+    "description": "Grants access to Serverless resources and thier connections",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "microsoft.web/sites/publish/action",
+          "Microsoft.Web/sites/sitecontainers/read",
+          "microsoft.web/sites/slots/publish/action",
+          "microsoft.web/sites/config/list/action",
+          "microsoft.web/sites/slots/config/list/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-03-07T09:46:16.6481066Z",
+    "updatedOn": "2025-12-16T16:24:39.2065512Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/68ac31b4-936a-4046-a6d2-ba6f8a757bf6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "68ac31b4-936a-4046-a6d2-ba6f8a757bf6"
+}

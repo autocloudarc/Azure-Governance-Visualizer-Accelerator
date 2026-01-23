@@ -1,0 +1,43 @@
+{
+  "roleName": "Cognitive Services Language Reader",
+  "type": "BuiltInRole",
+  "description": "Has access to Read and Test functions under Language portal",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/*/read",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/*/read",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/projects/export/action",
+        "Microsoft.CognitiveServices/accounts/Language/*/read",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/export/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-text/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-dataverse/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/jobs/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/jobscancel/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/jobscancel/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/jobs/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-knowledgebases/action",
+        "Microsoft.CognitiveServices/accounts/Language/generate/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/*"
+      ],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/QnaMaker/*"
+      ]
+    }
+  ],
+  "createdOn": "2021-11-04T03:29:14.7643336Z",
+  "updatedOn": "2023-03-01T16:11:03.4080312Z",
+  "createdBy": null,
+  "updatedBy": null
+}

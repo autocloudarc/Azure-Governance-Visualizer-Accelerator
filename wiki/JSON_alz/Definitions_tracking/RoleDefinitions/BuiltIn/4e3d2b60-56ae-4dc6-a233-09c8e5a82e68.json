@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "roleName": "Container Apps Jobs Contributor",
+    "type": "BuiltInRole",
+    "description": "Full management of Container Apps jobs, including creation, deletion, and updates.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "microsoft.app/jobs/read",
+          "Microsoft.App/jobs/*/read",
+          "Microsoft.App/jobs/*/action",
+          "Microsoft.App/jobs/write",
+          "Microsoft.App/jobs/delete",
+          "Microsoft.app/managedenvironments/read",
+          "Microsoft.App/managedenvironments/*/read",
+          "Microsoft.App/managedenvironments/join/action",
+          "Microsoft.App/managedenvironments/checknameavailability/action",
+          "Microsoft.app/connectedEnvironments/read",
+          "Microsoft.App/connectedEnvironments/*/read",
+          "Microsoft.App/connectedEnvironments/join/action",
+          "Microsoft.App/connectedEnvironments/checknameavailability/action",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-08-14T16:23:29.078965Z",
+    "updatedOn": "2024-08-14T16:23:29.078965Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4e3d2b60-56ae-4dc6-a233-09c8e5a82e68",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4e3d2b60-56ae-4dc6-a233-09c8e5a82e68"
+}

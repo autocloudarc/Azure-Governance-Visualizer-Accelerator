@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Search Index Data Reader",
+    "type": "BuiltInRole",
+    "description": "Grants read access to Azure Cognitive Search index data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Search/searchServices/indexes/documents/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-06-01T20:26:13.4850461Z",
+    "updatedOn": "2021-11-11T20:15:11.3604371Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1407120a-92aa-4202-b7e9-c0e197c71c8f",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1407120a-92aa-4202-b7e9-c0e197c71c8f"
+}

@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Data Boundary Tenant Administrator",
+    "type": "BuiltInRole",
+    "description": "Allows tenant level administration for data boundaries.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/dataBoundaries/write",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-09-26T15:18:40.8881798Z",
+    "updatedOn": "2023-09-26T15:18:40.8881798Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/d1a38570-4b05-4d70-b8e4-1100bcf76d12",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d1a38570-4b05-4d70-b8e4-1100bcf76d12"
+}

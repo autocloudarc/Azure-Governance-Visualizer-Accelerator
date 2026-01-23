@@ -1,0 +1,28 @@
+{
+  "roleName": "Bayer Ag Powered Services Crop Id Solution User Role",
+  "type": "BuiltInRole",
+  "description": "Provide access to Crop Id Solution by Bayer Ag Powered Services",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.AgFoodPlatform/farmBeats/parties/fields/read",
+        "Microsoft.AgFoodPlatform/farmBeats/parties/fields/write",
+        "Microsoft.AgFoodPlatform/farmBeats/parties/read",
+        "Microsoft.AgFoodPlatform/farmBeats/ingestionJobs/satelliteDataIngestionJobs/*",
+        "Microsoft.AgFoodPlatform/farmBeats/scenes/*",
+        "Microsoft.AgFoodPlatform/farmBeats/parties/models/resourceTypes/resources/insights/*",
+        "Microsoft.AgFoodPlatform/farmBeats/parties/models/resourceTypes/resources/insightAttachments/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-04-22T15:03:58.3512473Z",
+  "updatedOn": "2024-05-16T15:24:47.2532254Z",
+  "createdBy": null,
+  "updatedBy": null
+}

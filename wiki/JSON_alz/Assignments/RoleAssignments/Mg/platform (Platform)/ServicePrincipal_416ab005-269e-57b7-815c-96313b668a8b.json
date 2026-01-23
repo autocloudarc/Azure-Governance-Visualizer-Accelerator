@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/416ab005-269e-57b7-815c-96313b668a8b",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-Kubernetes0",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Kubernetes Service Contributor Role",
+  "RoleDefinitionId": "ed7f3fbd-7b88-4dd4-9017-9adb7ce333f8",
+  "ObjectId": "4874bce3-231a-4e4c-90ef-d2e56e15caa5",
+  "ObjectType": "ServicePrincipal"
+}

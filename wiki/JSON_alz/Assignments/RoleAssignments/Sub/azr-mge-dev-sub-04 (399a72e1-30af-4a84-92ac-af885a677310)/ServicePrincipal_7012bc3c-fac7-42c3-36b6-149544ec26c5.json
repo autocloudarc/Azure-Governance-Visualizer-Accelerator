@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310/providers/microsoft.authorization/roleassignments/7012bc3c-fac7-42c3-36b6-149544ec26c5",
+  "Scope": "/subscriptions/399a72e1-30af-4a84-92ac-af885a677310",
+  "DisplayName": "Defender for Containers provisioning AKS Security Profile",
+  "SignInName": null,
+  "RoleDefinitionName": "Kubernetes Extension Contributor",
+  "RoleDefinitionId": "85cb6faf-e071-4c9b-8136-154b5a04f717",
+  "ObjectId": "fc25dcbb-ab32-4687-ba79-d3bd0909343c",
+  "ObjectType": "ServicePrincipal"
+}

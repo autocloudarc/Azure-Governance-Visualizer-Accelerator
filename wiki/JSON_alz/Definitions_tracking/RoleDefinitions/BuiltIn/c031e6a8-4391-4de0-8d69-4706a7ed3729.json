@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "API Management Developer Portal Content Editor",
+    "type": "BuiltInRole",
+    "description": "Can customize the developer portal, edit its content, and publish it.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ApiManagement/service/portalRevisions/read",
+          "Microsoft.ApiManagement/service/portalRevisions/write",
+          "Microsoft.ApiManagement/service/contentTypes/read",
+          "Microsoft.ApiManagement/service/contentTypes/delete",
+          "Microsoft.ApiManagement/service/contentTypes/write",
+          "Microsoft.ApiManagement/service/contentTypes/contentItems/read",
+          "Microsoft.ApiManagement/service/contentTypes/contentItems/write",
+          "Microsoft.ApiManagement/service/contentTypes/contentItems/delete"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-05-06T23:48:52.0904132Z",
+    "updatedOn": "2022-05-11T03:49:58.0615604Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/c031e6a8-4391-4de0-8d69-4706a7ed3729",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "c031e6a8-4391-4de0-8d69-4706a7ed3729"
+}

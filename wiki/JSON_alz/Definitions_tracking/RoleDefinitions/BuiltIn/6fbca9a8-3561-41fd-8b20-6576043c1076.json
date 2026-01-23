@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "roleName": "Scheduled Actions Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows users to use Scheduled Actions offered by Microsoft.ComputeSchedule",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ComputeSchedule/locations/virtualMachinesCancelOperations/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteDeallocate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteHibernate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteStart/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteCreate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesExecuteDelete/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationErrors/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesGetOperationStatus/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitDeallocate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitHibernate/action",
+          "Microsoft.ComputeSchedule/locations/virtualMachinesSubmitStart/action",
+          "Microsoft.ComputeSchedule/scheduledActions/write",
+          "Microsoft.ComputeSchedule/scheduledActions/delete",
+          "Microsoft.ComputeSchedule/scheduledActions/attachResources/action",
+          "Microsoft.ComputeSchedule/scheduledActions/cancelNextOccurrence/action",
+          "Microsoft.ComputeSchedule/scheduledActions/detachResources/action",
+          "Microsoft.ComputeSchedule/scheduledActions/disable/action",
+          "Microsoft.ComputeSchedule/scheduledActions/enable/action",
+          "Microsoft.ComputeSchedule/scheduledActions/listResources/action",
+          "Microsoft.ComputeSchedule/scheduledActions/patchResources/action",
+          "Microsoft.ComputeSchedule/scheduledActions/triggerManualOccurrence/action",
+          "Microsoft.ComputeSchedule/register/action",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-05-26T15:05:37.5260157Z",
+    "updatedOn": "2025-06-09T15:08:17.0884244Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/6fbca9a8-3561-41fd-8b20-6576043c1076",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "6fbca9a8-3561-41fd-8b20-6576043c1076"
+}

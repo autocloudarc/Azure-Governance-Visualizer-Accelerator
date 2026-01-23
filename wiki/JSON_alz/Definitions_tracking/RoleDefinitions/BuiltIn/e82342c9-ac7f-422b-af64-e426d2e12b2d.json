@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Compute Recommendations Role",
+    "type": "BuiltInRole",
+    "description": "Grants permissions to call Compute Recommendations APIs provided by Compute Diagnostic Resource Provider service.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/locations/placementScores/generate/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-05-01T15:29:03.4064531Z",
+    "updatedOn": "2024-07-03T15:20:29.2192889Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/e82342c9-ac7f-422b-af64-e426d2e12b2d",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "e82342c9-ac7f-422b-af64-e426d2e12b2d"
+}

@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Microsoft.OffAzureSpringBoot Service Owner",
+    "type": "BuiltInRole",
+    "description": "Full access to Azure Microsoft.OffAzureSpringBoot Service REST APIs",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.OffAzureSpringBoot/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-07-21T15:02:41.338673Z",
+    "updatedOn": "2025-08-08T08:00:27.2426095Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/79732128-7761-4733-aebf-35590da9f29b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "79732128-7761-4733-aebf-35590da9f29b"
+}

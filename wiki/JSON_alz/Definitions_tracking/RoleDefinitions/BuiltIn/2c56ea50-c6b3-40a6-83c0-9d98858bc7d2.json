@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Schema Registry Reader",
+    "type": "BuiltInRole",
+    "description": "Read and list Schema Registry groups and schemas.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EventHub/namespaces/schemagroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.EventHub/namespaces/schemas/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-09-13T06:31:38.027274Z",
+    "updatedOn": "2025-05-05T15:00:29.6908892Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2c56ea50-c6b3-40a6-83c0-9d98858bc7d2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2c56ea50-c6b3-40a6-83c0-9d98858bc7d2"
+}

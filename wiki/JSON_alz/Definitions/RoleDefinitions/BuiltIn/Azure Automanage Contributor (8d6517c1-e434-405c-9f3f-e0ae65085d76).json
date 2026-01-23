@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Automanage Contributor",
+  "type": "BuiltInRole",
+  "description": "Azure Automanage Contributor",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Automanage/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-09-11T15:31:21.7247588Z",
+  "updatedOn": "2024-09-11T15:31:21.7247588Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,34 @@
+{
+  "roleName": "Logic Apps Standard Contributor (Preview)",
+  "type": "BuiltInRole",
+  "description": "You can manage all aspects of a Standard logic app and workflows. You can't change access or ownership.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Web/*/read",
+        "Microsoft.Web/certificates/*",
+        "Microsoft.Web/connectionGateways/*",
+        "Microsoft.Web/connections/*",
+        "Microsoft.Web/customApis/*",
+        "Microsoft.Web/serverFarms/*",
+        "Microsoft.Web/sites/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-08-11T18:29:26.2014706Z",
+  "updatedOn": "2024-04-04T21:09:40.8283445Z",
+  "createdBy": null,
+  "updatedBy": null
+}

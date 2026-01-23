@@ -1,0 +1,69 @@
+{
+  "properties": {
+    "roleName": "Cognitive Services QnA Maker Editor",
+    "type": "BuiltInRole",
+    "description": "Let’s you create, edit, import and export a KB. You cannot publish or delete a KB.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.CognitiveServices/*/read",
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.Authorization/roleDefinitions/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CognitiveServices/accounts/QnAMaker/knowledgebases/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/knowledgebases/download/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/knowledgebases/create/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/knowledgebases/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/knowledgebases/generateanswer/action",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/knowledgebases/train/action",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/alterations/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/alterations/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/endpointkeys/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/endpointkeys/refreshkeys/action",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/endpointsettings/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/endpointsettings/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker/operations/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/download/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/create/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/generateanswer/action",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/knowledgebases/train/action",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/alterations/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/alterations/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointkeys/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointkeys/refreshkeys/action",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointsettings/read",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/endpointsettings/write",
+          "Microsoft.CognitiveServices/accounts/QnAMaker.v2/operations/read",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/read",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/download/read",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/create/write",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/write",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/generateanswer/action",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/knowledgebases/train/action",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/alterations/read",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/alterations/write",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointkeys/read",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointkeys/refreshkeys/action",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointsettings/read",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/endpointsettings/write",
+          "Microsoft.CognitiveServices/accounts/TextAnalytics/QnAMaker/operations/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-12-17T18:27:30.6434556Z",
+    "updatedOn": "2021-11-11T20:14:14.9961559Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f4cc2bf9-21be-47a1-bdf1-5c5804381025",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f4cc2bf9-21be-47a1-bdf1-5c5804381025"
+}

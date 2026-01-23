@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/f00ac66a-5ccd-57df-89c5-17ebd4dc5d29",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Deploy-GuestAttest",
+  "SignInName": null,
+  "RoleDefinitionName": "Managed Identity Contributor",
+  "RoleDefinitionId": "e40ec5ca-96e0-45a2-b4ff-59039f2c2b59",
+  "ObjectId": "535fe3b7-ad0c-46b2-a4b5-bca05f052cce",
+  "ObjectType": "ServicePrincipal"
+}

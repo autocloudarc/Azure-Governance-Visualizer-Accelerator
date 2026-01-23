@@ -1,0 +1,22 @@
+{
+  "roleName": "Web PubSub Service Owner",
+  "type": "BuiltInRole",
+  "description": "Full access to Azure Web PubSub Service REST APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/WebPubSub/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-03-24T09:10:11.833518Z",
+  "updatedOn": "2023-04-06T15:21:51.7148896Z",
+  "createdBy": null,
+  "updatedBy": null
+}

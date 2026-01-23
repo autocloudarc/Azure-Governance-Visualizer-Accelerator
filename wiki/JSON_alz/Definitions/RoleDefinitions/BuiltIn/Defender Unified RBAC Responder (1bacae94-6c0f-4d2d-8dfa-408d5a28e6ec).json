@@ -1,0 +1,52 @@
+{
+  "roleName": "Defender Unified RBAC Responder",
+  "type": "BuiltInRole",
+  "description": "Defender Unified RBAC Responder. This role is managed and assigned automatically by the Defender Unified RBAC system. Manual assignment of this role is not recommended, as the Defender Unified RBAC system may modify or remove it at any time based on system requirements.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.SecurityInsights/*/read",
+        "Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action",
+        "Microsoft.SecurityInsights/automationRules/*",
+        "Microsoft.SecurityInsights/cases/*",
+        "Microsoft.SecurityInsights/incidents/*",
+        "Microsoft.SecurityInsights/entities/runPlaybook/action",
+        "Microsoft.SecurityInsights/threatIntelligence/indicators/appendTags/action",
+        "Microsoft.SecurityInsights/threatIntelligence/indicators/query/action",
+        "Microsoft.SecurityInsights/threatIntelligence/bulkTag/action",
+        "Microsoft.SecurityInsights/threatIntelligence/indicators/appendTags/action",
+        "Microsoft.SecurityInsights/threatIntelligence/indicators/replaceTags/action",
+        "Microsoft.SecurityInsights/threatIntelligence/queryIndicators/action",
+        "Microsoft.SecurityInsights/businessApplicationAgents/systems/undoAction/action",
+        "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+        "Microsoft.OperationalInsights/workspaces/*/read",
+        "Microsoft.OperationalInsights/workspaces/dataSources/read",
+        "Microsoft.OperationalInsights/workspaces/savedSearches/read",
+        "Microsoft.OperationsManagement/solutions/read",
+        "Microsoft.OperationalInsights/workspaces/query/read",
+        "Microsoft.OperationalInsights/workspaces/query/*/read",
+        "Microsoft.OperationalInsights/workspaces/dataSources/read",
+        "Microsoft.OperationalInsights/querypacks/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/workbooks/read",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [
+        "Microsoft.SecurityInsights/cases/*/Delete",
+        "Microsoft.SecurityInsights/incidents/*/Delete",
+        "Microsoft.SecurityInsights/ConfidentialWatchlists/*",
+        "Microsoft.OperationalInsights/workspaces/query/ConfidentialWatchlist/*"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-09-01T15:03:55.5085788Z",
+  "updatedOn": "2025-09-12T12:38:19.6246651Z",
+  "createdBy": null,
+  "updatedBy": null
+}

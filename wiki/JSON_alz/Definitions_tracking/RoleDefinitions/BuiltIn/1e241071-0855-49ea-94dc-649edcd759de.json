@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "roleName": "EventGrid Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage EventGrid operations.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.EventGrid/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-02-08T18:46:18.8999557Z",
+    "updatedOn": "2021-11-11T20:15:01.6867802Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/1e241071-0855-49ea-94dc-649edcd759de",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "1e241071-0855-49ea-94dc-649edcd759de"
+}

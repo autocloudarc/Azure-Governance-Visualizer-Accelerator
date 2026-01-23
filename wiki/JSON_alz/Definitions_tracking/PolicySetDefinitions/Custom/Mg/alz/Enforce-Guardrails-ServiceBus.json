@@ -1,0 +1,112 @@
+{
+  "properties": {
+    "displayName": "Enforce recommended guardrails for Service Bus",
+    "policyType": "Custom",
+    "description": "This policy initiative is a group of policies that ensures Service Bus is compliant per regulated Landing Zones.",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Service Bus",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "version": "1.1.0",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:11.0850976Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "serviceBusAuthzRules": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "serviceBusDenyDisabledLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "serviceBusDoubleEncryption": {
+        "type": "string",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "serviceBusModifyDisableLocalAuth": {
+        "type": "string",
+        "allowedValues": [
+          "Modify",
+          "Disabled"
+        ],
+        "defaultValue": "Modify"
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "Deny-Sb-Authz-Rules",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a1817ec0-a368-432a-8057-8371e17ac6ee",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('serviceBusAuthzRules')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Sb-Encryption",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ebaf4f25-a4e8-415f-86a8-42d9155bef0b",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('serviceBusDoubleEncryption')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Deny-Sb-LocalAuth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cfb11c26-f069-4c14-8e36-56c394dae5af",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('serviceBusDenyDisabledLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      },
+      {
+        "policyDefinitionReferenceId": "Modify-Sb-LocalAuth",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/910711a6-8aa2-4f15-ae62-1e5b2ed3ef9e",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('serviceBusModifyDisableLocalAuth')]"
+          }
+        },
+        "groupNames": []
+      }
+    ],
+    "policyDefinitionGroups": []
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policySetDefinitions/Enforce-Guardrails-ServiceBus",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "name": "Enforce-Guardrails-ServiceBus",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:11.0515889Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:11.0515889Z"
+  }
+}

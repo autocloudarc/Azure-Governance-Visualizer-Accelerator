@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "roleName": "EventGrid TopicSpaces Publisher",
+    "type": "BuiltInRole",
+    "description": "Lets you publish messages on topicspaces.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.EventGrid/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.EventGrid/topicSpaces/publish/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-09-20T15:20:54.9383815Z",
+    "updatedOn": "2023-10-23T15:12:07.1308307Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a12b0b94-b317-4dcd-84a8-502ce99884c6",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a12b0b94-b317-4dcd-84a8-502ce99884c6"
+}

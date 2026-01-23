@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "principalId": "bdb637b4-220c-43e3-8799-de2b19952905",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/d7c3ea3a-edf3-4bd5-bd64-d5b635b05393",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "parameters": {},
+    "description": "This policy assignment was automatically created by Microsoft Defender for Cloud for agent installation as configured in Defender for Cloud auto provisioning.",
+    "metadata": {
+      "createdBy": "1c928d69-50e7-4ffe-a193-f1dbc9ec2ff9",
+      "createdOn": "2024-08-13T16:11:10.8468481Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+  "location": "centralus",
+  "systemData": {
+    "createdBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "createdByType": "User",
+    "createdAt": "2024-08-13T16:11:09.8723388Z",
+    "lastModifiedBy": "admin@MngEnvMCAP799126.onmicrosoft.com",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2024-08-13T16:11:09.8723388Z"
+  }
+}

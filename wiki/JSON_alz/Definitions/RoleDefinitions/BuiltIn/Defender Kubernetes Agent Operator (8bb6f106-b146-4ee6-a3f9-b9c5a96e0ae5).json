@@ -1,0 +1,40 @@
+{
+  "roleName": "Defender Kubernetes Agent Operator",
+  "type": "BuiltInRole",
+  "description": "Grants Microsoft Defender for Cloud permissions to provision the Kubernetes defender security agent",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.KubernetesConfiguration/extensions/write",
+        "Microsoft.KubernetesConfiguration/extensions/read",
+        "Microsoft.KubernetesConfiguration/extensions/delete",
+        "Microsoft.KubernetesConfiguration/extensions/operations/read",
+        "Microsoft.Kubernetes/connectedClusters/Write",
+        "Microsoft.Kubernetes/connectedClusters/read",
+        "Microsoft.OperationalInsights/workspaces/write",
+        "Microsoft.OperationalInsights/workspaces/read",
+        "Microsoft.OperationalInsights/workspaces/listKeys/action",
+        "Microsoft.OperationalInsights/workspaces/sharedkeys/action",
+        "Microsoft.Kubernetes/register/action",
+        "Microsoft.KubernetesConfiguration/register/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-30T16:11:35.3297751Z",
+  "updatedOn": "2024-04-09T15:14:10.7703257Z",
+  "createdBy": null,
+  "updatedBy": null
+}

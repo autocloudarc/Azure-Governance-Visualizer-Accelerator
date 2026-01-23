@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/aa4e567a-26c0-5fab-87a7-c5ec43045f8d",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-Storage0",
+  "SignInName": null,
+  "RoleDefinitionName": "Security Admin",
+  "RoleDefinitionId": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+  "ObjectId": "56a68665-1799-46a6-ba44-77a7d7067f4c",
+  "ObjectType": "ServicePrincipal"
+}

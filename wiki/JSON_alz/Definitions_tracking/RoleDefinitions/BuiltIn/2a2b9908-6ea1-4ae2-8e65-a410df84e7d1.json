@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Storage Blob Data Reader",
+    "type": "BuiltInRole",
+    "description": "Allows for read access to Azure Storage blob containers and data",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+          "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2017-12-21T00:01:24.7972312Z",
+    "updatedOn": "2021-11-11T20:13:55.2975076Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/2a2b9908-6ea1-4ae2-8e65-a410df84e7d1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2a2b9908-6ea1-4ae2-8e65-a410df84e7d1"
+}

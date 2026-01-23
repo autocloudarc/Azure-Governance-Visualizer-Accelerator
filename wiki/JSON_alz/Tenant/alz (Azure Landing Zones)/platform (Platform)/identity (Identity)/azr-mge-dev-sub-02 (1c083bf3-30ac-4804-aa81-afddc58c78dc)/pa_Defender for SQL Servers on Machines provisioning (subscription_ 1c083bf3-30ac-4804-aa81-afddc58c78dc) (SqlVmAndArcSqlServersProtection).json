@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "principalId": "50b1f477-5130-4552-b100-e6e77210db45",
+    "tenantId": "54d665dd-30f1-45c5-a8d5-d6ffcdb518f9",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Defender for SQL Servers on Machines provisioning (subscription: 1c083bf3-30ac-4804-aa81-afddc58c78dc)",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/c1529623-9fc2-45bc-b84b-b14cd0b7484e",
+    "scope": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc",
+    "description": "This initiative enables Defender for SQL on SQL VMs and Arc-enabled SQL Servers",
+    "metadata": {
+      "assignedBy": "Security Center",
+      "createdBy": "2edb2aec-6497-405f-9b4c-3b489dcf0c45",
+      "createdOn": "2025-11-10T21:04:52.2025593Z",
+      "updatedBy": "6ee43372-341c-4b21-81ed-b62c0d888d2e",
+      "updatedOn": "2025-11-10T21:05:23.065163Z"
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/1c083bf3-30ac-4804-aa81-afddc58c78dc/providers/Microsoft.Authorization/policyAssignments/SqlVmAndArcSqlServersProtection",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "SqlVmAndArcSqlServersProtection",
+  "location": "westeurope",
+  "systemData": {
+    "createdBy": "77cef9f1-f194-4ef3-aeb9-5976388f3945",
+    "createdByType": "Application",
+    "createdAt": "2025-11-10T21:04:50.8764731Z",
+    "lastModifiedBy": "5387eab3-6a7f-4717-a121-913f426edaf9",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2025-11-10T21:05:22.8685645Z"
+  }
+}

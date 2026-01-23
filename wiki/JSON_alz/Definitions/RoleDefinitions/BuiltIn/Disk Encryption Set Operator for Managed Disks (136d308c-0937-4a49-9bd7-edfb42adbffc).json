@@ -1,0 +1,22 @@
+{
+  "roleName": "Disk Encryption Set Operator for Managed Disks",
+  "type": "BuiltInRole",
+  "description": "Provides permissions to read, write or delete disk encryption sets which are used for encrypting managed disks with customer managed keys",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/diskEncryptionSets/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-07-19T21:32:25.1095326Z",
+  "updatedOn": "2024-07-19T21:32:25.1095326Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,45 @@
+{
+  "properties": {
+    "roleName": "Healthcare Agent Admin",
+    "type": "BuiltInRole",
+    "description": "Users with admin access can sign in, view and edit all of the bot resources, scenarios and configuration setting including the bot instance keys & secrets.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.HealthBot/healthBots/ResourceData/Read",
+          "Microsoft.HealthBot/healthBots/Metadata/Read",
+          "Microsoft.HealthBot/healthBots/CopilotStudioSolution/*",
+          "Microsoft.HealthBot/healthBots/Feedback/Read",
+          "Microsoft.HealthBot/healthBots/Users/Read",
+          "Microsoft.HealthBot/healthBots/AuditTrails/Read",
+          "Microsoft.HealthBot/healthBots/AnalyticReport/Read",
+          "Microsoft.HealthBot/healthBots/ExposedSkill/Read",
+          "Microsoft.HealthBot/healthBots/RegisteredSkills/Read",
+          "Microsoft.HealthBot/healthBots/Configuration/*",
+          "Microsoft.HealthBot/healthBots/Localization/*",
+          "Microsoft.HealthBot/healthBots/AuthenticationProviders/*",
+          "Microsoft.HealthBot/healthBots/Channels/*",
+          "Microsoft.HealthBot/healthBots/DataConnections/*",
+          "Microsoft.HealthBot/healthBots/OpenAPIPlugins/*",
+          "Microsoft.HealthBot/healthBots/Scenarios/*",
+          "Microsoft.HealthBot/healthBots/LanguageModels/*",
+          "Microsoft.HealthBot/healthBots/Resources/*",
+          "Microsoft.HealthBot/healthBots/Admin/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-02-29T16:11:01.3963426Z",
+    "updatedOn": "2025-08-22T10:25:43.1782987Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/f1082fec-a70f-419f-9230-885d2550fb38",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "f1082fec-a70f-419f-9230-885d2550fb38"
+}

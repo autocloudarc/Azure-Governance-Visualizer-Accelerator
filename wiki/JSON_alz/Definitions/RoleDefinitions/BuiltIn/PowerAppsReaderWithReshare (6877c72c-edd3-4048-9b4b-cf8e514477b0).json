@@ -1,0 +1,26 @@
+{
+  "roleName": "PowerAppsReaderWithReshare",
+  "type": "BuiltInRole",
+  "description": "PowerAppsReadersWithReshare can use the resource and re-share it with other users, but cannot edit the resource or re-share it with edit permissions.",
+  "assignableScopes": [
+    "/providers/Microsoft.PowerApps"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.PowerApps/*/permissions/write",
+        "Microsoft.PowerApps/*/read"
+      ],
+      "notActions": [
+        "Microsoft.PowerApps/*/delete",
+        "Microsoft.PowerApps/*/write"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2016-03-15T00:55:03.0666416Z",
+  "updatedOn": "2021-11-11T20:13:46.9678962Z",
+  "createdBy": null,
+  "updatedBy": null
+}

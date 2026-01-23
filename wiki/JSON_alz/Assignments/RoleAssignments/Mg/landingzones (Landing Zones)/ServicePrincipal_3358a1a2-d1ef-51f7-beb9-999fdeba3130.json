@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/3358a1a2-d1ef-51f7-beb9-999fdeba3130",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enable-AUM-CheckUpdates",
+  "SignInName": null,
+  "RoleDefinitionName": "Azure Connected Machine Resource Administrator",
+  "RoleDefinitionId": "cd570a14-e51a-42ad-bac8-bafd67325302",
+  "ObjectId": "b9bed05d-d241-463a-8b6b-35f6e0a56b7f",
+  "ObjectType": "ServicePrincipal"
+}

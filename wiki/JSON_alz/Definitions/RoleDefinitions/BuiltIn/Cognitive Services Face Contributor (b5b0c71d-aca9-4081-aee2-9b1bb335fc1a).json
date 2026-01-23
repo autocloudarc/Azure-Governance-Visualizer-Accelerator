@@ -1,0 +1,26 @@
+{
+  "roleName": "Cognitive Services Face Contributor",
+  "type": "BuiltInRole",
+  "description": "Full access to perform all Face APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/Face/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-09-04T15:25:04.7461682Z",
+  "updatedOn": "2024-09-04T15:25:04.7461682Z",
+  "createdBy": null,
+  "updatedBy": null
+}

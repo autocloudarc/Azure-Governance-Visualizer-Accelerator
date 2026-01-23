@@ -1,0 +1,52 @@
+{
+  "roleName": "Enclave Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Enclave Contributor Role to access the resources of Microsoft.Mission stored with RPSAAS.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Mission/register/action",
+        "Microsoft.Mission/unregister/action",
+        "Microsoft.Mission/Locations/OperationStatuses/read",
+        "Microsoft.Mission/Locations/OperationStatuses/write",
+        "Microsoft.Mission/Operations/read",
+        "Microsoft.Mission/communities/read",
+        "Microsoft.Mission/virtualEnclaves/read",
+        "Microsoft.Mission/virtualEnclaves/write",
+        "Microsoft.Mission/virtualEnclaves/endpoints/read",
+        "Microsoft.Mission/virtualEnclaves/endpoints/write",
+        "Microsoft.Mission/virtualEnclaves/workloads/read",
+        "Microsoft.Mission/virtualEnclaves/workloads/write",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Mission/communities/communityEndpoints/read",
+        "Microsoft.Mission/communities/transitHubs/read",
+        "Microsoft.Mission/enclaveConnections/read",
+        "Microsoft.Mission/enclaveConnections/write",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/write",
+        "Microsoft.Mission/approvals/read",
+        "Microsoft.Mission/approvals/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-12-11T16:01:29.1699004Z",
+  "updatedOn": "2025-07-17T21:39:32.1403397Z",
+  "createdBy": null,
+  "updatedBy": null
+}

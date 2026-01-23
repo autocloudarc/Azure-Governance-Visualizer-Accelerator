@@ -1,0 +1,137 @@
+{
+  "properties": {
+    "displayName": "[Deprecated] RDP access from the Internet should be blocked",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "This policy denies any network security rule that allows RDP access from Internet. This policy is superseded by https://www.azadvertizer.net/azpolicyadvertizer/Deny-MgmtPorts-From-Internet.html",
+    "metadata": {
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ],
+      "category": "Network",
+      "deprecated": true,
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "supersededBy": "Deny-MgmtPorts-From-Internet",
+      "version": "1.0.1-deprecated",
+      "createdBy": "bbd0bbbd-16fc-4c39-a530-65ced78b7590",
+      "createdOn": "2026-01-21T00:37:02.8407945Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "description": "Enable or disable the execution of the policy",
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "equals": "Microsoft.Network/networkSecurityGroups/securityRules",
+            "field": "type"
+          },
+          {
+            "allOf": [
+              {
+                "equals": "Allow",
+                "field": "Microsoft.Network/networkSecurityGroups/securityRules/access"
+              },
+              {
+                "equals": "Inbound",
+                "field": "Microsoft.Network/networkSecurityGroups/securityRules/direction"
+              },
+              {
+                "anyOf": [
+                  {
+                    "equals": "*",
+                    "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange"
+                  },
+                  {
+                    "equals": "3389",
+                    "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange"
+                  },
+                  {
+                    "equals": "true",
+                    "value": "[if(and(not(empty(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange'))), contains(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange'),'-')), and(lessOrEquals(int(first(split(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange'), '-'))),3389),greaterOrEquals(int(last(split(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange'), '-'))),3389)), 'false')]"
+                  },
+                  {
+                    "count": {
+                      "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]",
+                      "where": {
+                        "equals": "true",
+                        "value": "[if(and(not(empty(first(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]')))), contains(first(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]')),'-')), and(lessOrEquals(int(first(split(first(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]')), '-'))),3389),greaterOrEquals(int(last(split(first(field('Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]')), '-'))),3389)) , 'false')]"
+                      }
+                    },
+                    "greater": 0
+                  },
+                  {
+                    "not": {
+                      "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]",
+                      "notEquals": "*"
+                    }
+                  },
+                  {
+                    "not": {
+                      "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRanges[*]",
+                      "notEquals": "3389"
+                    }
+                  }
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "equals": "*",
+                    "field": "Microsoft.Network/networkSecurityGroups/securityRules/sourceAddressPrefix"
+                  },
+                  {
+                    "equals": "Internet",
+                    "field": "Microsoft.Network/networkSecurityGroups/securityRules/sourceAddressPrefix"
+                  },
+                  {
+                    "not": {
+                      "field": "Microsoft.Network/networkSecurityGroups/securityRules/sourceAddressPrefixes[*]",
+                      "notEquals": "*"
+                    }
+                  },
+                  {
+                    "not": {
+                      "field": "Microsoft.Network/networkSecurityGroups/securityRules/sourceAddressPrefixes[*]",
+                      "notEquals": "Internet"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Management/managementGroups/alz/providers/Microsoft.Authorization/policyDefinitions/Deny-RDP-From-Internet",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "Deny-RDP-From-Internet",
+  "systemData": {
+    "createdBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "createdByType": "Application",
+    "createdAt": "2026-01-21T00:37:02.7555042Z",
+    "lastModifiedBy": "2fb557e8-a7b2-4828-b19d-b2ddee966115",
+    "lastModifiedByType": "Application",
+    "lastModifiedAt": "2026-01-21T00:37:02.7555042Z"
+  }
+}

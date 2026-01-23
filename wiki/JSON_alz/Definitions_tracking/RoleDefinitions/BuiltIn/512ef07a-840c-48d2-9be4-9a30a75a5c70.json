@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Defender Cloud Secrets Posture",
+    "type": "BuiltInRole",
+    "description": "Service role that provides permissions for Microsoft Defender Cloud Secrets Posture",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.DocumentDB/databaseAccounts/listKeys/action",
+          "Microsoft.documentdb/mongoClusters/read",
+          "Microsoft.DocumentDB/databaseAccounts/listConnectionStrings/action",
+          "Microsoft.CognitiveServices/accounts/listKeys/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2025-10-31T14:44:05.9238452Z",
+    "updatedOn": "2025-10-31T14:44:05.9238452Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/512ef07a-840c-48d2-9be4-9a30a75a5c70",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "512ef07a-840c-48d2-9be4-9a30a75a5c70"
+}

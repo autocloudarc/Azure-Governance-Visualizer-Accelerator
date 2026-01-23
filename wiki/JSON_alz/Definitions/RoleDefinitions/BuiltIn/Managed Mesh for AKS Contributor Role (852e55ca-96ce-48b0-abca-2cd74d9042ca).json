@@ -1,0 +1,28 @@
+{
+  "roleName": "Managed Mesh for AKS Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Grant read, write and delete access to Managed Mesh for AKS",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AppLink/AppLinks/read",
+        "Microsoft.AppLink/AppLinks/write",
+        "Microsoft.AppLink/AppLinks/delete",
+        "Microsoft.AppLink/AppLinks/AppLinkMembers/read",
+        "Microsoft.AppLink/AppLinks/AppLinkMembers/write",
+        "Microsoft.AppLink/AppLinks/AppLinkMembers/delete",
+        "Microsoft.AppLink/locations/operationStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-10-22T15:31:31.339395Z",
+  "updatedOn": "2025-10-22T15:31:31.339395Z",
+  "createdBy": null,
+  "updatedBy": null
+}

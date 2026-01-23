@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "Key Vault Crypto Officer",
+    "type": "BuiltInRole",
+    "description": "Perform any action on the keys of a key vault, except manage permissions. Only works for key vaults that use the 'Azure role-based access control' permission model.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Support/*",
+          "Microsoft.KeyVault/checkNameAvailability/read",
+          "Microsoft.KeyVault/deletedVaults/read",
+          "Microsoft.KeyVault/locations/*/read",
+          "Microsoft.KeyVault/vaults/*/read",
+          "Microsoft.KeyVault/operations/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.KeyVault/vaults/keys/*",
+          "Microsoft.KeyVault/vaults/keyrotationpolicies/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-05-19T17:52:47.0099249Z",
+    "updatedOn": "2022-01-06T23:21:17.9760884Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/14b46e9e-c2b7-41b4-b07b-48a6ebf60603",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "14b46e9e-c2b7-41b4-b07b-48a6ebf60603"
+}

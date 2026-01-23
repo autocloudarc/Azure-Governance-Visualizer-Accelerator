@@ -1,0 +1,24 @@
+{
+  "roleName": "Monitoring Reader",
+  "type": "BuiltInRole",
+  "description": "Can read all monitoring data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "Microsoft.OperationalInsights/workspaces/search/action",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2016-09-21T19:19:52.4939376Z",
+  "updatedOn": "2025-06-18T13:58:09.9859598Z",
+  "createdBy": null,
+  "updatedBy": null
+}

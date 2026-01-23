@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "PlayFab Reader",
+    "type": "BuiltInRole",
+    "description": "Provides read access to PlayFab resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.PlayFab/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-11-04T23:26:57.2248605Z",
+    "updatedOn": "2021-11-11T20:15:26.5784834Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a9a19cc5-31f4-447c-901f-56c0bb18fcaf",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a9a19cc5-31f4-447c-901f-56c0bb18fcaf"
+}

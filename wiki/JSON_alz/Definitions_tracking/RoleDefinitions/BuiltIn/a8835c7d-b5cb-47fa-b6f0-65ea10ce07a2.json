@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "roleName": "LocalNGFirewallAdministrator role",
+    "type": "BuiltInRole",
+    "description": "Allows user to create, modify, describe, or delete NGFirewalls.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "PaloAltoNetworks.Cloudngfw/firewalls/*",
+          "PaloAltoNetworks.Cloudngfw/localRulestacks/read",
+          "PaloAltoNetworks.Cloudngfw/globalRulestacks/read",
+          "PaloAltoNetworks.Cloudngfw/Locations/operationStatuses/read",
+          "Microsoft.OperationalInsights/workspaces/write",
+          "Microsoft.OperationalInsights/workspaces/sharedKeys/read",
+          "Microsoft.OperationalInsights/workspaces/read",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Insights/metrics/read",
+          "Microsoft.Insights/metricDefinitions/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.ResourceHealth/availabilityStatuses/read",
+          "Microsoft.Support/*",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/virtualNetworks/subnets/join/action",
+          "Microsoft.Network/publicIPAddresses/write",
+          "Microsoft.Network/publicIPAddresses/read",
+          "Microsoft.Network/publicIPAddresses/join/action",
+          "Microsoft.Network/networkVirtualAppliances/read",
+          "Microsoft.Network/networkVirtualAppliances/write",
+          "Microsoft.Network/networkVirtualAppliances/delete",
+          "Microsoft.Network/virtualHubs/read",
+          "Microsoft.Network/virtualWans/read",
+          "Microsoft.Network/virtualWans/virtualHubs/read",
+          "Microsoft.Network/networkSecurityGroups/read",
+          "Microsoft.Network/networkSecurityGroups/join/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-02-06T16:01:22.3881136Z",
+    "updatedOn": "2023-03-14T15:28:19.3614218Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/a8835c7d-b5cb-47fa-b6f0-65ea10ce07a2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "a8835c7d-b5cb-47fa-b6f0-65ea10ce07a2"
+}

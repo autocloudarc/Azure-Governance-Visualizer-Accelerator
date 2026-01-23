@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/platform/providers/microsoft.authorization/roleassignments/4456aa56-e5fe-56be-abf8-81812d0eb5eb",
+  "Scope": "/providers/Microsoft.Management/managementGroups/platform",
+  "DisplayName": "Enforce-GR-Synapse0",
+  "SignInName": null,
+  "RoleDefinitionName": "SQL Security Manager",
+  "RoleDefinitionId": "056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+  "ObjectId": "57b9fc03-4191-4360-b209-b1addfc85b2e",
+  "ObjectType": "ServicePrincipal"
+}

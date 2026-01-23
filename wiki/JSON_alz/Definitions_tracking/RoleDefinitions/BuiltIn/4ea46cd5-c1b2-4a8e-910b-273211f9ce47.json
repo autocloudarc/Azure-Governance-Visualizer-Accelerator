@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "IoT Hub Registry Contributor",
+    "type": "BuiltInRole",
+    "description": "Allows for full access to IoT Hub device registry.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Devices/IotHubs/devices/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-04-22T20:36:47.5532704Z",
+    "updatedOn": "2021-11-11T20:15:08.9804295Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/4ea46cd5-c1b2-4a8e-910b-273211f9ce47",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4ea46cd5-c1b2-4a8e-910b-273211f9ce47"
+}

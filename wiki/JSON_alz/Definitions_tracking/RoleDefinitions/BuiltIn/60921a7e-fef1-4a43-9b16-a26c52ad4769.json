@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Grafana Viewer",
+    "type": "BuiltInRole",
+    "description": "View dashboards, playlists, and query data sources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.Dashboard/grafana/ActAsGrafanaViewer/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-08-05T16:36:18.7737511Z",
+    "updatedOn": "2024-07-19T05:11:50.7830427Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/60921a7e-fef1-4a43-9b16-a26c52ad4769",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "60921a7e-fef1-4a43-9b16-a26c52ad4769"
+}

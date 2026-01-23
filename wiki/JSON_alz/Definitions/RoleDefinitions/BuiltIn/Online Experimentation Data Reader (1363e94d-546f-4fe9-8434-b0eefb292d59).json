@@ -1,0 +1,22 @@
+{
+  "roleName": "Online Experimentation Data Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read access to Online Experimentation data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.OnlineExperimentation/workspaces/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-01-31T18:42:14.0945842Z",
+  "updatedOn": "2025-01-31T18:42:14.0945842Z",
+  "createdBy": null,
+  "updatedBy": null
+}

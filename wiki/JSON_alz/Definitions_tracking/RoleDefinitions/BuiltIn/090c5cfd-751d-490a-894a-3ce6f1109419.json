@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Service Bus Data Owner",
+    "type": "BuiltInRole",
+    "description": "Allows for full access to Azure Service Bus resources.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ServiceBus/*"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ServiceBus/*"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-04-16T21:33:36.7445745Z",
+    "updatedOn": "2021-11-11T20:13:59.2005807Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/090c5cfd-751d-490a-894a-3ce6f1109419",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "090c5cfd-751d-490a-894a-3ce6f1109419"
+}

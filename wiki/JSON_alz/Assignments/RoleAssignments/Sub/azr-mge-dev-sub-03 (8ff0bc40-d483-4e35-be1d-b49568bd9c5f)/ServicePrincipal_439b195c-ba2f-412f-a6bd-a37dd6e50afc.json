@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/439b195c-ba2f-412f-a6bd-a37dd6e50afc",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "Cloud Infrastructure Entitlement Management",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "499b1a12-a346-48b0-be20-8ac5ecd42c40",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/landingzones/providers/microsoft.authorization/roleassignments/a224c8c5-0346-5928-a003-014fc50e207f",
+  "Scope": "/providers/Microsoft.Management/managementGroups/landingzones",
+  "DisplayName": "Enforce-GR-CosmosDb0",
+  "SignInName": null,
+  "RoleDefinitionName": "Security Admin",
+  "RoleDefinitionId": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+  "ObjectId": "ff39fdcb-ddbd-4956-aadb-74c21959c173",
+  "ObjectType": "ServicePrincipal"
+}

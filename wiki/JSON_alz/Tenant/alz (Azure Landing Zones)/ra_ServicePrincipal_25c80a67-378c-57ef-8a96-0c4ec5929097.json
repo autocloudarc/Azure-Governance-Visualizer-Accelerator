@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/alz/providers/microsoft.authorization/roleassignments/25c80a67-378c-57ef-8a96-0c4ec5929097",
+  "Scope": "/providers/Microsoft.Management/managementGroups/alz",
+  "DisplayName": "Deploy-MDEndpoints",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "a6326185-c8e3-48a7-be39-911e45867dfe",
+  "ObjectType": "ServicePrincipal"
+}

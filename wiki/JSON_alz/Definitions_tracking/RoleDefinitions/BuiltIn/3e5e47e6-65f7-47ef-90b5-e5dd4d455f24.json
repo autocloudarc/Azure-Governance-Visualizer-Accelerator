@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Disk Backup Reader",
+    "type": "BuiltInRole",
+    "description": "Provides permission to backup vault to perform disk backup.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Compute/disks/read",
+          "Microsoft.Compute/disks/beginGetAccess/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-12-15T07:39:03.8394514Z",
+    "updatedOn": "2021-11-11T20:14:56.0178737Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/3e5e47e6-65f7-47ef-90b5-e5dd4d455f24",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "3e5e47e6-65f7-47ef-90b5-e5dd4d455f24"
+}

@@ -1,0 +1,23 @@
+{
+  "roleName": "Azure AI Safety Evaluator",
+  "type": "BuiltInRole",
+  "description": "This role can perform all actions under workspace evaluations and simulations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.MachineLearningServices/workspaces/evaluations/*",
+        "Microsoft.MachineLearningServices/workspaces/simulations/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-12-18T16:29:45.1650072Z",
+  "updatedOn": "2024-12-18T16:29:45.1650072Z",
+  "createdBy": null,
+  "updatedBy": null
+}

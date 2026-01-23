@@ -1,0 +1,38 @@
+{
+  "roleName": "Recurring Scheduled Actions Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows users to use Recurring Scheduled Actions offered by Microsoft.ComputeSchedule",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ComputeSchedule/scheduledActions/write",
+        "Microsoft.ComputeSchedule/scheduledActions/delete",
+        "Microsoft.ComputeSchedule/scheduledActions/attachResources/action",
+        "Microsoft.ComputeSchedule/scheduledActions/cancelNextOccurrence/action",
+        "Microsoft.ComputeSchedule/scheduledActions/detachResources/action",
+        "Microsoft.ComputeSchedule/scheduledActions/disable/action",
+        "Microsoft.ComputeSchedule/scheduledActions/enable/action",
+        "Microsoft.ComputeSchedule/scheduledActions/listResources/action",
+        "Microsoft.ComputeSchedule/scheduledActions/patchResources/action",
+        "Microsoft.ComputeSchedule/scheduledActions/triggerManualOccurrence/action",
+        "Microsoft.ComputeSchedule/scheduledActions/occurrences/cancel/action",
+        "Microsoft.ComputeSchedule/scheduledActions/occurrences/delay/action",
+        "Microsoft.ComputeSchedule/register/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2025-08-07T17:24:27.0994142Z",
+  "updatedOn": "2025-08-07T17:24:27.0994142Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f/providers/microsoft.authorization/roleassignments/3b9759cc-eb54-4808-98fd-31315564149c",
+  "Scope": "/subscriptions/8ff0bc40-d483-4e35-be1d-b49568bd9c5f",
+  "DisplayName": "Containers/securityOperators/DefenderForContainersSecurityOperator",
+  "SignInName": null,
+  "RoleDefinitionName": "Defender Kubernetes API Access",
+  "RoleDefinitionId": "d5a2ae44-610b-4500-93be-660a0c5f5ca6",
+  "ObjectId": "814ec3b2-8117-4a83-b32c-539ddad6ff38",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "displayName": "Resources should not be created in West Europe",
+    "policyType": "BuiltIn",
+    "mode": "Indexed",
+    "description": "This policy definition blocks resource creation and updates in West Europe.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "System Policy"
+    },
+    "policyRule": {
+      "if": {
+        "field": "location",
+        "equals": "westeurope"
+      },
+      "then": {
+        "effect": "deny"
+      }
+    }
+  },
+  "id": "/providers/Microsoft.Authorization/policyDefinitions/7509877f-d414-4d79-8d1f-d600ea78d087",
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "7509877f-d414-4d79-8d1f-d600ea78d087"
+}

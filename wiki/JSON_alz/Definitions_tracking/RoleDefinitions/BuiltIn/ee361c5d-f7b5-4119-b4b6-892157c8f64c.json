@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Knowledge Consumer",
+    "type": "BuiltInRole",
+    "description": "Knowledge Read permission to consume Enterprise Graph Knowledge using entity search and graph query",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EnterpriseKnowledgeGraph/services/knowledge/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-02-23T21:23:31.4037552Z",
+    "updatedOn": "2021-11-11T20:13:37.0021342Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/976c53b8-965c-4f97-ab51-993195a8623c/providers/Microsoft.Authorization/roleDefinitions/ee361c5d-f7b5-4119-b4b6-892157c8f64c",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ee361c5d-f7b5-4119-b4b6-892157c8f64c"
+}
