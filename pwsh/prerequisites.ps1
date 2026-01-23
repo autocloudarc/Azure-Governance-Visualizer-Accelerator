@@ -35,8 +35,14 @@ if ($codeRunPlatform -eq 'GitHubActions') {
         }
         elseif ($statusCode -eq 200) {
             Write-Host "Test returned statusCode: '$statusCode' - '$($repoUri)' is accessible from the public!"
-            Write-Host 'Assuming and insisting that you do not want to publish your tenant insights to the public - throw'
-            throw
+            if ($env:ALLOW_PUBLIC_REPO -eq 'true') {
+                Write-Host "Environment variable 'ALLOW_PUBLIC_REPO' is set to 'true' - proceeding despite public repository"
+            }
+            else {
+                Write-Host 'Assuming and insisting that you do not want to publish your tenant insights to the public - throw'
+                Write-Host "Set the environment variable 'ALLOW_PUBLIC_REPO' to 'true' if you want to allow running in a public repository"
+                throw
+            }
         }
         else {
             Write-Host "Test returned statusCode: '$statusCode' - skipping this test"
