@@ -799,6 +799,7 @@ Also provide instructions based on the content of the "$(git rev-parse --show-to
 - Always verify all 6 secrets + 2 variables before running workflows (step 17)
 - Use full repo paths in all gh CLI commands: `--repo autocloudarc/Azure-Governance-Visualizer-Accelerator`
 - Instead of using the "Authorized Group object Id to access the AzGovViz webapp" parameter for the workflow, replace it
+- When running the **DeployAzGovViz** workflow set ALLOW_PUBLIC_REPO to true (line 20) if using a public repository
 
 ### Keep the Azure Governance Visualizer code up-to-date
 
